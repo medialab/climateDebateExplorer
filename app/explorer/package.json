@@ -1,0 +1,11 @@
+{
+  "name": "explorer",
+  "version": "0.1.0",
+  "description": "Climate debate explorer app",
+  "main": "app.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Medialab & Atelier Iceberg",
+  "license": "ISC"
+}
