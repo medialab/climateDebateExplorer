@@ -1,0 +1,43 @@
+{
+   "actors": [
+      "European Union"
+   ],
+   "countries": [
+      "United States",
+      "Germany",
+      "Netherlands",
+      "Saudi Arabia",
+      "Bulgaria",
+      "China"
+   ],
+   "enb_end_date": "10-Sep-04",
+   "enb_long_title": "United Nations Framework Convention on Climate Change (UNFCCC) workshop on emissions projections from Parties included in Annex I of the UNFCCC",
+   "enb_short_title": "UNFCCC Workshop",
+   "enb_start_date": "10-Sep-04",
+   "enb_url": "http://www.iisd.ca/vol12/enb12243e.html",
+   "id": "enb12243e_4",
+   "section_title": "DISCUSSION ON WORKING PAPER 2",
+   "sentences": [
+      "Participants discussed questions raised in Working Paper 2 one by one, beginning by exchanging views on modeling energy demand and discussing approaches for projecting changes in the energy supply mix. The US said that the primary purpose of most energy demand models in her country is to inform energy policy, rather than calculate carbon dioxide emissions projections, making it difficult to provide recommendations on best practices for modeling energy demand.",
+      "Sergey Kononov raised the issue of overestimates in projections.",
+      "Germany suggested providing 'low' and 'high' projections to address this.",
+      "Bulgaria observed that overestimations may result from the fact that national communications are a communication by governments to the UNFCCC, not a scientific exercise.",
+      "The Netherlands noted that despite political requirements, expert choices are made with respect to the model results.",
+      "He suggested considering consistency of assumptions, rather than consistency in models.",
+      "The RSPB pointed to two sources of uncertainty: in the assumptions entered into models and in the models themselves.",
+      "The EC said one recommendation could be to create a 'pool' of available models to be shared among experts who are fearful of employing these due to lack of experience.",
+      "China suggested that a common approach could be to have bottom-up models. Participants then addressed liberalization of energy markets, and whether particular modeling techniques are necessary to reflect this in projections.",
+      "They deliberated whether and how liberalization is included in models used for the existing national communications, and how to reflect this in neighboring countries with connected economies. On modeling greenhouse gas mitigation measures particularly relevant to the energy sector, participants highlighted difficulties in defining the baseline for projections.",
+      "Saudi Arabia suggested recommending efforts to avoid impacts of mitigation measures in Annex I Parties on non-Annex I Parties.",
+      "Germany pointed out that national models could not account for impacts on other countries, for which bi-national or multinational models are required.",
+      "Chair Ferry noted that the present workshop did not have a mandate to address the issue, but it would be noted. On implications of emissions trading and project-based mechanisms on projections, the Netherlands said assumptions about the EU Emissions Trading Scheme and project-based mechanisms are considered in his country`s emissions projections.",
+      "China suggested that countries with experience in including trading mechanisms in projections could report on their experiences for the benefit of other countries.",
+      "Bulgaria said accounting for trading in projections was a problem for EIT countries, given the lack of information on the willingness of countries to engage in JI projects, and the resulting impact on emissions in EIT countries. On projections of bunker fuel emissions, the RSPB said that, in some cases, the rise in aviation-related emissions negates the effect of mitigation measures, but countries still do not account for bunker fuel emissions in projections.",
+      "Saudi Arabia said it was premature to talk about bunker fuel emissions, since no decision had been reached in the negotiations.",
+      "He called for the inclusion of the impacts of response measures on non-Annex I Parties in the recommendations for modeling transport-related taxation. Regarding the industry sector, the International Chamber of Commerce said modeling difficulties in calculating and presenting HFCs, PFCs and sulphur hexafluoride emissions are related to the high rate of change in the sector, driven by many concerns, including environmental and macroeconomic concerns. Saudi Arabia said that it is the use of energy, not supply, that drives emissions. Bulgaria said supply refers to the mining, delivery, and production of energy. Chair Ferry said in the case of electricity, it is the supply, not the use, that is the problem.",
+      "The issue was noted."
+   ],
+   "subtype": "",
+   "topics": [],
+   "type": ""
+}

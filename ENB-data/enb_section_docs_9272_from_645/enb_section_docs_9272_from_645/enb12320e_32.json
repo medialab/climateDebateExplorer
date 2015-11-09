@@ -1,0 +1,27 @@
+{
+   "actors": [],
+   "countries": [
+      "Russian Federation",
+      "Belgium",
+      "Sudan",
+      "Russia"
+   ],
+   "enb_end_date": "05-Apr-07",
+   "enb_long_title": "Eighth session of the IPCC Working Group II",
+   "enb_short_title": "IPCC WGII",
+   "enb_start_date": "02-Apr-07",
+   "enb_url": "http://www.iisd.ca/vol12/enb12320e.html",
+   "id": "enb12320e_32",
+   "section_title": "Figure on observed changes (Figure SPM-1)",
+   "sentences": [
+      "A figure on changes in physical and biological systems and surface temperature was first addressed in plenary on Monday.",
+      "Several delegates commented on the lack of clarity regarding whether areas colored in white represented lack of data or lack of temperature changes.",
+      "Many stressed the need to increase readability and a contact group, co-chaired by Belgium and Sudan, was established.",
+      "In contact group discussions, the Lead Authors explained the figures in the SPM-1, and presented a revised map, which showed improved data coverage for the Russian Federation.",
+      "Corrections were made to data on Europe, and an explanation of the data-selection process was inserted in a caption.",
+      "Delegates agreed to the revised figure."
+   ],
+   "subtype": "",
+   "topics": [],
+   "type": ""
+}

@@ -1,0 +1,30 @@
+{
+   "actors": [],
+   "countries": [
+      "Canada",
+      "India",
+      "New Zealand",
+      "Japan",
+      "China",
+      "Trinidad and Tobago",
+      "Panama"
+   ],
+   "enb_end_date": "02-Dec-08",
+   "enb_long_title": "UN Climate Change Conference - Pozna\u0144",
+   "enb_short_title": "COP 14",
+   "enb_start_date": "02-Dec-08",
+   "enb_url": "http://www.iisd.ca/vol12/enb12386e.html",
+   "id": "enb12386e_17",
+   "section_title": "NAIROBI WORK PROGRAMME:",
+   "sentences": [
+      "SBSTA Chair Helen Plume (New Zealand) reported on the implementation of the NWP and relevant technical papers (FCCC/SBSTA/2008/9, 10, 12, INF.5, FCCC/TP/2008/3-4).",
+      "UNEP described progress made on a global adaptation network to support the NWP and the CONVENTION ON BIOLOGICAL DIVERSITY described the preliminary findings of the Ad hoc Technical Expert Group on Biodiversity and Climate Change.",
+      "The WORLD METEOROLOGICAL ORGANIZATION highlighted its Third World Climate Conference to be held in August 2009.",
+      "PANAMA, supported by CHINA and INDIA, proposed an expert group on vulnerability, impacts and adaptation.",
+      "JAPAN said an expert group was not yet necessary.",
+      "A contact group will be co-chaired by Kishan Kumarsingh (Trinidad and Tobago) and Don Lemmen (Canada)."
+   ],
+   "subtype": "",
+   "topics": [],
+   "type": "sbsta"
+}

@@ -1,0 +1,38 @@
+{
+   "actors": [
+      "Group of 77",
+      "Alliance of Small Island States",
+      "Umbrella Group",
+      "European Union",
+      "Environmental Integrity Group",
+      "African Group"
+   ],
+   "countries": [
+      "Yemen",
+      "Liechtenstein",
+      "China",
+      "Australia",
+      "Congo",
+      "Lesotho",
+      "Grenada",
+      "Belgium"
+   ],
+   "enb_end_date": "30-Nov-10",
+   "enb_long_title": "Canc\u00fan Climate Change Conference",
+   "enb_short_title": "COP 16",
+   "enb_start_date": "30-Nov-10",
+   "enb_url": "http://www.iisd.ca/vol12/enb12488e.html",
+   "id": "enb12488e_14",
+   "section_title": "OPENING STATEMENTS:",
+   "sentences": [
+      "Yemen, for the G-77/CHINA, urged Annex I parties to close the gap between the current emission reduction pledges and what is required by science.",
+      "Belgium, for the EU, said the Cancun outcome should preserve the Kyoto Protocol architecture and confirm the continuation of the Kyoto Protocol institutions, but noted that progress under the AWG-KP alone would be insufficient.",
+      "Australia, for the UMBRELLA GROUP, said that agreement on the work by the AWG-KP should be part of a comprehensive outcome considering the AWG-LCA.",
+      "The Democratic Republic of the Congo, for the AFRICAN GROUP, emphasized that the AWG-LCA should agree on comparable mitigation commitments for Annex I countries that are not parties to the Kyoto Protocol.",
+      "Lesotho, for the LDCs, said that Annex I parties should increase the level of ambition of their emission reduction commitments and, with Grenada, for AOSIS, said loopholes, such as carry over of surplus AAUs and weak LULUCF accounting rules, should be avoided.",
+      "Liechtenstein, for the EIG, highlighted the need for further progress on transforming pledges into quantified emission limitation and reduction objectives (QELROs), commitment period length and the carryover of surplus AAUs."
+   ],
+   "subtype": "",
+   "topics": [],
+   "type": "working group"
+}

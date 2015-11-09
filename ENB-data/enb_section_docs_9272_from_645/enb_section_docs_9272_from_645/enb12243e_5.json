@@ -1,0 +1,35 @@
+{
+   "actors": [
+      "European Union"
+   ],
+   "countries": [
+      "Ireland",
+      "Finland",
+      "Denmark",
+      "New Zealand"
+   ],
+   "enb_end_date": "10-Sep-04",
+   "enb_long_title": "United Nations Framework Convention on Climate Change (UNFCCC) workshop on emissions projections from Parties included in Annex I of the UNFCCC",
+   "enb_short_title": "UNFCCC Workshop",
+   "enb_start_date": "10-Sep-04",
+   "enb_url": "http://www.iisd.ca/vol12/enb12243e.html",
+   "id": "enb12243e_5",
+   "section_title": "PRESENTATIONS ON NATIONAL CIRCUMSTANCES",
+   "sentences": [
+      "Trevor Donnellan, Rural Economy Research Center, Ireland, presented on greenhouse gas emissions projections from agriculture in his country.",
+      "He described the models used and emphasized the importance of inputs by national experts and interlinkages within agricultural sectors.",
+      "He observed that policy models that can form the basis for emissions projections do exist and that agricultural policy alone can have important effects on emissions projections.",
+      "He also stressed the importance of sensitivity analyses as agricultural prices in the EU move closer to world prices and therefore become more volatile. In reply to a question, Donellan said that projections beyond 2010-12 are uncertain.",
+      "Other questions related to interlinkages and the isolation of agriculture from the rest of the economy in the models, which Donellan explained as having to do with the size of the sector and its share of the GDP. Paula Per\u00e4l\u00e4, MTT Agrifood Research, Finland, presented an overview of the emissions scenarios from agriculture presented in her country`s third national communication and now in the process of being updated.",
+      "As the main challenges, she mentioned the need to: further develop models; incorporate important animal categories and crop species; make the models more consistent with Intergovernmental Panel on Climate Change (IPCC) guidelines; include them in the Finnish National System for calculating greenhouse gas inventories; and use them to follow up the implementation of the National Climate Strategy. Leonard Brown, Climate Change Office, New Zealand, described his country`s emissions projections, highlighting the importance of institutional arrangements and links between personnel responsible for inventories and for projections.",
+      "He described the main drivers of emissions projections from agriculture: animal population by species; productivity and emissions per animal; forecasts for nitrogen fertilizer usage; and P&Ms such as environmental constraints and price measures.",
+      "He also noted that New Zealand`s projections are made only until 2010, after which there are too many uncertainties.",
+      "Regarding forestry, he said the models are now being reworked and mentioned the need to refine data. Questions were raised regarding the effects of carrying capacity, the displacement of sheep farms by dairy farms, accounting for afforestation, reforestation and deforestation under the Protocol Article 3.3, and on the difficulty of calculating forestry growth rates and establishing scenarios. Steen Gyldenk\u00e6rne, National Environmental Research Institute, Denmark, presented on Danish emissions projections from agriculture.",
+      "He gave an overview of the agricultural sector in his country, noting that deforestation is banned and agriculture is highly regulated as a result of nitrogen leeching.",
+      "He described a module containing an interlinked agricultural inventory as the basis for projections and the use of equilibrium models for calculating future activity.",
+      "As lessons learned, he mentioned the importance of expert analysis and the need to consider long-term market development. In the discussion, participants addressed the use of the Monte Carlo model for addressing uncertainties, nitrogen estimates and assumptions about the use of fertilizer, and IPCC default emission factors."
+   ],
+   "subtype": "",
+   "topics": [],
+   "type": ""
+}

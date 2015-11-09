@@ -1,0 +1,28 @@
+{
+   "actors": [
+      "Umbrella Group",
+      "Alliance of Small Island States",
+      "European Union"
+   ],
+   "countries": [
+      "Belize",
+      "Trinidad and Tobago"
+   ],
+   "enb_end_date": "04-Dec-08",
+   "enb_long_title": "United Nations Climate Change Conference - Bali",
+   "enb_short_title": "COP/MOP3",
+   "enb_start_date": "04-Dec-08",
+   "enb_url": "http://www.iisd.ca/vol12/enb12344e.html",
+   "id": "enb12344e_7",
+   "section_title": "SBSTA 27",
+   "sentences": [
+      "SBSTA Chair Kishan Kumarsingh (Trinidad and Tobago) opened SBSTA 27, and parties adopted the agenda (FCCC/SBSTA/2007/5).",
+      "Belize, for AOSIS, underscored adaptation, technology transfer, and systematic observation, and proposed an IPCC Special Report on SIDS.",
+      "LDCs stressed implementation of concrete adaptation measures, an extended mandate for the expert group on technology transfer (EGTT) and assistance to LDCs.",
+      "The EU supported the establishment of a constituted body to address near and medium-term technology transfer activities and a decision enabling pilot project activities and further methodological work in the context of reducing emissions from deforestation and forest degradation (REDD).",
+      "The UMBRELLA GROUP called for progress on technology transfer, REDD, and the Nairobi work programme."
+   ],
+   "subtype": "plenary",
+   "topics": [],
+   "type": "sbsta"
+}
