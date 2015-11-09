@@ -3,6 +3,9 @@ import os
 import itertools
 
 
+ENB_DATA = "enb_section_docs_9272_from_645"
+OUT_DATA = "metadata_overview"
+
 
 format_txt = lambda x: ('"' + x.replace('"', '""').replace("\n", " ").replace("\r", "") + '"').encode('utf-8')
 format_spe = lambda x: format_txt("|".join(x))
@@ -11,7 +14,7 @@ format_field = lambda x: format_txt(x) if type(x) == unicode else format_spe(x)
 
 data_index={}
 
-with open("metadata.csv","w") as f:
+with open(os.path.join(OUT_DATA,"metadata.csv"),"w") as f:
 	headers=["countries", 
     "topics", 
     "section_title", 
@@ -26,7 +29,7 @@ with open("metadata.csv","w") as f:
     "enb_end_date"]
 	print >> f, (",".join(headers)).encode('utf-8') 
 
-for directory,subdir,filenames in os.walk("enb_section_docs_9272_from_645"):
+for directory,subdir,filenames in os.walk(ENB_DATA):
 	for f in filenames:
 		if f.split(".")[-1]=="json":
 			with open(os.path.join(directory,f),"r") as jsonfile:
@@ -34,7 +37,7 @@ for directory,subdir,filenames in os.walk("enb_section_docs_9272_from_645"):
 				for k,v in data.iteritems():
 					if k!="sentences":
 						data_index[k]=[v] if k not in data_index else data_index[k]+[v]
-				with open("metadata.csv","a") as f:
+				with open(os.path.join(OUT_DATA,"metadata.csv"),"a") as f:
 					print >>f, ",".join([format_field(data[a]) for a in headers])
 key_usage={}
 val_usage={}
@@ -56,7 +59,7 @@ for k in val_usage:
 	val_stat[k]=sorted(val_stat[k].iteritems(),key=lambda t:t[1],reverse=True)
 
 
-with open("key_stat.json","w") as f:
+with open(os.path.join(OUT_DATA,"key_stat.json"),"w") as f:
 	json.dump(key_usage,f,indent=4)
-with open("val_stat.json","w") as f:
+with open(os.path.join(OUT_DATA,"val_stat.json"),"w") as f:
 	json.dump(val_stat,f,indent=4)
