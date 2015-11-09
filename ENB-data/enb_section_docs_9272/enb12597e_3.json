@@ -1,0 +1,42 @@
+{
+   "actors": [],
+   "countries": [
+      "India",
+      "Norway",
+      "Venezuela",
+      "China",
+      "Tanzania",
+      "Saudi Arabia",
+      "Peru",
+      "Switzerland",
+      "Bolivia"
+   ],
+   "enb_end_date": "12-Apr-14",
+   "enb_long_title": "Twelfth Session of the Intergovernmental Panel on Climate Change (IPCC) Working Group III (WGIII-12) and Thirty-ninth Session of the Intergovernmental Panel on Climate Change (IPCC-39)",
+   "enb_short_title": "IPCC-39",
+   "enb_start_date": "07-Apr-14",
+   "enb_url": "http://www.iisd.ca/vol12/enb12597e.html",
+   "id": "enb12597e_3",
+   "section_title": "INTRODUCTION :",
+   "sentences": [
+      "Co-Chair Sokona explained that this section had been rewritten based on governments' comments and that the language was similar to text already approved by WG-I.",
+      "On a sentence describing the function of the report, Switzerland suggested, and participants agreed to, changing the words 'focuses on literature' to 'assesses literature'.",
+      "Saudi Arabia, supported by India, called for reference to the IPCC's special report on carbon capture and storage in a sentence describing the literature on which the report is based.",
+      "Co-Chair Sokona clarified that the WGIII report builds on AR4 and, therefore, only includes literature published since AR4.",
+      "Switzerland suggested, and participants agreed to, adding a reference to previous reports.",
+      "Venezuela, supported by China, Bolivia, Peru and Tanzania, lamented the removal from the text of a reference to UNFCCC Article 2 (Objective of the Convention).",
+      "India called for reintroduction of deleted text on the definition of mitigation and climate policy.",
+      "Saudi Arabia, supported by China, called for retaining language from the December SPM draft version, emphasizing that the report does not recommend particular goals for mitigation, but assesses available options.",
+      "Switzerland, supported by Tanzania and Norway, said the reference to the report not recommending particular goals for mitigation is superfluous as IPCC reports are not intended to be prescriptive.",
+      "Co-Chair Sokona suggested, and participants agreed to, adding text reflecting that the report assesses mitigation options and their societal implications, but does not recommend any particular option.",
+      "In the final introductory paragraph on the degree of certainty of findings, Switzerland suggested, and participants agreed, to state that the language on of the degree of certainty is consistent across the WG reports.",
+      "Regarding a footnote, Norway suggested, and participants agreed to, text referring to the guidance note for Lead Authors on consistent treatment of uncertainties.",
+      "Final SPM.1 Text : The introduction addresses the role of the IPCC, outlines the SPM's structure and explains degrees of certainty.",
+      "In the SPM, the degree of certainty of the WG's findings is expressed as a qualitative level of confidence (from very low to very high) and, when possible, probabilistically, with a quantified likelihood (from exceptionally unlikely to virtually certain)."
+   ],
+   "subtype": "",
+   "topics": [
+      "Anthropogenic Interference with Climate System"
+   ],
+   "type": "ipcc"
+}

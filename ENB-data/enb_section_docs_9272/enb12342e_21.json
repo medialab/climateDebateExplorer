@@ -1,0 +1,37 @@
+{
+   "actors": [],
+   "countries": [
+      "Austria",
+      "India",
+      "Canada",
+      "China",
+      "Saudi Arabia",
+      "Greenland"
+   ],
+   "enb_end_date": "17-Nov-07",
+   "enb_long_title": "IPCC-27",
+   "enb_short_title": "IPCC-27",
+   "enb_start_date": "12-Nov-07",
+   "enb_url": "http://www.iisd.ca/vol12/enb12342e.html",
+   "id": "enb12342e_21",
+   "section_title": "LONGER REPORT:",
+   "sentences": [
+      "During the discussions on Friday evening, India, Saudi Arabia, China and others suggested referring to technology transfer and financing in a paragraph on incentives and barriers to mitigation.",
+      "The Authors, supported by Canada, Austria and others, explained that although relevant, these issues did not fit under the heading robust findings.",
+      "Delegates agreed not to include them.",
+      "The rest of the text was adopted with minor changes.",
+      "Final Longer Report Text: The final text defines robust findings and key uncertainties.",
+      "It highlights that some findings may be policy-relevant even though they are associated with large uncertainties.",
+      "The text then lists robust findings on observed changes in climate and their effects and causes, including that: warming of the climate system is unequivocal; many natural systems on all continents and some oceans are being affected by regional climate changes; global greenhouse gas emissions have grown by 70% between 1970 and 2004; atmospheric greenhouse gas concentrations far exceed pre-industrial values; and most of the warming over the past 50 years is very likely due to anthropogenic greenhouse gas increases.",
+      "On key uncertainties, the text mentions that: data on some regions is limited and there is notable lack of geographical balance; analyzing extreme events is more difficult than climatic averages; effects of climate change on human and some natural systems are difficult to detect; difficulties remain in attributing observed temperature changes at smaller than continental scales; and magnitude of CO 2 emissions from land-use change remains uncertain.",
+      "On drivers and projections of future climate change and their impacts, robust findings include that: global emissions will continue to grow with current policies; a warming of 0.2 \u00b0C is projected for the next two decades; continued emissions at or above current levels would cause further warming and very likely induce larger changes than in the 20th century; warming tends to reduce uptake of CO 2 by terrestrial ecosystems and oceans; anthropogenic warming and sea level rise would continue for centuries even if greenhouse gas concentrations are stabilized; some systems, sectors and regions are likely to be especially affected by climate change; and impacts are very likely to increase due to extreme weather events.",
+      "As key uncertainties, the text lists: uncertainty in equilibrium climate sensitivity creates uncertainty in the expected warming for a given stabilization scenario; considerably different modeling results on feedbacks; aerosol impacts; future changes in the Greenland and Antarctic ice sheet mass affecting sea level rise; large-scale ocean circulation changes beyond the 21st century; uncertainties surrounding regional projections hampering impacts research; and understanding of low-probability/high-impact events and cumulative impacts is generally limited.",
+      "On responses to climate change, the robust findings include: some planned adaptation is occurring and more extensive adaptation is required; unmitigated climate change would be likely to exceed adaptive capacity in the long term; a wide range of mitigation opportunities are available at costs ranging from net negative up to US$100/tCO 2 eq; to stabilize greenhouse gas concentrations, emissions would need to peak and decline; the lower the stabilization level, the lower the risks; a range of stabilization levels can be achieved by using currently available technologies and those expected to be commercialized in coming decades; this requires appropriate and effective incentives and further research, development and dissemination; sustainable development paths can make major contributions to mitigation and adaptation; and seemingly unrelated macroeconomic and other policies can significantly affect emissions.",
+      "The key uncertainties include: understanding of how development planners incorporate information on climate variability and change in their decisions is limited; adaptive and mitigative capacity depends on socioeconomic development pathways; barriers, limits and costs of adaptation are not fully understood; estimates of mitigation potential and costs depend on various assumptions and uncertainty arises in particular concerning technology-related issues and effects of changes in behavior and lifestyles; and effects of non-climate policies on emissions are poorly quantified."
+   ],
+   "subtype": "",
+   "topics": [
+      "Anthropogenic Interference with Climate System"
+   ],
+   "type": "ipcc"
+}

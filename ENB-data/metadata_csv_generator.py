@@ -3,7 +3,7 @@ import os
 import itertools
 
 
-ENB_DATA = "enb_section_docs_9272_cluster_topics"
+ENB_DATA = "enb_section_docs_9272"
 OUT_DATA = "metadata_overview"
 
 
@@ -15,19 +15,19 @@ format_field = lambda x: format_txt(x) if type(x) == unicode else format_spe(x)
 data_index={}
 
 with open(os.path.join(OUT_DATA,"metadata.csv"),"w") as f:
-	headers=["countries", 
-    "topics", 
-    "section_title", 
-    "enb_start_date", 
-    "enb_short_title", 
-    "subtype", 
-    "actors", 
-    "enb_url", 
-    "enb_long_title", 
-    "type", 
-    "id", 
+	headers=["countries",
+    "topics",
+    "section_title",
+    "enb_start_date",
+    "enb_short_title",
+    "subtype",
+    "actors",
+    "enb_url",
+    "enb_long_title",
+    "type",
+    "id",
     "enb_end_date"]
-	print >> f, (",".join(headers)).encode('utf-8') 
+	print >> f, (",".join(headers)).encode('utf-8')
 
 for directory,subdir,filenames in os.walk(ENB_DATA):
 	for f in filenames:
