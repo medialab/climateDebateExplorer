@@ -7,3 +7,6 @@ An web app exploration of ENB data.
   - metadata_csv_generator.py : a python script to generate metadata overview
   - metadata_overview : the metadata overview files
 
+# data model
+- type = track
+- sub-type = format
