@@ -3,7 +3,7 @@ import os
 import itertools
 
 
-ENB_DATA = "enb_section_docs_9272_from_645"
+ENB_DATA = "enb_section_docs_9272_cluster_topics"
 OUT_DATA = "metadata_overview"
 
 
@@ -44,7 +44,7 @@ val_usage={}
 
 for k in data_index:
 	key_usage[k]=len(data_index[k])
-	if k in ["actors","countries"]:
+	if k in ["actors","countries","topics"]:
 		values=[_ for v in data_index[k] for _ in v]
 	else:
 		values=data_index[k]
