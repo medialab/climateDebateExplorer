@@ -1,10 +1,15 @@
 import json
-import os
+import os, sys
 import itertools
 
-
 ENB_DATA = "enb_section_docs_9272"
+#ENB_DATA = "enb_section_docs_9272-topiked"
+#ENB_DATA = "enb_section_docs_10980_cluster_topics"
 OUT_DATA = "metadata_overview"
+if len(sys.argv) > 1:
+    ENB_DATA = sys.argv[1]
+if len(sys.argv) > 2:
+    OUT_DATA = sys.argv[2]
 
 
 format_txt = lambda x: ('"' + x.replace('"', '""').replace("\n", " ").replace("\r", "") + '"').encode('utf-8')
