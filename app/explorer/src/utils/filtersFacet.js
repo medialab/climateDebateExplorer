@@ -22,7 +22,7 @@ function getOneField(filter, spec) {
     };
   else
     return {
-      operator: 'OR',
+      operator: spec.operator || 'AND',
       _brackets: true,
       branches:
         filter.values.map(function(value) {
