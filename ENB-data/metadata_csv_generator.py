@@ -7,9 +7,8 @@ import codecs
 # the valid uptodate event_bulletinurl.csv in OUT_DATA folder
 LINK_TO_EVENT="event_bulletinurl.csv"
 
-ENB_DATA = "enb_section_docs_9272"
-#ENB_DATA = "enb_section_docs_9272-topiked"
-#ENB_DATA = "enb_section_docs_10980_cluster_topics"
+ENB_DATA = "enb_section_jsons"
+#ENB_DATA = "enb_section_jsons-topiked"
 OUT_DATA = "metadata_overview"
 if len(sys.argv) > 1:
     ENB_DATA = sys.argv[1]
@@ -35,7 +34,7 @@ if os.path.exists(os.path.join(OUT_DATA,LINK_TO_EVENT)):
         url_eventid["http://www.iisd.ca/vol12/enb12603e.html"]=url_eventid["http://www.iisd.ca/vol12/enb125603e.html"]
 
 
-with open(os.path.join(OUT_DATA,"section_metadata.csv"),"w") as f:
+with open(os.path.join(OUT_DATA,"sections_metadata.csv"),"w") as f:
     headers=[
     "id",
     "title",
@@ -80,9 +79,9 @@ for directory,subdir,filenames in os.walk(ENB_DATA):
                     unicode(year)
                     ]
                 section_metadata.append(csv_data)
-                    
 
-with open(os.path.join(OUT_DATA,"section_metadata.csv"),"a") as metadata_file:
+
+with open(os.path.join(OUT_DATA,"sections_metadata.csv"),"a") as metadata_file:
     for l in section_metadata:
         for field in l:
             try:

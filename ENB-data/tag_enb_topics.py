@@ -38,7 +38,7 @@ def tag_json(data, topics):
 if __name__ =="__main__":
     topics_csv = "topics-keywords.csv"
     json_dir = "enb_section_jsons"
-    output_json_dir = "enb_section_json-topiked"
+    output_json_dir = "enb_section_jsons-topiked"
     if not os.path.exists(output_json_dir):
         os.makedirs(output_json_dir)
 
