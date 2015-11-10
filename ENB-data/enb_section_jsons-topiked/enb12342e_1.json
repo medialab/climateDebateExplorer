@@ -1,0 +1,43 @@
+{
+  "countries": [
+    "Switzerland", 
+    "Ethiopia", 
+    "India", 
+    "Canada"
+  ], 
+  "topics": [
+    "IPCC Governance", 
+    "IPCC Governance", 
+    "UNFCCC and Kyoto Protocol Functioning", 
+    "National Communications & Inventories"
+  ], 
+  "section_title": "A BRIEF HISTORY OF THE IPCC AND AR4", 
+  "enb_start_date": "12-Nov-07", 
+  "enb_short_title": "IPCC-27", 
+  "subtype": "history", 
+  "actors": [], 
+  "sentences": [
+    "The IPCC was established in 1988 by the World Meteorological Organization (WMO) and the UN Environment Programme (UNEP).", 
+    "The purpose of the IPCC is to assess scientific, technical and socioeconomic information relevant to understanding the risks associated with human-induced climate change.", 
+    "The IPCC does not undertake new research, nor does it monitor climate-related data, but bases its assessments on published and peer-reviewed scientific and technical literature.", 
+    "The IPCC Secretariat is located in Geneva, Switzerland, and is staffed by the WMO and UNEP.", 
+    "The IPCC has three working groups: Working Group I (WGI) addresses the scientific aspects of the climate system and climate change; Working Group II (WGII) addresses the vulnerability of socioeconomic and natural systems to climate change, negative and positive consequences of climate change, and adaptation options; and Working Group III (WGIII) addresses options for limiting greenhouse gas emissions and otherwise mitigating climate change.", 
+    "The IPCC has a Task Force on National Greenhouse Gas Inventories.", 
+    "The Task Force oversees the IPCC National Greenhouse Gas Inventories Programme, which aims to develop and refine an internationally-agreed methodology and software for the calculation and reporting of national greenhouse gas emissions and removals, and to encourage the use of this methodology by countries participating in the IPCC and by parties to the UN Framework Convention on Climate Change (UNFCCC).", 
+    "The IPCC Bureau, comprised of 30 members elected by the Panel, assists the IPCC Chair in planning, coordinating and monitoring the work of the IPCC.", 
+    "Rajendra Pachauri (India) was elected Chair of the IPCC in 2002.", 
+    "Since its inception, the IPCC has prepared a series of comprehensive assessments, special reports and technical papers subject to extensive review by experts and governments, providing scientific information on climate change to the international community, including policymakers and the public.", 
+    "This information has played an important role in negotiations under the UNFCCC and in framing national and regional policies.", 
+    "The IPCC completed its initial comprehensive assessment of climate change in the First Assessment Report in 1990 and the Second Assessment Report in 1995.", 
+    "The IPCC \u0092s Third Assessment Report (TAR), completed in 2001, addresses policy-relevant scientific, technical, and socioeconomic dimensions of climate change, and concentrated on findings since 1995 at both the regional and global levels.", 
+    "The TAR includes a comprehensive assessment by each of the three IPCC working groups, Summaries for Policymakers (SPM) and Technical Summaries of each working group report, and an overarching Synthesis Report.", 
+    "Recent special reports prepared by the IPCC include the Special Report on Safeguarding the Ozone Layer and the Global Climate System, accepted at IPCC-23 (8 April 2005, Addis Ababa, Ethiopia) and the Special Report on Carbon Dioxide Capture and Storage, accepted at IPCC-24 (26-28 September 2005, Montreal, Canada).", 
+    "The IPCC Guidelines for National Greenhouse Gas Inventories were first released in 1994, and a revised set was completed in 1996.", 
+    "The Panel has also approved additional good practice guidance reports in 2000 and 2003, and the 2006 IPCC Guidelines.."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12342e.html", 
+  "enb_long_title": "IPCC-27", 
+  "type": "ipcc", 
+  "id": "enb12342e_1", 
+  "enb_end_date": "17-Nov-07"
+}

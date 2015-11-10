@@ -1,0 +1,29 @@
+{
+  "countries": [
+    "Japan", 
+    "Senegal", 
+    "Bangladesh", 
+    "Botswana"
+  ], 
+  "topics": [
+    "Vulnerabilities and Impacts", 
+    "Technology Transfer"
+  ], 
+  "section_title": "India", 
+  "enb_start_date": "19-May-05", 
+  "enb_short_title": "SOGE", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "emphasized that adaptation measures should not attempt to replicate mitigation models, such as incremental costs.", 
+    "Senegal said technology transfer should be integrated into political decision making, and stressed the need for information transfer and scientific cooperation.", 
+    "Japan and Bangladesh emphasized the need to enhance monitoring and assessment of climate impacts and vulnerability.", 
+    "Bangladesh underscored the need to integrate disaster management into adaptation strategies.", 
+    "Botswana stressed the importance of public awareness on adaptation."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12261e.html", 
+  "enb_long_title": "Seminar of Governmental Experts", 
+  "type": "", 
+  "id": "enb12261e_44", 
+  "enb_end_date": "19-May-05"
+}

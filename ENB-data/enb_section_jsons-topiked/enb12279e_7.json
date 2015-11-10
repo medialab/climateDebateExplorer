@@ -1,0 +1,35 @@
+{
+  "countries": [
+    "Jamaica", 
+    "Netherlands", 
+    "Bangladesh", 
+    "United Kingdom", 
+    "Australia", 
+    "Peru", 
+    "Switzerland", 
+    "United States", 
+    "Spain"
+  ], 
+  "topics": [
+    "Vulnerabilities and Impacts"
+  ], 
+  "section_title": "VULNERABILITY ASSESSMENTS", 
+  "enb_start_date": "17-Oct-05", 
+  "enb_short_title": "UNFCCC Workshop on Adaptation", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "On vulnerability assessments, Switzerland stressed the need to benefit from already existing information sources.", 
+    "The Netherlands noted the importance of multidisciplinary efforts involving people working in alternative sectors as well as decision makers for conducting vulnerability and impact assessments.", 
+    "The US said that stocktaking might be more important in some areas than others, and supported by the UK, suggested looking at regional impacts rather than impacts on specific parties.", 
+    "The UK, supported by Spain and others, said that one could capture the information on vulnerability through a broadly-structured questionnaire that would address methodological issues and costs of implementation across sectors.", 
+    "Australia noted the need to introduce action-oriented verbs in the proposed sub-themes under the thematic areas.", 
+    "Peru suggested including both social and economic impacts as a necessary component of vulnerability assessments.", 
+    "Bangladesh highlighted the role of the SBSTA in providing tools to examine economic impacts of climate change, and Jamaica noted that many of the tools available are more suitable for developed countries than for developing ones."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12279e.html", 
+  "enb_long_title": "UNFCCC Workshop on the Development of the Five-Year Programme of Work on Impacts, Vulnerability and Adaptation to Climate Change", 
+  "type": "", 
+  "id": "enb12279e_7", 
+  "enb_end_date": "19-Oct-05"
+}

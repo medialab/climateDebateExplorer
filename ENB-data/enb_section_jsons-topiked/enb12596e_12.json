@@ -1,0 +1,25 @@
+{
+  "countries": [
+    "Switzerland"
+  ], 
+  "topics": [
+    "Reasons for Concern", 
+    "IPCC Governance", 
+    "UNFCCC and Kyoto Protocol Functioning"
+  ], 
+  "section_title": "IPCC-35:", 
+  "enb_start_date": "10-Mar-14", 
+  "enb_short_title": "IPCC-38", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "This session took place from 6-9 June 2012 in Geneva, Switzerland.", 
+    "The meeting concluded the Panel's consideration of the recommendations from the IAC Review by approving the functions of the IPCC Secretariat and TSUs, and the Communications Strategy.", 
+    "Delegates also agreed to revisions to the Procedures for the IPCC Reports, and the Procedures for the Election of the IPCC Bureau and Any Task Force Bureau."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12596e.html", 
+  "enb_long_title": "Tenth Session of the Intergovernmental Panel on Climate Change (IPCC) Working Group II (WGII-10) and Thirty-eighth Session of the IPCC (IPCC-38)", 
+  "type": "ipcc", 
+  "id": "enb12596e_12", 
+  "enb_end_date": "14-Mar-14"
+}

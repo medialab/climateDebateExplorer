@@ -7,8 +7,8 @@ import codecs
 # the valid uptodate event_bulletinurl.csv in OUT_DATA folder
 LINK_TO_EVENT="event_bulletinurl.csv"
 
-ENB_DATA = "enb_section_jsons"
-#ENB_DATA = "enb_section_jsons-topiked"
+#ENB_DATA = "enb_section_jsons"
+ENB_DATA = "enb_section_jsons-topiked"
 OUT_DATA = "metadata_overview"
 if len(sys.argv) > 1:
     ENB_DATA = sys.argv[1]
@@ -68,13 +68,13 @@ for directory,subdir,filenames in os.walk(ENB_DATA):
                 csv_data=[
                     data["id"],
                     data["section_title"],
-                    data["actors"],
-                    data["countries"],
-                    data["topics"],
+                    [act.replace('&', 'and') for act in data["actors"]],
+                    [cou.replace('&', 'and') for cou in data["countries"]],
+                    [top.replace('&', 'and') for top in data["topics"]],
                     data["enb_url"],
                     u"" if not add_eventid else url_eventid[data["enb_url"]],
-                    data["type"],
-                    data["subtype"],
+                    data["type"].replace('&', 'and'),
+                    data["subtype"].replace('&', 'and'),
                     unicode(epoch_millisecond),
                     unicode(year)
                     ]

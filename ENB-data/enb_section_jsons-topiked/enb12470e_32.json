@@ -1,0 +1,30 @@
+{
+  "countries": [
+    "Bolivia", 
+    "China", 
+    "Spain"
+  ], 
+  "topics": [
+    "UNFCCC and Kyoto Protocol Functioning"
+  ], 
+  "section_title": "ANNEX I NATIONAL COMMUNICATIONS AND GHG INVENTORY DATA:", 
+  "enb_start_date": "10-Jun-10", 
+  "enb_short_title": "AWGs", 
+  "subtype": "", 
+  "actors": [
+    "European Union", 
+    "Group of 77"
+  ], 
+  "sentences": [
+    "The SBI did not reach conclusions and consideration of the issue will continue at SBI 33. BOLIVIA expressed disappointment that developed countries wish to submit their next national communications after a four-year period despite the availability of resources to do so sooner.", 
+    "She underscored the drastic increase in most developed countries emissions.", 
+    "China, for the G-77/CHINA, lamented that non-Annex I countries are being pushed to increase the frequency of their national communications, while Annex I countries are refusing to do likewise.", 
+    "He requested inclusion of a new agenda sub-item on further implementation of Convention Article 12.5 and that his statement be reflected in the report.", 
+    "Spain, for the EU, expressed disappointment at the lack of agreement, stressed the importance of the review process to improve national communications and urged that, pending resolution of the issue, national communications should continue to be developed periodically, appropriately and on time."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12470e.html", 
+  "enb_long_title": "Bonn Climate Change Talks - May/June 2010", 
+  "type": "sbi", 
+  "id": "enb12470e_32", 
+  "enb_end_date": "10-Jun-10"
+}

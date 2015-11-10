@@ -1,0 +1,44 @@
+{
+  "countries": [
+    "Canada", 
+    "Ukraine", 
+    "Sudan", 
+    "El Salvador"
+  ], 
+  "topics": [
+    "Financial Mechanisms and Funds", 
+    "Vulnerabilities and Impacts"
+  ], 
+  "section_title": "First Breakout Group:", 
+  "enb_start_date": "10-Mar-08", 
+  "enb_short_title": "Workshop", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "This breakout group, facilitated by Lawrence Flint, ENDA-TM, began with a discussion on what can be done to enhance the use of existing socioeconomic information in impact and vulnerability assessments.", 
+    "Participants identified problems related to: collection, storage and accessibility of data; lack of available infrastructure, including adequate internet facilities in developing countries; and appropriateness of information accessed.", 
+    "On tailoring socioeconomic information to suit the needs of decision makers, Canada cited time constraints of decision makers, and advocated building their capacity and skills to interpret and use the information, and share knowledge.", 
+    "Ukraine said providers should advise policy makers and help determine the climate change component of information.", 
+    "University of Nairobi suggested breaking down information for specific populations and communities and Sudan advocated bottom-up approaches for developing socioeconomic information.", 
+    "Participants also suggested strengthening existing capacity in developing countries to collect and interpret data, and stressed that socioeconomic data is more difficult to analyze than biophysical data.", 
+    "UNDP suggested a compendium of data on methodologies for assessments.", 
+    "The ILO suggested looking at NAPAs to determine which methodologies have been used, and noted the IPCC recognized that the socioeconomic component was lacking in its Fourth Assessment Report.", 
+    "El Salvador noted that social scientists were often marginalized in climate change studies and assessments, and were struggling to get biophysical scientists to understand linkages between nature and society.", 
+    "Participants suggested: building capacity of decision makers, targeting key institutions; reviewing previous studies to deduce types of information and whether that information is sufficient; translating information for users, such as meteorology data in a handbook for farmers; translating socioeconomic information for climate studies; giving equal footing to social and biophysical sciences in assessments; and asking the UNFCCC to play a role in providing consistency in approaches.", 
+    "Regarding what further socioeconomic information or datasets are required, participants discussed, inter alia : traditional and indigenous knowledge, including how to obtain it and integrate it into scientific assessments; and how to recognize and build on traditional coping strategies instead of usurping and replacing them.", 
+    "The group emphasized: working and sharing knowledge with communities; climatologists alone cannot address the issue; and qualitative data must be translated for use in analyses.", 
+    "Regarding indicators, the group discussed whether to develop universal indicators versus sector-, location or income group-specific indicators.", 
+    "The group addressed: insufficiency of quantitative, macro-level data; the need for community or sector specific data; developing policy indicators to assist with vulnerability and adaptation assessments; channeling funds towards adaptation strategies; investing in climate research; thresholds to determine when policy adjustments are necessary; and developing indicators at the local scale.", 
+    "UNDP called for defining appropriate indicators in the context of adaptation projects.", 
+    "The ILO said indicators should reflect priorities of those who are trying to adapt.", 
+    "Participants stressed: the need to recognize indigenous knowledge and integrate it into adaptation planning; disaggregating data; and identifying the scale and level at which information is needed.", 
+    "Regarding funding, participants agreed funds need to be made available for building internal capacities and capacity in traditional data collecting agencies in order to determine data needed for adaptation and vulnerability assessments.", 
+    "Regarding research, UNDP pointed to limited funds to support research, and Flint said more research was needed on how to integrate traditional and indigenous knowledge.", 
+    "Participants also addressed: the need to calculate the economic costs of climate change impacts, building a knowledge base that can be used by different communities; development policies that are increasing vulnerability; and developing a methodology for integrating socioeconomic information into physical assessments."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12356e.html", 
+  "enb_long_title": "UNFCCC Expert Group Meeting on socioeconomic information under the Nairobi Work Programme on Impacts, Vulnerability and Adaptation to Climate Change (NWP)", 
+  "type": "", 
+  "id": "enb12356e_25", 
+  "enb_end_date": "12-Mar-08"
+}

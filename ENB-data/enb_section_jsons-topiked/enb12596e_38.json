@@ -1,0 +1,30 @@
+{
+  "countries": [], 
+  "topics": [
+    "Reasons for Concern", 
+    "Anthropogenic Interference with Climate System", 
+    "Vulnerabilities and Impacts"
+  ], 
+  "section_title": "MAIN FINDINGS", 
+  "enb_start_date": "10-Mar-14", 
+  "enb_short_title": "IPCC-38", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "With human influence on the climate system clearly established in WGI's contribution to the AR5, WGII sets out to address the principal objective of the IPCC, which is to be policy-relevant but not policy-prescriptive, by adopting a risk-based approach to its assessment.", 
+    "As Co-Chair Field explained, 'if we want to take a smart approach to the future, we need to consider a full range of possible outcomes and that means not only the more likely outcomes, but also outcomes for truly catastrophic impacts, even if those have a lower probability'.", 
+    "The report makes clear that, according to the vast majority of assessed scientific literature, the impacts are mostly negative, and they will only worsen with increased climate change, affecting cities, ecosystems and species, human health, food production - pretty much everything.", 
+    "This is based on a substantially larger knowledge base of relevant scientific literature.", 
+    "And if the still glaring gaps in information about some parts of the world, in particular Africa, were not there, the findings would likely be even starker.", 
+    "However, as Co-Chair Field said, the report is not all 'scary scenarios and doom and gloom'.", 
+    "It also highlights, with guarded optimism, steps being taken and opportunities that exist for actions to adapt to adverse impacts of climate change, as well as measures that may help in managing and reducing potential risks in the future.", 
+    "Perhaps the most distinctive feature of the AR5 WGII report compared to previous ones is that it places climate change more squarely among multiple stressors that drive vulnerability and enhance exposure to risk at many different scales and levels.", 
+    "The report emphasizes the role of poverty, food insecurity, lack of adequate infrastructure, erosion, population density, urbanization, conflict and other such factors of vulnerability, as key to appraising the potential impacts of climate change.", 
+    "This multidimensional character is what makes the risk more serious, but it also makes the path to reducing vulnerability more apparent - simply put, it's about sustainable development."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12596e.html", 
+  "enb_long_title": "Tenth Session of the Intergovernmental Panel on Climate Change (IPCC) Working Group II (WGII-10) and Thirty-eighth Session of the IPCC (IPCC-38)", 
+  "type": "ipcc", 
+  "id": "enb12596e_38", 
+  "enb_end_date": "14-Mar-14"
+}

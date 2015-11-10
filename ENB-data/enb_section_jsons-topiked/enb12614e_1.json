@@ -1,0 +1,28 @@
+{
+  "countries": [
+    "Switzerland", 
+    "Australia", 
+    "Norway", 
+    "Bolivia", 
+    "China"
+  ], 
+  "topics": [], 
+  "section_title": "REPORT ON THE HIGH-LEVEL MINISTERIAL ROUND TABLE ON INCREASED AMBITION OF KYOTO PROTOCOL COMMITMENTS:", 
+  "enb_start_date": "08-Dec-14", 
+  "enb_short_title": "COP 20", 
+  "subtype": "", 
+  "actors": [
+    "European Union", 
+    "Group of 77"
+  ], 
+  "sentences": [
+    "CMP 10 President Manuel Pulgar-Vidal reported that no agreement had been reached during informal consultations on whether to form a contact group on this issue.", 
+    "A contact group was supported by Bolivia, for the G-77/CHINA, and opposed by AUSTRALIA, SWITZERLAND, the EU and NORWAY.", 
+    "Informal consultations will continue."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12614e.html", 
+  "enb_long_title": "Lima Climate Change Conference - December 2014", 
+  "type": "cop", 
+  "id": "enb12614e_1", 
+  "enb_end_date": "08-Dec-14"
+}

@@ -1,0 +1,26 @@
+{
+  "countries": [
+    "Brazil", 
+    "Saudi Arabia", 
+    "Cuba", 
+    "Panama", 
+    "India", 
+    "China", 
+    "Argentina"
+  ], 
+  "topics": [], 
+  "section_title": "BUNKER FUELS:", 
+  "enb_start_date": "29-Nov-11", 
+  "enb_short_title": "COP17", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "On emissions from fuel used for international aviation and maritime transport (bunker fuels), CUBA, ARGENTINA, BRAZIL, CHINA, INDIA and SAUDI ARABIA, said work to address sectoral emissions under the IMO and ICAO should be guided by the principles of the UNFCCC.", 
+    "PANAMA said the IMO, not the UNFCCC, is the correct forum to discuss maritime emissions."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12524e.html", 
+  "enb_long_title": "Durban Climate Change Conference - COP17/CMP7", 
+  "type": "sbsta", 
+  "id": "enb12524e_11", 
+  "enb_end_date": "29-Nov-11"
+}

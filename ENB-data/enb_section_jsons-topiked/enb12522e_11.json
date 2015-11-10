@@ -1,0 +1,23 @@
+{
+  "countries": [
+    "Uganda"
+  ], 
+  "topics": [
+    "IPCC Governance", 
+    "Vulnerabilities and Impacts"
+  ], 
+  "section_title": "SREX:", 
+  "enb_start_date": "18-Nov-11", 
+  "enb_short_title": "IPCC-34", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "The First joint session of IPCC WGs I and II, which took place on 14-17 November in Kampala, Uganda, accepted the Special Report on Managing the Risks of Extreme Events and Disasters to Advance Climate Change Adaptation (SREX) and approved its SPM.", 
+    "The SREX addressed the interaction of climatic, environmental and human factors leading to adverse impacts of climate extremes and disasters, options for managing the risks posed by impacts and disasters, and the important role that non-climatic factors play in determining impacts."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12522e.html", 
+  "enb_long_title": "Thirty-fourth Session of the Intergovernmental Panel on Climate Change (IPCC)", 
+  "type": "", 
+  "id": "enb12522e_11", 
+  "enb_end_date": "19-Nov-11"
+}

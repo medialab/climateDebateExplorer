@@ -1,0 +1,30 @@
+{
+  "countries": [
+    "United States", 
+    "Canada", 
+    "Australia"
+  ], 
+  "topics": [], 
+  "section_title": "BUDGET:", 
+  "enb_start_date": "12-May-07", 
+  "enb_short_title": "SB 26", 
+  "subtype": "", 
+  "actors": [
+    "European Union"
+  ], 
+  "sentences": [
+    "The Secretariat distributed a new tabulated budget proposal reflecting a 2.5% increase for the 2008-2009 biennium.", 
+    "AUSTRALIA, the US and CANADA expressed approval, though CANADA signaled that it would maintain a caveat pending clarification of any budgetary implications of the international transaction log.", 
+    "Delegates then considered the Chair's draft conclusion and draft COP and COP/MOP decision.", 
+    "The EU proposed text on accompanying budget proposals with an advisory report from the UN Advisory Committee on Administrative and Budgetary Questions.", 
+    "Parties considered the implications of this proposal and the possibility of delays, increasing bureaucracy and the value added by such a process.", 
+    "AUSTRALIA suggested requesting the Secretariat to explore the implications of involving the UN Advisory Committee in the Secretariat's budgetary process.", 
+    "The EU preferred the text to form part of a COP or COP/MOP decision, however, Chair Dovland suggested that the EU text would be more appropriate as an SBI conclusion.", 
+    "Discussions will continue in a contact group on Saturday."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12327e.html", 
+  "enb_long_title": "Twenty-sixth sessions of the Subsidiary Bodies (SB 26) of the United Nations Framework Convention on Climate Change (UNFCCC)", 
+  "type": "sbi/sbsta", 
+  "id": "enb12327e_2", 
+  "enb_end_date": "12-May-07"
+}

@@ -1,0 +1,18 @@
+{
+  "countries": [], 
+  "topics": [], 
+  "section_title": "INTERNATIONAL TRANSACTION LOG:", 
+  "enb_start_date": "03-Dec-08", 
+  "enb_short_title": "COP 14", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "The Secretariat introduced the relevant document (FCCC/SBI/2008/7).", 
+    "The Chair will draft conclusions in consultation with interested parties."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12387e.html", 
+  "enb_long_title": "UN Climate Change Conference - Pozna\u0144", 
+  "type": "sbi", 
+  "id": "enb12387e_20", 
+  "enb_end_date": "03-Dec-08"
+}

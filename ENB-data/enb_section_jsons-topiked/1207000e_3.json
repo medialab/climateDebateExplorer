@@ -1,0 +1,42 @@
+{
+  "countries": [
+    "Saudi Arabia", 
+    "Netherlands", 
+    "Czech Republic", 
+    "Malaysia", 
+    "Denmark", 
+    "Costa Rica", 
+    "Russia", 
+    "United States", 
+    "Trinidad and Tobago", 
+    "Australia", 
+    "China", 
+    "Germany", 
+    "Argentina", 
+    "Nigeria", 
+    "Benin"
+  ], 
+  "topics": [], 
+  "section_title": "IN THE CORRIDORS I", 
+  "enb_start_date": "14-Feb-95", 
+  "enb_short_title": "11th Session of the INC", 
+  "subtype": "corridors", 
+  "actors": [
+    "Eastern European group", 
+    "European Union", 
+    "Group of 77"
+  ], 
+  "sentences": [
+    "A contact group of 16 countries met Monday afternoon to resolve the remaining issues related to joint implementation.", 
+    "The G-77 and China were represented by Argentina, Benin, China, Costa Rica, Malaysia, Nigeria, Saudi Arabia and Trinidad and Tobago.", 
+    "The EU was represented by Denmark, Germany and the Netherlands.", 
+    "The JUSCANZ group was represented by Australia, the US and a country to be nominated, and the Eastern European Group was represented by the Czech Republic and Russia.", 
+    "The group agreed on the basic concepts describing JI and identified areas of divergence, including participation.", 
+    "Members agreed to continue discussions on areas of divergence as well as the pilot phase, which the group has not yet addressed."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/1207000e.html", 
+  "enb_long_title": "Eleventh Session of The INC for the Framework Convention on Climate Change (UNFCCC)", 
+  "type": "cop", 
+  "id": "1207000e_3", 
+  "enb_end_date": "14-Feb-95"
+}

@@ -1,0 +1,23 @@
+{
+  "countries": [
+    "Spain"
+  ], 
+  "topics": [], 
+  "section_title": "IPCC:", 
+  "enb_start_date": "03-Dec-08", 
+  "enb_short_title": "COP/MOP3", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "The IPCC held its 27th session from 12-17 November 2007, in Valencia, Spain.", 
+    "The session marked the culmination of several years work by finalizing the Fourth Assessment Report.", 
+    "Having completed the reports of its three working groups earlier in 2007, the IPCC session in Valencia included the adoption of both the Summary for Policymakers of the Synthesis Report and a longer version of the Report.", 
+    "The 23-page final draft of the Summary for Policymakers contains sections on the observed changes in climate and their effects, the causes of change, projected climate change and its impacts, adaptation and mitigation options, and the long-term perspective.", 
+    "The report suggests that neither adaptation nor mitigation alone can avoid all climate change impacts, but that they can complement each other and together can significantly reduce the risks of climate change."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12343e.html", 
+  "enb_long_title": "United Nations Climate Change Conference - Bali", 
+  "type": "", 
+  "id": "enb12343e_10", 
+  "enb_end_date": "03-Dec-08"
+}

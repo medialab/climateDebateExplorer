@@ -1,0 +1,43 @@
+{
+  "countries": [
+    "Madagascar", 
+    "Australia", 
+    "Indonesia", 
+    "Papua New Guinea", 
+    "Congo", 
+    "French Guiana"
+  ], 
+  "topics": [
+    "forests", 
+    "Compliance and Enforcement", 
+    "Vulnerabilities and Impacts", 
+    "National Communications & Inventories"
+  ], 
+  "section_title": "SESSION IV", 
+  "enb_start_date": "25-Jun-08", 
+  "enb_short_title": "Workshop", 
+  "subtype": "", 
+  "actors": [
+    "European Union"
+  ], 
+  "sentences": [
+    "OPTIONS FOR ASSESSING EFFECTIVENESS OF ACTIONS AND CRITERIA The fourth Session addressed options for assessing effectiveness of actions and criteria, including lessons learned from ongoing work, capacity building and technical assistance.", 
+    "Stephen Ogle, Colorado State University, US, presented on regional capacity building projects in Central America and Southeast Asia related to agriculture and land use inventory programmes, and elaborated on the Agriculture and Land Use Software Approach (ALU), a greenhouse gas inventory software programme.", 
+    "He explained that the ALU: produces tabular results and maps for LULUCF; may import activity data from remotely-sensed imagery and combine statistics from forestry and agriculture data; and can estimate national and subnational reference scenarios, estimate biomass carbon stock from deforestation and degradation, and facilitate verification, although it cannot address international displacement of emissions.", 
+    "Australia reported on its AU$200 million International Forest Carbon Initiative for REDD.", 
+    "She said this initiative focuses on developing a market in cooperation with Papua New Guinea and Indonesia and aims, inter alia , to: increase international forest carbon monitoring and accounting capacity; undertake trials to demonstrate robust and verifiable action on REDD; and support international efforts to develop and evaluate market-based approaches to REDD.", 
+    "She said REDD can be part of an equitable and efficient international agreement on climate change and market mechanisms can be used to address REDD effectively.", 
+    "The European Union presented on lessons learned from four demonstration activities in relation to the main outstanding methodological issues on REDD.", 
+    "The activities included: training of local communities in mapping boundaries and strata of community forests using GPS in Africa and Asia; monitoring deforestation in French Guiana by optical remote sensing; sustainable management of logging concessions in the Congo Basin; and a World Bank BioCarbon Fund project in Madagascar.", 
+    "He noted that the community-based inventories projects had resulted in good accuracy levels, when matched against remotely sensed data, and low costs.", 
+    "On the project on sustainable management of logging concessions, he noted numerous benefits for forest management and forest inventory, but expressed concern about the issues of biodiversity loss due to bush meat trade and income not reaching local communities.", 
+    "On the BioCarbon Fund project, he highlighted high start-up costs and the need for long-term partnerships with NGOs but also high feel good value given its positive impacts on biodiversity and community benefits.", 
+    "He said that although local displacement of emissions is a concern, local drivers can be addressed, for example through alternatives to slash and burn or a community development approach.", 
+    "In summarizing, he stressed that sustainable access to satellite data is critical and proposed it be made a global public good, and said that: forest policies are key to address displacement; capacity building is a large and long-term need; start-up costs are considerable and require diversified financing sources; and combining activities is important."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12376e.html", 
+  "enb_long_title": "UNFCCC Workshop on Methodological Issues Relating to Reducing Emissions from Deforestation and Forest Degradation in Developing Countries", 
+  "type": "SPECIAL WORKSHOP", 
+  "id": "enb12376e_11", 
+  "enb_end_date": "27-Jun-08"
+}

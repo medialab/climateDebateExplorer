@@ -1,0 +1,36 @@
+{
+  "countries": [
+    "United States", 
+    "Maldives", 
+    "Australia", 
+    "Iran", 
+    "Switzerland", 
+    "Saint Lucia"
+  ], 
+  "topics": [], 
+  "section_title": "PREAMBLE AND DEFINITIONS:", 
+  "enb_start_date": "11-Feb-15", 
+  "enb_short_title": "COP 20", 
+  "subtype": "", 
+  "actors": [
+    "European Union", 
+    "Independent association of Latin America and the Caribbean", 
+    "Alliance of Small Island States"
+  ], 
+  "sentences": [
+    "The Maldives, for AOSIS, and the EU proposed acknowledging that climate change requires the widest possible cooperation.", 
+    "The EU proposed adding reference to different national circumstances wherever CBDRRC appears.", 
+    "SWITZERLAND called for a separate paragraph on gender and human rights.", 
+    "AILAC called for a stand-alone paragraph on human rights.", 
+    "LICHTENSTEIN suggested that the agreement should significantly contribute to the achievement of the post-2015 development agenda.", 
+    "Iran, for the LMDCs, proposed noting that the largest share of the current global GHG emissions originated from developed countries and that emissions in developing countries will grow to meet their social and development needs.", 
+    "AUSTRALIA suggested recognizing that the provision of finance and support should be treated holistically.", 
+    "The US proposed a placeholder for a new annex x, to be agreed in Paris and updated regularly based on criteria relating to evolving emissions and economic trends, and for a new annex y, agreed based on capabilities and evolving economic circumstances.", 
+    "SAINT LUCIA proposed a placeholder for a new annex z for countries falling outside of the proposed new annexes."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12623e.html", 
+  "enb_long_title": "Geneva Climate Change Conference - February 2015", 
+  "type": "working group", 
+  "id": "enb12623e_4", 
+  "enb_end_date": "11-Feb-15"
+}

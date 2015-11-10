@@ -1,0 +1,33 @@
+{
+  "countries": [
+    "United States", 
+    "Switzerland", 
+    "Canada", 
+    "India", 
+    "Peru"
+  ], 
+  "topics": [
+    "UNFCCC and Kyoto Protocol Functioning"
+  ], 
+  "section_title": "Emissions from aviation and maritime transport:", 
+  "enb_start_date": "07-Dec-04", 
+  "enb_short_title": "UNFCCC COP-10", 
+  "subtype": "", 
+  "actors": [
+    "Alliance of Small Island States"
+  ], 
+  "sentences": [
+    "Chair Benrageb noted that SBSTA-20 was unable to come to an agreement on this issue.", 
+    "Several delegations expressed concern about the rapid increase of emissions in the aviation sector.", 
+    "AOSIS urged greater progress in methodologies to attribute and account for aviation and maritime emissions in the second commitment period.", 
+    "SWITZERLAND, opposed by the US, welcomed discussions on allocating emissions from international aviation and maritime transport.", 
+    "The US and CANADA said inventory issues should be taken up at SB-22.", 
+    "INDIA said allocation is a political issue that should be addressed by the UNFCCC and IPCC, not by the International Civil Aviation Organization and International Maritime Organization.", 
+    "Informal consultations, facilitated by Eduardo Calvo (Peru), will further address this issue."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12250e.html", 
+  "enb_long_title": "Tenth Conference of the Parties to the UN Framework Convention on Climate Change", 
+  "type": "", 
+  "id": "enb12250e_6", 
+  "enb_end_date": "07-Dec-04"
+}

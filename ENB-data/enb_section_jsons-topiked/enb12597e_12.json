@@ -1,0 +1,24 @@
+{
+  "countries": [
+    "Switzerland"
+  ], 
+  "topics": [
+    "IPCC Governance", 
+    "UNFCCC and Kyoto Protocol Functioning"
+  ], 
+  "section_title": "IPCC-35 :", 
+  "enb_start_date": "07-Apr-14", 
+  "enb_short_title": "IPCC-39", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "This session took place from 6-9 June 2012 in Geneva, Switzerland.", 
+    "The meeting concluded the Panel's consideration of the recommendations from the IAC Review by approving the functions of the IPCC Secretariat and TSUs, and the Communications Strategy.", 
+    "Delegates also agreed to revisions to the Procedures for the IPCC Reports, and the Procedures for the Election of the IPCC Bureau and Any Task Force Bureau."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12597e.html", 
+  "enb_long_title": "Twelfth Session of the Intergovernmental Panel on Climate Change (IPCC) Working Group III (WGIII-12) and Thirty-ninth Session of the Intergovernmental Panel on Climate Change (IPCC-39)", 
+  "type": "ipcc", 
+  "id": "enb12597e_12", 
+  "enb_end_date": "12-Apr-14"
+}

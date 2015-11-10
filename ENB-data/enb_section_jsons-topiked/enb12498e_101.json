@@ -1,0 +1,36 @@
+{
+  "countries": [
+    "Brazil", 
+    "Australia", 
+    "Papua New Guinea", 
+    "Switzerland", 
+    "Grenada", 
+    "Norway"
+  ], 
+  "topics": [
+    "UNFCCC and Kyoto Protocol Functioning", 
+    "Loss and Damage", 
+    "Flexibility Mechanims"
+  ], 
+  "section_title": "COP/MOP Decision", 
+  "enb_start_date": "29-Nov-10", 
+  "enb_short_title": "COP 16", 
+  "subtype": "", 
+  "actors": [
+    "European Union"
+  ], 
+  "sentences": [
+    "The final COP/MOP decision (FCCC/KP/CMP/2010/L.10) states that CCS in geological formations is eligible as a project activity under the CDM, provided that the issues identified in decision 2/CMP.5, paragraph 29 are addressed and resolved in a satisfactory manner.", 
+    "The COP/MOP further requests SBSTA 35 to elaborate on modalities and procedures, and decides that these will address, inter alia , selection of storage sites, monitoring plans, modeling, measuring and accounting for leakage, risk and safety assessments, liability provisions, and restoration of ecosystems and compensation for communities.", 
+    "It invites views on addressing these modalities, requests a technical workshop before SBSTA 35; and asks the Secretariat to produce draft modalities and procedures for SBSTA 35.", 
+    "Standardized baselines under the CDM: SBSTA 33 first took up this issue (FCCC/SBSTA/2010/MISC.13 and Add.1, and FCCC/TP/2010/4) in plenary on 30 November.", 
+    "The EU, Switzerland, Australia and others highlighted the benefits of using standardized baselines under the CDM.", 
+    "Brazil underscored the importance of additionality and said standardized baselines would change the CDM s nature, while Papua New Guinea said they would be compatible with the current definition and make the CDM more efficient and objective.", 
+    "Peer Stiansen (Norway) and Hugh Sealy (Grenada) subsequently conducted informal consultations with parties, which resulted in the adoption of conclusions during the closing SBSTA plenary on 4 December."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12498e.html", 
+  "enb_long_title": "Canc\u00fan Climate Change Conference", 
+  "type": "", 
+  "id": "enb12498e_101", 
+  "enb_end_date": "11-Dec-10"
+}

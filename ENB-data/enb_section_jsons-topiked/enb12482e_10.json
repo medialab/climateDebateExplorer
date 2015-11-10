@@ -1,0 +1,48 @@
+{
+  "countries": [
+    "Brazil", 
+    "Australia", 
+    "Tuvalu", 
+    "India", 
+    "Papua New Guinea", 
+    "Belarus", 
+    "Switzerland", 
+    "New Zealand"
+  ], 
+  "topics": [
+    "forests"
+  ], 
+  "section_title": "LULUCF:", 
+  "enb_start_date": "07-Oct-10", 
+  "enb_short_title": "AWGs", 
+  "subtype": "", 
+  "actors": [
+    "European Union"
+  ], 
+  "sentences": [
+    "AWG-KP Vice-Chair Macey described progress on discussions on reviewing reference levels, force majeur and harvested wood products (HWPs), as well as agreement on deleting the option of including HWPs under the CDM .", 
+    "On forest management accounting, TUVALU presented an option on net-net accounting relative to an average over the previous commitment period or periods.", 
+    "The EU said this proposal would reduce long-term incentives for actions.", 
+    "NEW ZEALAND and INDIA expressed concern that averaging over a commitment period does not reflect long-term forestry cycles. BELARUS said the proposal is helpful for estimating whether parties are reaching a target.", 
+    "AUSTRALIA underscored the central importance of transparency regardless of which option is chosen.", 
+    "CLIMATE ACTION NETWORK preferred a historical baseline and said projected baselines allow parties to hide increased emissions from forest management, though this could be improved with the use of historical harvest rates.", 
+    "TUVALU questioned whether we are reflecting what the atmosphere sees or creating incentives for industry.", 
+    "On the base year for additional activities, PAPUA NEW GUINEA noted the challenge of using 1990 due to inadequate data and the EU said that incentives will depend on whether the reference level is fixed in time or is tracked through periods.", 
+    "He highlighted that a single base year is not politically feasible.", 
+    "NEW ZEALAND supported a 1990 base year for all activities.", 
+    "BELARUS underscored that the reason for a base year is to reduce perverse incentives.", 
+    "On accounting for wetlands, BELARUS noted an upcoming IPCC workshop on wetlands that will report to the SBSTA.", 
+    "BRAZIL cautioned that if accounting is voluntary, parties with net-draining will not account for wetlands while parties with rewetting will.", 
+    "TUVALU expressed concern about accounting crossover between wetlands, cropland and grazing land, and the EU cautioned against the potential for double counting.", 
+    "BELARUS said these concerns are addressed under the definitions.", 
+    "CLIMATE ACTION NETWORK called for addressing data quality so that wetland accounting can become mandatory.", 
+    "BELARUS and SWITZERLAND said voluntary accounting is better than not accounting for wetlands at all.", 
+    "BRAZIL questioned how non-CO2 emissions from wetlands will be considered.", 
+    "SWITZERLAND underscored that parties are moving toward full carbon accounting."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12482e.html", 
+  "enb_long_title": "Tianjin Climate Change Talks - October 2010", 
+  "type": "working group", 
+  "id": "enb12482e_10", 
+  "enb_end_date": "07-Oct-10"
+}

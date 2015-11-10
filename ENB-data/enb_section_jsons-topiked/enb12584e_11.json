@@ -1,0 +1,37 @@
+{
+  "countries": [
+    "Brazil", 
+    "Canada", 
+    "Australia", 
+    "Algeria", 
+    "Egypt", 
+    "India", 
+    "United States", 
+    "China", 
+    "Switzerland", 
+    "Argentina", 
+    "Fiji", 
+    "New Zealand"
+  ], 
+  "topics": [], 
+  "section_title": "AGRICULTURE:", 
+  "enb_start_date": "12-Nov-13", 
+  "enb_short_title": "COP 19", 
+  "subtype": "", 
+  "actors": [
+    "European Union", 
+    "Group of 77"
+  ], 
+  "sentences": [
+    "SBSTA Chair Muyungi proposed a contact group to consider this issue.", 
+    "Fiji, for the G-77/CHINA, supported by BRAZIL, EGYPT, INDIA, ALGERIA, ARGENTINA and others, opposed, explaining that it had not been previously agreed.", 
+    "The US, the EU, SWITZERLAND, CANADA, NEW ZEALAND and AUSTRALIA, expressed willingness to discuss this issue and supported a contact group.", 
+    "SBSTA Chair Muyungi will consult with parties informally and report back to the SBSTA.", 
+    "The workshop on agriculture will take place as planned."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12584e.html", 
+  "enb_long_title": "Warsaw Climate Change Conference - November 2013", 
+  "type": "sbsta", 
+  "id": "enb12584e_11", 
+  "enb_end_date": "12-Nov-13"
+}
