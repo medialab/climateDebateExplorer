@@ -1,8 +1,28 @@
 {
-  "index": [],
+  "index": [
+    "countries",
+    "actors",
+    "topics"
+  ],
   "fields": {
     "countries": {
+      "cacheValues": true,
+      "separator": "|"
+    },
+    "actors": {
+      "cacheValues": true,
+      "separator": "|"
+    },
+    "topics": {
+      "cacheValues": true,
       "separator": "|"
     }
-  }
+  },
+
+  "filters": [
+    {
+      "field": "countries",
+      "label": "Countries"
+    }
+  ]
 }
