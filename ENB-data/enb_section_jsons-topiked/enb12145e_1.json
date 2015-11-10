@@ -1,0 +1,25 @@
+{
+  "countries": [
+    "United States", 
+    "China"
+  ], 
+  "topics": [], 
+  "section_title": "PLENARY", 
+  "enb_start_date": "08-Sep-00", 
+  "enb_short_title": "SB-13", 
+  "subtype": "plenary", 
+  "actors": [
+    "Group of 77"
+  ], 
+  "sentences": [
+    "Delegates met in Plenary to hear brief progress reports from the Chairs of the informal groups.", 
+    "SBI Chair Ashe thanked delegates and the Chairs of the groups for their positive work.", 
+    "The G-77/CHINA expressed the hope that further areas of convergence would continue to emerge during SB-13, and stressed the need for a balanced package of decisions at COP-6.", 
+    "The US said he was 'somewhat concerned' at the slow pace of progress in some groups, and called for concentrated efforts to keep the process on track."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12145e.html", 
+  "enb_long_title": "Thirteenth Session of the Subsidiary Bodies of the UNFCCC", 
+  "type": "sbi/sbsta", 
+  "id": "enb12145e_1", 
+  "enb_end_date": "08-Sep-00"
+}

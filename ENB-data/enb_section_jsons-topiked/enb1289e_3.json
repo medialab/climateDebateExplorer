@@ -1,0 +1,40 @@
+{
+  "countries": [
+    "Australia", 
+    "Poland", 
+    "United States", 
+    "Slovenia", 
+    "China", 
+    "Colombia", 
+    "Switzerland", 
+    "Japan", 
+    "Norway"
+  ], 
+  "topics": [
+    "UNFCCC and Kyoto Protocol Functioning"
+  ], 
+  "section_title": "JOINT SBI/SBSTA SESSION", 
+  "enb_start_date": "04-Nov-98", 
+  "enb_short_title": "4th COP FCCC", 
+  "subtype": "groups", 
+  "actors": [
+    "European Union", 
+    "Group of 77"
+  ], 
+  "sentences": [
+    "The joint SBI/SBSTA session considered the status of the Activities Implemented Jointly (AIJ) pilot phase.", 
+    "The Secretariat provided a report on the 95 projects, the main methodological issues, and subjects that arose in workshops on this topic (FCCC/CP/1998/2, FCCC/CP/1998/INF.3, FCCC/CP/1998/MISC.7 and FCCC/CP/1998/MISC7.add1). The G-77/CHINA, supported by several developing countries, observed that AIJ is separate from the mechanisms arising from the Protocol.", 
+    "He said that while the number of projects increased, representation is poor.", 
+    "He stated that there were insufficient details to draw conclusions and the pilot phase should be extended.", 
+    "Most non-Annex I Parties have not experienced and evaluated an AIJ project within their own country.", 
+    "Several Parties observed that further experience and capacity building would lay the groundwork on Protocol mechanisms. SWITZERLAND, with NORWAY, JAPAN, SLOVENIA, the EU, the US, AUSTRALIA and COLOMBIA, contended that the AIJ pilot phase provided lessons for the flexibility mechanisms.", 
+    "A review of the AIJ pilot phase for COP-5 will support the development of this work.", 
+    "POLAND observed that a review of the process could explain why some countries are excluded and resolve some of the concerns of the G-77/CHINA.", 
+    "After an extensive debate, the co-chairs indicated that informal negotiations would be held on this matter."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb1289e.html", 
+  "enb_long_title": "Fourth Conference of the Parties to the Framework Convention on Climate Change", 
+  "type": "sbi/sbsta", 
+  "id": "enb1289e_3", 
+  "enb_end_date": "04-Nov-98"
+}

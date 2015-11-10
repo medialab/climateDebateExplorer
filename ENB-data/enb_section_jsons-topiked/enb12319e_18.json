@@ -1,0 +1,37 @@
+{
+  "countries": [
+    "Canada", 
+    "United States", 
+    "Netherlands", 
+    "Italy", 
+    "United Kingdom", 
+    "Cuba", 
+    "Belgium"
+  ], 
+  "topics": [
+    "Anthropogenic Interference with Climate System"
+  ], 
+  "section_title": "FIGURES:", 
+  "enb_start_date": "29-Jan-07", 
+  "enb_short_title": "IPCC WGI", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "All Figures for the SPM were approved on Thursday night.", 
+    "Three figures were approved without discussion, namely those on: changes in temperature, sea level and snow cover (Figure SPM-3); continental temperature change (Figure SPM-4); and projected patterns of precipitation changes (Figure SPM-6).", 
+    "A figure on changes in greenhouse gas concentrations (Figure SPM-1) and a figure on projections of surface temperatures and its caption (Figure SPM-5) were approved with minor amendments.", 
+    "Regarding radiative forcing components (Figure SPM-2), Canada's suggestion to include net to total anthropogenic forcing was accepted.", 
+    "Belgium proposed using language linear contrails instead of linear contrail cirrus, to which delegates also agreed.", 
+    "In addition, participants accepted Belgium's proposal to add language in the caption noting that the range for contrails does not include other effects of aviation on cloudiness.", 
+    "As well, participants agreed to language suggested by the US to clarify that, while many of these radiative forcing phenomena have natural components, the figure only reflects the anthropogenic contribution.", 
+    "During discussions on projections, the Netherlands, supported by the UK, Italy, Belgium, and Cuba, requested that a new figure accompany the table of warming projections.", 
+    "One was introduced by Italy in plenary on Thursday night.", 
+    "Following minor amendments, the figure (Figure SPM-7) was approved..", 
+    "Final Figures: The figures in the final version of the SPM cover a range of relevant issues, including: changes in greenhouse gas concentrations; components of radiative forcing; observed changes in temperature, sea level, and Northern Hemisphere snow cover; projections of changes in surface temperatures and patterns of precipitation; and projections of global warming according to different SRES scenarios."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12319e.html", 
+  "enb_long_title": "Tenth Session of the IPCC Working Group I (WGI)", 
+  "type": "ipcc", 
+  "id": "enb12319e_18", 
+  "enb_end_date": "01-Feb-07"
+}

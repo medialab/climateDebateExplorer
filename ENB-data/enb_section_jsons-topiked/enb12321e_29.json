@@ -1,0 +1,39 @@
+{
+  "countries": [
+    "Brazil", 
+    "Saudi Arabia", 
+    "Greenland", 
+    "China", 
+    "Peru"
+  ], 
+  "topics": [
+    "Reasons for Concern"
+  ], 
+  "section_title": "WGI: SCIENTIFIC BASIS", 
+  "enb_start_date": "30-Apr-07", 
+  "enb_short_title": "IPCC WGIII", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "In late January, WGI convened in Paris and relayed the message that global warming was unequivocal and very likely to be due to human activities.", 
+    "The very likely conclusion, associated with a 90% or more probability, was considerably more certain than the TAR, in which the link was assessed to be likely, only a 66% or more probability.", 
+    "However, the very likely statement was not arrived at without contention.", 
+    "China and Saudi Arabia called for qualifying the probability of very likely, replacing it with likely or increasingly very likely.", 
+    "This controversial issue was finally withdrawn with a rather benign footnote stating that consideration of the remaining uncertainties was based on current methodologies.", 
+    "In some cases, political agendas seemed evident.", 
+    "For instance, China repeatedly moved to avoid language on emissions in recent years, and Brazil and Peru tried to ensure that uncertainties in emissions surrounding land use change were clearly conveyed.", 
+    "These positions could be respectively related to the ongoing debate regarding greenhouse gas targets for the largest emitters, and interests in forestry.", 
+    "The growing number and fast pace of release of climate change studies proved to be a difficult issue for WGI.", 
+    "The deadline for research that could be included in the WGI report was 31 December 2005.", 
+    "By 2007, new available data had superseded some of the 2005 research.", 
+    "This was most notable concerning projections of sea-level rise, with several recent studies showing high potential contributions from melting of the Greenland and Antarctic Ice Sheets.", 
+    "In addition, improved projections due to increased data resulted in smaller uncertainty ranges.", 
+    "Many delegates feared smaller uncertainty ranges would be misinterpreted by the public to mean that climate change was a smaller problem than previously thought, rather than a better understood one.", 
+    "According to many, however, the results of WGI were conveyed strongly enough to put an end to the debate surrounding the human role in climate change."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12321e.html", 
+  "enb_long_title": "Ninth session of the IPCC Working Group III (WGIII)", 
+  "type": "ipcc", 
+  "id": "enb12321e_29", 
+  "enb_end_date": "04-May-07"
+}

@@ -1,0 +1,27 @@
+{
+  "countries": [
+    "Brazil", 
+    "Japan", 
+    "Bolivia", 
+    "South Africa"
+  ], 
+  "topics": [], 
+  "section_title": "HFC-23:", 
+  "enb_start_date": "20-May-06", 
+  "enb_short_title": "UNFCCC SB 24", 
+  "subtype": "", 
+  "actors": [
+    "European Union"
+  ], 
+  "sentences": [
+    "On avoiding perverse incentives that would result in increased production of HCFC-22 as a result of crediting the destruction of HFC-23 under the CDM, BRAZIL, SOUTH AFRICA, BOLIVIA and others proposed limiting crediting to existing production capacity.", 
+    "JAPAN called for practical solutions based on market trends and demand.", 
+    "With the EU, JAPAN suggested exploring solutions that would provide incentives for mitigation but not for increased production.", 
+    "Informal consultations will continue."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12300e.html", 
+  "enb_long_title": "Twenty-Fourth sessions of the Subsidiary Body for Scientific and Technological Advice (SBSTA) and the Subsidiary Body for Implementation (SBI) of the UNFCCC and First session of the Ad Hoc Working Group on Further Commitments for Annex I Parties under the Kyoto Protocol (AWG) and related meetings", 
+  "type": "WORKING GROUP", 
+  "id": "enb12300e_13", 
+  "enb_end_date": "20-May-06"
+}

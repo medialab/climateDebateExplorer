@@ -1,0 +1,41 @@
+{
+  "countries": [
+    "United States", 
+    "Russian Federation", 
+    "Australia", 
+    "China", 
+    "Chile", 
+    "Switzerland", 
+    "Japan"
+  ], 
+  "topics": [
+    "Financial Mechanisms and Funds", 
+    "Compliance and Enforcement"
+  ], 
+  "section_title": "JOINT WORKING GROUP ON COMPLIANCE", 
+  "enb_start_date": "15-Sep-00", 
+  "enb_short_title": "SB-13", 
+  "subtype": "groups", 
+  "actors": [
+    "European Union", 
+    "Group of 77", 
+    "Environmental Integrity Group"
+  ], 
+  "sentences": [
+    "Parties discussed sections in the Co-Chairs' text addressing general provisions, outcomes and consequences, and other provisions.", 
+    "On general provisions, Parties differed on the need for text on principles, and agreed that the text on functions was superfluous, given subsequent elaboration of functions.", 
+    "On adoption, JAPAN said COP-6 could recommend that the COP/MOP adopt a decision.", 
+    "The EU presented two options: adoption of a decision by COP-6 that would have immediate interim effect, accompanied by a recommendation to COP/MOP-1 to adopt an identical instrument; and adoption of a legal instrument that would enter into force at the same time as the Protocol.", 
+    "Parties supported different options based on their positions on the need for binding consequences. On consequences of non-compliance, the G-77/CHINA expressed interest in the EU proposal on financial penalties linked to a compliance fund.", 
+    "The EU emphasized the role of P&Ms in compliance action plans and, opposed by AUSTRALIA and CHILE, advocated an open-ended list of facilitation consequences.", 
+    "The US said the facilitation branch should not apply mandatory outcomes.", 
+    "The RUSSIAN FEDERATION highlighted concerns relating to, inter alia: publication of potential non-compliance, initiation by the facilitation branch of the enforcement procedure; and the calculation of excess tonnes to be deducted from a Party's assigned amount.", 
+    "SWITZERLAND, for the ENVIRONMENTAL INTEGRITY GROUP, supported the following consequences: a compliance action plan, restrictions on the use of mechanisms, and a compliance fund.", 
+    "AUSTRALIA opposed financial penalties and the issuing of cautions."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12150e.html", 
+  "enb_long_title": "Thirteenth Session of the Subsidiary Bodies of the UNFCCC", 
+  "type": "sbi/sbsta", 
+  "id": "enb12150e_7", 
+  "enb_end_date": "15-Sep-00"
+}

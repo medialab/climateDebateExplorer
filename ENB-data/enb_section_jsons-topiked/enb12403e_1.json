@@ -1,0 +1,57 @@
+{
+  "countries": [
+    "Canada", 
+    "Ghana", 
+    "Australia", 
+    "Bangladesh", 
+    "Mexico", 
+    "Indonesia", 
+    "India", 
+    "United States", 
+    "China", 
+    "Japan", 
+    "Bolivia", 
+    "Norway", 
+    "Brazil"
+  ], 
+  "topics": [
+    "Pre-Kyoto", 
+    "Financial Mechanisms and Funds", 
+    "Mitigation", 
+    "Technology Transfer"
+  ], 
+  "section_title": "TECHNOLOGY AND FINANCE:", 
+  "enb_start_date": "04-Apr-09", 
+  "enb_short_title": "AWGs", 
+  "subtype": "", 
+  "actors": [
+    "European Union", 
+    "Group of 77", 
+    "Alliance of Small Island States"
+  ], 
+  "sentences": [
+    "The contact group met in the morning and afternoon, mostly focusing on technology.", 
+    "The main issues discussed included: research and development (R&D); technology cooperation; intellectual property rights (IPRs); the need for comprehensive technology plans; how to involve the private sector; whether the Convention s role should imply more direct involvement or be catalytic; technology transfer indicators; and financial and institutional arrangements. NORWAY elaborated on its proposal that includes auctioning of emission allowances, noting that the crucial elements are the amount of allowances in the system and a requirement for countries to redeem allowances.", 
+    "MEXICO underscored using GDP, population and emissions as indicators to assess contributions, and reminded that financing for the UN is based on assessed contributions.", 
+    "INDIA, INDONESIA and others underlined the need to relax IPRs.", 
+    "BOLIVIA suggested, regarding IPRs in developing countries: compulsory licensing; voluntary licenses; patent pooling; mandatory exclusion; and/or extension of exemptions.", 
+    "JAPAN said IPRs should be protected and highlighted them as fundamental for technology development. AUSTRALIA proposed a leveraging facility, for instance, scaling up Climate Technology Initiative s Private Financing Advisory Network (PFAN).", 
+    "JAPAN proposed establishing an advisory body under the COP to analyze emission reduction potentials of specific technologies.", 
+    "CANADA said form should follow function.", 
+    "JAPAN, BANGLADESH and CANADA stressed country-specific approaches.", 
+    "GHANA highlighted the proposed multilateral technology acquisition fund.", 
+    "AOSIS underscored the need for a SIDS-specific mechanism.", 
+    "The G-77/CHINA highlighted collaborative development of technology.", 
+    "The EU said technology financing should be an integral part of a Copenhagen agreement, and noted the need to double energy-related public R&D investments by 2012, and quadruple them by 2020.", 
+    "Noting the different stages of R&D, demonstration and deployment, the US stated that: there is a clear government role for R&D; government can help in demonstration; and all governments must establish laws and policies to create the necessary private investment for deployment. CHINA underscored the need to define the nature of technology transfer in the UNFCCC context.", 
+    "He said performance assessments should include the scale and speed of technology transfer.", 
+    "NORWAY said technology needs assessments should be integrated within NAMAs and NAPAs.", 
+    "BANGLADESH and AOSIS supported regional innovation centers.", 
+    "BRAZIL underscored the need to ensure assessment mechanisms do not become a barrier to technology transfer themselves."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12403e.html", 
+  "enb_long_title": "Fifth session of the Ad Hoc Working Group on Long-term Cooperative Action under the UN Framework Convention on Climate Change (AWG-LCA 5) and Seventh session of the Ad Hoc Working Group on Further Commitments for Annex I Parties under the Kyoto Protocol (AWG-KP 7)", 
+  "type": "working group", 
+  "id": "enb12403e_1", 
+  "enb_end_date": "04-Apr-09"
+}

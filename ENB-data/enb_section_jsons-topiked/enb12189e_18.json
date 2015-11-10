@@ -1,0 +1,28 @@
+{
+  "countries": [
+    "United States", 
+    "Canada", 
+    "China"
+  ], 
+  "topics": [], 
+  "section_title": "Supplementarity:", 
+  "enb_start_date": "12-Nov-01", 
+  "enb_short_title": "COP-7", 
+  "subtype": "", 
+  "actors": [
+    "European Union"
+  ], 
+  "sentences": [
+    "Regarding supplementarity in the use of mechanisms, delegates disagreed over whether providing such information should be mandatory.", 
+    "China introduced a proposal specifying the aim of reducing per capita emissions differences between developed and developing countries.", 
+    "The US, supported by Canada, opposed translating preambular text from the Bonn Agreements into an operational paragraph.", 
+    "The EU noted problems with such reporting, including lack of relevant developing country data.", 
+    "Ministers decided to drop this paragraph and agreed that Parties 'shall' report on supplementarity.", 
+    "However they agreed that reporting failures would not trigger loss of mechanisms' eligibility."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12189e.html", 
+  "enb_long_title": "Seventh Conference of the Parties to the UN Framework Convention on Climate Change", 
+  "type": "", 
+  "id": "enb12189e_18", 
+  "enb_end_date": "12-Nov-01"
+}

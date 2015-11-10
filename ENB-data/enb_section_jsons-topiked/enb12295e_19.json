@@ -1,0 +1,35 @@
+{
+  "countries": [
+    "Saudi Arabia", 
+    "France", 
+    "United States", 
+    "Russian Federation", 
+    "Austria", 
+    "China", 
+    "Sri Lanka", 
+    "Kenya", 
+    "Argentina", 
+    "Switzerland"
+  ], 
+  "topics": [
+    "IPCC Governance"
+  ], 
+  "section_title": "ELECTION PROCEDURES", 
+  "enb_start_date": "26-Apr-06", 
+  "enb_short_title": "IPCC-25", 
+  "subtype": "plenary", 
+  "actors": [], 
+  "sentences": [
+    "The item on the draft rules of procedures for the election of the IPCC Bureau and any Task Force Bureau (IPCC-XXV/Doc.", 
+    "5) was discussed in plenary on Thursday, when Secretary Christ recalled that delegates agreed to the content of all rules at IPCC-24 except for Rule 20, the bracketed text of which states that nominations for the position of the IPCC Chair, the IPCC Bureau and any Task Force Bureau are to be made by the government of a member of the IPCC.", 
+    "Delegates agreed to remove the brackets and accept Rule 20 as drafted and adopted the rules of procedures with minor editorial changes, including renumbering Rule 20 to come before Rule 18 on the qualifications of nominees. Discussion centered on the meaning of Rule 20, in particular, whether individuals must be nominated by the government of their own country.", 
+    "Emphasizing the IPCC\u0092s position as an intergovernmental organization and that individuals must represent their own countries, the Russian Federation expressed support for removing the brackets around Rule 20, as did others, including Argentina, Austria, Saudi Arabia, France, the US, China, and Kenya.", 
+    "Switzerland noted that the IPCC works on several levels in terms of scientific and governmental representation and highlighted the mobility of the scientific community.", 
+    "Sri Lanka suggested that the interpretation of Rule 20 as understood by plenary, being that individuals must be nominated by the government of their own countries, should be recorded."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12295e.html", 
+  "enb_long_title": "IPCC-25", 
+  "type": "ipcc", 
+  "id": "enb12295e_19", 
+  "enb_end_date": "28-Apr-06"
+}

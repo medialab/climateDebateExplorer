@@ -1,0 +1,27 @@
+{
+   "actors": [
+      "Least Developed Countries",
+      "Asian Group",
+      "Eastern European group"
+   ],
+   "countries": [
+      "Russian Federation",
+      "Hungary",
+      "India",
+      "Japan"
+   ],
+   "enb_end_date": "17-Feb-95",
+   "enb_long_title": "Eleventh Session of The INC for the Framework Convention on Climate Change (UNFCCC)",
+   "enb_short_title": "11th Session of the INC",
+   "enb_start_date": "17-Feb-95",
+   "enb_url": "http://www.iisd.ca/vol12/1210000e.html",
+   "id": "1210000e_1",
+   "section_title": "PLENARY",
+   "sentences": [
+      "In opening Thursday morning\u0092s Plenary, the INC Chair reported that the Eastern European Group has nominated the Russian Federation and Hungary and the Asian Group has nominated India and Japan for positions on the COP Bureau.",
+      "Japan then announced that it would make an additional US$100,000 contribution to the Voluntary Fund for the participation of the least developed countries at COP-1."
+   ],
+   "subtype": "plenary",
+   "topics": [],
+   "type": "cop"
+}

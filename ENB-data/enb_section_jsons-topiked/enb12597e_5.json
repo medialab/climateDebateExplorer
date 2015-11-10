@@ -1,0 +1,23 @@
+{
+  "countries": [
+    "Turkey", 
+    "Italy"
+  ], 
+  "topics": [
+    "Anthropogenic Interference with Climate System"
+  ], 
+  "section_title": "IPCC-30 :", 
+  "enb_start_date": "07-Apr-14", 
+  "enb_short_title": "IPCC-39", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "This session was held from 21-23 April 2009 in Antalya, Turkey.", 
+    "At the meeting, the Panel focused mainly on the near-term future of the IPCC and provided guidance for an AR5 scoping meeting, which was held in Venice, Italy, from 13-17 July 2009."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12597e.html", 
+  "enb_long_title": "Twelfth Session of the Intergovernmental Panel on Climate Change (IPCC) Working Group III (WGIII-12) and Thirty-ninth Session of the Intergovernmental Panel on Climate Change (IPCC-39)", 
+  "type": "ipcc", 
+  "id": "enb12597e_5", 
+  "enb_end_date": "12-Apr-14"
+}

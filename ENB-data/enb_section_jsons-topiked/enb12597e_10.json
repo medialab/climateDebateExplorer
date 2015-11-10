@@ -1,0 +1,23 @@
+{
+  "countries": [
+    "Uganda"
+  ], 
+  "topics": [
+    "Pre-Kyoto", 
+    "Vulnerabilities and Impacts"
+  ], 
+  "section_title": "SREX :", 
+  "enb_start_date": "07-Apr-14", 
+  "enb_short_title": "IPCC-39", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "The first joint session of IPCC WGs I and II, which took place from 14-17 November 2011 in Kampala, Uganda, accepted the SREX and approved its SPM.", 
+    "The SREX addresses the interaction of climatic, environmental and human factors leading to adverse impacts of climate extremes and disasters, options for managing the risks posed by impacts and disasters, and the important role that non-climatic factors play in determining impacts."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12597e.html", 
+  "enb_long_title": "Twelfth Session of the Intergovernmental Panel on Climate Change (IPCC) Working Group III (WGIII-12) and Thirty-ninth Session of the Intergovernmental Panel on Climate Change (IPCC-39)", 
+  "type": "ipcc", 
+  "id": "enb12597e_10", 
+  "enb_end_date": "12-Apr-14"
+}

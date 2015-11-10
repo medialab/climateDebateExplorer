@@ -1,0 +1,30 @@
+{
+  "countries": [
+    "Canada", 
+    "Denmark", 
+    "France", 
+    "United Kingdom", 
+    "Slovenia", 
+    "Russian Federation", 
+    "Japan", 
+    "Norway"
+  ], 
+  "topics": [
+    "Anthropogenic Interference with Climate System"
+  ], 
+  "section_title": "Cryosphere", 
+  "enb_start_date": "23-Sep-13", 
+  "enb_short_title": "IPCC36", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "Projections on developments in the cryosphere inspired interventions, during which delegates questioned the CLAs about levels of certainty, models and the utilization of different scenarios.", 
+    "Many delegates, including Canada, Norway, UK, France, Japan, the Russian Federation, Denmark and Slovenia, engaged with the CLAs in drafting more precise language that would less likely be interpreted as 'alarmist'.", 
+    "The Russian Federation highlighted the need to express clearly that all results in the keynote message were based on scenarios, but agreed to support the text after clarification by the CLAs that RCP scenarios were mentioned in the chapeau of the chapter."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12581e.html", 
+  "enb_long_title": "Twelfth Session of Working Group I (WGI) of the Intergovernmental Panel on Climate Change (IPCC) and Thirty-sixth Session of the IPCC", 
+  "type": "", 
+  "id": "enb12581e_35", 
+  "enb_end_date": "26-Sep-13"
+}

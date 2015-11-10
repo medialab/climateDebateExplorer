@@ -1,0 +1,18 @@
+{
+  "countries": [], 
+  "topics": [], 
+  "section_title": "TECHNICAL ASSESSMENT", 
+  "enb_start_date": "29-Jan-07", 
+  "enb_short_title": "IPCC WGI", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "Participants met on Thursday night to review the corrections to the underlying report and technical summary.", 
+    "The WGI accepted these."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12319e.html", 
+  "enb_long_title": "Tenth Session of the IPCC Working Group I (WGI)", 
+  "type": "ipcc", 
+  "id": "enb12319e_19", 
+  "enb_end_date": "01-Feb-07"
+}

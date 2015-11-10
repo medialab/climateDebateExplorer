@@ -1,0 +1,35 @@
+{
+  "countries": [
+    "Brazil", 
+    "Australia", 
+    "Mexico", 
+    "Indonesia", 
+    "India", 
+    "South Africa", 
+    "China", 
+    "Japan"
+  ], 
+  "topics": [
+    "Financial Mechanisms and Funds"
+  ], 
+  "section_title": "MAJOR ECONOMIES MEETING:", 
+  "enb_start_date": "21-Aug-08", 
+  "enb_short_title": "AWGs", 
+  "subtype": "HISTORY", 
+  "actors": [
+    "European Union"
+  ], 
+  "sentences": [
+    "A fourth Major Economies Meeting on Energy Security and Climate Change was held on 9 July 2008, alongside the G8 Summit in Hokkaido, Japan.", 
+    "The meeting involved leaders from the G8 countries, Australia, Brazil, China, India, Indonesia, Republic of Korea, Mexico, South Africa and the EU.", 
+    "Leaders adopted a declaration affirming the commitment of major economies from both the developed and developing world to combat climate change, taking into account their common but differentiated responsibilities and respective capabilities.", 
+    "The declaration stresses the importance of a long-term goal and mid-terms goals, commitments and actions, and the role of carbon sinks, mitigation, adaptation, technology, and financial resources.", 
+    "It also announces that our nations will continue to work constructively together to promote the success of the Copenhagen climate change conference in 2009.", 
+    "There was no agreement on emission reduction targets for either the medium or long term."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12377e.html", 
+  "enb_long_title": "Third session of the Ad Hoc Working Group on Long-term Cooperative Action and first part of the sixth session of the Ad Hoc Working Group on Further Commitments for Annex 1 Parties under the Kyoto Protocol to the UNFCCC", 
+  "type": "SPECIAL WORKSHOP", 
+  "id": "enb12377e_3", 
+  "enb_end_date": "21-Aug-08"
+}

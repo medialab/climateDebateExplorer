@@ -1,0 +1,28 @@
+{
+  "countries": [
+    "United States", 
+    "United Kingdom", 
+    "China"
+  ], 
+  "topics": [], 
+  "section_title": "LULUCF", 
+  "enb_start_date": "27-Nov-00", 
+  "enb_short_title": "COP-6", 
+  "subtype": "", 
+  "actors": [
+    "Umbrella Group", 
+    "European Union", 
+    "Group of 77"
+  ], 
+  "sentences": [
+    "On the most visible issue - LULUCF - two 'crunch' questions in particular stalled progress: the inclusion within the first commitment period of additional activities under Protocol Articles 3.4 (seen by many Umbrella Group Parties as a precondition for ratifying the Protocol, and considered with great caution by the EU and G-77/China); and the issue of sinks in the CDM (on which there was fundamental division between the Umbrella Group and the EU, as well as among members of the G-77/China).", 
+    "There is much speculation that disagreement on these issues was responsible for scuppering the last-minute deal that apparently was almost brokered by the UK Deputy Prime Minister John Prescott, between the US and the EU.", 
+    "It seems his compromise package, which possibly sought to cater to Umbrella Group demands on sinks, was not acceptable to others within the EU.", 
+    "While Pronk's Note made a valiant attempt to find convergence on this issue, it seems the stakes were too high."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12163e.html", 
+  "enb_long_title": "Sixth Conference of the Parties to the UN Framework Convention on Climate Change", 
+  "type": "", 
+  "id": "enb12163e_58", 
+  "enb_end_date": "27-Nov-00"
+}

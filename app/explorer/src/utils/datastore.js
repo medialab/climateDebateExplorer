@@ -190,7 +190,6 @@ function matchEntry(tree, entry) {
  */
 var DataStore = function(specs) {
   var _store = [],          // The original entries
-      _storeModified = [],  // The modified entries (parsed dates, etc...)
 
       _indexes = [],        // The indexes definitions
       _indexed = {},        // The indexed entries
@@ -209,6 +208,7 @@ var DataStore = function(specs) {
     }, {});
 
 
+
   /**
    * This method appends a new entry in the document store.
    *
@@ -216,29 +216,22 @@ var DataStore = function(specs) {
    * @return {DataStore}     Returns itself.
    */
   this.append = function(obj) {
-    var k,
-        entry = {};
-
-    for (k in obj)
-      entry[k] = obj[k];
-
-    function registerInDicts(value) {
-      if (!_reverseDicts[k][value])
-        _reverseDicts[k][value] = [];
-      _reverseDicts[k][value].push(obj);
-    }
+    var k;
 
     for (k in _reverseDicts)
       (
-        Array.isArray(entry[k]) ?
-          entry[k] :
-        entry[k] ?
-          [entry[k]] :
+        Array.isArray(obj[k]) ?
+          obj[k] :
+        obj[k] ?
+          [obj[k]] :
           []
-      ).forEach(registerInDicts);
+      ).forEach(function(value) {
+        if (!_reverseDicts[k][value])
+          _reverseDicts[k][value] = [];
+        _reverseDicts[k][value].push(obj);
+      });
 
     _store.push(obj);
-    _storeModified.push(entry);
 
     return this;
   };
@@ -336,8 +329,7 @@ var DataStore = function(specs) {
 
     var k,
         res = {},
-        set = _store,
-        hitsModified = [];
+        set = _store;
 
     function _checkOneField(tree) {
       var tmp;
@@ -356,10 +348,10 @@ var DataStore = function(specs) {
       // Multiple values:
       else if (
         tree.branches &&
-        ( tmp = _.uniq(tree.branches.map(function(branch) {
-            return branch.field;
-          }) ).length === 1 &&
-        _reverseDicts(tmp[0]) )
+        ( ( tmp = _.uniq(tree.branches.map(function(branch) {
+              return branch.field;
+            }) ) ).length === 1) &&
+        _reverseDicts[tmp[0]]
       )
         return {
           field: tmp[0],
@@ -397,25 +389,19 @@ var DataStore = function(specs) {
               _.intersection :
               _.union;
 
-        if (arrays.length > 1)
-          set = method.apply(_, arrays);
-        else
+        if (arrays.length === 1)
           set = arrays[0].slice(0);
+        else if (arrays.length > 1)
+          set = method.apply(_, arrays);
       }
 
       res.hits = set.filter(function(obj, i) {
-        obj = _storeModified[i];
-        if (matchEntry(tree, obj)) {
-          hitsModified.push(obj);
-          return true;
-        }
+        return matchEntry(tree, obj);
       });
     }
 
-    else {
-      hitsModified = _storeModified.slice(0);
+    else
       res.hits = _store.slice(0);
-    }
 
     // Total:
     res.total = res.hits.length;
@@ -463,10 +449,6 @@ var DataStore = function(specs) {
     res.hits = res.hits.slice(
       options.from || 0,
       (options.from || 0) + (options.size || _store.length)
-    );
-    hitsModified = hitsModified.slice(
-      options.from || 0,
-      (options.from || 0) + (options.size || _storeModified.length)
     );
 
     // Extrema:
@@ -516,7 +498,7 @@ var DataStore = function(specs) {
         res.extrema[k] = {};
         res.extrema[k][options.extrema[k].field] = extrema;
 
-        hitsModified.forEach(extremaIterator);
+        res.hits.forEach(extremaIterator);
       }
     }
 
@@ -561,7 +543,7 @@ var DataStore = function(specs) {
           aggregations[k].weight = options.aggregations[k].weight;
       }
 
-      res.aggregations = hitsModified.reduce(function(aggregationsRes, data) {
+      res.aggregations = res.hits.reduce(function(aggregationsRes, data) {
         function reduceOnFieldsFn(currentObjects, field, i, a) {
           var nextLevelObjects = [],
               lastField = i === a.length - 1;

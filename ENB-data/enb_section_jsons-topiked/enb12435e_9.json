@@ -1,0 +1,42 @@
+{
+  "countries": [
+    "Canada", 
+    "Brazil", 
+    "Australia", 
+    "Micronesia", 
+    "United States", 
+    "Switzerland", 
+    "Japan", 
+    "New Zealand", 
+    "Norway"
+  ], 
+  "topics": [
+    "Pre-Kyoto", 
+    "National Communications & Inventories"
+  ], 
+  "section_title": "OTHER ISSUES (basket of methodological issues)", 
+  "enb_start_date": "06-Oct-09", 
+  "enb_short_title": "AWGs", 
+  "subtype": "", 
+  "actors": [
+    "European Union"
+  ], 
+  "sentences": [
+    "The contact group on other issues focused on the basket of methodological issues, proceeding with a technical discussion on adding new greenhouse gases.", 
+    "The Secretariat presented information on global warming potentials (GWPs), current uses and likely future uses of the possible new greenhouse gases or classes of gases. CANADA expressed concern about increasing the reporting burden and highlighted potential commercialization of these chemicals as a means of determining which ones to include.", 
+    "The EU suggested three criteria for choosing which new greenhouse gases to include, namely: availability of GWPs; availability of methodology from the IPCC; and whether the gases have a significant current or future impact.", 
+    "JAPAN supported use of four criteria for determining inclusion of new gases: specified usage and sources of the greenhouse gases; whether they are already commercialized; the availability of a clear methodology; and the availability of substitutes.", 
+    "The EU emphasized that adding entire classes of gases embodies the precautionary principle since it is difficult to predict which individual gases will become commercially important. BRAZIL, countered by NORWAY and the EU, stressed that GWPs do not adequately capture the lifetime of a greenhouse gas in the atmosphere, that many of the new gases have short lifetimes, and therefore that GWP overestimates the actual radiative forcing of these chemicals.", 
+    "The FEDERATED STATES OF MICRONESIA underscored the need to capture what the atmosphere sees and opposed the availability of substitutes as a criterion for determining which gases to include.", 
+    "AUSTRALIA, with SWITZERLAND, said that inclusion of specific gases should be based on the principle of maximum coverage.", 
+    "BRAZIL emphasized that the group does not have a mandate to amend Annex A of the Protocol.", 
+    "Vice-Chair Dovland then requested an update from the informal group working to consolidate the options from Australia, the EU, and Brazil under guidelines for national reporting.", 
+    "AUSTRALIA reported that the group had met several times, identifying differences on the current role of the SBSTA process and how to reference the 2006 IPCC Guidelines for National Greenhouse Gas Inventories, but expressed confidence that the group would be able to provide improved, albeit bracketed, text.", 
+    "On common metrics to calculate the carbon dioxide equivalence of emissions by sources and removals by sinks, AUSTRALIA, with NEW ZEALAND, stressed coherence with concurrent negotiations underway in the AWG-LCA, and the US urged Protocol parties to avoid creating inconsistencies between the two negotiating tracks in this respect."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12435e.html", 
+  "enb_long_title": "Bangkok Climate Change Talks - 2009", 
+  "type": "", 
+  "id": "enb12435e_9", 
+  "enb_end_date": "06-Oct-09"
+}

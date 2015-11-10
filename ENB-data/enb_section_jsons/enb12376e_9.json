@@ -1,0 +1,43 @@
+{
+   "actors": [],
+   "countries": [
+      "Brazil",
+      "Japan",
+      "India"
+   ],
+   "enb_end_date": "27-Jun-08",
+   "enb_long_title": "UNFCCC Workshop on Methodological Issues Relating to Reducing Emissions from Deforestation and Forest Degradation in Developing Countries",
+   "enb_short_title": "Workshop",
+   "enb_start_date": "25-Jun-08",
+   "enb_url": "http://www.iisd.ca/vol12/enb12376e.html",
+   "id": "enb12376e_9",
+   "section_title": "SESSION III",
+   "sentences": [
+      "ESTIMATING, MONITORING, AND REPORTING GREENHOUSE GAS EMISSIONS FROM DEFORESTATION AND FOREST DEGRADATION On Thursday morning, the third Session addressed methodological and monitoring issues, challenges and further areas of work regarding the estimation, monitoring, and reporting of greenhouse gas emissions from deforestation and forest degradation.",
+      "Brazil explained her country s experience in monitoring deforestation and degradation, noting that the latter entails identifying anomalies in the forest cover using more coarse resolution satellite data than that used to identify deforested areas.",
+      "She explained that geo-referenced information on anomalies is sent to local government enforcement entities every two weeks, functioning as an early warning system in identifying areas of potential deforestation.",
+      "She said problems exist, however, in the definition of forest degradation as a direct, human-induced long-term loss of a percentage of forest carbon stocks which does not qualify as deforestation, because: degradation may be due to seasonal or other natural (or climate change-related) causes rather than human-induced; it is difficult to discriminate human-induced from natural changes; and changes in the understory beneath the canopy can go unnoticed.",
+      "On selective logging, she noted that it is even more difficult to estimate loss because thin forests or wetlands can be mistaken for logged forests if monitored using infrared imaging and because not all selective logging leads to deforestation.",
+      "She noted two studies on selectively logged areas which tended to show that 30% of selectively logged areas that are abandoned in early stages actually regrow into forest; 30% became fully deforested, while for the remaining 40% it was impossible to predict its fate.",
+      "She called for further consideration of whether selective logging activities should be assumed to lead ultimately to full clearcut or a fractional clearcut and, if the latter, how to estimate the degree of degradation that would occur in the absence of a REDD programme.",
+      "She also questioned whether a business-as-usual scenario should be assumed and whether satellites currently in use can be relied upon to continue to provide consistent, reliable data throughout the duration of REDD.",
+      "Japan presented on monitoring of deforestation and degradation using remote-sensing techniques for REDD policy implementation.",
+      "He noted two methods of monitoring for land cover change using remote sensing: wall-to-wall, characterized by no leakage, high cost and applicability for local policy but affected by relative lack of cloud-free data; and sampling, characterized by being cost-effective and easier to acquire with cloud-free data but for which sampling rates accuracy needs to be defined and which is less applicable for local policy.",
+      "He emphasized the need for capacity building in interpreting remotely-sensed data, and stressed the importance of field survey in combination with remotely sensed data.",
+      "Noting variety in forest fires depending on their type, intensity and development, he underlined the need to understand causes of degradation.",
+      "On technologies, he said high-resolution satellite data can only trace canopy surface so assumptions are needed to estimate crown diameter and height, but this can be reasonably done.",
+      "He said three-dimensional remote-sensing, which reflects canopy as well as ground cover, allows for reconstructing ground surface and estimating standing volume.",
+      "He identified technical problems related to local and seasonal data acquisition (related to rainy seasons and cloud cover in coastal areas, for example), and topographic effects (related to the difficulty of monitoring forest in mountainous areas either by satellite or optical means).",
+      "In concluding, he emphasized, inter alia , the need for adequate methodologies, consistency of satellite data and results, appropriate definitions, and field surveys.",
+      "India presented on estimating and monitoring methodologies for forest carbon stock in her country.",
+      "She said India favors a comprehensive REDD mechanism including conservation, increase of forest cover, SFM, and reduced deforestation, with incentives for all.",
+      "On methodological issues, she supported: national level accounting; a baseline year (for example 1990, when India first adopted participatory community forestry programmes); and assessment at regular intervals (every 2 or 5 years).",
+      "She said reference emission levels should be based on historical data, with starting dates chosen according to national circumstances.",
+      "She noted that since 1987 forest cover assessment has been done on a biennial cycle, and includes digital interpretation of satellite data, intensive ground-truthing and accuracy assessments.",
+      "She said forest cover has stabilized in the last 20 years and that model-based projections estimate an increase in carbon stocks in the country s forest from 8.79 GtC in 2005 to 9.75 GtC in 2030, and possibly much more.",
+      "She confirmed strong political will to achieve this increase, noting current important reforestation, afforestation and conservation programmes."
+   ],
+   "subtype": "",
+   "topics": [],
+   "type": "SPECIAL WORKSHOP"
+}

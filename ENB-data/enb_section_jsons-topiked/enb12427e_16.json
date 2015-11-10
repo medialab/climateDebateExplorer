@@ -1,0 +1,58 @@
+{
+  "countries": [
+    "Brazil", 
+    "Canada", 
+    "Australia", 
+    "South Africa", 
+    "Tuvalu", 
+    "Zambia", 
+    "Guyana", 
+    "Papua New Guinea", 
+    "Ethiopia", 
+    "Senegal", 
+    "Belarus", 
+    "China", 
+    "Thailand", 
+    "Switzerland", 
+    "Japan", 
+    "New Zealand"
+  ], 
+  "topics": [
+    "forests", 
+    "Mitigation"
+  ], 
+  "section_title": "LULUCF:", 
+  "enb_start_date": "10-Aug-09", 
+  "enb_short_title": "AWGs", 
+  "subtype": "", 
+  "actors": [
+    "European Union", 
+    "African Group"
+  ], 
+  "sentences": [
+    "The spin-off group on LULUCF focused the week s discussions on land-based accounting, natural disturbances and forest management ( FCCC/KP/AWG/2009/10/Add.3 annex II), CDM-related issues and data submission ( FCCC/KP/AWG/2009/10/Add.3 ).", 
+    "Co-facilitator Marcelo Rocha (Brazil) explained that due to concerns expressed by several parties, small groups on specific issues would not convene, but he suggested bilateral discussions.", 
+    "Many countries said that a land-based accounting approach is a desirable long-term goal.", 
+    "Australia, with Switzerland and the EU, stated that they are not ready to support land-based accounting in the second commitment period.", 
+    "Brazil, China and Japan underscored incomplete reporting of data, as well as the existing scientific uncertainties of measurement.", 
+    "Many countries highlighted the difficulty of distinguishing between anthropogenic and non-anthropogenic emissions and removals, and the challenge this poses to defining natural disturbances.", 
+    "South Africa suggested wider consideration of both sinks and sources, noting a limited willingness to consider positive measures.", 
+    "Switzerland described its proposal to address natural disturbances, highlighting the potential usefulness of discount rates throughout the LULUCF activities, but acknowledged that setting discount rates is subjective.", 
+    "Responding to questions on accounting for harvested wood products (HWP), New Zealand emphasized that they do not perceive HWP as a permanent sink and they highlighted the responsibility of the producing country.", 
+    "Thailand and Belarus called for assistance from the Intergovernmental Panel on Climate Change (IPCC) to create guidelines for natural disturbances and peatlands.", 
+    "The group also discussed eligibility of LULUCF activities under the CDM, including: afforestation and reforestation; reducing emissions from deforestation and forest degradation in developing countries (REDD); restoration of wetlands; sustainable forest management or land management activities; soil carbon management; and revegetation, forest, cropland and grazing land management.", 
+    "China and Brazil suggested only considering afforestation and reforestation under the CDM.", 
+    "Many countries supported considering REDD under other discussion tracks.", 
+    "Senegal, for the African Group, with Japan, Zambia, Papua New Guinea and Ethiopia, highlighted the need to improve the geographical distribution of the CDM and emphasized that broadening the scope of eligible LULUCF activities provides this opportunity.", 
+    "Brazil, the EU, Tuvalu and Canada called for discussion on whether activities are best considered under the CDM or NAMAs.", 
+    "Parties agreed on the utility of data submission with some noting that data increases transparency and clarifies the implications of LULUCF proposals on targets.", 
+    "Guyana called for Annex I countries to provide data on the contribution of LULUCF to their targets.", 
+    "Many suggested that data submission would ideally occur before AWG-KP 9 in Bangkok, while noting the practical challenges of assembling data.", 
+    "Canada suggested that two types of data were being discussed: basic data that is readily available; and scenarios and projections, which require more information and are not likely to be available for Bangkok."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12427e.html", 
+  "enb_long_title": "Bonn Climate Change Talks - August 2009", 
+  "type": "WORKING GROUP", 
+  "id": "enb12427e_16", 
+  "enb_end_date": "14-Aug-09"
+}

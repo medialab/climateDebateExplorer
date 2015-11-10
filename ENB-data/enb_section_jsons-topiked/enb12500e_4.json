@@ -1,0 +1,27 @@
+{
+  "countries": [
+    "Switzerland", 
+    "Norway", 
+    "India"
+  ], 
+  "topics": [
+    "IPCC Governance"
+  ], 
+  "section_title": "IPCC-29 :", 
+  "enb_start_date": "10-May-11", 
+  "enb_short_title": "IPCC-33", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "This session, which commemorated the IPCC s 20th anniversary, was held from 31 August to 4 September 2008, in Geneva, Switzerland.", 
+    "At this time, the Panel elected the new IPCC Bureau and the TFB, and reelected Rajendra Pachauri (India) as IPCC Chair.", 
+    "The Panel also continued its discussions on the future of the IPCC and agreed to create a scholarship fund for young climate change scientists from developing countries with the funds from the Nobel Peace Prize.", 
+    "It also asked the Bureau to consider a scoping meeting on the SREX Report, which took place from 23-26 March 2009 in Oslo, Norway.", 
+    "Earth Negotiations Bulletin coverage of IPCC 29 can be found at: http://www.iisd.ca/climate/ipcc29 ."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12500e.html", 
+  "enb_long_title": "Thirty-third Session of the Intergovernmental Panel on Climate Change (IPCC)", 
+  "type": "ipcc", 
+  "id": "enb12500e_4", 
+  "enb_end_date": "13-May-11"
+}

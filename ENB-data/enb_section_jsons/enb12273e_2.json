@@ -1,0 +1,30 @@
+{
+   "actors": [],
+   "countries": [
+      "Netherlands",
+      "Sierra Leone"
+   ],
+   "enb_end_date": "23-Sep-05",
+   "enb_long_title": "8th Session of WG-III and IPCC-24",
+   "enb_short_title": "IPCC-24",
+   "enb_start_date": "23-Sep-05",
+   "enb_url": "http://www.iisd.ca/vol12/enb12273e.html",
+   "id": "enb12273e_2",
+   "section_title": "PRESENTATION ON THE DRAFT SUMMARY FOR POLICY MAKERS",
+   "sentences": [
+      "WGIII Co-Chair Bert Metz (The Netherlands) introduced the draft SPM.",
+      "He explained that highlights from the SPM would be presented as it would not be practical to introduce every chapter of the Special Report as originally envisaged in the agenda.",
+      "WGIII Co-Chair Ogunlade Davidson (Sierra Leone) explained that the SPM is organized on the basis of several key questions about CCS.",
+      "He noted that reference to technology diffusion and transfer was not included in the SPM because of a lack of literature, and that information on gaps in CCS knowledge was not included due to space limitations.",
+      "He reminded delegates that the SPM aims to cover key issues relevant to decision makers but that it does not include policy recommendations. Noting the difficulty in categorizing the current maturity of different CCS system components, Co-Chair Davidson said that CCS technologies had been grouped as being at one of four 'phases' of maturity: those in the research phase; those in the demonstration phase; those that are economically feasible under certain conditions; and those that have a mature market. Continuing the presentation, Co-Chair Metz noted that, on electricity costs, assumptions of oil prices at US$15 - 20 per barrel could not be changed given a lack of literature.",
+      "On storage potential, he noted that: an expert judgment was made to derive the figure of 2000Gt of carbon dioxide for geological storage; industrial uses of carbon dioxide are technically possible but that their potential is relatively small; and technical estimates for oceans and mineral carbonation cannot yet be made.",
+      "Regarding the economic potential of CCS, he stated that since experience with CCS is limited, scenario studies are being used. Considering the local risks associated with CCS, Co-Chair Metz noted that: risks from a carbon dioxide pipeline would be comparable to those of hydrocarbon pipelines, while the risks for carbon dioxide storage could be comparable with storing substances such as acid gas; ocean storage could have significant risks, but that there is insufficient information on ecosystem impacts; and that the risks of mineral carbonation would be those related to the environmental impacts of mining operations.",
+      "On the implications of leakage from storage, he said the figures in the draft SPM are indicative only.",
+      "On emissions estimation and accounting, he said the 2006 IPCC Guidelines for National Greenhouse Gas Inventories will include guidance on incorporating CCS in inventories."
+   ],
+   "subtype": "",
+   "topics": [
+      "Flexibility Mechanism"
+   ],
+   "type": "ipcc"
+}

@@ -1,0 +1,33 @@
+{
+  "countries": [
+    "Ghana", 
+    "Canada", 
+    "Finland", 
+    "India", 
+    "United States", 
+    "China", 
+    "Uganda", 
+    "Japan"
+  ], 
+  "topics": [
+    "Technology Transfer"
+  ], 
+  "section_title": "TECHNOLOGY TRANSFER:", 
+  "enb_start_date": "05-Dec-08", 
+  "enb_short_title": "COP/MOP3", 
+  "subtype": "", 
+  "actors": [
+    "Group of 77"
+  ], 
+  "sentences": [
+    "Ghana, for the G-77/CHINA, called for the establishment of a contact group.", 
+    "Noting ongoing discussions under SBSTA, CANADA, JAPAN and the US proposed holding an informal dialogue and establishing a contact group at SBI 28.", 
+    "INDIA called for a review of technology transfer under the Convention, and initiating a global dialogue.", 
+    "A contact group will be co-chaired by Jukka Uosukainen (Finland) and Philip Gwage (Uganda)."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12345e.html", 
+  "enb_long_title": "United Nations Climate Change Conference - Bali", 
+  "type": "sbi", 
+  "id": "enb12345e_11", 
+  "enb_end_date": "05-Dec-08"
+}
