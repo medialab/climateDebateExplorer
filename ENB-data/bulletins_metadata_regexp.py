@@ -3,6 +3,7 @@ import csv
 import re
 import itertools
 import os
+import json
 
 volume_number=re.compile(r"Volume (\d{2}) Number (\d{1,3})")
 year_city_country=re.compile(r".*(\d{4})[ \t]*?(?:[ \wéñú()\t/]*, )*([ \wéñńú/]*),[ \t]*?([ \wé]*)$")
@@ -35,16 +36,27 @@ with open(os.path.join(OUT_DATA,"bulletins_metadata.csv"),"r") as f:
 		bulletins_metadata.append([index_title,long_title,city,country,year,volume,number,url])
 
 event_url=[]
-with open(os.path.join(OUT_DATA,"events_metadata.csv"),"w") as f:
+with open(os.path.join(OUT_DATA,"events_metadata.csv"),"w") as f, open(os.path.join(OUT_DATA,"events_metadata.json"),"w") as fjson:
 	csvw=csv.writer(f)
+	headers=["event_id","long_title","city","country","year","min_volnumber","max_volnumber"]
 	csvw.writerow(["event_id","long_title","city","country","year","min_volnumber","max_volnumber"])
+	json_export={}
 
 	for event_id,events in itertools.groupby(bulletins_metadata,key=lambda e: e[0]):
 		events=list(events)
 		event_id="%03d"%int(event_id)
+
+		#export csv
 		csvw.writerow([event_id]+events[0][1:5]+ [min([int(e[6]) for e in events]),max([int(e[6]) for e in events])])
+		
+		#export json
+		json_export[event_id]=dict(zip(headers[1:5],events[0][1:5]))
+
+
+		#preparing the event_id/url index
 		for e in events:
 			event_url.append([event_id,e[-1]])
+	json.dump(json_export,fjson,indent=2)
 
 with open(os.path.join(OUT_DATA,"event_bulletinurl.csv"),"w") as f:
 	csvw=csv.writer(f)
