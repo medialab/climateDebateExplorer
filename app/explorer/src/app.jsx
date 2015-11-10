@@ -8,6 +8,7 @@ var _ = require('lodash'),
     BaobabRootMixin = require('baobab-react/mixins').root,
 
     tree = require('./tree.js'),
+    controller = require('./controller.js'),
     DataStore = require('./utils/datastore'),
     HashBinder = require('./utils/hashbinder'),
     container = document.getElementById('app-container'),
@@ -23,17 +24,25 @@ var _ = require('lodash'),
 djax({
   url: 'assets/data/config.json',
   success: function(config) {
+    // Cache config:
+    tree.set(
+      ['cached', 'config'],
+      config
+    );
+
     // Load CSV data file:
     Papa.parse('assets/data/data.csv', {
       header: true,
       download: true,
-      complete: function(results) {
-        // Feed the store:
-        var store = new DataStore({
+      complete: function(data) {
+        // Reference the store as a tree attribute, to make it easily accessible
+        // from outside of here:
+        tree.datastore = new DataStore({
           fields: config.fields,
           index: config.index
         });
 
+        // Feed the store:
         var splitables = [];
         _.forEach(config.fields, function(field, key) {
           if (field.separator)
@@ -43,16 +52,13 @@ djax({
             });
         });
 
-        results.data.forEach(function(row) {
+        data.data.forEach(function(row) {
           splitables.forEach(function(field) {
-            row[field.id] = (row[field.id] || '').split(field.separator);
+            row[field.id] =
+              (row[field.id] || '').split(field.separator) || undefined;
           })
-          store.append(row);
+          tree.datastore.append(row);
         });
-
-        // Reference the store as a tree attribute, to make it easily accessible
-        // from outside of here:
-        tree.datastore = store;
 
         // Hash bindings:
         new HashBinder(
@@ -60,10 +66,34 @@ djax({
           ['deployedList', 'deployedVerbatim']
         );
 
-        // Initial rendering:
-        ReactDOM.render(
-          <App tree={ tree } />,
-          container
+        // Compute once and for all some relevant metrics:
+        var aggregations = {};
+        _.forEach(config.fields, function(obj, field) {
+          if (obj.cacheValues)
+            aggregations[field] = field;
+        });
+
+        tree.datastore.query(
+          { aggregations: aggregations },
+          function(result) {
+            for (var k in result.aggregations)
+              result.aggregations[k] =
+                _.map(result.aggregations[k], function(value, key) {
+                  return key;
+                });
+
+            // Cache values lists:
+            tree.set(
+              ['cached', 'valuesLists'],
+              result.aggregations
+            );
+
+            // Initial rendering:
+            ReactDOM.render(
+              <App tree={ tree } />,
+              container
+            );
+          }
         );
       }
     });
