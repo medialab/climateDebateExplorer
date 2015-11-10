@@ -8,11 +8,11 @@ var React = require('react'),
     container = document.getElementById('app-container'),
     Layout = require('./components/Layout.jsx'),
     App = React.createClass({
-            mixins: [ BaobabRootMixin ],
-            render: function() {
-              return <Layout />;
-            }
-          });
+      mixins: [ BaobabRootMixin ],
+      render: function() {
+        return <Layout />;
+      }
+    });
 
 ReactDOM.render(
   <App tree={ tree } />,
