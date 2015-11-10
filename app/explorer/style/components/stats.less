@@ -1,12 +1,11 @@
 .stats {
-  border: 1px solid @COLOR_BORDERS;
-  background-color: @COLOR_BACKGROUND;
-
+  color: @COLOR_STATS_TEXTS;
 
   .block {
+    position: relative;
     height: calc(~"(100% - 2em) / 3");
 
-    border-bottom: 1px solid @COLOR_BORDERS;
+    .border-bottom;
 
     &.expanded {
       height: calc(~"100% - 2em");
@@ -19,27 +18,50 @@
     }
 
     .block-content {
-      height: calc(~"100% - 4em");
+      height: calc(~"100% - 3em");
       width: 100%;
 
       overflow-y: auto;
 
       .chart-line {
-        height: 2em;
-        width: 100%;
+        position: relative;
+        height: 2.5em;
+        width: calc(~"100% - 2em");
+        margin-left: 1em;
+        padding-top: 0.7em;
+
+        &::before {
+          position: absolute;
+          content: '';
+          top: 0.5em;
+          left: -10px;
+          height: 1.8em;
+        }
+        &.topic::before {
+          border-right: 3px solid @COLOR_TOPICS;
+        }
+        &.grouping::before {
+          border-right: 3px solid @COLOR_GROUPINGS;
+        }
+        &.event::before {
+          border-right: 3px solid @COLOR_EVENTS;
+        }
 
         .chart-line-bar {
           position: relative;
           width: 85%;
-          height: 3px;
+          height: 8px;
 
-          background-color: @COLOR_BORDERS;
+          background-color: @COLOR_BARS_BACKGROUND;
 
           &::after {
             position: absolute;
             content: attr(data-figure);
             left: 100%;
-            top: -0.5em;
+            top: -0.3em;
+            margin-left: 5px;
+
+            font-size: 0.8em;
           }
 
           .chart-line-fill {
@@ -48,14 +70,23 @@
             background-color: @COLOR_BARS;
           }
         }
+
+        .chart-line-label {
+          padding-top: 0.1em;
+
+          font-size: 0.9em;
+        }
       }
     }
 
     .block-more {
       .button;
 
-      height: 2em;
+      height: 1em;
       width: 100%;
+
+      font-size: 0.8em;
+      text-align: center;
     }
   }
 }
