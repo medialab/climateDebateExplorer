@@ -1,4 +1,4 @@
-var targetFile = "../ENB-data/metadata_overview/metadata.csv"
+var targetFile = "../ENB-data/temp_data/metadata.csv"
 
 var margin = {top: 20, right: 200, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
@@ -23,7 +23,7 @@ var yAxis = d3.svg.axis()
     .orient("left");
 
 var line = d3.svg.line()
-    // .interpolate("basis")
+    .interpolate("cardinal")
     .x(function(d) { return x(d.year); })
     .y(function(d) { return y(d.volume); });
 
@@ -90,10 +90,8 @@ d3.csv(targetFile, function(error, data) {
     .key(function(d) { return d.actor; })
     .entries(volumes)
     .filter(function(d, i){
-        return d3.max(d.values.map(function(d2){return d2.volume})) >= 10
+        return d3.max(d.values.map(function(d2){return d2.volume})) >= 30
       })
-
-  nested_data.forEach(function(d){console.log('gaga',d)})
 
   color.domain(nested_data.map(function(d){return d.key}));
 
@@ -139,6 +137,12 @@ d3.csv(targetFile, function(error, data) {
       .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.volume) + ")"; })
       .attr("x", 3)
       .attr("y", function(d){
+          if ( d.name == "UNFCCC and Kyoto Protocol Implementation" ) {
+            return -5
+          }
+          if ( d.name == "Financial Mechanisms and Funds 2" ) {
+            return 5
+          }
           return 0
         })
       .attr("dy", '.35em')
