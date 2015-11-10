@@ -89,11 +89,16 @@ module.exports = React.createClass({
         <div className="column-title">Verbatims</div>
 
 
-        <div className="minutes">{
+        <ul className="minutes">{
           data.map(function(minute, i) {
             return (
-              <div  className="minute"
+              <li  className="minute"
                     key={ i }>
+                <div className="minute-actions">
+                  <div className="minute-number"></div>
+                  <div className="minute-see"></div>
+                  <div className="minute-share"></div>
+                </div>
                 <div className="minute-context">{
                   minute.year + ' | ' + minute.place + ' | ' + minute.event
                 }</div>
@@ -103,10 +108,10 @@ module.exports = React.createClass({
                 <div className="minute-tags">{
                   minute.actors.concat(minute.topics).join(' | ')
                 }</div>
-              </div>
+              </li>
             );
           }, this)
-        }</div>
+        }</ul>
       </div>
     );
   }

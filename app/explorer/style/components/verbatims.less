@@ -6,20 +6,49 @@
     overflow: auto;
 
     .minute {
-      width: 100%;
+      display: block;
+      position: relative;
+      height: 8em;
+      width: 90%;
+      margin-left: 1em;
 
-      border-bottom: 1px solid @COLOR_BORDERS;
+      .minute-actions {
+        position: absolute;
+        top: 1em;
+        left: 0em;
+        height: 6em;
+        width: 3em;
+
+        border-right: 2px solid @COLOR_ORANGE;
+      }
 
       .minute-context {
+        position: absolute;
+        top: 1em;
+        left: 4em;
         height: 2em;
+        line-height: 2em;
+        width: calc(~"100% - 2em");
+
+        color: @COLOR_ORANGE;
       }
 
       .minute-title {
+        position: absolute;
+        top: 3em;
+        left: 4em;
         height: 2em;
+        line-height: 2em;
+        width: calc(~"100% - 2em");
       }
 
       .minute-tags {
+        position: absolute;
+        top: 5em;
+        left: 4em;
         height: 2em;
+        line-height: 2em;
+        width: calc(~"100% - 2em");
       }
     }
   }
