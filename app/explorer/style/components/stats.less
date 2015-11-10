@@ -1,0 +1,61 @@
+.stats {
+  border: 1px solid @COLOR_BORDERS;
+  background-color: @COLOR_BACKGROUND;
+
+
+  .block {
+    height: calc(~"(100% - 2em) / 3");
+
+    border-bottom: 1px solid @COLOR_BORDERS;
+
+    &.expanded {
+      height: calc(~"100% - 2em");
+    }
+
+    &.hidden {
+      height: 0;
+
+      overflow: hidden;
+    }
+
+    .block-content {
+      height: calc(~"100% - 4em");
+      width: 100%;
+
+      overflow-y: auto;
+
+      .chart-line {
+        height: 2em;
+        width: 100%;
+
+        .chart-line-bar {
+          position: relative;
+          width: 85%;
+          height: 3px;
+
+          background-color: @COLOR_BORDERS;
+
+          &::after {
+            position: absolute;
+            content: attr(data-figure);
+            left: 100%;
+            top: -0.5em;
+          }
+
+          .chart-line-fill {
+            height: 100%;
+
+            background-color: @COLOR_BARS;
+          }
+        }
+      }
+    }
+
+    .block-more {
+      .button;
+
+      height: 2em;
+      width: 100%;
+    }
+  }
+}

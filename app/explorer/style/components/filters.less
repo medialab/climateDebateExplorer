@@ -1,0 +1,62 @@
+.filters {
+  border: 1px solid @COLOR_BORDERS;
+  background-color: @COLOR_BACKGROUND;
+
+  .search {
+    position: relative;
+    height: 2em;
+    width: 100%;
+
+    border-top: 1px solid @COLOR_BORDERS;
+    border-bottom: 1px solid @COLOR_BORDERS;
+    background-color: #fff;
+
+    input {
+      height: 100%;
+      width: calc(~"100% - 3em");
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0.5em;
+      right: 1em;
+      height: 0.7em;
+      width: 0.7em;
+
+      border: 1px solid @COLOR_TITLES;
+      border-radius: 1em;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 1.2em;
+      right: 0.9em;
+      height: 0.4em;
+      width: 0;
+      margin-top: -0.1em;
+
+      border: 1px solid @COLOR_TITLES;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .block {
+    border-bottom: 1px solid @COLOR_BORDERS;
+    overflow: hidden;
+
+    .block-title {
+      .button;
+    }
+
+    .block-content {
+      height: 0;
+      width: 100%;
+
+      &.expanded {
+        height: auto;
+      }
+    }
+  }
+}
