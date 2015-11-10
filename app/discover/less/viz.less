@@ -1,0 +1,67 @@
+
+#viz-container {
+  position: fixed;
+  height: 100%;
+  left: 0;
+  right: 0;
+
+  >div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    #viz-selector {
+      position: absolute;
+      top: 5em;
+      left: 10em;
+      right: 10em;
+
+      a {
+        span.number {
+
+        }
+        span.title {
+
+        }
+      }
+    } 
+
+    .viz-band {
+      position: absolute;
+      box-sizing: border-box;
+      padding: 0 30em 0 10em;
+      width: 100%;
+      top: 10em;
+      bottom: 10em;
+      background-color: @lightGrey;
+      border-top: solid 1px @mainBlue;
+      border-bottom: solid 1px @mainBlue;
+
+      .verbatims {
+        position: absolute;
+        top: 1em;
+        bottom: 1em;
+        right: 10em;
+        width: 19em;
+        border-left: 1px solid #FFF;
+        padding-left: 1em;
+      }
+
+      .analysis {
+        position: absolute;
+        left: 20em;
+        right: 20em;
+        top: 100%;
+        margin-top: 1em;
+        height: 8em;
+      }
+
+      .viz {
+        display: block;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+    }
+  }
+}
