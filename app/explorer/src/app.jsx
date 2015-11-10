@@ -54,8 +54,9 @@ djax({
 
         data.data.forEach(function(row) {
           splitables.forEach(function(field) {
-            row[field.id] =
-              (row[field.id] || '').split(field.separator) || undefined;
+            row[field.id] = row[field.id] ?
+              row[field.id].split(field.separator) :
+              [];
           })
           tree.datastore.append(row);
         });
