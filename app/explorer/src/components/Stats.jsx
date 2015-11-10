@@ -37,7 +37,7 @@ module.exports = React.createClass({
     var dom = ReactDOM.findDOMNode(this);
 
     this.setState({
-      nbLines: Math.floor(((dom.offsetHeight - 2 * EM) / 3 - 4 * EM) / (2 * EM))
+      nbLines: Math.floor(((dom.offsetHeight - EM) / 3 - 4 * EM) / (2.5 * EM))
     });
   },
 
@@ -80,7 +80,7 @@ module.exports = React.createClass({
 
     return (
       <div className="stats">
-        <div className="column-title">Stats</div>
+        <div className="column-title">Statistics</div>
         <div  className={
                 this.state.expanded === null ?
                   'block' :
@@ -92,9 +92,8 @@ module.exports = React.createClass({
           <div className="block-content">{
             bars.map(function(line, i) {
               return (
-                <div  className="chart-line"
+                <div  className="chart-line topic"
                       key={ i }>
-                  <div className="chart-line-label">{ line.name }</div>
                   <div  className="chart-line-bar"
                         data-figure={ line.figure + '%' }>
                     <div  className="chart-line-fill"
@@ -102,13 +101,14 @@ module.exports = React.createClass({
                             width: line.figure + '%'
                           }}></div>
                   </div>
+                  <div className="chart-line-label">{ line.name }</div>
                 </div>
               );
             })
           }</div>
           <div  className="block-more"
                 data-id="topics"
-                onClick={ this.more }>See more</div>
+                onClick={ this.more }>See more results</div>
         </div>
         <div  className={
                 this.state.expanded === null ?
@@ -121,9 +121,8 @@ module.exports = React.createClass({
           <div className="block-content">{
             bars.map(function(line, i) {
               return (
-                <div  className="chart-line"
+                <div  className="chart-line grouping"
                       key={ i }>
-                  <div className="chart-line-label">{ line.name }</div>
                   <div  className="chart-line-bar"
                         data-figure={ line.figure + '%' }>
                     <div  className="chart-line-fill"
@@ -131,13 +130,14 @@ module.exports = React.createClass({
                             width: line.figure + '%'
                           }}></div>
                   </div>
+                  <div className="chart-line-label">{ line.name }</div>
                 </div>
               );
             })
           }</div>
           <div  className="block-more"
                 data-id="groupings"
-                onClick={ this.more }>See more</div>
+                onClick={ this.more }>See more results</div>
         </div>
         <div  className={
                 this.state.expanded === null ?
@@ -150,9 +150,8 @@ module.exports = React.createClass({
           <div className="block-content">{
             bars.map(function(line, i) {
               return (
-                <div  className="chart-line"
+                <div  className="chart-line event"
                       key={ i }>
-                  <div className="chart-line-label">{ line.name }</div>
                   <div  className="chart-line-bar"
                         data-figure={ line.figure + '%' }>
                     <div  className="chart-line-fill"
@@ -160,13 +159,14 @@ module.exports = React.createClass({
                             width: line.figure + '%'
                           }}></div>
                   </div>
+                  <div className="chart-line-label">{ line.name }</div>
                 </div>
               );
             })
           }</div>
           <div  className="block-more"
                 data-id="events"
-                onClick={ this.more }>See more</div>
+                onClick={ this.more }>See more results</div>
         </div>
       </div>
     );
