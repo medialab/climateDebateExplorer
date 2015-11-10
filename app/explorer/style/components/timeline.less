@@ -1,0 +1,82 @@
+.timeline {
+  position: relative;
+  padding-top: 0.5em;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 2em;
+    right: 2em;
+
+    border-top: 1px solid @COLOR_BORDERS;
+  }
+
+  .bar-placeholder {
+    position: relative;
+    display: inline-block;
+    height: 4em;
+
+    &:nth-child(1) {
+      opacity: 0.6;
+      border-right: 1px dashed @COLOR_BORDERS;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 100%;
+      left: 50%;
+      height: 0;
+      width: 70%;
+      margin-left: -35%;
+
+      border-bottom: 3px solid @COLOR_TITLES;
+    }
+
+    &::after {
+      position: absolute;
+      content: attr(data-year);
+      top: 100%;
+      left: 0;
+      width: 100%;
+      margin-top: 5px;
+
+      font-size: 0.8em;
+      text-align: center;
+    }
+
+    .bar {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+
+      border-left: 1px dashed @COLOR_BORDERS;
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 6px;
+        width: 6px;
+        margin-top: -3px;
+        margin-left: -3px;
+
+        background-color: @COLOR_BORDERS;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        position: absolute;
+        content: attr(data-figure);
+        top: 0;
+        left: 5px;
+        margin-top: -0.6em;
+
+        font-size: 0.6em;
+      }
+    }
+  }
+}
