@@ -1,0 +1,77 @@
+.app {
+  height: 100%;
+  width: 100%;
+
+  .header {
+    height: 2em;
+    width: 100%;
+  }
+
+  .about {
+    height: 0;
+    width: 100%;
+
+    &.displayed {
+      height: auto;
+    }
+  }
+
+  .disclaimer {
+    height: 0;
+    width: 100%;
+
+    &.displayed {
+      height: auto;
+    }
+  }
+
+  .menu {
+    height: 5em;
+    width: 100%;
+  }
+
+  .context {
+    height: 5em;
+    width: 100%;
+  }
+
+  .content {
+    position: relative;
+    height: calc(~"100% - 12em");
+    width: 100%;
+
+    .filters {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 15em;
+    }
+
+    .stats {
+      position: absolute;
+      top: 0;
+      left: 15em;
+      height: 100%;
+      width: 15em;
+    }
+
+    .right-content {
+      position: absolute;
+      top: 0;
+      left: 30em;
+      height: 100%;
+      width: calc(~"100% - 30em");
+
+      .verbatims {
+        height: calc(~"100% - 3em");
+        width: 100%;
+      }
+
+      .timeline {
+        height: 3em;
+        width: 100%;
+      }
+    }
+  }
+}
