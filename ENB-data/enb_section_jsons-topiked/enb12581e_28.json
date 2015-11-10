@@ -1,0 +1,29 @@
+{
+  "countries": [
+    "Canada", 
+    "Saudi Arabia", 
+    "Saint Lucia", 
+    "United Kingdom", 
+    "Slovenia", 
+    "Germany", 
+    "Switzerland", 
+    "Fiji"
+  ], 
+  "topics": [], 
+  "section_title": "Detection and Attribution of Climate Change", 
+  "enb_start_date": "23-Sep-13", 
+  "enb_short_title": "IPCC36", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "In drafting the keynote message, the UK suggested adding a sentence that explicitly notes increased evidence of anthropogenic influence since the AR4.", 
+    "This was supported, with several different wording suggestions, by Slovenia, Switzerland, Canada, Fiji, Saint Lucia and Germany, and opposed by Saudi Arabia.", 
+    "A contact group developed a proposal that included text suggested by the UK.", 
+    "Canada proposed including Arctic warming in the context of explaining warming of continental regions, and additional language was developed."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12581e.html", 
+  "enb_long_title": "Twelfth Session of Working Group I (WGI) of the Intergovernmental Panel on Climate Change (IPCC) and Thirty-sixth Session of the IPCC", 
+  "type": "", 
+  "id": "enb12581e_28", 
+  "enb_end_date": "26-Sep-13"
+}

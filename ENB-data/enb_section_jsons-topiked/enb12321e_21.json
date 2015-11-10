@@ -1,0 +1,52 @@
+{
+  "countries": [
+    "Mauritius", 
+    "Australia", 
+    "Egypt", 
+    "United States", 
+    "Belgium", 
+    "Sweden", 
+    "Netherlands", 
+    "China", 
+    "Russian Federation"
+  ], 
+  "topics": [
+    "IPCC Governance", 
+    "Anthropogenic Interference with Climate System", 
+    "Vulnerabilities and Impacts"
+  ], 
+  "section_title": "FURTHER WORK OF THE IPCC ON EMISSIONS SCENARIOS", 
+  "enb_start_date": "30-Apr-07", 
+  "enb_short_title": "IPCC WGIII", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "Chair Pachauri called attention to the document describing developments regarding further work of the IPCC on emissions scenarios (IPCC-XXVI/Doc.8).", 
+    "He explained that a steering committee had been established to prepare for an expert meeting with the scientific community, which will take place from 19-22 September 2007, in the Netherlands.", 
+    "Chair Pachauri proposed that experts define benchmark scenarios to replace the currently existing SRES scenarios based on stabilization concentrations of greenhouse gases, rather than emissions.", 
+    "He highlighted that emissions scenarios could be calculated and scaled based on benchmark concentration scenarios in preparation for a possible fifth IPCC Report.", 
+    "Pachauri underscored the decision of IPCC-25 that the IPCC should only play a facilitating role in this process.", 
+    "Sweden noted that newly emerging models may benefit from emissions scenarios instead of concentration scenarios.", 
+    "Chair Pachauri emphasized that emissions scenarios could be inversely calculated.", 
+    "Australia stressed urgency and, with Egypt, highlighted the need for more information on aerosols.", 
+    "Leo Meyer, Head of the WGIII Technical Support Unit, said that the steering committee would welcome suggestions from delegates, underscored a catalytic but distant role of the IPCC in defining scenarios, and clarified that the results of the expert meeting would be classified as IPCC supporting materials, not as an IPCC-approved technical paper.", 
+    "The Russian Federation pointed to the link between concentrations and UNFCCC Article 2.", 
+    "Belgium highlighted that, according to IPCC procedure, the cover page of the report would make clear that the report had not been subject to the formal IPCC review process.", 
+    "Belgium also drew attention to the fact that users of the report would include modelers focusing on impacts, adaptation and vulnerability, and Chair Pachauri responded that the term climate modelers is meant to include all users.", 
+    "Ismail Elgizouli, Co-Chair of the steering committee, briefed delegates on developments in preparation for the September meeting.", 
+    "The US stressed the IPCC's function as an assessment body, distinct from a body that develops research.", 
+    "He suggested that the steering committee should not be involved in preparing scenarios, but rather in facilitating this process.", 
+    "China suggested that taking into account economic scenarios developed elsewhere would help to remove inconsistencies between these different scenarios.", 
+    "And, with Mauritius, she urged for geographical balance of experts at the September meeting.", 
+    "In response, Meyer said there were 50 journeys budgeted for developing country experts, to ensure ample participation.", 
+    "Chair Pachauri underscored the broad support for moving forward on scenarios.", 
+    "He confirmed that the steering committee's role is only to design the meeting and review process, not to develop scenarios.", 
+    "He encouraged the steering committee to explore mechanisms for actively involving other organizations.", 
+    "Delegates approved the proposal."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12321e.html", 
+  "enb_long_title": "Ninth session of the IPCC Working Group III (WGIII)", 
+  "type": "ipcc", 
+  "id": "enb12321e_21", 
+  "enb_end_date": "04-May-07"
+}

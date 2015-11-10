@@ -1,0 +1,32 @@
+{
+  "countries": [
+    "United States", 
+    "Netherlands", 
+    "Australia", 
+    "Japan", 
+    "Philippines", 
+    "Belize"
+  ], 
+  "topics": [
+    "Technology Transfer"
+  ], 
+  "section_title": "TECHNOLOGY TRANSFER:", 
+  "enb_start_date": "31-May-10", 
+  "enb_short_title": "AWGs", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "The item (FCCC/SBI/2010/INF.4, FCCC/SBI/2010/INF.6, and FCCC/SB/2010/INF.1) was first considered by the SBI plenary on 31 May.", 
+    "It was then referred to a joint SBI/SBSTA contact group and informal consultations, co-chaired by Carlos Fuller (Belize) and Ronald Schillemans (the Netherlands).", 
+    "The SBI adopted conclusions on 9 June.", 
+    "Japan stressed the importance of strengthening the Expert Group on Technology Transfer s (EGTT) ties with alliances that include the private sector, such as the Climate Technology Initiative.", 
+    "The US welcomed efforts undertaken both bilaterally and multilaterally, and inside and outside the Convention.", 
+    "Australia encouraged enhanced engagement with the private sector.", 
+    "The Philippines expressed hope that the work done by the EGTT will not undermine the negotiations on the implementation of the BAP."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12472e.html", 
+  "enb_long_title": "Bonn Climate Change Talks - May/June 2010", 
+  "type": "SBI", 
+  "id": "enb12472e_55", 
+  "enb_end_date": "11-Jun-10"
+}

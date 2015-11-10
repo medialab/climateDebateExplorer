@@ -1,0 +1,45 @@
+{
+  "countries": [
+    "Cook Islands"
+  ], 
+  "topics": [
+    "Financial Mechanisms and Funds", 
+    "Vulnerabilities and Impacts"
+  ], 
+  "section_title": "IDENTIFICATION OF GAPS AND NEEDS:", 
+  "enb_start_date": "10-Mar-08", 
+  "enb_short_title": "Workshop", 
+  "subtype": "", 
+  "actors": [
+    "Alliance of Small Island States"
+  ], 
+  "sentences": [
+    "Heather McGray, World Resources Institute (WRI), gave a framing presentation on priorities and data needs for socioeconomic information for impact and vulnerability assessments.", 
+    "She explained factors affecting data priorities and needs relate to the purpose and scope of the assessment.", 
+    "McGray discussed precautionary versus purpose-specific decision-making, noting that data availability will determine which approach should be used.", 
+    "She suggested that sectors, scales, and regions as well as cross cutting issues should be considered in prioritizing gaps to fill.", 
+    "Participants discussed different approaches to governance information and advantages of regional versus national approaches.", 
+    "Information providers perspective: Alex de Sherbinin, CIESIN, presented on information accessibility and effectiveness, highlighting the Environmental Performance Index (EPI), an international ranking of environmental performance conducted by Columbia and Yale universities and available online.", 
+    "He said the EPI is focused on measurable outcomes, and described the indicators used within various policy categories.", 
+    "He described the ratio approach, which assesses how countries adaptive capacity changes with each degree of change in average global temperatures.", 
+    "He noted that web mapping technology has immense potential, but needs to be taken beyond the realm of the technologically savvy.", 
+    "De Sherbinin concluded by recommending that governments make better use of existing information before seeking higher resolution data.", 
+    "Malgosia Madajewicz, International Research Institute for Climate and Society (IRI), discussed information needs for assessing adaptation approaches that work.", 
+    "She stressed that impact evaluations for the assessments themselves need to be part of the planning process from the beginning.", 
+    "She cautioned against continuous repetition of unsuccessful policies and emphasized learning from mistakes made in the broader development agenda.", 
+    "She called for better impact evaluations, noting the cost of repeating mistakes is greater than carrying out an evaluation properly, and stressed the need for policy makers and evaluators to work together, for policy makers to possess statistical skills, and for countries to develop their institutional and human capital.", 
+    "Information Users Perspective: Pasha Carruthers, Cook Islands, identified the socioeconomic information needs of SIDS, including: consideration of the unique conditions of SIDS in scenarios; more integrated and analyzed data made available in a user-friendly format; cost-benefits of response measures; addressing limited expertise through preparing information packages; and including stakeholders perspectives.", 
+    "Carruthers suggested possible roles of the UNFCCC, including: providing financial support and facilitating collaboration between countries and research institutions; working with the IPCC on new guidelines on adaptation analysis; improving access to socioeconomic information; increasing documentation dissemination; expanding the role of existing UNFCCC expert groups or creating an adaptation expert group; and integrating the impacts, vulnerability and adaptation community into the work of the IPCC.", 
+    "Ken Johm, African Development Bank, presented on ClimDev Africa, a programme developed to address climate observing needs as well as the development of improved climate services, climate risk management and decision-making in Africa.", 
+    "He described the role this programme has played in integrating climate risk management into policy and decision-making, emphasizing the need to consider region-specific needs within Africa.", 
+    "He highlighted Africa s economic dependency on rainfall, and recent links between drought and internal and cross-border migration.", 
+    "He identified major users of climate information, including policy makers and planners in various sectors.", 
+    "He identified gaps regarding: access to information on safety nets; information on community-level coping strategies; and traditional risk management strategies.", 
+    "Lastly, he identified key socioeconomic parameters related to vulnerability, including assets, institutions and knowledge."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12356e.html", 
+  "enb_long_title": "UNFCCC Expert Group Meeting on socioeconomic information under the Nairobi Work Programme on Impacts, Vulnerability and Adaptation to Climate Change (NWP)", 
+  "type": "SPECIAL WORKSHOP", 
+  "id": "enb12356e_18", 
+  "enb_end_date": "12-Mar-08"
+}

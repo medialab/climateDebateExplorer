@@ -1,0 +1,29 @@
+{
+  "countries": [
+    "Canada", 
+    "Japan"
+  ], 
+  "topics": [
+    "Anthropogenic Interference with Climate System", 
+    "Extension of the Kyoto protocol"
+  ], 
+  "section_title": "A BRIEF HISTORY OF THE UNFCCC AND THE KYOTO PROTOCOL", 
+  "enb_start_date": "28-Sep-09", 
+  "enb_short_title": "AWGs", 
+  "subtype": "HISTORY", 
+  "actors": [], 
+  "sentences": [
+    "The international political response to climate change began with the adoption of the United Nations Framework Convention on Climate Change (UNFCCC) in 1992, which sets out a framework for action aimed at stabilizing atmospheric concentrations of greenhouse gases to avoid dangerous anthropogenic interference with the climate system.", 
+    "The UNFCCC entered into force on 21 March 1994 and now has 192 parties.", 
+    "In December 1997, delegates at COP 3 in Kyoto, Japan, agreed to a Protocol to the UNFCCC that commits industrialized countries and countries in transition to a market economy to achieve emission reduction targets.", 
+    "These countries, known under the UNFCCC as Annex I parties, agreed to reduce their overall emissions of six greenhouse gases by an average of 5.2% below 1990 levels between 2008-2012 (the first commitment period), with specific targets varying from country to country.", 
+    "The Kyoto Protocol entered into force on 16 February 2005 and now has 189 parties.", 
+    "In 2005, the first Conference of the Parties serving as the Meeting of the Parties (COP/MOP 1) held in Montreal, Canada, established the AWG-KP on the basis of Protocol Article 3.9, which mandates consideration of Annex I parties further commitments at least seven years before the end of the first commitment period.", 
+    "In addition, COP 11 agreed in Montreal to consider long-term cooperation under the Convention through a series of four workshops known as the Convention Dialogue, which continued until COP 13."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12439e.html", 
+  "enb_long_title": "Bangkok Climate Change Talks - 2009", 
+  "type": "WORKING GROUP", 
+  "id": "enb12439e_1", 
+  "enb_end_date": "09-Oct-09"
+}

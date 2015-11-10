@@ -1,0 +1,29 @@
+{
+  "countries": [
+    "Brazil", 
+    "Kenya", 
+    "New Zealand", 
+    "Norway"
+  ], 
+  "topics": [
+    "IPCC Governance", 
+    "UNFCCC and Kyoto Protocol Functioning", 
+    "National Communications & Inventories"
+  ], 
+  "section_title": "Greenhouse gas inventories", 
+  "enb_start_date": "17-Jun-04", 
+  "enb_short_title": "UNFCCC SB-20", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "The IPCC Inventories Task Force Bureau reported on progress in compiling the IPCC 2006 Guidelines for Greenhouse Gas Inventories.", 
+    "KENYA emphasized that 'aggressive mitigation' is required by Annex I Parties.", 
+    "NORWAY said the greenhouse gas inventory review process is a capacity-building activity beneficial to all Parties.", 
+    "Chair Benrageb said Helen Plume (New Zealand) and Branca Americano (Brazil) would conduct informal consultations on the matter."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12234e.html", 
+  "enb_long_title": "Twentieth Session of the Subsidiary Bodies to the UN Framework Convention on Climate Change", 
+  "type": "", 
+  "id": "enb12234e_3", 
+  "enb_end_date": "17-Jun-04"
+}

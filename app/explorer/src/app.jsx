@@ -9,6 +9,7 @@ var _ = require('lodash'),
 
     tree = require('./tree.js'),
     DataStore = require('./utils/datastore'),
+    HashBinder = require('./utils/hashbinder'),
     container = document.getElementById('app-container'),
     Layout = require('./components/Layout.jsx'),
     App = React.createClass({
@@ -52,6 +53,12 @@ djax({
         // Reference the store as a tree attribute, to make it easily accessible
         // from outside of here:
         tree.datastore = store;
+
+        // Hash bindings:
+        new HashBinder(
+          tree.select('appState'),
+          ['deployedList', 'deployedVerbatim']
+        );
 
         // Initial rendering:
         ReactDOM.render(

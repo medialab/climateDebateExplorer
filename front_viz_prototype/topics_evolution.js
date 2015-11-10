@@ -1,4 +1,4 @@
-var targetFile = "../ENB-data/temp_data/metadata.csv"
+var targetFile = "../app/data/sections_metadata.csv"
 
 var margin = {top: 20, right: 200, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
@@ -36,22 +36,7 @@ var svg = d3.select("body").append("svg")
 d3.csv(targetFile, function(error, data) {
   if (error) throw error;
 
-  // Get years
-  data.forEach(function(d, i) {
-    var two_digit_year = +d.enb_start_date.split('-')[2]
-      , year
-
-    if ( two_digit_year < 50 ) {
-      year = 2000 + two_digit_year
-    } else {
-      year = 1900 + two_digit_year
-    }
-
-    d.year = year
-
-  });
-
-  // Actors as an array
+  // Topics as an array
   data.forEach(function(d){
     d.topics = d.topics.split('|').filter(function(d){ return d != '' })
   })
@@ -90,7 +75,7 @@ d3.csv(targetFile, function(error, data) {
     .key(function(d) { return d.actor; })
     .entries(volumes)
     .filter(function(d, i){
-        return d3.max(d.values.map(function(d2){return d2.volume})) >= 30
+        return d3.max(d.values.map(function(d2){return d2.volume})) >= 5
       })
 
   color.domain(nested_data.map(function(d){return d.key}));

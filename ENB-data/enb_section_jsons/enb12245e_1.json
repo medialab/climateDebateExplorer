@@ -1,0 +1,25 @@
+{
+   "actors": [],
+   "countries": [
+      "Switzerland"
+   ],
+   "enb_end_date": "09-Nov-04",
+   "enb_long_title": "IPCC-22",
+   "enb_short_title": "IPCC-22",
+   "enb_start_date": "09-Nov-04",
+   "enb_url": "http://www.iisd.ca/vol12/enb12245e.html",
+   "id": "enb12245e_1",
+   "section_title": "A BRIEF HISTORY OF THE IPCC",
+   "sentences": [
+      "The IPCC was established in 1988 by the World Meteorological Organization (WMO) and the United Nations Environment Programme (UNEP).",
+      "The purpose of the IPCC is to assess the scientific, technical and socioeconomic information relevant to understanding the risks associated with human-induced climate change.",
+      "The IPCC does not undertake new research, nor does it monitor climate-related data, but bases its assessments on published and peer-reviewed scientific and technical literature.",
+      "Its Secretariat is located in Geneva, Switzerland, and is staffed by both WMO and UNEP. Since its inception, the IPCC has prepared a series of comprehensive assessments, special reports and technical papers, providing scientific information on climate change to the international community, including policymakers and the general public.",
+      "This information has played an important role in the negotiations under the United Nations Framework Convention on Climate Change (UNFCCC).",
+      "The UNFCCC, which provides the overall global policy framework for addressing climate change, was adopted in 1992 and entered into force in 1994. The current structure of the IPCC includes three working groups: Working Group I addresses the scientific aspects of the climate system and climate change; Working Group II addresses the vulnerability of socioeconomic and natural systems to climate change, negative and positive consequences of climate change, and options for adapting to it; and Working Group III addresses options for limiting greenhouse gas emissions and otherwise mitigating climate change. The IPCC also has a Task Force on National Greenhouse Gas Inventories (TFI).",
+      "The TFI oversees the IPCC National Greenhouse Gas Inventories Programme (NGGIP), which aims to develop and refine an internationally-agreed methodology and software for the calculation and reporting of national greenhouse gas emissions and removals, and to encourage the use of this methodology by countries participating in the IPCC and by UNFCCC signatories."
+   ],
+   "subtype": "history",
+   "topics": [],
+   "type": "ipcc"
+}

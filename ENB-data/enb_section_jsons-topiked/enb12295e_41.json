@@ -1,0 +1,37 @@
+{
+  "countries": [
+    "United States", 
+    "Netherlands", 
+    "Australia", 
+    "Germany", 
+    "Spain"
+  ], 
+  "topics": [
+    "Anthropogenic Interference with Climate System"
+  ], 
+  "section_title": "NEW EMISSION SCENARIOS", 
+  "enb_start_date": "26-Apr-06", 
+  "enb_short_title": "IPCC-25", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "Of all the agenda items at the IPCC\u0092s twenty-fifth session, further work on new emission scenarios was one of the most important issues in defining the mandate of the IPCC.", 
+    "Before the First Assessment Report was released in 1990, Working Group III prepared the initial set of possible future greenhouse gas emission scenarios that were used by Working Group I in assessing future climate change.", 
+    "These scenarios, called the SA90 scenarios, examined business as usual and three additional trajectories based on assumed policies that would lead to reduced emissions. In 1992, the SA90 scenarios were reviewed and six alternative scenarios were developed that were subsequently evaluated in 1994.", 
+    "In 1996, the Panel decided that a new set of scenarios was needed.", 
+    "This most recent set of scenarios, initially published in 1998, is still widely used by researchers.", 
+    "The projections of the future atmospheric composition and climate based on these scenarios were assessed in the IPCC\u0092s Third Assessment Report.", 
+    "The assessment of emission scenarios in the scientific literature is an important aspect of the AR4, which will be released in 2007.", 
+    "Preparations are needed to ensure the readiness of an updated set of new emission scenarios for use in a possible fifth assessment report. At IPCC-25, the role that the IPCC should play with regard to this process was highly debated.", 
+    "The US and Australia stressed the importance of protecting the integrity of the IPCC by limiting its role to one of assessing the available literature, with the development of new emission scenarios taking place wholly within the scientific community.", 
+    "Others, including Germany, the Netherlands, Spain, and most developing countries, argued that the IPCC should coordinate those efforts to ensure consistency, comparability, transparency, and the participation of developing country experts. After extended debate, the Panel adopted a proposal by the Co- Chairs of the contact group on emission scenarios to produce a scoping document for a technical paper that would summarize the AR4 findings and identify a small number of benchmark scenarios for potential use by climate modeling groups.", 
+    "The proposal includes the organization of a meeting between the IPCC and experts in 2007 to address this issue.", 
+    "There was also much discussion on whether the IPCC 'may facilitate' or 'may coordinate' this process in the scientific community.", 
+    "In the end, the adopted proposal states that the IPCC 'may catalyze' such work."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12295e.html", 
+  "enb_long_title": "IPCC-25", 
+  "type": "ipcc", 
+  "id": "enb12295e_41", 
+  "enb_end_date": "28-Apr-06"
+}

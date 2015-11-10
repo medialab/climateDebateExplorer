@@ -1,0 +1,41 @@
+{
+  "countries": [
+    "Mauritius", 
+    "India", 
+    "France", 
+    "United Kingdom", 
+    "Morocco", 
+    "Germany", 
+    "Switzerland", 
+    "Thailand", 
+    "Spain"
+  ], 
+  "topics": [
+    "IPCC Governance"
+  ], 
+  "section_title": "AR4:", 
+  "enb_start_date": "02-Apr-07", 
+  "enb_short_title": "IPCC WGII", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "The IPCC decided to continue preparing comprehensive assessment reports at IPCC-18 (24-29 September 2001, London, UK).", 
+    "Subsequent meetings discussed the timing and other details of the report, with participants agreeing to late 2007 as the completion date for the AR4.", 
+    "The overall outline of the working groups \u0092 contributions to the AR4 was accepted at IPCC-21 (19-21 February 2003, Paris, France).", 
+    "That same year, the scope and outline of AR4 were developed during two scoping meetings (April, Marrakesh, Morocco, and September, Potsdam, Germany), and the author teams were assembled.", 
+    "Another scoping meeting was held in 2004 in Geneva, Switzerland, on the AR4 Synthesis Report (SYR). IPCC-22 (9-11 November 2004, New Delhi, India) decided the SYR outline of topics to be addressed.", 
+    "At its 35th session, the IPCC Bureau agreed on the composition of the Core Writing Team and Review Editors for the SYR, and the list was presented to the Panel at IPCC-25 (26-28 April 2006, Port Louis, Mauritius).", 
+    "The AR4 is structured in three parts, one for each working group.", 
+    "The working groups \u0092 contribution comprises the underlying assessment report, a Technical Summary, Executive Summary, and a Summary for Policymakers, which undergoes a thorough review process.", 
+    "The review process generally takes place in three stages: a first review by experts, a second review by experts and governments, and a third review by governments.", 
+    "In addition to the three working groups \u0092 contributions, the AR4 also comprises a Synthesis Report, which, like the SPMs, will be approved line-by-line by the IPCC.", 
+    "More than 2500 expert reviewers, 800 authors, 450 lead authors, and 130 countries have participated in the elaboration of the AR4. WGI met in from 29 January to 1 February 2007 , in Paris, France, and approved its contribution to the AR4, including the SPM, the Technical Summary and underlying reports.", 
+    "WGIII will meet in Bangkok, Thailand, from 30 April to 3 May 2007 to approve its contribution the AR4.", 
+    "The final AR4 is scheduled to be accepted at IPCC-27 in November 2007, in Valencia, Spain."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12320e.html", 
+  "enb_long_title": "Eighth session of the IPCC Working Group II", 
+  "type": "ipcc", 
+  "id": "enb12320e_2", 
+  "enb_end_date": "05-Apr-07"
+}

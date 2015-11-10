@@ -1,0 +1,33 @@
+{
+   "actors": [],
+   "countries": [
+      "Canada",
+      "Australia",
+      "India",
+      "United Kingdom",
+      "Maldives",
+      "Germany",
+      "Mali",
+      "Switzerland",
+      "China",
+      "Norway"
+   ],
+   "enb_end_date": "09-Jun-12",
+   "enb_long_title": "Thirty-fifth Session of the Intergovernmental Panel on Climate Change (IPCC)",
+   "enb_short_title": "IPCC-35",
+   "enb_start_date": "06-Jun-12",
+   "enb_url": "http://www.iisd.ca/vol12/enb12547e.html",
+   "id": "enb12547e_37",
+   "section_title": "ELECTRONIC VERSIONS OF IPCC REPORTS",
+   "sentences": [
+      "In the plenary on Friday, WG II Co-Chair Field reported on a proposal for making the electronic version of the AR5 the document of record (IPCC-XXXV/Doc.16), highlighting the advantages of the officially approved or accepted products being archival electronic documents instead of printed documents.",
+      "Australia, Canada, Norway and others supported the proposal, with Canada stressing the importance of printed and electronic versions containing identical versions of the text; links to material approved by the Panel; a locked version; and the option to audit the document.",
+      "Switzerland, China, Germany, India, UK, the Maldives and others expressed concern about longevity, security, management procedures, the inclusion of errata, and ease of access and operation, particularly in developing countries.",
+      "Mali stressed the importance of capacity building in this regard.",
+      "Switzerland and WGI Co-Chair Stocker, supported by others, suggested applying this approach to AR5 on a transitional basis, starting with two identical documents, printed and electronic.",
+      "Delegates agreed to forward this matter to the Executive Committee, and to have it report back to the Panel."
+   ],
+   "subtype": "",
+   "topics": [],
+   "type": "ipcc"
+}

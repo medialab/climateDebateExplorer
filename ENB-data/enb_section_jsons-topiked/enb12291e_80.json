@@ -1,0 +1,30 @@
+{
+  "countries": [
+    "China", 
+    "Russia", 
+    "Bulgaria"
+  ], 
+  "topics": [
+    "Flexibility Mechanims"
+  ], 
+  "section_title": "JOINT IMPLEMENTATION", 
+  "enb_start_date": "28-Nov-05", 
+  "enb_short_title": "UNFCCC COP 11 and COP/MOP 1", 
+  "subtype": "", 
+  "actors": [
+    "European Union", 
+    "Group of 77", 
+    "Alliance of Small Island States"
+  ], 
+  "sentences": [
+    "The agenda item on implementation of Article 6 of the Kyoto Protocol (joint implementation) was addressed by the COP/MOP plenary on 30 November, in two contact group meetings and several informal consultations chaired by Daniela Stoycheva (Bulgaria).", 
+    "The COP/MOP decision was adopted on 9 December. Discussions revealed the desire of Annex I countries to quickly operationalize second-track JI, taking advantage of CDM experiences, while the G-77/China emphasized differences between JI and CDM.", 
+    "Highlighting the spirit of the Marrakesh Accords, the EU, Russia and others proposed that JI projects should be able to use CDM\u0092s designated operational entities, project design document and methodologies.", 
+    "The G-77/China insisted that these are not applicable given the differences between the two mechanisms and that the JISC should develop its own accreditation procedures for independent entities and adopt distinct baseline and monitoring methodologies. The COP/MOP elected 10 members and 10 alternates for the Joint Implementation Supervisory Committee, including three from countries with economies in transition (EITs), three from other Annex I Parties, three from non-Annex I Parties and one from SIDS (FCCC/KP/CMP/2005/L.1 and Add.1)."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12291e.html", 
+  "enb_long_title": "Eleventh session of the Conference of the Parties to the Climate Change Convention and first meeting of the Parties to the Kyoto Protocol", 
+  "type": "COP", 
+  "id": "enb12291e_80", 
+  "enb_end_date": "09-Dec-05"
+}

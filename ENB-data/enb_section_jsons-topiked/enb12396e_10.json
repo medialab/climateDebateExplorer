@@ -1,0 +1,36 @@
+{
+  "countries": [
+    "United Kingdom", 
+    "Denmark", 
+    "Sweden", 
+    "China", 
+    "Cuba"
+  ], 
+  "topics": [
+    "Reasons for Concern", 
+    "Anthropogenic Interference with Climate System", 
+    "Vulnerabilities and Impacts"
+  ], 
+  "section_title": "GROUP I - CLIMATE-RELATED HAZARDS", 
+  "enb_start_date": "10-Mar-09", 
+  "enb_short_title": "Workshop", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "This group was co-facilitated by Leon Charles, Charles and Associates, Inc., and Glenn Dolcemascolo, UN/ISDR.", 
+    "Participants decided to first identify the most common hazards that require risk assessments, including hurricanes, landslides, sea-level rise, temperature rise, forest and rural fires, and droughts.", 
+    "Cuba, WMO, Sweden, China, the UK, Denmark and Timor Leste outlined tools and methodologies that were useful for implementing DRR and climate change policies.", 
+    "These included: planning for civilian evacuation; mapping past disasters and forecasting future ones; elaborating adaptation plans that take into account different sectors; downscaling scenario analyses for different levels of risks; developing early warning systems; building partnerships among stakeholders; promoting national integration by elaborating coordinated policy frameworks; motivating developers to carry out risk assessments; raising public awareness to inform decision makers and citizens; elaborating and providing web manuals on what action each individual can take to prepare for hazards; incorporating DRR and climate change issues into formal education; and elaborating meteorological maps for different hazards and including such information in development plans.", 
+    "Cuba said the regional hurricane warning systems, which are linked to national systems in the Caribbean and Central America, have helped reduce the loss of life across in the region.", 
+    "Many participants pointed out that indices, models and protocols need to be fully-integrated into national development policies.", 
+    "Other participants highlighted the importance of a legal framework to allow implementation of DRR and climate change measures.", 
+    "Many underscored constraints to developing these methodologies and practices, such as the need to include information about costs on socioeconomic data related to vulnerability, rather than hazards, and develop enforceable legislation for DRR and climate change actions.", 
+    "Participants also highlighted successful tools and practices, including national simulation exercises and multi-stakeholder approaches.", 
+    "On identifying opportunities for replication of successful examples and potential actions to address gaps and challenges, participants highlighted the importance of, inter alia : elaborating legislation that incorporates climate change issues, such as adaptation and DRR; inserting risk-related capacity in national communications under the UNFCCC; establishing national committees to deal with climate change and DRR; planning for hazard preparedness and prevention, including mapping and support for local-level management; establishing post-disaster strategies; establishing indicators and a feedback mechanism to enhance coordination across national and local levels; identifying civil defense needs to cope with hazards; and developing, regulating and enforcing building codes that take into account climate change aspects."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12396e.html", 
+  "enb_long_title": "Workshop on Integrating Practices, Tools and Systems for Climate Risk Assessment and Management and Disaster Risk Reduction Strategies into National Policies and Programmes", 
+  "type": "special workshop", 
+  "id": "enb12396e_10", 
+  "enb_end_date": "12-Mar-09"
+}

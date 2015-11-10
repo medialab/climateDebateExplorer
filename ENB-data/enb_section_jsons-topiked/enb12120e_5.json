@@ -1,0 +1,31 @@
+{
+  "countries": [
+    "Italy", 
+    "France", 
+    "United Kingdom", 
+    "Sweden", 
+    "Germany", 
+    "Ireland", 
+    "Japan", 
+    "Haiti", 
+    "Spain", 
+    "Bulgaria"
+  ], 
+  "topics": [], 
+  "section_title": "Protocol ratification:", 
+  "enb_start_date": "03-Nov-99", 
+  "enb_short_title": "COP-5", 
+  "subtype": "", 
+  "actors": [
+    "European Union"
+  ], 
+  "sentences": [
+    "Numerous Parties supported the Protocol's entry into force by Rio+10, 2002, including, inter alia: BULGARIA, CARICOM, the EU, FRANCE, GERMANY, HAITI, IRELAND, ITALY, JAPAN, SPAIN, SWEDEN, and the UK.", 
+    "The EU said more ambitious emissions reduction commitments than those agreed to at Kyoto were needed."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12120e.html", 
+  "enb_long_title": "Fifth Conference of the Parties to the UN Framework Convention on Climate Change", 
+  "type": "", 
+  "id": "enb12120e_5", 
+  "enb_end_date": "03-Nov-99"
+}

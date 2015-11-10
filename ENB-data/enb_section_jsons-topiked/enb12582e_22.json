@@ -1,0 +1,42 @@
+{
+  "countries": [
+    "Brazil", 
+    "Canada", 
+    "Saudi Arabia", 
+    "Australia", 
+    "India", 
+    "United Kingdom", 
+    "Germany", 
+    "New Zealand", 
+    "Norway"
+  ], 
+  "topics": [
+    "IPCC Governance", 
+    "UNFCCC and Kyoto Protocol Functioning"
+  ], 
+  "section_title": "REDUCING THE CARBON FOOTPRINT OF IPCC ACTIVITIES", 
+  "enb_start_date": "14-Oct-13", 
+  "enb_short_title": "IPCC37", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "Participants addressed this matter on Monday afternoon.", 
+    "IPCC Secretary Christ introduced the agenda item (IPCC-XXXVII/Doc.10), stating that the Secretariat has studied reducing the IPCC's carbon and environmental footprints, and examining the choice of meeting venues and travel distances.", 
+    "She stressed that these considerations must be balanced with other needs, including the facilitation of outreach and awareness raising.", 
+    "She raised the possibility of carbon offsetting and noted the success of the IPCC's use of electronic documents at recent meetings.", 
+    "New Zealand emphasized the need to hold meetings in different venues worldwide and stressed that Bureau members should have input on where meetings are held.", 
+    "Norway pointed out the value of selecting 'green hotels' and suggested that green information about hotels should be provided to participants before meetings.", 
+    "Australia and Saudi Arabia urged a balanced approach in selecting venues.", 
+    "The UK stressed that electronic communications should be encouraged and that genuine carbon offsetting should be used.", 
+    "Brazil recommended that the IPCC and others offset emissions by purchasing credits under the UNFCCC's Clean Development Mechanism.", 
+    "Canada highlighted the value of holding non-plenary meetings electronically and the importance of measuring the impacts of awareness raising and capacity building.", 
+    "Germany said information on the costs of offsetting is needed, and India stressed that offsetting must be balanced with other priorities.", 
+    "Norway urged the application of the polluter pays principle, noting the IPCC should not pay for offsetting the carbon emitted by developed country participants.", 
+    "IPCC Chair Pachauri said the Secretariat would investigate these issues and provide data and options in due course."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12582e.html", 
+  "enb_long_title": "Thirty-seventh session of the Intergovernmental Panel on Climate Change (IPCC-37)", 
+  "type": "ipcc", 
+  "id": "enb12582e_22", 
+  "enb_end_date": "17-Oct-13"
+}

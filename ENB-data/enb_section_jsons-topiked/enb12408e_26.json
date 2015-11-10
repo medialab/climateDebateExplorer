@@ -1,0 +1,42 @@
+{
+  "countries": [
+    "Brazil", 
+    "United Kingdom", 
+    "Saudi Arabia", 
+    "Netherlands", 
+    "Sweden", 
+    "United States", 
+    "Austria", 
+    "China", 
+    "Mali", 
+    "Japan", 
+    "New Zealand", 
+    "Germany", 
+    "Kazakhstan"
+  ], 
+  "topics": [
+    "Reasons for Concern", 
+    "IPCC Governance"
+  ], 
+  "section_title": "COMMENTS FROM GOVERNMENTS:", 
+  "enb_start_date": "21-Apr-09", 
+  "enb_short_title": "IPCC-30", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "IPCC Secretary Christ presented Comments from Governments and Organizations on the Scoping for the AR5 ( IPCC-XXX/INF.7 ).", 
+    "Noting that some aspects of the climate are changing faster than foreseen in the AR4 , such as those leading to the rapid reduction in Arctic sea ice, the UK explained its proposal for an update report on current climate trends and emerging science, to be prepared within the next 18-24 months.", 
+    "He also noted the UK s proposal for a separate report on climate change impacts on marine ecosystems, including ocean acidification.", 
+    "The US also expressed support for an assessment of ocean ecosystems.", 
+    "Expressing concern about work overloading, Mali, Netherlands, New Zealand, Saudi Arabia, China, Brazil and Austria opposed the special report on climate trends and emerging science.", 
+    "Sweden, the US, Kazakhstan and Germany supported it, and suggested identifying key issues and areas.", 
+    "The Panel agreed to include these proposals for consideration at the AR5 scoping meeting.", 
+    "Chair Pachauri also invited Japan to host and finance an expert meeting on ocean acidification and marine ecosystems.", 
+    "Japan said he would take the proposal back home and respond in due course."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12408e.html", 
+  "enb_long_title": "Thirtieth Session of the IPCC", 
+  "type": "ipcc", 
+  "id": "enb12408e_26", 
+  "enb_end_date": "23-Apr-09"
+}

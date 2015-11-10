@@ -1,0 +1,44 @@
+{
+  "countries": [
+    "Saudi Arabia", 
+    "Uruguay", 
+    "Finland", 
+    "India", 
+    "Sweden", 
+    "United Kingdom", 
+    "Austria", 
+    "Germany", 
+    "China"
+  ], 
+  "topics": [
+    "Flexibility Mechanims", 
+    "Technology Transfer"
+  ], 
+  "section_title": "WORKSHOP ON MITIGATION: POWER GENERATION", 
+  "enb_start_date": "16-May-07", 
+  "enb_short_title": "SB 26", 
+  "subtype": "", 
+  "actors": [
+    "European Union"
+  ], 
+  "sentences": [
+    "This in-session workshop on mitigation took place on Tuesday afternoon, and focused on power generation , including clean fossil fuels and renewable energy.", 
+    "Jean-Arnold Vinois, European Commission, discussed the EU's target of a 20% market share for renewables by 2020, as well as work on carbon capture and storage (CCS).", 
+    "Zhang Hongwei, China, indicated that per capita electricity use in China remains low, and outlined China's national policies and measures, including hydro, wind, thermal and nuclear power development.", 
+    "Matthew Webb, UK, and Li Gao, China, presented on the new zero emissions coal initiative, which includes the construction and operation of a CCS demonstration project in China between 2010-2014.", 
+    "Kai Sipil\u00e4, Finland, presented plans to increase the proportion of biofuel by as much as 30% in future blended fuels.", 
+    "Bart Stoffer, US, presented on investments in low and zero emissions technology.", 
+    "Mariana Kasprzyk, Uruguay, presented on national experiences with electricity generation from biogas released from landfills, emphasizing co-benefits with the waste sector.", 
+    "Bryan Hannegan, US, identified various technological challenges, including increasing grid efficiency and sending the right price signals to consumers.", 
+    "Christoph Erdmenger, Germany, demonstrated how his country will reduce its emissions by moving increasingly from coal to gas and renewables.", 
+    "Klaus Radunsky, Austria, presented a case study of a biomass power plant in Vienna.", 
+    "Bengt Johansson, Sweden, reflected on m easures to decrease fossil fuel dependency for heat and electricity generation in Sweden, noting the impact of a carbon tax introduced in 1991..", 
+    "In the ensuing discussion, INDIA stressed the need for technology transfer, and said all energy sources should be considered, including advanced fossil fuel technologies and nuclear.", 
+    "SAUDI ARABIA said that technologies employed should be cost-effective, efficient, reliable, socially acceptable, and based on a suite of environmental criteria, including biodiversity and noise pollution, rather than on emissions alone."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12330e.html", 
+  "enb_long_title": "Twenty-sixth sessions of the Subsidiary Bodies (SB 26) of the United Nations Framework Convention on Climate Change (UNFCCC)", 
+  "type": "SPECIAL WORKSHOP", 
+  "id": "enb12330e_10", 
+  "enb_end_date": "16-May-07"
+}

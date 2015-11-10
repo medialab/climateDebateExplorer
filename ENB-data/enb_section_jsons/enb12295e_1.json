@@ -1,0 +1,27 @@
+{
+   "actors": [],
+   "countries": [
+      "Switzerland"
+   ],
+   "enb_end_date": "28-Apr-06",
+   "enb_long_title": "IPCC-25",
+   "enb_short_title": "IPCC-25",
+   "enb_start_date": "26-Apr-06",
+   "enb_url": "http://www.iisd.ca/vol12/enb12295e.html",
+   "id": "enb12295e_1",
+   "section_title": "A BRIEF HISTORY OF THE IPCC",
+   "sentences": [
+      "The IPCC was established in 1988 by the World Meteorological Organization (WMO) and the United Nations Environment Programme (UNEP).",
+      "The purpose of the IPCC is to assess the scientific, technical and socioeconomic information relevant to understanding the risks associated with human-induced climate change.",
+      "The IPCC does not undertake new research, nor does it monitor climate- related data, but bases its assessments on published and peer- reviewed scientific and technical literature.",
+      "Its Secretariat is located in Geneva, Switzerland, and is staffed by the WMO and UNEP. Since its inception, the IPCC has prepared a series of comprehensive assessments, special reports and technical papers, which provide scientific information on climate change to the international community, including policy makers and the public.",
+      "This information has played an important role in negotiations under the United Nations Framework Convention on Climate Change (UNFCCC). The IPCC currently has three working groups: Working Group I addresses the scientific aspects of the climate system and climate change; Working Group II addresses the vulnerability of socioeconomic and natural systems to climate change, negative and positive consequences of climate change, and adaptation options; and Working Group III addresses options for limiting greenhouse gas emissions and otherwise mitigating climate change. The IPCC also has a Task Force on National Greenhouse Gas Inventories (TFI).",
+      "The TFI oversees the IPCC National Greenhouse Gas Inventories Programme (NGGIP), which aims to develop and refine an internationally-agreed methodology and software for the calculation and reporting of national greenhouse gas emissions and removals, and to encourage the use of this methodology by countries participating in the IPCC and by UNFCCC signatories.",
+      "The IPCC Bureau, composed of 30 members elected by the Panel, assists the IPCC Chair in planning, coordinating and monitoring progress in the work of the IPCC."
+   ],
+   "subtype": "history",
+   "topics": [
+      "IPCC Governance"
+   ],
+   "type": "ipcc"
+}

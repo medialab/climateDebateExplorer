@@ -1,0 +1,25 @@
+{
+   "actors": [],
+   "countries": [
+      "Belgium"
+   ],
+   "enb_end_date": "17-Nov-07",
+   "enb_long_title": "IPCC-27",
+   "enb_short_title": "IPCC-27",
+   "enb_start_date": "12-Nov-07",
+   "enb_url": "http://www.iisd.ca/vol12/enb12342e.html",
+   "id": "enb12342e_13",
+   "section_title": "LONGER REPORT:",
+   "sentences": [
+      "During the discussions, Belgium enquired about consistency in the reference to mixture of greenhouse gases when defining CO 2 eq emissions.",
+      "Upon clarification by an Author that a uniform definition was not possible, delegates agreed to insert a footnote explaining the mixture composition.",
+      "Other parts of the text were approved with minor editorial changes.",
+      "Final SYR SPM Text : The final text indicates that: global greenhouse gas emissions due to human activities have grown since pre-industrial times, with an increase of 70% between 1970 and 2004; CO 2 is the most important anthropogenic greenhouse gas; in 2005, atmospheric concentrations of CO 2 and CH 4 exceed by far the natural range over the last 650,000 years ; the net effect of human activities since 1750 has been one of warming; the observed temperature increase since the mid-20th century is very likely due to the observed increase in anthropogenic greenhouse gas concentrations; during the past 50 years, the sum of solar and volcanic forcings would likely have produced cooling; apart from temperature, discernible human influence extends to other aspects of climate, including sea level rise, changes in wind patterns, increased temperatures of extreme hot nights, cold nights and cold days, and heat waves, droughts and heavy precipitation events; anthropogenic warming has likely had a discernible influence on observed changes in many physical and biological systems; and complete attribution of observed natural system responses to warming is limited by short timescales of impact studies.",
+      "The section also includes a figure showing global anthropogenic greenhouse gas emissions (Figure SPM 3), and another showing observed and simulated temperature changes at the global and continental scales (Figure SPM 4). TOPIC 3 -"
+   ],
+   "subtype": "",
+   "topics": [
+      "Anthropogenic Interference with Climate System"
+   ],
+   "type": "ipcc"
+}

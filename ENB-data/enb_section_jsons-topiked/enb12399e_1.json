@@ -1,0 +1,54 @@
+{
+  "countries": [
+    "Brazil", 
+    "Pakistan", 
+    "Saudi Arabia", 
+    "Australia", 
+    "Bangladesh", 
+    "Canada", 
+    "South Africa", 
+    "Philippines", 
+    "India", 
+    "United States", 
+    "China", 
+    "Uganda", 
+    "Ghana", 
+    "Tanzania", 
+    "Barbados"
+  ], 
+  "topics": [
+    "Financial Mechanisms and Funds", 
+    "Adaptation", 
+    "Technology Transfer"
+  ], 
+  "section_title": "TECHNOLOGY AND FINANCE:", 
+  "enb_start_date": "31-Mar-09", 
+  "enb_short_title": "AWGs", 
+  "subtype": "", 
+  "actors": [
+    "European Union", 
+    "Group of 77", 
+    "Alliance of Small Island States"
+  ], 
+  "sentences": [
+    "Several developing countries underscored finance and technology as make or break components of the deal in Copenhagen.", 
+    "The Philippines, for the G-77/CHINA, recalled Convention Article 4.7, which makes developing countries commitments conditional to developed country assistance.", 
+    "INDIA noted the lack of metrics on what constitute incremental costs.", 
+    "SAUDI ARABIA stressed that South-South financing is against the Convention s principles.", 
+    "Barbados, for AOSIS, called for significant public funding and asked developed countries how much money they would be putting on the table in Copenhagen.", 
+    "The US recognized the need for new and additional finance, underscored the need to channel private sector direct investment, and noted that a single financial structure does not satisfy all needs.", 
+    "The EU suggested avoiding show me the money vs. show me the actions arguments, and supported low carbon development strategies. BANGLADESH called for region-specific financing mechanisms and capacity building.", 
+    "SOUTH AFRICA emphasized that climate change financing should not be merely a reshaping of ODA, and PAKISTAN stressed that market mechanisms alone cannot fill the financing gap.", 
+    "UGANDA urged climate change financing commitments on a scale similar to current economic stimulus packages.", 
+    "BRAZIL supported assessed contributions and auctioning of Assigned Amount Units.", 
+    "TANZANIA called for compliance mechanisms for finance.", 
+    "On technology, CANADA and AUSTRALIA highlighted the EGGT s advance reports.", 
+    "Noting that discussions on mechanisms and institutional arrangements should not distract from what parties want to accomplish, CHINA supported a technology roadmap, including identifying areas for technology financing, and urged a strong agreement that leads to meaningful technology transfer.", 
+    "Ghana, for the G-77/CHINA, underscored the role of private sector financing of mitigation technologies and public financing of adaptation technologies."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12399e.html", 
+  "enb_long_title": "Fifth session of the Ad Hoc Working Group on Long-term Cooperative Action under the UN Framework Convention on Climate Change (AWG-LCA 5) and Seventh session of the Ad Hoc Working Group on Further Commitments for Annex I Parties under the Kyoto Protocol (AWG-KP 7)", 
+  "type": "working group", 
+  "id": "enb12399e_1", 
+  "enb_end_date": "31-Mar-09"
+}

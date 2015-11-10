@@ -1,0 +1,40 @@
+{
+  "countries": [
+    "Canada", 
+    "United Kingdom", 
+    "Saudi Arabia", 
+    "Australia", 
+    "Mexico", 
+    "Saint Lucia", 
+    "United States", 
+    "Slovenia", 
+    "Germany", 
+    "Chile", 
+    "Russian Federation", 
+    "New Zealand", 
+    "Fiji", 
+    "Tanzania", 
+    "Spain"
+  ], 
+  "topics": [
+    "Anthropogenic Interference with Climate System"
+  ], 
+  "section_title": "B) OBSERVED CHANGES IN THE CLIMATE SYSTEM:", 
+  "enb_start_date": "23-Sep-13", 
+  "enb_short_title": "IPCC36", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "This section was addressed in plenary from Monday to Thursday, with some issues, such as the global temperature increase, also taken up in informal consultations.", 
+    "On the headline statement, which states that warming of the climate system is unequivocal and, since 1950, many of the observed changes are unprecedented over decades to millennia, Saudi Arabia said the statement was 'alarmist', urged qualifying the terms 'unequivocal' and 'unprecedented', requested using the year 1850 instead of 1950, and called for a reference to slowed warming over the past 15 years.", 
+    "Germany, Australia, Chile, Spain, Fiji, New Zealand, the US, Saint Lucia, Tanzania, Mexico, Slovenia, the UK and others supported the statement as presented, with Germany pointing out that AR4 concluded almost the same.", 
+    "Canada pointed out that factors other than warming will be the emphasis in the future.", 
+    "The Russian Federation proposed 'changing', rather than warming of the climate system.", 
+    "After some discussion, Saudi Arabia agreed to accept the statement as presented."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12581e.html", 
+  "enb_long_title": "Twelfth Session of Working Group I (WGI) of the Intergovernmental Panel on Climate Change (IPCC) and Thirty-sixth Session of the IPCC", 
+  "type": "ipcc", 
+  "id": "enb12581e_23", 
+  "enb_end_date": "26-Sep-13"
+}

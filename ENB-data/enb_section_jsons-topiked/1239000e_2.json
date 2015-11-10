@@ -1,0 +1,27 @@
+{
+  "countries": [
+    "Germany"
+  ], 
+  "topics": [
+    "Pre-Kyoto", 
+    "UNFCCC and Kyoto Protocol Functioning"
+  ], 
+  "section_title": "COP-1", 
+  "enb_start_date": "09-Dec-96", 
+  "enb_short_title": "AGBM 5, SBI 4, SBSTA 4, AG13 3", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "The first meeting of the Conference of the Parties to the UN Framework Convention on Climate Change (COP-1) took place in Berlin from 28 March - 7 April 1995.", 
+    "Delegates reached agreement on what many believed to be the central issue before COP-1 - adequacy of commitments.", 
+    "The result was a mandate to launch a process toward appropriate action for the period beyond the year 2000, including strengthening of the commitments of developed countries.", 
+    "Delegates also reached agreement on a number of other important issues, including the establishment of a pilot phase for implementation of joint projects, the location of the Permanent Secretariat in Bonn, Germany, the budget for the Secretariat, financial procedures and the establishment of the subsidiary bodies.", 
+    "Delegates, however, did not reach consensus on the rules of procedure.", 
+    "This critical issue, including a decision on the voting rules and the composition of the Bureau, was deferred until COP-2."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/1239000e.html", 
+  "enb_long_title": "Fifth Session of the Ad Hoc Group on the Berlin Mandate Fourth Subsidiary Body for Scientific and Technological Advice (SBSTA) and the Subsidiary Body for Implementation (SBI)", 
+  "type": "COP", 
+  "id": "1239000e_2", 
+  "enb_end_date": "18-Dec-96"
+}

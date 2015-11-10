@@ -1,0 +1,37 @@
+{
+  "countries": [
+    "Switzerland"
+  ], 
+  "topics": [
+    "IPCC Governance", 
+    "IPCC Governance", 
+    "UNFCCC and Kyoto Protocol Functioning", 
+    "Vulnerabilities and Impacts", 
+    "National Communications & Inventories"
+  ], 
+  "section_title": "A BRIEF HISTORY OF THE IPCC", 
+  "enb_start_date": "21-Apr-09", 
+  "enb_short_title": "IPCC-30", 
+  "subtype": "history", 
+  "actors": [], 
+  "sentences": [
+    "The IPCC was established in 1988 by the World Meteorological Organization (WMO) and the UN Environment Programme (UNEP).", 
+    "Its purpose is to assess scientific, technical and socioeconomic information relevant to understanding the risks associated with human-induced climate change, its potential impacts, and options for adaptation and mitigation.", 
+    "The IPCC does not undertake new research, nor does it monitor climate-related data, but it conducts assessments on the basis of published and peer-reviewed scientific and technical literature.", 
+    "The IPCC has three Working Groups: Working Group I addresses the scientific aspects of the climate system and climate change; Working Group II addresses the vulnerability of socioeconomic and natural systems to climate change, impacts of climate change, and adaptation options; and Working Group III addresses options for limiting greenhouse gas emissions and mitigating climate change.", 
+    "Each Working Group has two Co-Chairs and six Vice-Chairs, except Working Group III, which for the Fifth Assessment cycle has three Co-Chairs and five Vice-Chairs.", 
+    "The Co-Chairs guide the Working Groups to fulfill the mandates given to them by the Panel, and are assisted in this task by Technical Support Units.", 
+    "The IPCC also has a Task Force on National Greenhouse Gas Inventories.", 
+    "The Task Force oversees the IPCC National Greenhouse Gas Inventories Programme, which aims to develop and refine an internationally-agreed methodology and software for the calculation and reporting of national greenhouse gas emissions and removals, and to encourage the use of this methodology by countries participating in the IPCC and by parties to the UN Framework Convention on Climate Change (UNFCCC).", 
+    "The IPCC Bureau is elected by the Panel for the duration of the preparation of an IPCC assessment report (normally 5-6 years).", 
+    "Its role is to assist the IPCC Chair in planning, coordinating and monitoring the work of the IPCC.", 
+    "The Bureau is composed of climate change experts representing all regions.", 
+    "Currently, the Bureau comprises 30 members: the Chair of the IPCC, the Co-Chairs of the three Working Groups and of the Bureau of the Task Force on National Greenhouse Gas Inventories (TFB), the IPCC Vice-Chairs, and the Vice-Chairs of the three Working Groups.", 
+    "The IPCC Secretariat is located in Geneva, Switzerland, and is hosted by the WMO."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12408e.html", 
+  "enb_long_title": "Thirtieth Session of the IPCC", 
+  "type": "ipcc", 
+  "id": "enb12408e_1", 
+  "enb_end_date": "23-Apr-09"
+}

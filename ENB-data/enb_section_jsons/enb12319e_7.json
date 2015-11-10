@@ -1,0 +1,29 @@
+{
+   "actors": [],
+   "countries": [
+      "Canada",
+      "South Africa",
+      "United Kingdom",
+      "China",
+      "Argentina",
+      "Norway"
+   ],
+   "enb_end_date": "01-Feb-07",
+   "enb_long_title": "Tenth Session of the IPCC Working Group I (WGI)",
+   "enb_short_title": "IPCC WGI",
+   "enb_start_date": "29-Jan-07",
+   "enb_url": "http://www.iisd.ca/vol12/enb12319e.html",
+   "id": "enb12319e_7",
+   "section_title": "INTRODUCTION:",
+   "sentences": [
+      "The introduction section in the SPM was discussed on Monday morning and early afternoon.",
+      "Discussion focused on the scope and extent of the introduction, and how to best express the relationship of the AR4 to the TAR, the level of progress, and the levels of confidence and uncertainty.",
+      "Participants agreed to language proposed by the UK, supported by Canada and Norway, to clarify that the Report concerns scientific progress since the TAR.",
+      "Citing the example of sea ice, Co-Chair Solomon suggested, and participants agreed, to textual changes to clarify that improvements in models were a result of increased understanding of processes and their simulation in models.",
+      "Other suggestions did not find universal approval to be included in the text, however.",
+      "The suggestions that were not ultimately incorporated included South Africa's suggestion for changes in the wording to indicate that new climate data derives from broader coverage; Argentina's proposal to note the lack of data from certain regions; and China's call for referencing outstanding uncertainties."
+   ],
+   "subtype": "",
+   "topics": [],
+   "type": "ipcc"
+}
