@@ -104,6 +104,7 @@ for directory,subdir,filenames in os.walk(ENB_DATA):
 
 
 with open(os.path.join(OUT_DATA,"sections_metadata.csv"),"a") as metadata_file:
+    section_metadata.sort(key=lambda x: x[0])
     for l in section_metadata:
         for field in l:
             try:
