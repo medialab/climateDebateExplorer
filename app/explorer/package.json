@@ -13,6 +13,9 @@
   "dependencies": {
     "baobab": "^2.1.0",
     "baobab-react": "^1.0.0",
+    "djax": "^1.2.0",
+    "lodash": "^3.10.1",
+    "papaparse": "^4.1.2",
     "react": "^0.14.2",
     "react-dom": "^0.14.2"
   },
