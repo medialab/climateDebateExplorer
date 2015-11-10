@@ -1,0 +1,31 @@
+{
+  "countries": [], 
+  "topics": [
+    "IPCC Governance", 
+    "Reasons for Concern", 
+    "IPCC Governance", 
+    "UNFCCC and Kyoto Protocol Functioning", 
+    "Vulnerabilities and Impacts", 
+    "National Communications & Inventories"
+  ], 
+  "section_title": "A BRIEF HISTORY OF THE IPCC", 
+  "enb_start_date": "09-Apr-01", 
+  "enb_short_title": "IPCC-17", 
+  "subtype": "history", 
+  "actors": [], 
+  "sentences": [
+    "The Intergovernmental Panel on Climate Change was initiated in 1988 by the World Meteorological Organization (WMO) and the United Nations Environment Programme (UNEP).", 
+    "The purpose of the IPCC is to assess the scientific, technical and socioeconomic information relevant to understanding the risks associated with human-induced climate change.", 
+    "The IPCC does not undertake new research, nor does it monitor climate-related data, but bases its assessments on published and peer reviewed scientific and technical literature.", 
+    "Its Secretariat is located in Geneva and is staffed by both WMO and UNEP. Since its inception, the IPCC has prepared a series of technical papers, special reports and comprehensive assessments, providing scientific information on climate change to the international community, including policy-makers and the general public.", 
+    "This information has played an important role in the negotiations under the United Nations Framework Convention on Climate Change (UNFCCC).", 
+    "The UNFCCC was adopted in 1992 and entered into force in 1994.", 
+    "It provides the overall policy framework for addressing climate change. The current structure of the IPCC includes three Working Groups and a Task Force. Working Group I addresses the scientific aspects of the climate system and climate change. Working Group II addresses the scientific, technical, environmental, economic and social aspects of the vulnerability (sensitivity and adaptability) to climate change, and the negative and positive consequences (impacts) for ecological systems, socio- economic sectors and human health, with an emphasis on regional sectoral and cross-sectoral issues. Working Group III assesses the scientific, technical, environmental, economic and social aspects of the mitigation of climate change, as well as the methodological aspects of crosscutting issues. The Task Force on National Greenhouse Gas Inventories manages the National Greenhouse Gas Inventories Programme. The current Bureau of the IPCC was established in 1997, and the new Bureau is expected to be formed at the IPCC meeting in March 2002.", 
+    "The Bureau has 30 members representing all five UN regions."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12165e.html", 
+  "enb_long_title": "Seventeenth session of the Intergovernmental Panel on Climate Change (IPCC)", 
+  "type": "ipcc", 
+  "id": "enb12165e_1", 
+  "enb_end_date": "09-Apr-01"
+}

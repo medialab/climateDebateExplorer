@@ -1,0 +1,39 @@
+{
+  "countries": [
+    "France", 
+    "United Kingdom", 
+    "Morocco", 
+    "Germany", 
+    "Belgium", 
+    "Thailand"
+  ], 
+  "topics": [
+    "IPCC Governance"
+  ], 
+  "section_title": "AR4:", 
+  "enb_start_date": "12-Nov-07", 
+  "enb_short_title": "IPCC-27", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "The IPCC decided to continue preparing comprehensive assessment reports at IPCC-18 (24-29 September 2001, London, UK).", 
+    "Subsequent meetings discussed the timing and other details of the next report, with participants agreeing to late 2007 as the completion date for the AR4.", 
+    "The overall outline of the working groups \u0092 contributions to the AR4 was accepted at IPCC-21 (19-21 February 2003, Paris, France).", 
+    "That same year, the scope and outline of AR4 were developed during two scoping meetings (April, Marrakesh, Morocco, and September, Potsdam, Germany), and the author teams were assembled.", 
+    "The AR4 is structured in three volumes, one for each working group.", 
+    "Each working group's contribution comprises the underlying assessment report, a Technical Summary, Executive Summary, and SPM, all of which undergo a thorough review process.", 
+    "The review process generally takes place in three stages: a first review by experts, a second review by experts and governments, and a third review by governments.", 
+    "In addition to the three working groups \u0092 contributions, the AR4 SYR SPM, like the SPMs of the working groups, is approved line-by-line by the IPCC.", 
+    "More than 2500 expert reviewers, 800 authors, 450 lead authors, and 130 governments have participated in the elaboration of the AR4.", 
+    "The tenth session of WGI met from 29 January to 1 February 2007 in Paris, France.", 
+    "The eighth session of WGII met from 2-6 April in Brussels, Belgium.", 
+    "The ninth session of WGIII was held from 30 April to 3 May in Bangkok, Thailand.", 
+    "All three working groups accepted their respective contributions to the AR4, including the SPMs, Technical Summaries and underlying reports.", 
+    "At its 26th session, held on 4 May 2007, in Bangkok, Thailand, the IPCC accepted the actions taken by the three working groups."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12341e.html", 
+  "enb_long_title": "IPCC-27", 
+  "type": "ipcc", 
+  "id": "enb12341e_2", 
+  "enb_end_date": "12-Nov-07"
+}

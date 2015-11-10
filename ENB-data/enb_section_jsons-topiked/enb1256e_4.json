@@ -1,0 +1,30 @@
+{
+  "countries": [
+    "Australia"
+  ], 
+  "topics": [
+    "Anthropogenic Interference with Climate System"
+  ], 
+  "section_title": "FIFTH INTERNATIONAL CARBON DIOXIDE CONFERENCE", 
+  "enb_start_date": "20-Oct-97", 
+  "enb_short_title": "7th Session SBSTA & SBI", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "This conference was held in Cairns, Australia from 8 - 12 September 1997.", 
+    "Over 200 delegates from 25 countries discussed the latest in research on the global carbon cycle.", 
+    "The program was organized around half-hour presentations of the most topical results with other papers presented in a series of poster sessions both during the day and into the evenings.", 
+    "The conference was organized into sessions that covered papers under the general topics of oceans, atmosphere and the terrestrial biosphere.", 
+    "The oceans sessions covered topics as diverse as iron fertilization experiments, the rate of CO2 uptake by the oceans, and modeling the oceanic carbon cycle.", 
+    "The atmosphere sessions covered a range of attempts to model atmospheric CO2 variations on a variety of temporal scales and topics such as the oxygen content of the atmosphere and the isotopic composition of atmospheric CO2.", 
+    "Papers on the terrestrial biosphere also focused heavily on attempts to model the terrestrial carbon cycle, and presented the latest results on the likelihood of a CO2 fertilization effect, and on the magnitude of current land-use changes. Much discussion in many sessions focused on the 'missing CO2 sink', and while there appears to be general agreement that the sink lies in the terrestrial biosphere, it became apparent that there is a long way to go before there is agreement on exactly where the sink is located.", 
+    "One camp still favors the high latitude forests as the sink, based on inverse modeling of the global distribution of isotopic anomalies in the atmospheric CO2.", 
+    "An emerging alternative is that the sink is actually located in the tropical forests, with evidence in support of this hypothesis coming from eddy covariance experiments in the Amazon Basin, and global physiological models of carbon uptake by the terrestrial biota.", 
+    "Further background to the meeting and its organization can be found in summary form at http://www.dar.csiro.au/pub/events/co2_conf/index.html"
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb1256e.html", 
+  "enb_long_title": "Seventh Subsidiary Body for Scientific and Technological Advice (SBSTA) and the Subsidiary Body for Implementation (SBI) Eighth Session of the Ad Hoc Group on the Berlin Mandate", 
+  "type": "", 
+  "id": "enb1256e_4", 
+  "enb_end_date": "20-Oct-97"
+}

@@ -1,0 +1,23 @@
+{
+  "countries": [
+    "Germany"
+  ], 
+  "topics": [], 
+  "section_title": "IMPLEMENTATION OF THE IPCC ERROR PROTOCOL", 
+  "enb_start_date": "05-Oct-15", 
+  "enb_short_title": "IPCC-42", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "On Tuesday evening, Acting IPCC Secretary Stewart summarized the document on this item (IPCC-XLII/Doc.4), saying that 16 error claims related to AR5 had been reported through the IPCC Error Protocol since IPCC-41.", 
+    "He noted that the document provides links to lists of errata for each WG report and the SYR that can be accessed online.", 
+    "He also said it provides additional processes and procedures for addressing errata corrected before publication, for reflecting post-publication errata in electronic publications, and for addressing errata related to translations.", 
+    "Germany called for amending the proposal for addressing translation errors to give final decisions on such errors to experts rather than to translators.", 
+    "The Panel agreed to this suggestion."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12645e.html", 
+  "enb_long_title": "42nd Session of the Intergovernmental Panel on Climate Change (IPCC-42)", 
+  "type": "IPCC", 
+  "id": "enb12645e_36", 
+  "enb_end_date": "08-Oct-15"
+}

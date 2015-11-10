@@ -1,0 +1,30 @@
+{
+  "countries": [
+    "Kuwait", 
+    "Saudi Arabia", 
+    "China", 
+    "Norway", 
+    "Japan"
+  ], 
+  "topics": [], 
+  "section_title": "BUNKER FUELS:", 
+  "enb_start_date": "08-Nov-06", 
+  "enb_short_title": "COP/MOP2", 
+  "subtype": "", 
+  "actors": [
+    "European Union"
+  ], 
+  "sentences": [
+    "The International Maritime Organization (IMO) reported on its work on emissions from international shipping.", 
+    "He informed participants of a new amendment to the London Protocol to allow carbon sequestration in seabed geological formations.", 
+    "KUWAIT, with SAUDI ARABIA and opposed by the EU, JAPAN, NORWAY and others, proposed removing this agenda item.", 
+    "CHINA said any decision should strictly follow Protocol Article 2.2 (Annex I targets and the Montreal Protocol) and only apply to Annex I parties.", 
+    "IMO proposed establishing a benchmark for maritime emissions.", 
+    "Chair Kumarsingh will consult informally."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12309e.html", 
+  "enb_long_title": "UN Climate Change Conference \u2013 Nairobi 2006", 
+  "type": "SBSTA", 
+  "id": "enb12309e_11", 
+  "enb_end_date": "08-Nov-06"
+}

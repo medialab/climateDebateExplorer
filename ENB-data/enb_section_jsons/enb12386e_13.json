@@ -1,0 +1,33 @@
+{
+   "actors": [
+      "European Union",
+      "Umbrella Group",
+      "African Group",
+      "Group of 77",
+      "Alliance of Small Island States"
+   ],
+   "countries": [
+      "Bahamas",
+      "China"
+   ],
+   "enb_end_date": "02-Dec-08",
+   "enb_long_title": "UN Climate Change Conference - Pozna\u0144",
+   "enb_short_title": "COP 14",
+   "enb_start_date": "02-Dec-08",
+   "enb_url": "http://www.iisd.ca/vol12/enb12386e.html",
+   "id": "enb12386e_13",
+   "section_title": "OPENING STATEMENTS:",
+   "sentences": [
+      "The G-77/CHINA said the Adaptation Fund must be fully operationalized with sufficient and predictable resources, and stressed the principle of direct access.",
+      "She welcomed work on implications of response measures and urged reinstating the CGE.",
+      "The EU highlighted progress on technology transfer under the SBI and SBSTA.",
+      "The UMBRELLA GROUP emphasized agenda items on national communications and guidance to the GEF.",
+      "The Bahamas, for AOSIS, called for enhancing a supporting framework for national communications, and a capacity building framework.",
+      "The AFRICAN GROUP urged greater predictability of financial resources.",
+      "The LDCs supported a faster process for implementation of NAPA projects and called for adequate and predictable funding for non-Annex I communications.",
+      "He said the GEF replenishment should be increased and LDCs should have access to the Adaptation Fund."
+   ],
+   "subtype": "",
+   "topics": [],
+   "type": "sbi"
+}

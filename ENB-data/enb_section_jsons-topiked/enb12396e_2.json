@@ -1,0 +1,36 @@
+{
+  "countries": [
+    "Germany", 
+    "Trinidad and Tobago", 
+    "Italy", 
+    "Spain", 
+    "Mexico"
+  ], 
+  "topics": [
+    "Vulnerabilities and Impacts"
+  ], 
+  "section_title": "WORKSHOPS UNDER THE NWP:", 
+  "enb_start_date": "10-Mar-09", 
+  "enb_short_title": "Workshop", 
+  "subtype": "groups", 
+  "actors": [], 
+  "sentences": [
+    "The UNFCCC Workshop on Adaptation Planning and Practices under the NWP was held from 10-12 September 2007, at the headquarters of the Food and Agriculture Organization of the UN (FAO) in Rome, Italy.", 
+    "The workshop focused on adaptation planning and practices, one of the nine areas of work under the NWP.", 
+    "The workshop identified action pledges from organizations to fill capacity gaps and address challenges in adaptation planning and practices.", 
+    "The workshop concluded with a number of recommendations for adaptation planning and practices, and action pledges from several organizations.", 
+    "The report of the workshop was forwarded to SBSTA 28, which was held from 2-13 June 2008 in Bonn, Germany.", 
+    "The UNFCCC Meeting on Methods and Tools and on Data and Observations under the NWP was held from 4-7 March 2008 in Mexico City, Mexico.", 
+    "The workshop concluded with recommendations relating to methods, tools, data and observations, including assisting in their use and application, advancing their dissemination and experiences with their use; and promoting their development and improvement.", 
+    "Recommendations also focused on promoting implementation and improvements, and improving capacity for the collection, management, use and exchange of data and observations.", 
+    "The report of the workshop was forwarded to SBSTA 28.", 
+    "The UNFCCC Meeting on Socioeconomic Information under the NWP was held from 10-12 March 2008, in Port of Spain, Trinidad and Tobago.", 
+    "The workshop generated a number of recommendations regarding: ways and means to improve the availability, accessibility and effectiveness of information on socioeconomic aspects of climate change; integrating socioeconomic information into impact and vulnerability assessments; and the application of socioeconomic information in the context of adaptation planning.", 
+    "The report of the workshop was forwarded to SBSTA 28."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12396e.html", 
+  "enb_long_title": "Workshop on Integrating Practices, Tools and Systems for Climate Risk Assessment and Management and Disaster Risk Reduction Strategies into National Policies and Programmes", 
+  "type": "special workshop", 
+  "id": "enb12396e_2", 
+  "enb_end_date": "12-Mar-09"
+}

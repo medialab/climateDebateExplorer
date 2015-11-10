@@ -1,0 +1,24 @@
+{
+  "countries": [
+    "Denmark", 
+    "Poland"
+  ], 
+  "topics": [], 
+  "section_title": "COP", 
+  "enb_start_date": "08-Dec-09", 
+  "enb_short_title": "COP 15", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "COP 14 President Maciej Nowicki (Poland) opened COP 15, stressing its critical role in addressing climate change.", 
+    "Parties elected Connie Hedegaard, Minister for the UN Climate Change Conference in Copenhagen 2009, Denmark, as COP 15 President. COP President Hedegaard stated that the political will to address climate change has never been stronger and said if we miss this chance, it may take years to get the next one.", 
+    "She emphasized the need for progress during the first week, highlighting that leaders are expecting to adopt a global agreement in 11 days.", 
+    "She called for a comprehensive agreement delivering on all building blocks and launching immediate action.", 
+    "Finally, she urged parties to mark this meeting in history and get it done."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12449e.html", 
+  "enb_long_title": "Copenhagen Climate Change Conference", 
+  "type": "cop", 
+  "id": "enb12449e_2", 
+  "enb_end_date": "08-Dec-09"
+}

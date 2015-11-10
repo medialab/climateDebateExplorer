@@ -1,0 +1,31 @@
+{
+   "actors": [],
+   "countries": [
+      "United States",
+      "Denmark",
+      "Austria",
+      "Germany",
+      "France"
+   ],
+   "enb_end_date": "28-Sep-05",
+   "enb_long_title": "8th Session of WG-III and IPCC-24",
+   "enb_short_title": "IPCC-24",
+   "enb_start_date": "22-Sep-05",
+   "enb_url": "http://www.iisd.ca/vol12/enb12278e.html",
+   "id": "enb12278e_12",
+   "section_title": "What are the characteristics of CCS?",
+   "sentences": [
+      "Delegates considered this section of the SPM on Thursday.",
+      "After initial discussions on whether to modify the title to specify that CCS is relevant to 'large,' 'anthropogenic,' or 'suitable' sources of CO2, delegates agreed to leave the title unchanged. Discussions on the text in this section first centered on what can be categorized as 'large point sources' and the potential for CO2 storage in geothermal sites and aquifers.",
+      "France noted that deep aquifers could be used for CO2 storage and other purposes concurrently.",
+      "Discussions then shifted to leakage from the transportation of CO2 and a proposal by Denmark to include specific reference to biomass.",
+      "The US, opposed by Germany and Austria, proposed deleting reference to leakage from the transport of CO2 as a factor in the net reduction of emissions through CCS, saying that its impact is minor.",
+      "Agreement was reached on text referring to 'any leakage from transport.",
+      "' Final Text: The final text notes that capture of CO2 can be applied to large point sources.",
+      "The CO2 would then be compressed and transported for storage in geological formations, the ocean, or mineral carbonates, or for use in industrial processes.",
+      "It also states that the net reduction of emissions from CCS depends on the fraction of CO2 captured, the increase in CO2 production arising from any additional energy required for CCS, any leakage from transport, and the fraction of CO2 retained in storage over the long term."
+   ],
+   "subtype": "",
+   "topics": [],
+   "type": ""
+}

@@ -1,0 +1,38 @@
+{
+  "countries": [
+    "Canada", 
+    "Brazil", 
+    "Saudi Arabia", 
+    "Australia", 
+    "United Kingdom", 
+    "Switzerland", 
+    "Austria", 
+    "Netherlands", 
+    "Germany", 
+    "Ireland", 
+    "Belgium"
+  ], 
+  "topics": [
+    "IPCC Governance", 
+    "Vulnerabilities and Impacts"
+  ], 
+  "section_title": "OTHER BUSINESS", 
+  "enb_start_date": "07-Apr-14", 
+  "enb_short_title": "IPCC-39", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "IPCC Deputy Secretary Leone drew attention to a letter from the Consultative Group on International Agricultural Research (IPCC-XXXIX/Doc.12) requesting an IPCC technical report compiling agriculture-related information from the three WG reports to be completed by June 2015 to support the UNFCCC negotiations.", 
+    "Based on preliminary discussions with participants and given the limited time of IPCC authors, IPCC Chair Pachauri suggested an expert meeting as an alternative and said the development of a special report on agriculture could also be considered.", 
+    "Noting that the SYR is still to be finalized and questioning the practical value of technical reports, the UK, supported by Ireland, Austria, Germany and others, said the proposal was premature and felt it should be discussed at a later stage, including possibly in a technical meeting.", 
+    "Belgium, Canada, Australia and the Netherlands suggested consulting with other relevant organizations, including the UNFCCC, FAO and UNEP, to further explore the issue, with Switzerland suggesting that a workshop be held.", 
+    "Brazil expressed concern over the signal such a report would send to UNFCCC negotiators, and said 'dozens of subjects' are of particular concern to negotiators, pointing out that the SPM is the best place to elaborate on such issues. IPCC Chair Pachauri proposed that the IPCC Secretariat consult with relevant organizations and return to IPCC-40 with a more comprehensive proposal.", 
+    "Calling for full consideration of the proposal, Saudi Arabia suggested establishing a process to address the issue between now and IPCC-40.", 
+    "IPCC Chair Pachauri assured participants that the IPCC would not undertake a 'half-hearted exercise' on the matter, and the plenary agreed to his approach as proposed."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12597e.html", 
+  "enb_long_title": "Twelfth Session of the Intergovernmental Panel on Climate Change (IPCC) Working Group III (WGIII-12) and Thirty-ninth Session of the Intergovernmental Panel on Climate Change (IPCC-39)", 
+  "type": "ipcc", 
+  "id": "enb12597e_54", 
+  "enb_end_date": "12-Apr-14"
+}

@@ -1,4 +1,4 @@
-var targetFile = "../ENB-data/metadata_overview/metadata.csv"
+var targetFile = "../app/data/sections_metadata.csv"
 
 var margin = {top: 20, right: 200, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
@@ -23,7 +23,7 @@ var yAxis = d3.svg.axis()
     .orient("left");
 
 var line = d3.svg.line()
-    .interpolate("basis")
+    .interpolate("cardinal")
     .x(function(d) { return x(d.year); })
     .y(function(d) { return y(d.volume); });
 
@@ -35,21 +35,6 @@ var svg = d3.select("body").append("svg")
 
 d3.csv(targetFile, function(error, data) {
   if (error) throw error;
-
-  // Get years
-  data.forEach(function(d, i) {
-    var two_digit_year = +d.enb_start_date.split('-')[2]
-      , year
-
-    if ( two_digit_year < 50 ) {
-      year = 2000 + two_digit_year
-    } else {
-      year = 1900 + two_digit_year
-    }
-
-    d.year = year
-
-  });
 
   // Actors as an array
   data.forEach(function(d){

@@ -1,0 +1,41 @@
+{
+  "countries": [
+    "Canada", 
+    "Saudi Arabia", 
+    "France", 
+    "United Kingdom", 
+    "Austria", 
+    "Germany", 
+    "Belgium", 
+    "New Zealand"
+  ], 
+  "topics": [
+    "Adaptation", 
+    "Vulnerabilities and Impacts"
+  ], 
+  "section_title": "Adaptation Experience", 
+  "enb_start_date": "10-Mar-14", 
+  "enb_short_title": "IPCC-38", 
+  "subtype": "", 
+  "actors": [
+    "European Union"
+  ], 
+  "sentences": [
+    "In the introductory sentence on people and societies adjusting and coping with climate variability and extremes throughout history, Saudi Arabia suggested changing 'coping with' to 'adapting to'.", 
+    "The UK said this would change the meaning and, with Austria, favored the original language.", 
+    "Germany, with Belgium and New Zealand, proposed deleting the sentence.", 
+    "Ultimately, participants agreed the sentence was introductory, approving it without changes.", 
+    "A sentence, explaining that the section focuses on adaptive human responses to observed and projected climate change impacts, was approved with minor textual revisions.", 
+    "On a sentence on most evaluations of adaptation restricted to impacts, vulnerability and adaptation planning, Canada queried the term 'evaluations'.", 
+    "A CLA proposed replacing it with 'assessments', which was agreed.", 
+    "The UK, supported by France, proposed referring to adaptation projects or programmes, but the CLAs recommended retaining the original broader formulation.", 
+    "On examples of adaptation across regions, for Europe, the EU requested, and participants agreed, to insert reference to 'environmental protection and land planning'.", 
+    "For Asia, the Republic of Korea proposed, and participants agreed to, stating that adaptation in Asia is also being facilitated through 'mainstreaming climate adaptation action into subnational development planning'.", 
+    "The rest of the regional examples were accepted with minor or no revisions."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12596e.html", 
+  "enb_long_title": "Tenth Session of the Intergovernmental Panel on Climate Change (IPCC) Working Group II (WGII-10) and Thirty-eighth Session of the IPCC (IPCC-38)", 
+  "type": "", 
+  "id": "enb12596e_19", 
+  "enb_end_date": "14-Mar-14"
+}

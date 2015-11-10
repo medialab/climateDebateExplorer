@@ -1,0 +1,25 @@
+{
+  "countries": [
+    "United States", 
+    "Brazil", 
+    "Norway", 
+    "Spain", 
+    "Tuvalu"
+  ], 
+  "topics": [], 
+  "section_title": "LULUCF COMMON REPORTING FORMAT (CRF)", 
+  "enb_start_date": "28-Nov-05", 
+  "enb_short_title": "UNFCCC COP 11 and COP/MOP 1", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "This issue was first addressed in SBSTA on 28 November, and in two contact groups co-chaired by Audun Rosland (Norway) and Newton Paciornik (Brazil).", 
+    "An informal drafting group, facilitated by Mar\u00eda Jos\u00e9 Sanz (Spain) was set up to address technical issues in the CRF tables.", 
+    "By 3 December, parties had agreed to the revisions on the CRF tables and to include in the decision a request for SBSTA to further consider inventory issues associated with biomass burning and natural disturbances as they relate to reporting under the Convention, as proposed by Tuvalu, and with reporting of carbon stock changes, as suggested by the US."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12291e.html", 
+  "enb_long_title": "Eleventh session of the Conference of the Parties to the Climate Change Convention and first meeting of the Parties to the Kyoto Protocol", 
+  "type": "", 
+  "id": "enb12291e_45", 
+  "enb_end_date": "09-Dec-05"
+}

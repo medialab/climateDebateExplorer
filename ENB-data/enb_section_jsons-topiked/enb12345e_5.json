@@ -1,0 +1,36 @@
+{
+  "countries": [
+    "Canada", 
+    "United States", 
+    "China", 
+    "Niue", 
+    "Japan", 
+    "Gambia"
+  ], 
+  "topics": [
+    "Financial Mechanisms and Funds"
+  ], 
+  "section_title": "FINANCIAL MECHANISM:", 
+  "enb_start_date": "05-Dec-08", 
+  "enb_short_title": "COP/MOP3", 
+  "subtype": "", 
+  "actors": [
+    "European Union", 
+    "Group of 77", 
+    "Alliance of Small Island States"
+  ], 
+  "sentences": [
+    "The Secretariat presented a report (FCCC/SBI/2007/21) on the fourth review of the financial mechanism, prepared with the GEF.", 
+    "The G-77/CHINA underlined the importance of financing given the prospect of enhanced implementation of the Convention.", 
+    "The US supported enhancing financing tools and recalled that the private sector would provide the bulk of immediate investments. JAPAN commended GEF's co-financing role and the EU welcomed GEF reforms. GEF CEO Monique Barbut introduced a report (FCCC/CP/2007/3) focusing on a five-point reform and sustainability plan, initiated in response to calls from the COP.", 
+    "She noted that the GEF had become the largest funder of adaptation.", 
+    "The G-77/CHINA welcomed the reforms and highlighted a communication gap between the GEF and parties.", 
+    "NIUE called for better engagement with SIDS.", 
+    "Tina Guthrie (Canada) and Bubu Pateh Jallow (Gambia) will convene a contact group."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12345e.html", 
+  "enb_long_title": "United Nations Climate Change Conference - Bali", 
+  "type": "sbi", 
+  "id": "enb12345e_5", 
+  "enb_end_date": "05-Dec-08"
+}

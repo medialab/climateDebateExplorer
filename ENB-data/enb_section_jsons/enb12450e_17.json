@@ -1,0 +1,36 @@
+{
+   "actors": [
+      "Umbrella Group",
+      "European Union",
+      "Group of 77",
+      "Alliance of Small Island States"
+   ],
+   "countries": [
+      "Australia",
+      "Sudan",
+      "Philippines",
+      "Indonesia",
+      "Zambia",
+      "Sweden",
+      "China",
+      "Grenada",
+      "Sierra Leone"
+   ],
+   "enb_end_date": "09-Dec-09",
+   "enb_long_title": "Copenhagen Climate Change Conference",
+   "enb_short_title": "COP 15",
+   "enb_start_date": "09-Dec-09",
+   "enb_url": "http://www.iisd.ca/vol12/enb12450e.html",
+   "id": "enb12450e_17",
+   "section_title": "OPENING STATEMENTS:",
+   "sentences": [
+      "Sudan, for the G-77/CHINA, noted the report on progress in implementing the Nairobi Work Programme on Impacts, Vulnerability and Adaptation (NWP).",
+      "She supported the Third World Climate Conference statement calling for strengthening the Global Climate Observing System.",
+      "Grenada, for AOSIS, urged SBSTA to prepare a draft COP decision on REDD and REDD-plus.",
+      "Australia, for the UMBRELLA GROUP, highlighted REDD and carbon capture and storage (CCS) under the CDM.",
+      "Sweden, for the EU, as well as INDONESIA, SIERRA LEONE, the PHILIPPINES and ZAMBIA called for SBSTA 31 to prioritize REDD."
+   ],
+   "subtype": "",
+   "topics": [],
+   "type": "sbsta"
+}

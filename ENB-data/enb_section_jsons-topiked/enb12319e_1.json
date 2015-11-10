@@ -1,0 +1,43 @@
+{
+  "countries": [
+    "Switzerland", 
+    "Ethiopia", 
+    "Canada"
+  ], 
+  "topics": [
+    "IPCC Governance", 
+    "UNFCCC and Kyoto Protocol Functioning", 
+    "National Communications & Inventories"
+  ], 
+  "section_title": "A BRIEF HISTORY OF THE IPCC AND AR4", 
+  "enb_start_date": "29-Jan-07", 
+  "enb_short_title": "IPCC WGI", 
+  "subtype": "history", 
+  "actors": [], 
+  "sentences": [
+    "The IPCC was established in 1988 by the World Meteorological Organization (WMO) and the United Nations Environment Programme (UNEP).", 
+    "The purpose of the IPCC is to assess the scientific, technical and socioeconomic information relevant to understanding the risks associated with human-induced climate change.", 
+    "The IPCC does not undertake new research, nor does it monitor climate-related data, but bases its assessments on published and peer-reviewed scientific and technical literature.", 
+    "The IPCC Secretariat is located in Geneva, Switzerland, and is staffed by the WMO and UNEP.", 
+    "The IPCC currently has three working groups: Working Group I (WGI) addresses the scientific aspects of the climate system and climate change; Working Group II (WGII) addresses the vulnerability of socioeconomic and natural systems to climate change, negative and positive consequences of climate change, and adaptation options; and Working Group III (WGIII) addresses options for limiting greenhouse gas emissions and otherwise mitigating climate change.", 
+    "The IPCC also has a Task Force on National Greenhouse Gas Inventories.", 
+    "The Task Force oversees the IPCC National Greenhouse Gas Inventories Programme, which aims to develop and refine an internationally-agreed methodology and software for the calculation and reporting of national greenhouse gas emissions and removals, and to encourage the use of this methodology by countries participating in the IPCC and by signatories to the United Nations Framework Convention on Climate Change (UNFCCC).", 
+    "The IPCC Bureau, composed of 30 members elected by the Panel, assists the IPCC Chair in planning, coordinating and monitoring progress in the work of the IPCC.", 
+    "Since its inception, the IPCC has prepared a series of comprehensive assessments, special reports and technical papers, which provide scientific information on climate change to the international community, including policy makers and the public.", 
+    "This information has played an important role in negotiations under the UNFCCC and in framing national and regional policies.", 
+    "The IPCC completed its initial comprehensive assessments of climate change in the First Assessment Report in 1990 and the Second Assessment Report in 1995.", 
+    "The IPCC's Third Assessment Report (TAR), completed in 2001, addresses policy-relevant scientific, technical, and socioeconomic dimensions of climate change, and concentrates on findings since 1995 at both regional and global levels.", 
+    "The TAR, which was subject to extensive review from experts and governments, is composed of a comprehensive assessment from the three IPCC Working Groups, a Summary for Policy Makers (SPM) and Technical Summary of each Working Group report, and a Synthesis Report.", 
+    "The TAR Synthesis Report is written in a non-technical style aimed at policy makers, and discusses nine policy-relevant questions identified by the IPCC based on submissions by governments.", 
+    "The IPCC's Fourth Assessment Report (AR4) is due to be released in late 2007.", 
+    "Recent special reports include the Special Report on Safeguarding the Ozone Layer and the Global Climate System, accepted at IPCC-23 (8 April 2005, Addis Ababa, Ethiopia) and the Special Report on Carbon Dioxide Capture and Storage, accepted at IPCC-24 (26-28 September 2005, Montreal, Canada).", 
+    "The IPCC Guidelines for National Greenhouse Gas Inventories were first released in 1994, and a revised set was completed in 1996.", 
+    "In 2000 and 2003, the Panel approved additional good practice guidance reports that complement the Revised 1996 Guidelines.", 
+    "In 2006, the IPCC approved the 2006 IPCC Guidelines."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12319e.html", 
+  "enb_long_title": "Tenth Session of the IPCC Working Group I (WGI)", 
+  "type": "ipcc", 
+  "id": "enb12319e_1", 
+  "enb_end_date": "01-Feb-07"
+}

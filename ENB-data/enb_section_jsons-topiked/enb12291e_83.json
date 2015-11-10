@@ -1,0 +1,21 @@
+{
+  "countries": [], 
+  "topics": [], 
+  "section_title": "COP/MOP Decision", 
+  "enb_start_date": "28-Nov-05", 
+  "enb_short_title": "UNFCCC COP 11 and COP/MOP 1", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "In this decision (FCCC/SBSTA/2005/L.20/Add.1) on guidance relating to registry systems, the COP/MOP notes that the international transaction log is essential to the implementation of the Kyoto Protocol\u0092s flexible mechanisms.", 
+    "It also notes that registry systems may begin initialization testing with the log on 31 October 2006.", 
+    "The COP/MOP also adopts design requirements for the technical standards for data exchange between registry systems under the Kyoto Protocol.", 
+    "It requests the administrator to implement the log in 2006, and requests a first meeting of experts from non-Annex I Parties in March 2006.", 
+    "Further, it requests the administrator to facilitate an interactive exercise that includes experts from non-Annex I Parties to demonstrate the functioning of the international transaction log with regard to other registry systems."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12291e.html", 
+  "enb_long_title": "Eleventh session of the Conference of the Parties to the Climate Change Convention and first meeting of the Parties to the Kyoto Protocol", 
+  "type": "", 
+  "id": "enb12291e_83", 
+  "enb_end_date": "09-Dec-05"
+}

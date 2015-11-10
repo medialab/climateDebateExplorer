@@ -1,0 +1,37 @@
+{
+   "actors": [],
+   "countries": [
+      "Belgium",
+      "Mauritius",
+      "India",
+      "France",
+      "United Kingdom",
+      "Morocco",
+      "Switzerland",
+      "Thailand",
+      "Spain"
+   ],
+   "enb_end_date": "01-Feb-07",
+   "enb_long_title": "Tenth Session of the IPCC Working Group I (WGI)",
+   "enb_short_title": "IPCC WGI",
+   "enb_start_date": "29-Jan-07",
+   "enb_url": "http://www.iisd.ca/vol12/enb12319e.html",
+   "id": "enb12319e_2",
+   "section_title": "RECENT IPCC SESSIONS:",
+   "sentences": [
+      "The IPCC decided to continue preparing comprehensive assessment reports at IPCC-18 (24-29 September 2001, London, UK) aiming to emphasize new findings.",
+      "Subsequent meetings discussed the timing and other details of the next report, with participants agreeing to late 2007 as the completion date for the AR4.",
+      "The overall outline of the WG contributions to the AR4 was accepted at IPCC-21 (19-21 February 2003 in Paris, France).",
+      "That same year, the scope and outline of AR4 were developed during two scoping meetings (April, Marrakesh, Morocco, and September, Potsdam, Paris), and the author teams were assembled.",
+      "Another scoping meeting was held in 2004 in Geneva, Switzerland, on the AR4 Synthesis Report (SYR).",
+      "IPCC-22 (9-11 November 2004, New Delhi, India) decided the SYR outlines of topics to be addressed.",
+      "The IPCC Bureau at its 35th session agreed on the composition of the Core Writing Team and Review Editors for the SYR, and the list was presented to the Panel at IPCC-25 (26-28 April 2006, Port Louis, Mauritius).",
+      "WGII will meet in April 2007 in Brussels, Belgium, and WGIII will meet in Bangkok, Thailand, in May 2007.",
+      "The final AR4 is scheduled to be accepted at IPCC-27, in November 2007, in Valencia, Spain."
+   ],
+   "subtype": "",
+   "topics": [
+      "IPCC Governance"
+   ],
+   "type": "ipcc"
+}

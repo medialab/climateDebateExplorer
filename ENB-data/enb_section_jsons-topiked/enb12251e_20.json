@@ -1,0 +1,36 @@
+{
+  "countries": [
+    "Ghana", 
+    "Canada", 
+    "Sweden", 
+    "China", 
+    "Japan", 
+    "New Zealand", 
+    "Norway", 
+    "Brazil"
+  ], 
+  "topics": [], 
+  "section_title": "LULUCF GPG", 
+  "enb_start_date": "08-Dec-04", 
+  "enb_short_title": "UNFCCC COP-10", 
+  "subtype": "", 
+  "actors": [
+    "European Union", 
+    "Group of 77", 
+    "Alliance of Small Island States"
+  ], 
+  "sentences": [
+    "This contact group was co-chaired by Audun Rosland (Norway) and William Kojo Agyemang-Bonsu (Ghana).", 
+    "Co-Chair Rosland recalled progress achieved on the common reporting format at SBSTA-20.", 
+    "Delegates heard presentations from Canada and Sweden on reporting systems for the Protocol and engaged in a question-and- answer session.", 
+    "The Secretariat reported on issues related to LULUCF under Protocol Article 6 (joint implementation).", 
+    "Co-Chair Rosland, supported by the EU, CANADA and JAPAN, proposed removing all brackets in the draft negotiating text forwarded from SBSTA-20 and deleting the option on the common reporting format referring to Article 6.", 
+    "BRAZIL, for G-77/China, requested time to consider the matter further, but hoped to reach agreement on the issue at COP-10.", 
+    "AOSIS, opposed by CANADA and NEW ZEALAND, said SBSTA should request the IPCC to revise 'method one' (units of land subject to multiple activities) in the GPG."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12251e.html", 
+  "enb_long_title": "Tenth Conference of the Parties to the UN Framework Convention on Climate Change", 
+  "type": "", 
+  "id": "enb12251e_20", 
+  "enb_end_date": "08-Dec-04"
+}

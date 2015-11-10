@@ -1,0 +1,44 @@
+{
+  "countries": [
+    "United Kingdom", 
+    "Bangladesh", 
+    "Sudan", 
+    "Finland", 
+    "France", 
+    "United States", 
+    "Germany", 
+    "Japan", 
+    "Sri Lanka", 
+    "Hungary", 
+    "Norway"
+  ], 
+  "topics": [
+    "IPCC Governance", 
+    "Vulnerabilities and Impacts"
+  ], 
+  "section_title": "SPECIAL REPORT ON DISASTER RISK REDUCTION:", 
+  "enb_start_date": "31-Aug-08", 
+  "enb_short_title": "IPCC-29", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "On Wednesday afternoon, Norway introduced a proposal, co-developed with the International Strategy for Disaster Reduction (ISDR), for an IPCC Special Report on managing risks of extreme events to advance climate change adaptation ( IPCC-XXIX/Doc.6 ).", 
+    "Norway stressed the urgent need for information on how to manage disaster impacts to be available to the policy community, and underscored the linkages between disaster reduction and adaptation to climate change.", 
+    "Numerous countries supported a special report.", 
+    "Sri Lanka and Bangladesh underscored the report s importance for developing countries given their higher socioeconomic vulnerability during disasters.", 
+    "Finland stressed the report s significance to developed countries as well.", 
+    "France underscored current lack of financing for the report.", 
+    "Hungary emphasized the policy-relevance of the report, and that it meets items identified in the Task Force that deals with the future of the IPCC.", 
+    "Germany, joined by Sudan, stressed the urgent need for the report s information to policy makers.", 
+    "Japan and others commented on the scope of the disasters to be covered by the report.", 
+    "The UK urged caution to differentiate between climate events and other vulnerabilities, and for the report not to replicate ongoing work at the WMO and in the UNFCCC Nairobi Work Programme.", 
+    "The UK, supported by the US, noted a piecemeal approach to deciding on special reports in the future has to be avoided.", 
+    "The US cautioned that the new Bureau has to be involved in the scoping of the report.", 
+    "The Panel agreed the new Bureau will decide on the scoping meeting."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12384e.html", 
+  "enb_long_title": "IPCC-29 and Twentieth Anniversary of the IPCC", 
+  "type": "ipcc", 
+  "id": "enb12384e_17", 
+  "enb_end_date": "04-Sep-08"
+}

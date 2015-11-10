@@ -1,0 +1,35 @@
+{
+   "actors": [],
+   "countries": [
+      "Switzerland"
+   ],
+   "enb_end_date": "13-May-11",
+   "enb_long_title": "Thirty-third Session of the Intergovernmental Panel on Climate Change (IPCC)",
+   "enb_short_title": "IPCC-33",
+   "enb_start_date": "10-May-11",
+   "enb_url": "http://www.iisd.ca/vol12/enb12500e.html",
+   "id": "enb12500e_1",
+   "section_title": "A BRIEF HISTORY OF THE IPCC",
+   "sentences": [
+      "The IPCC was established in 1988 by the World Meteorological Organization (WMO) and the UN Environment Programme (UNEP).",
+      "Its purpose is to assess scientific, technical and socioeconomic information relevant to understanding the risks associated with human-induced climate change, its potential impacts, and options for adaptation and mitigation.",
+      "The IPCC does not undertake new research, nor does it monitor climate-related data, but it conducts assessments on the basis of published and peer-reviewed scientific and technical literature.",
+      "The IPCC has three working groups: Working Group (WG) I addresses the scientific aspects of the climate system and climate change; WGII addresses the vulnerability of socioeconomic and natural systems to climate change, impacts of climate change and adaptation options; and WGIII addresses options for limiting greenhouse gas emissions and mitigating climate change.",
+      "Each WG has two Co-Chairs and six Vice-Chairs, except WGIII, which for the Fifth Assessment cycle has three Co-Chairs.",
+      "The Co-Chairs guide the WGs in fulfilling the mandates given to them by the Panel and are assisted in this task by Technical Support Units (TSUs).",
+      "The IPCC also has a Task Force on National Greenhouse Gas Inventories (TFI).",
+      "TFI oversees the IPCC National Greenhouse Gas Inventories Programme, which aims to develop and refine an internationally agreed methodology and software for the calculation and reporting of national greenhouse gas emissions and removals, and to encourage the use of this methodology by parties to the United Nations Framework Convention on Climate Change (UNFCCC).",
+      "The Task Group on Data and Scenario Support for Impact and Climate Analysis (TGICA) is an entity set up to address WG needs for data, especially WGII and WGIII.",
+      "The TGICA facilitates distribution and application of climate change related data and scenarios, and oversees a Data Distribution Centre, which provides data sets, scenarios of climate change and other environmental and socioeconomic conditions, and other materials.",
+      "The IPCC Bureau is elected by the Panel for the duration of the preparation of an IPCC assessment report (approximately six years).",
+      "Its role is to assist the IPCC Chair in planning, coordinating and monitoring the work of the IPCC.",
+      "The Bureau is composed of climate change experts representing all regions.",
+      "Currently, the Bureau comprises 31 members: the Chair of the IPCC, the Co-Chairs of the three WGs and the Bureau of the TFI (TFB), the IPCC Vice-Chairs, and the Vice-Chairs of the three WGs.",
+      "The IPCC Secretariat is located in Geneva, Switzerland, and is hosted by the WMO."
+   ],
+   "subtype": "history",
+   "topics": [
+      "IPCC Governance"
+   ],
+   "type": "ipcc"
+}

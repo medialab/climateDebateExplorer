@@ -1,0 +1,27 @@
+{
+  "countries": [
+    "Canada", 
+    "Switzerland", 
+    "Germany", 
+    "Uruguay"
+  ], 
+  "topics": [], 
+  "section_title": "IN THE CORRIDORS", 
+  "enb_start_date": "09-Feb-95", 
+  "enb_short_title": "11th Session of the INC", 
+  "subtype": "corridors", 
+  "actors": [], 
+  "sentences": [
+    "The bidding war is on.", 
+    "Canada, Germany, Switzerland and Uruguay are actively campaigning to be selected as the host for the Permanent Secretariat.", 
+    "While Bonn and Geneva may be the front runners, there is clearly no consensus yet.", 
+    "For Canada, Switzerland and Uruguay a decision at INC-11 would be to their advantage.", 
+    "If a decision is postponed until COP- 1, Bonn is clearly the favorite.", 
+    "But then, as one delegate pointed out, there is always the possibility that the decision will be postponed by COP-1 and that Geneva could remain the interim location for the foreseeable future."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/1204000e.html", 
+  "enb_long_title": "Eleventh Session of The INC for the Framework Convention on Climate Change (UNFCCC)", 
+  "type": "cop", 
+  "id": "1204000e_5", 
+  "enb_end_date": "09-Feb-95"
+}

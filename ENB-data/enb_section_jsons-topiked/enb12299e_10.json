@@ -1,0 +1,41 @@
+{
+  "countries": [
+    "Netherlands", 
+    "Uruguay", 
+    "Philippines", 
+    "Indonesia", 
+    "Switzerland", 
+    "China", 
+    "Paraguay", 
+    "Kenya"
+  ], 
+  "topics": [
+    "Financial Mechanisms and Funds", 
+    "UNFCCC and Kyoto Protocol Functioning", 
+    "National Communications & Inventories"
+  ], 
+  "section_title": "NON-ANNEX I COMMUNICATIONS:", 
+  "enb_start_date": "19-May-06", 
+  "enb_short_title": "UNFCCC SB 24", 
+  "subtype": "", 
+  "actors": [
+    "European Union", 
+    "Group of 77", 
+    "Alliance of Small Island States"
+  ], 
+  "sentences": [
+    "The Secretariat introduced a report on the activities of the non-Annex I national communications consultative expert group (CGE) (FCCC/SBI/2006/8).", 
+    "CGE rapporteur Lilian Portillo (Paraguay) outlined CGE's activities and a relevant report (FCCC/SBI/2006/4).", 
+    "Many parties stressed the importance of CGE's work.", 
+    "URUGUAY said CGE's work promotes South-South cooperation and INDONESIA suggested more expert workshops.", 
+    "The Secretariat introduced sub-items on compilation and synthesis of initial national communications (FCCC/SBI/2006/MISC.2 and FCCC/SBI/2006/18/Adds.1-6 & Add.3/Corr.1) and on provision of financial and technical advice (FCCC/SBI/2006/INF.1).", 
+    "The G-77/CHINA and AOSIS noted the importance of addressing financial, technical, and institutional constraints. SWITZERLAND, with the EU, called for a desk review of non-Annex I communications and, supported by AOSIS, suggested grouping countries with common circumstances for such a review.", 
+    "The PHILIPPINES stressed the need for full-cost financial support.", 
+    "Henri\u00e0 tte Bersee (Netherlands) and Emily Ojoo-Massawa (Kenya) will consult informally."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12299e.html", 
+  "enb_long_title": "Twenty-Fourth sessions of the Subsidiary Body for Scientific and Technological Advice (SBSTA) and the Subsidiary Body for Implementation (SBI) of the UNFCCC and First session of the Ad Hoc Working Group on Further Commitments for Annex I Parties under the Kyoto Protocol (AWG) and related meetings", 
+  "type": "sbi", 
+  "id": "enb12299e_10", 
+  "enb_end_date": "19-May-06"
+}

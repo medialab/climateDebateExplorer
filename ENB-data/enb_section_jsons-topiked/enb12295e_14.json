@@ -1,0 +1,38 @@
+{
+  "countries": [
+    "United Kingdom", 
+    "Saudi Arabia", 
+    "Australia", 
+    "Sudan", 
+    "United States", 
+    "Netherlands", 
+    "Germany", 
+    "Belgium"
+  ], 
+  "topics": [
+    "IPCC Governance", 
+    "Anthropogenic Interference with Climate System", 
+    "Vulnerabilities and Impacts"
+  ], 
+  "section_title": "FURTHER WORK ON EMISSION SCENARIOS", 
+  "enb_start_date": "26-Apr-06", 
+  "enb_short_title": "IPCC-25", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "This item was discussed in plenary on Wednesday and Friday, and in contact group, co-chaired by Ismail Elgizouli (Sudan) and Jean- Pascal van Ypersele (Belgium), and informal meetings on Wednesday through Friday.", 
+    "Discussions proceeded from the recommendations of the TGNES (IPCC-XXV/Doc.", 
+    "11) and proposals contained within a letter to Chair Pachauri from John Mitchell, Met Office, UK, suggesting the selection of no more than two or three 'benchmark' emissions trajectories for future climate change studies (IPCC- XXV/INF.", 
+    "The Panel accepted a proposal for further work on emission scenarios on Friday afternoon. Throughout much of the discussion, delegates were divided as to what the role of the IPCC should be in relation to further work on emission scenarios.", 
+    "Australia joined the US in stressing that the IPCC\u0092s role be limited to assessment of emission scenarios while Germany, the Netherlands, and others supported a broader coordination role for the IPCC.", 
+    "The US emphasized the overriding importance of the IPCC\u0092s credibility in assessment, arguing that a separation of function could not be maintained if the IPCC engaged in a joint, interactive process of scenario development with the climate modeling community.", 
+    "Saudi Arabia expressed concern that it would be inappropriate to take decisions on future work during the approval process of the AR4. The timeliness of any decision on further work by the IPCC, for the purposes of alerting the scientific community in preparation for a fifth assessment report, was also considered important by many delegates, given the time lag between the start and end of any new scientific work.", 
+    "Similarly, delegates noted that those involved in impacts and vulnerability scenario activities need time to follow up from the results of scientific studies.", 
+    "In addition, the US emphasized the important role of those who fund scientific research."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12295e.html", 
+  "enb_long_title": "IPCC-25", 
+  "type": "ipcc", 
+  "id": "enb12295e_14", 
+  "enb_end_date": "28-Apr-06"
+}

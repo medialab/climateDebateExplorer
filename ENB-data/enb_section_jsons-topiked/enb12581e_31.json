@@ -1,0 +1,29 @@
+{
+  "countries": [
+    "United States", 
+    "Belgium", 
+    "China", 
+    "Canada"
+  ], 
+  "topics": [
+    "Anthropogenic Interference with Climate System"
+  ], 
+  "section_title": "Atmosphere: Temperature", 
+  "enb_start_date": "23-Sep-13", 
+  "enb_short_title": "IPCC36", 
+  "subtype": "", 
+  "actors": [
+    "European Union"
+  ], 
+  "sentences": [
+    "Delegates engaged in a lengthy discussion over how to refer to the 'pre-industrial period', which is defined in the glossary as taking place before 1750, whereas in many cases the data is limited to the period 1850-1900.", 
+    "China suggested changing 'pre-industrial' to '1850-1900', while the EU and Belgium underscored that 'pre-industrial' is an important word used by policy makers.", 
+    "The US and Canada suggested solving the issue by adding language on using 1850-1900 as a proxy for 'pre-industrial'.", 
+    "A contact group developed a proposal, in which reference to 'pre-industrial' is deleted, and this was adopted."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12581e.html", 
+  "enb_long_title": "Twelfth Session of Working Group I (WGI) of the Intergovernmental Panel on Climate Change (IPCC) and Thirty-sixth Session of the IPCC", 
+  "type": "", 
+  "id": "enb12581e_31", 
+  "enb_end_date": "26-Sep-13"
+}

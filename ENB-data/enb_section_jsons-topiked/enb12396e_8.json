@@ -1,0 +1,33 @@
+{
+  "countries": [
+    "South Africa", 
+    "Germany", 
+    "Indonesia", 
+    "Cuba"
+  ], 
+  "topics": [
+    "Vulnerabilities and Impacts", 
+    "Technology Transfer"
+  ], 
+  "section_title": "NATIONAL EXPERIENCES:", 
+  "enb_start_date": "10-Mar-09", 
+  "enb_short_title": "Workshop", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "Ramon P\u00e9rez, Cuba, outlined Cuba s risk management efforts, including public education and awareness raising, early warning systems, accessible information systems, an established and structured response system.", 
+    "He described Cuba s climate monitoring system and gave examples of its work, such as analysis of rainfall behavior in Cuba, and information products, including climate monitoring bulletins, special climate advisories and summaries, and a website.", 
+    "Guy Midgley, South Africa, presented South Africa s policy framework for extreme events, and stressed the establishment of disaster management centers in each province.", 
+    "He also described the global change risk and vulnerability atlas launched by the Department of Science and Technology to bridge the gap between climate change science and policy in South Africa.", 
+    "Dadang Hilman, Indonesia, said the country has taken measures to make DRR a national and local priority by: enhancing legislation, policy and strategy; establishing relevant institutions; and allocating budgets for all phases of disaster management.", 
+    "He noted the importance of integrating mitigation and adaptation aspects with social and cultural aspects.", 
+    "Hilman highlighted the need for additional resources and for integrating adaptation issues into the development planning process.", 
+    "Gerd Tetzlaff, Chairman of the Scientific Advisory Board of the German Committee for Disaster Reduction, noted the importance of local community and climate forecasts to manage and prevent disasters.", 
+    "Underscoring that damages from major disasters in Germany have different impacts depending on the size of the area affected, he highlighted the importance of decentralization when dealing with such disasters."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12396e.html", 
+  "enb_long_title": "Workshop on Integrating Practices, Tools and Systems for Climate Risk Assessment and Management and Disaster Risk Reduction Strategies into National Policies and Programmes", 
+  "type": "special workshop", 
+  "id": "enb12396e_8", 
+  "enb_end_date": "12-Mar-09"
+}

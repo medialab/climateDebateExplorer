@@ -1,0 +1,22 @@
+{
+   "actors": [],
+   "countries": [
+      "Switzerland",
+      "Norway"
+   ],
+   "enb_end_date": "29-Oct-09",
+   "enb_long_title": "Thirty-First Session of the IPCC",
+   "enb_short_title": "IPCC-31",
+   "enb_start_date": "26-Oct-09",
+   "enb_url": "http://www.iisd.ca/vol12/enb12441e.html",
+   "id": "enb12441e_4",
+   "section_title": "IPCC-29:",
+   "sentences": [
+      "This session, which commemorated the IPCC s 20th anniversary, was held from 31 August to 4 September 2008 in Geneva, Switzerland.",
+      "During the meeting, the Panel elected the new IPCC Bureau and the TFB, and re-elected Rajendra Pachauri as IPCC Chair.",
+      "The Panel also continued its discussions on the future of the IPCC, agreed to create a scholarship for young climate change scientists from developing countries with the funds from the Nobel Prize and asked the Bureau to consider a scoping meeting on a Special Report on extreme events and disasters, which took place 23-26 March 2009, in Oslo, Norway."
+   ],
+   "subtype": "",
+   "topics": [],
+   "type": "ipcc"
+}

@@ -1,0 +1,40 @@
+{
+  "countries": [
+    "Canada", 
+    "Australia", 
+    "Uganda", 
+    "India", 
+    "United States", 
+    "China", 
+    "Chile", 
+    "Mali", 
+    "Switzerland"
+  ], 
+  "topics": [
+    "Financial Mechanisms and Funds"
+  ], 
+  "section_title": "R&SO", 
+  "enb_start_date": "04-Dec-03", 
+  "enb_short_title": "UNFCCC COP-9", 
+  "subtype": "", 
+  "actors": [
+    "European Union", 
+    "Group of 77"
+  ], 
+  "sentences": [
+    "This group was co-chaired by Sue Barrell (Australia) and Philip Gwage (Uganda).", 
+    "Parties discussed a draft decision and draft conclusions on global observing systems for climate.", 
+    "Co-Chair Barrell outlined the GCOS Cooperation Mechanism, which identifies the most effective use of existing resources for improving global observing systems of climate in developing countries.", 
+    "INDIA, supported by the G-77/CHINA, suggested including reference to the WMO principles for free data exchange, while the US cautioned against referring to principles established under any one specific organization.", 
+    "MALI, for the G-77/China, noted the need for guidance to the GEF regarding sustaining infrastructure.", 
+    "He also stressed the importance of implementing regional action plans.", 
+    "The EU, supported by SWITZERLAND, encouraged digitalizing historical data.", 
+    "CANADA suggested inviting the Group on Earth Observations (GEO) to prioritize work on climate monitoring, and the US proposed requesting GCOS and GEO to coordinate their work.", 
+    "CHILE stressed the need to call on national governments to provide financial resources to national meteorological authorities."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12224e.html", 
+  "enb_long_title": "Ninth Conference of the Parties to the UN Framework Convention on Climate Change", 
+  "type": "", 
+  "id": "enb12224e_9", 
+  "enb_end_date": "04-Dec-03"
+}

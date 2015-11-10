@@ -1,0 +1,41 @@
+{
+  "countries": [
+    "Uzbekistan", 
+    "Japan", 
+    "Cuba", 
+    "Spain", 
+    "Guyana"
+  ], 
+  "topics": [
+    "Reasons for Concern", 
+    "Anthropogenic Interference with Climate System", 
+    "Vulnerabilities and Impacts"
+  ], 
+  "section_title": "D) GAPS AND DEFICIENCIES IN DATA AND OBSERVATIONS, OPPORTUNITIES AND RECOMMENDATIONS:", 
+  "enb_start_date": "04-Mar-08", 
+  "enb_short_title": "Workshop", 
+  "subtype": "", 
+  "actors": [], 
+  "sentences": [
+    "Data, capacity and user needs for impacts and vulnerability assessment in support of adaptation, especially at the regional and national levels: Carlos Fuller, CCCCC, described the Mainstreaming Adaptation to Climate Change Project, as a second stage adaptation project with observing components.", 
+    "He explained downscaling was undertaken using the PRECIS model and Japan s Earth Simulator.", 
+    "Fuller cited challenges including the need to enhance national capacities and to get national meteorological service staff involved.", 
+    "He said pilot vulnerability assessments were undertaken and consultancy services provided to Guyana after serious flooding.", 
+    "Fuller described the outstanding needs in the region as data rescue, recovery and management.", 
+    "He highlighted current opportunities for donors, including the opportunity to assist in the establishment of a regional climate center.", 
+    "Manola Brunet, University Rovira i Virgili, Spain, emphasized the need for the development of high quality and high resolution climate data sets to improve knowledge of historical climate variability and change, reduce uncertainties, and ensure more robust and reliable climate scenarios.", 
+    "She said data needs to be long term and homogenous, as well as available at national, subregional and regional levels to enable adoption of the best adaptation strategies.", 
+    "She outlined several WMO initiatives for recovering and developing homogenous data and making it available, including the WMO/Mediterranean Data Rescue Climate Initiative (MEDARE), which aims to develop high quality, long-term data sets for the greater Mediterranean region.", 
+    "Lyudmila Skripnikova, Uzbekistan, discussed gaps and needs in vulnerability and adaptation assessments of climatic systems and water resources in Uzbekistan, including the lack of monitoring of transboundary water resources, out of date equipment at some meteorological and hydrological stations, uncertainty in water use estimation, and lack of reliable non-climatic data for vulnerability assessments.", 
+    "She stressed the importance of developing insurance systems for extreme weather events, and the creation of regional web based databases on specific data for vulnerability assessments.", 
+    "She said assistance from international processes and the NWP is needed to gain experience in collection and use of specific climatic and non-climatic data.", 
+    "Roger Rivero, Cuba, presented Cuba s vulnerability and adaptation assessment needs in the agriculture sector, and identified tools used for assessments in agriculture and water resources, including climatic and bioclimatic indices and process-based crop models.", 
+    "Regarding crop models, he identified the following data needs: maximum and minimum temperature; precipitation; wind speed; global solar radiation; CO2 atmospheric concentration; and mean sea level.", 
+    "On training, Rivero described a joint Caribbean initiative to organize sectoral hands-on training workshops, addressing identified constraints and providing recommended tools, workbooks and follow-up activities by the trainers."
+  ], 
+  "enb_url": "http://www.iisd.ca/vol12/enb12355e.html", 
+  "enb_long_title": "UNFCCC Expert Group Meeting on Methods and Tools and on Data and Observations under the Nairobi Work Programme on Impacts, Vulnerability and Adaptation to Climate Change (NWP)", 
+  "type": "SPECIAL WORKSHOP", 
+  "id": "enb12355e_36", 
+  "enb_end_date": "07-Mar-08"
+}
