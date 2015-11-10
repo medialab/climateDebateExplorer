@@ -12,16 +12,36 @@
 
     #viz-selector {
       position: absolute;
-      top: 5em;
       left: 10em;
       right: 10em;
 
       a {
-        span.number {
+        text-decoration: none;
+        color: @mainBlue;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
 
+        span {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        span.number {
+          font-family: "lato";
+          font-weight: 100;
+          font-size: 3em;
+          width: 2em;
+          text-align: center;
         }
         span.title {
-
+          font-family: "georgia";
+          font-size: 1.5em;
+          font-weight: bold;
+          font-style: italic;
+          white-space: nowrap;
+          position: relative;
         }
       }
     } 
