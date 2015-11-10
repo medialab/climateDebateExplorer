@@ -1,6 +1,6 @@
 var targetFile = "../ENB-data/metadata_overview/metadata.csv"
 
-var margin = {top: 20, right: 80, bottom: 30, left: 50},
+var margin = {top: 20, right: 200, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -56,12 +56,18 @@ d3.csv(targetFile, function(error, data) {
     d.actors = d.actors.split('|').filter(function(d){ return d != '' })
   })
 
+  // Total yearly
+  var totalVolumeYearly = {}
+  data.forEach(function(d){
+    totalVolumeYearly[d.year] = ( totalVolumeYearly[d.year] || 0 ) + 1
+  })
+
   // Agregate volume
   var volumeByActorYearly = {}
   data.forEach(function(d){
     d.actors.forEach(function(actor){
       var volumeYearly = volumeByActorYearly[actor] || {}
-        , volume = ( volumeYearly[d.year] || 0 ) + 1
+        , volume = ( volumeYearly[d.year] || 0 ) + ( 100 / totalVolumeYearly[d.year] )
       volumeYearly[d.year] = volume
       volumeByActorYearly[actor] = volumeYearly
     })
@@ -82,12 +88,12 @@ d3.csv(targetFile, function(error, data) {
   // Curves by actor
   var nested_data = d3.nest()
     .key(function(d) { return d.actor; })
-    // .key(function(d) { return d.year; })
     .entries(volumes)
+    .filter(function(d, i){
+        return d3.max(d.values.map(function(d2){return d2.volume})) > 10
+      })
 
-  console.log(nested_data)
-
-  color.domain(d3.keys(volumeByActorYearly));
+  color.domain(nested_data.map(function(d){return d.key}));
 
   x.domain(d3.extent(volumes, function(d) { return d.year; }));
 
@@ -103,7 +109,6 @@ d3.csv(targetFile, function(error, data) {
     .append("text")
       .attr("x", width)
       .attr("y", 30)
-      // .attr("dy", ".71em")
       .style("text-anchor", "end")
       .text("Year");
 
@@ -115,7 +120,7 @@ d3.csv(targetFile, function(error, data) {
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Volume");
+      .text("Volume (%)");
 
   var actor = svg.selectAll(".actor")
       .data(nested_data)
@@ -131,60 +136,30 @@ d3.csv(targetFile, function(error, data) {
       .datum(function(d) { return {name: d.key, value: d.values[d.values.length - 1]}; })
       .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.volume) + ")"; })
       .attr("x", 3)
-      .attr("dy", ".35em")
-      .text(function(d) { return d.name; });
-
-  /*color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
-
-  data.forEach(function(d) {
-    d.date = parseDate(d.date);
-  });
-
-  var cities = color.domain().map(function(name) {
-    return {
-      name: name,
-      values: data.map(function(d) {
-        return {date: d.date, temperature: +d[name]};
+      .attr("y", function(d){
+        // console.log(d.name)
+          if ( d.name == 'Alliance of Small Island States' ) {
+              return -7
+            }
+          if ( d.name == 'Group of 77' ) {
+              return -6
+            }
+          if ( d.name == 'African Group' ) {
+              return 0
+            }
+          if ( d.name == 'Independent association of Latin America and the Caribbean' ) {
+              return 9
+            }
+          return 0
+        })
+      .attr("dy", '.35em')
+      .style("fill", function(d) { return color(d.name); })
+      .text(function(d) {
+        if ( d.name == "Independent association of Latin America and the Caribbean" ) {
+          return "I.A. of Latin America & the Caribbean"
+        } else if ( d.name == "Organisation for Economic Co.operation and Development" ) {
+          return "Org. for Economic Coop. & Development"
+        }
+        return d.name;
       })
-    };
-  });
-
-  x.domain(d3.extent(data, function(d) { return d.date; }));
-
-  y.domain([
-    d3.min(cities, function(c) { return d3.min(c.values, function(v) { return v.temperature; }); }),
-    d3.max(cities, function(c) { return d3.max(c.values, function(v) { return v.temperature; }); })
-  ]);
-
-  svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
-
-  svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
-    .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("Temperature (ºF)");
-
-  var city = svg.selectAll(".city")
-      .data(cities)
-    .enter().append("g")
-      .attr("class", "city");
-
-  city.append("path")
-      .attr("class", "line")
-      .attr("d", function(d) { return line(d.values); })
-      .style("stroke", function(d) { return color(d.name); });
-
-  city.append("text")
-      .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
-      .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.temperature) + ")"; })
-      .attr("x", 3)
-      .attr("dy", ".35em")
-      .text(function(d) { return d.name; });*/
 });
