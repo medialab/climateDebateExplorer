@@ -23,7 +23,7 @@ var yAxis = d3.svg.axis()
     .orient("left");
 
 var line = d3.svg.line()
-    .interpolate("basis")
+    .interpolate("cardinal")
     .x(function(d) { return x(d.year); })
     .y(function(d) { return y(d.volume); });
 
