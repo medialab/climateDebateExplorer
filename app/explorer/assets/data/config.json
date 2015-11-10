@@ -6,23 +6,31 @@
   ],
   "fields": {
     "countries": {
+      "label": "Countries",
       "cacheValues": true,
       "separator": "|"
     },
     "actors": {
+      "label": "Groupings",
       "cacheValues": true,
       "separator": "|"
     },
     "topics": {
+      "label": "Topics",
       "cacheValues": true,
       "separator": "|"
+    },
+    "event_id": {
+      "label": "Events"
     }
   },
 
   "filters": [
-    {
-      "field": "countries",
-      "label": "Countries"
-    }
+    { "field": "countries" }
+  ],
+  "aggregations": [
+    "countries",
+    "event_id",
+    "actors"
   ]
 }

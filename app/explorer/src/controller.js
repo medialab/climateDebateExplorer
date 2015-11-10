@@ -1,7 +1,13 @@
 'use strict';
 
 var _ = require('lodash'),
-    tree = require('./tree');
+    tree = require('./tree'),
+    filtersFacet = require('./utils/filtersFacet');
+
+// BINDINGS:
+tree.select('appState', 'filters').on('update', function() {
+  tree.emit('actions:gather');
+});
 
 // ACTIONS:
 tree.on('actions:filter', function(e) {
@@ -31,4 +37,34 @@ tree.on('actions:filter', function(e) {
 
   tree.set(['appState', 'filters'], filters);
   tree.commit();
+});
+tree.on('actions:gather', function() {
+  tree.datastore.query(
+    { query: filtersFacet(
+        tree.get('appState', 'filters'),
+        tree.get('cached', 'config', 'fields')
+      ),
+      aggregations:
+        tree.get('cached', 'config', 'aggregations').reduce(function(result, field) {
+          result[field] = field;
+          return result;
+        }, {}) },
+    function(result) {
+      // Store aggregations:
+      _.forEach(result.aggregations, function(list, field) {
+        tree.set(
+          ['contextual', 'aggregatedLists', field],
+          _.sortBy(
+            _.reduce(list, function(result, value, key) {
+              result.push({ id: key, varlue: value });
+              return result;
+            }, []),
+            'value'
+          ).reverse()
+        );
+      });
+
+      tree.commit();
+    }
+  );
 });
