@@ -45,6 +45,13 @@
         "Latin American and Caribbean Group": "Independent association of Latin America and the Caribbean", 
         "Central America Group": "Central American Integration System"
       }
+    },
+    "topics":
+    {
+      "merge":
+      {
+        "Legal Status of Agreeements": "Legal Status of Agreements"
+      }
     }
 } 
        
