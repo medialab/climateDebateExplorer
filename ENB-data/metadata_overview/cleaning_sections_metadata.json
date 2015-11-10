@@ -1,0 +1,50 @@
+{
+  "subtype":
+    { 
+      "merge":
+      {
+        "PLENARY": "plenary", 
+        "GROUPS": "groups"
+      },
+      "exclude": 
+      [
+        "CORRIDORS",
+        "corridors",
+        "HISTORY", 
+        "history", 
+        "ANALYSIS", 
+        "analysis", 
+        "AGENDA", 
+        "agenda"
+      ]
+    },
+  "type":
+    {           
+      "merge":
+      {
+        "WORKING GROUP": "working group",
+        "sbi": "SBI",  
+        "sbi/sbsta": "SBI/SBSTA", 
+        "cop": "COP",  
+        "sbsta": "SBSTA"
+      },
+      "exclude":
+      [
+        "IPCC", 
+        "ipcc", 
+        "SPECIAL WORKSHOP", 
+        "special workshop"    
+      ]
+    },
+  "actors":
+    {
+      "merge":
+      {
+        "Group of 77": "Group of 77 and China", 
+        "Organisation for Economic Co.operation and Development": "Organisation for Economic Co-operation and Development",
+        "Latin American and Caribbean Group": "Independent association of Latin America and the Caribbean", 
+        "Central America Group": "Central American Integration System"
+      }
+    }
+} 
+       
