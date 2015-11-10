@@ -1,0 +1,56 @@
+
+#verbatims {
+  >div {
+    position: absolute;
+    top: 0;
+
+    .verbatim {
+      margin: 1em 0;
+      position: relative;
+
+      h3 {
+        font-family: "georgia";
+        font-weight: normal;
+        font-style: italic;
+        margin: 0;
+        color: @mainBlue;
+        position: relative;
+        z-index: 20;
+      }
+
+      p {
+        margin: 0;
+        font-family: "lato";
+        font-weight: 500;
+        font-size: 0.75em;
+        position: relative;
+        z-index: 20;
+      }
+    }
+
+    .verbatim:before {
+      content: " ";
+      background-image: url('assets/svg/quotes.svg');
+      position: absolute;
+      top: -0.5em;
+      left: -0.5em;
+      height: 2em;
+      width: 2em;
+      background-size: contain;
+      z-index: 1;
+      transform: rotate(180deg);
+    }
+
+    .verbatim:after {
+      content: " ";
+      background-image: url('assets/svg/quotes.svg');
+      position: absolute;
+      bottom: -0.5em;
+      right: -0.5em;
+      height: 2em;
+      width: 2em;
+      background-size: contain;
+      z-index: 1;
+    }
+  }
+}
