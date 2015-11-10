@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{{title}}</title>
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>{{title}}</h1>
+    <p>{{dates}} &mdash; <a href="{{source}}">original report</a></p>
+    {{#sections}}
+    <div id="section_{{id}}">
+      <h2>{{title}}</h2>
+      <small>{{legend}}</small>
+      {{#sentences}}
+      <p>{{.}}</p>
+      {{/sentences}}
+    </div>
+    {{/sections}}
+  </body>
+</html>

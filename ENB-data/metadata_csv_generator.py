@@ -3,6 +3,7 @@ import os, sys
 import itertools
 import time
 import codecs
+from clean_data import Cleaner
 
 # the valid uptodate event_bulletinurl.csv in OUT_DATA folder
 LINK_TO_EVENT="event_bulletinurl.csv"
@@ -24,7 +25,6 @@ format_txt = lambda x: ('"' + x.replace('"', '""').replace("\n", " ").replace("\
 format_spe = lambda x: format_txt("|".join(x))
 format_field = lambda x: format_txt(x) if type(x) == unicode else format_spe(x)
 
-
 data_index={}
 
 # prepare index for LINK SECTIONS TO EVENT task
@@ -37,29 +37,11 @@ if os.path.exists(os.path.join(OUT_DATA,LINK_TO_EVENT)):
         url_eventid["http://www.iisd.ca/vol12/enb12603e.html"]=url_eventid["http://www.iisd.ca/vol12/enb125603e.html"]
 
 # prepare index for CLEANING SECTIONS
-clean_sections=False
-if os.path.exists(os.path.join(OUT_DATA,CLEANING)):
-    with codecs.open(os.path.join(OUT_DATA,CLEANING),'r',"utf8") as f:
-        clean_infos=json.load(f)
-
-        def keep_section(section):
-            for metadata,rules in clean_infos.iteritems():
-                if "exclude" in rules and section[metadata] in rules["exclude"]:
-                    return False
-            return True
-        
-        def clean_section(section):
-            for metadata,rules in clean_infos.iteritems():
-                if "merge" in rules :
-                    if type(section[metadata])==list:
-                        section[metadata]=[rules["merge"][m] if m in rules["merge"] else m for m in section[metadata]]
-                    elif section[metadata] in rules["merge"]:       
-                        section[metadata]=rules["merge"][section[metadata]]
-            return section
-        
-        clean_sections=True
-
-
+try:
+    cleaner = Cleaner(os.path.join(OUT_DATA, CLEANING))
+    clean_sections=True
+except:
+    clean_sections=False
 
 with open(os.path.join(OUT_DATA,"sections_metadata.csv"),"w") as f:
     headers=[
@@ -86,11 +68,11 @@ for directory,subdir,filenames in os.walk(ENB_DATA):
                 data=json.load(jsonfile)
 
                 # filtering
-                if not clean_sections or keep_section(data):
-                    
+                if not clean_sections or cleaner.keep_section(data):
+
                     # clean
                     if clean_sections:
-                        data=clean_section(data)
+                        data=cleaner.clean_section(data)
 
                     # process date
                     import locale
