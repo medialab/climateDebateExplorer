@@ -3,16 +3,24 @@
 var Baobab = require('baobab');
 
 module.exports = new Baobab({
+  // Data that does depend on current filters:
   cached: {
     valuesLists: {}
   },
 
+  // Data that strongly depend on current filters:
+  contextual: {
+    aggregatedLists: {}
+  },
+
+  // Data that is used for the routing:
   appState: {
     filters: [],
     deployedList: undefined,
     deployedVerbatim: undefined
   },
 
+  // Dynamic views:
   views: {
     filtersIndex: Baobab.monkey({
       cursors: {

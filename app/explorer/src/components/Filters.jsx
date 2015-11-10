@@ -10,6 +10,8 @@ module.exports = React.createClass({
   cursors: {
     valuesLists: ['cached', 'valuesLists'],
     filtersIndex: ['views', 'filtersIndex'],
+
+    fields: ['cached', 'config', 'fields'],
     filterBlocks: ['cached', 'config', 'filters']
   },
 
@@ -54,7 +56,7 @@ module.exports = React.createClass({
         { (this.state.filterBlocks || []).map(function(filterBlock, i) {
             var field = filterBlock.field,
                 deployed = !!this.state.deployed[field],
-                filteredValues = this.state.filtersIndex[field];
+                filteredValues = this.state.filtersIndex[field] || {};
 
             return (
               <div  key={ field }
@@ -64,7 +66,7 @@ module.exports = React.createClass({
                 <div  data-field={ field }
                       className="block-title"
                       onClick={ this.toggleBlock }>{
-                  filterBlock.label
+                  this.state.fields[field].label || field
                 }</div>
 
                 <div className="block-content">
