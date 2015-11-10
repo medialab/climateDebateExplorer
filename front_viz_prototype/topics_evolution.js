@@ -1,4 +1,4 @@
-var targetFile = "../ENB-data/metadata_overview/metadata.csv"
+var targetFile = "../ENB-data/temp_data/metadata.csv"
 
 var margin = {top: 20, right: 200, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
@@ -53,7 +53,7 @@ d3.csv(targetFile, function(error, data) {
 
   // Actors as an array
   data.forEach(function(d){
-    d.actors = d.actors.split('|').filter(function(d){ return d != '' })
+    d.topics = d.topics.split('|').filter(function(d){ return d != '' })
   })
 
   // Total yearly
@@ -63,24 +63,24 @@ d3.csv(targetFile, function(error, data) {
   })
 
   // Agregate volume
-  var volumeByActorYearly = {}
+  var volumeByTopicYearly = {}
   data.forEach(function(d){
-    d.actors.forEach(function(actor){
-      var volumeYearly = volumeByActorYearly[actor] || {}
+    d.topics.forEach(function(actor){
+      var volumeYearly = volumeByTopicYearly[actor] || {}
         , volume = ( volumeYearly[d.year] || 0 ) + ( 100 / totalVolumeYearly[d.year] )
       volumeYearly[d.year] = volume
-      volumeByActorYearly[actor] = volumeYearly
+      volumeByTopicYearly[actor] = volumeYearly
     })
   })
 
   // Flatten data
   var volumes = []
-  for ( var actor in volumeByActorYearly ) {
+  for ( var actor in volumeByTopicYearly ) {
     for ( var year = 1995 ; year <= 2015 ; year++ ) {
       volumes.push({
         actor: actor
       , year: year
-      , volume: volumeByActorYearly[actor][year] || 0
+      , volume: volumeByTopicYearly[actor][year] || 0
       })
     }
   }
@@ -90,7 +90,7 @@ d3.csv(targetFile, function(error, data) {
     .key(function(d) { return d.actor; })
     .entries(volumes)
     .filter(function(d, i){
-        return d3.max(d.values.map(function(d2){return d2.volume})) > 10
+        return d3.max(d.values.map(function(d2){return d2.volume})) >= 30
       })
 
   color.domain(nested_data.map(function(d){return d.key}));
@@ -137,29 +137,17 @@ d3.csv(targetFile, function(error, data) {
       .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.volume) + ")"; })
       .attr("x", 3)
       .attr("y", function(d){
-        // console.log(d.name)
-          if ( d.name == 'Alliance of Small Island States' ) {
-              return -7
-            }
-          if ( d.name == 'Group of 77' ) {
-              return -6
-            }
-          if ( d.name == 'African Group' ) {
-              return 0
-            }
-          if ( d.name == 'Independent association of Latin America and the Caribbean' ) {
-              return 9
-            }
+          if ( d.name == "UNFCCC and Kyoto Protocol Implementation" ) {
+            return -5
+          }
+          if ( d.name == "Financial Mechanisms and Funds 2" ) {
+            return 5
+          }
           return 0
         })
       .attr("dy", '.35em')
       .style("fill", function(d) { return color(d.name); })
       .text(function(d) {
-        if ( d.name == "Independent association of Latin America and the Caribbean" ) {
-          return "I.A. of Latin America & the Caribbean"
-        } else if ( d.name == "Organisation for Economic Co.operation and Development" ) {
-          return "Org. for Economic Coop. & Development"
-        }
         return d.name;
       })
 });
