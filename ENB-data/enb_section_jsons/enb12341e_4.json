@@ -1,0 +1,26 @@
+{
+   "actors": [],
+   "countries": [
+      "Canada",
+      "Netherlands"
+   ],
+   "enb_end_date": "12-Nov-07",
+   "enb_long_title": "IPCC-27",
+   "enb_short_title": "IPCC-27",
+   "enb_start_date": "12-Nov-07",
+   "enb_url": "http://www.iisd.ca/vol12/enb12341e.html",
+   "id": "enb12341e_4",
+   "section_title": "IPCC EVENTS:",
+   "sentences": [
+      "Since IPCC-26, several meetings related to other IPCC activities have been held.",
+      "From 6-8 August 2007, Lead Authors of the Technical Paper on Climate Change and Water met in Victoria, Canada.",
+      "The purpose of the meeting was for the authors to incorporate revisions to the Technical Paper in response to 1600 comments by expert reviewers and 700 comments from governments.",
+      "A new draft of the Technical Paper was submitted to the WGII Technical Support Unit on 9 November 2007, and will be open for final government review from 26 November to 24 December 2007.",
+      "From 19-21 September 2007, an Expert Meeting on New Scenarios was held at Noordwijkerhout, the Netherlands, as decided by IPCC-25 and IPCC-26.",
+      "The meeting objective was to identify requirements and plans for the development of new scenarios of emissions, climate change, impacts, vulnerability, adaptation and mitigation.",
+      "The outcomes include: a proposed set of Representative Concentration Pathways (benchmark scenarios) to be used in initial Earth system model runs; plans for further coordination, organization and communication of actions for the development of new integrated scenarios; a plan for increasing involvement of experts from developing countries and economies in transition; and a meeting report."
+   ],
+   "subtype": "",
+   "topics": [],
+   "type": "ipcc"
+}

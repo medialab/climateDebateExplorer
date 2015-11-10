@@ -1,0 +1,28 @@
+{
+   "actors": [],
+   "countries": [
+      "Japan",
+      "Sweden",
+      "Greenland",
+      "Norway"
+   ],
+   "enb_end_date": "17-Nov-07",
+   "enb_long_title": "IPCC-27",
+   "enb_short_title": "IPCC-27",
+   "enb_start_date": "12-Nov-07",
+   "enb_url": "http://www.iisd.ca/vol12/enb12342e.html",
+   "id": "enb12342e_27",
+   "section_title": "GAS INVENTORIES:",
+   "sentences": [
+      "Takahiro Hiraishi (Japan), Co-Chair of the Task Force on National Greenhouse Gas Inventories, updated the Panel on the work of the Task Force (IPCC-XXVII/Doc.11).",
+      "He noted progress in the development of software for the 2006 IPCC Guidelines, including steps to test reporting of emissions from the energy sector at the end of 2007 and early 2008.",
+      "He drew attention to current efforts to expand data in the Emissions Factor Database, including plans for two expert meetings in 2008 on energy and agriculture, and called for IPCC members to submit information on their emissions factors.",
+      "On outreach, he noted the creation of an introduction to the 2006 IPCC Guidelines and leaflets on the database and inventory programs.",
+      "Hiraishi also highlighted an expert meeting to be held in the first half of 2008 on the use of the 2003 Good Practice Guidance for Land-Use Change and Forestry.",
+      "Sweden, supported by Norway, drew attention to the role of black carbon in the loss of ice cover in Greenland and the lack of relevant data.",
+      "They suggested that the Task Force develop guidelines and methodologies for reporting on black carbon to allow more accurate modeling and create a basis for action."
+   ],
+   "subtype": "",
+   "topics": [],
+   "type": "ipcc"
+}

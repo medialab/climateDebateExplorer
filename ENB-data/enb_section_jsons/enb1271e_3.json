@@ -1,0 +1,25 @@
+{
+   "actors": [
+      "European Union"
+   ],
+   "countries": [
+      "United States",
+      "Brazil"
+   ],
+   "enb_end_date": "05-Dec-97",
+   "enb_long_title": "Third Conference of the Parties to the Framework Convention on Climate Change",
+   "enb_short_title": "3rd COP FCCC",
+   "enb_start_date": "05-Dec-97",
+   "enb_url": "http://www.iisd.ca/vol12/enb1271e.html",
+   "id": "enb1271e_3",
+   "section_title": "IN THE CORRIDORS",
+   "sentences": [
+      "A number of the key elements in a final agreement are the subject of bilateral and multilateral contacts on the fringes of the negotiation.",
+      "One important example is the bilateral contact between the US and Brazil to discuss the fate of the proposed clean development fund.",
+      "Observers believe that the US has come to view the initiative as the key to a neat fix, linking a number of their interests, including emissions trading, and engaging some developing countries in meaningful participation with the promise of generating funds for technology.",
+      "Asked about the US interest in the clean development fund, an EU representative warned that multiple loopholes would render targets meaningless."
+   ],
+   "subtype": "corridors",
+   "topics": [],
+   "type": "cop"
+}

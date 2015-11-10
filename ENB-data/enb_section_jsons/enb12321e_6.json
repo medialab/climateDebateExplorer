@@ -1,0 +1,41 @@
+{
+   "actors": [],
+   "countries": [
+      "Canada",
+      "Australia",
+      "South Africa",
+      "India",
+      "Bahamas",
+      "China"
+   ],
+   "enb_end_date": "04-May-07",
+   "enb_long_title": "Ninth session of the IPCC Working Group III (WGIII)",
+   "enb_short_title": "IPCC WGIII",
+   "enb_start_date": "30-Apr-07",
+   "enb_url": "http://www.iisd.ca/vol12/enb12321e.html",
+   "id": "enb12321e_6",
+   "section_title": "A INTRODUCTION:",
+   "sentences": [
+      "This section was addressed on Monday, 30 April, and Tuesday, 1 May.",
+      "All text was agreed with minor amendments except for a paragraph describing how uncertainty is addressed in the SPM.",
+      "WGIII agreed to postpone its decision until a presentation on uncertainty by the Lead Authors and then begin discussion in a contact group co-chaired by Arthur Rolle (Bahamas) and WGIII Vice-Chair Olav Hohmeyer.",
+      "The uncertainty contact group met on Monday evening, and Tuesday morning and afternoon.",
+      "In addition to the paragraph in the introductory session, the contact group also considered a draft Annex I on how uncertainty is represented.",
+      "The main issues under discussion were the definitions for evidence and agreement.",
+      "During an informal presentation during lunchtime on Monday, Chair Pachauri explained the history of uncertainty treatment in AR4, a 2005 paper on guidance for AR4 Lead Authors on addressing uncertainty ( http://www.ipcc.ch/activity/uncertaintyguidancenote.pdf ). A Lead Author discussed the differences between the uncertainty approach in WGI, WGII and WGIII .",
+      "On the proposed two-dimensional approach to uncertainty in WGIII , which has agreement on the vertical axis and evidence on the horizontal axis, he said agreement meant the degree of convergence in the literature, and evidence the number of independent studies, quality of the studies, data points, model runs, etc.",
+      "On evidence, China, India, South Africa and others noted that evidence can be understood as 100% proof, particularly in other languages, and proposed alternative terminology.",
+      "This was resolved by introducing a footnote with a dictionary definition for evidence and adding an explanation for evidence in the glossary.",
+      "On agreement, China, US and others noted the need to express that the agreement is in the published literature and not among experts.",
+      "On text defining agreement, Australia proposed convergence in the literature, and Canada proposed concurrence.",
+      "While participants granted that convergence was preferable to concurrence, they agreed to concurrence in the literature because the word convergence in climate change is often associated with a mitigation strategy known as convergence and contraction.",
+      "WGIII agreed to specify that literature refers to literature qualifying under the IPCC rules, and to add an explanation for agreement in the glossary.",
+      "Final Text: The final text introduces the other six sections of the SPM.",
+      "This section also refers to the following box:"
+   ],
+   "subtype": "",
+   "topics": [
+      "Anthropogenic Interference with Climate System"
+   ],
+   "type": "ipcc"
+}
