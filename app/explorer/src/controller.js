@@ -40,7 +40,8 @@ tree.on('actions:filter', function(e) {
 });
 tree.on('actions:gather', function() {
   tree.datastore.query(
-    { query: filtersFacet(
+    { size: 0,
+      query: filtersFacet(
         tree.get('appState', 'filters'),
         tree.get('cached', 'config', 'fields')
       ),
@@ -51,12 +52,15 @@ tree.on('actions:gather', function() {
         }, {}) },
     function(result) {
       // Store aggregations:
+      var total = tree.set(['contextual', 'total'], result.total);
+
+      // Store aggregations:
       _.forEach(result.aggregations, function(list, field) {
         tree.set(
           ['contextual', 'aggregatedLists', field],
           _.sortBy(
             _.reduce(list, function(result, value, key) {
-              result.push({ id: key, varlue: value });
+              result.push({ id: key, value: value / total });
               return result;
             }, []),
             'value'
