@@ -15,12 +15,12 @@
       <a href="#"><img src="assets/svg/twitter.svg" /></a>
       <a href="#"><img src="assets/svg/linkedin.svg" /></a>
     </div>
-    <div id="mode-selector" data-0="top: 25em;" data-30="top: 0.5em;">
+    <div id="mode-selector" data-0="top: !25em;" data-_viz1="top: !0.5em;">
       <a href="#">Discover</a>
-      <a href="#">Explore</a>
+      <a href="#" class="explore">Explore</a>
     </div>
   </header>
-  <section id="context" data-0="top: 2em;" data-30="top: -20em;">
+  <section id="context" data-0="top: !2em;" data-_viz1="top: !-20em;">
     <h1>Climate debate explorer</h1>
     <p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand? Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
     <div id="logos">
@@ -29,28 +29,34 @@
       <img src="assets/svg/atelier-iceberg.svg" id="logo-atelier-iceberg" />
     </div>
   </section>
-  <section id="viz-container">
-    <section id="viz-selector">
-      <a href="#viz-1-1">
-        <span>1</span>
-        <span>Titre 1</span>
-      </a>
-      <a href="#viz-2-1">
-        <span>1</span>
-        <span>Titre 2</span>
-      </a>
-      <a href="#viz-3-1">
-        <span>1</span>
-        <span>Titre 3</span>
-      </a>
-      <a href="#viz-4-1">
-        <span>1</span>
-        <span>Titre 4</span>
-      </a>
-    </section>
-    <section class="viz">
-      <div class="">
-    </section>
+  <section id="viz-container" data-0="top: !20em;" data-_viz1="top: !0em;">
+    <div>
+      <section id="viz-selector" data-0="top: !10em;" data-_viz1="top: !7em;">
+        <a href="#viz-1-1" data-0="width: !50em;" data-_viz1="width: !50em;" data-_viz2="width: !4em;">
+          <span class="number">1</span>
+          <span class="title">Titre Un</span>
+        </a>
+        <a href="#viz-2-1" data-0="width: !4em;" data-_viz2="width: !50em;" data-_viz3="width: !4em;">
+          <span class="number">2</span>
+          <span class="title">Titre Deux</span>
+        </a>
+        <a href="#viz-3-1" data-0="width: !4em;" data-_viz3="width: !50em;" data-_viz4="width: !4em;">
+          <span class="number">3</span>
+          <span class="title">Titre Trois</span>
+        </a>
+        <a href="#viz-4-1" data-0="width: !4em;" data-_viz4="width: !50em;">
+          <span class="number">4</span>
+          <span class="title">Titre Quatre</span>
+        </a>
+      </section>
+      <section class="viz-band">
+        <div class="verbatims"></div>
+        <div class="analysis"></div>
+        <div class="viz">
+          <!-- D3 integration space -->
+        </div>
+      </section>
+    </div>
   </section>
   <section id="control-anchors">
     <div id="viz-1-1"></div>
@@ -74,22 +80,26 @@
   <script type="text/javascript">
     var s = skrollr.init({
       constants: {
-        viz1_1: 30,
-        viz1_2: 60,
-        viz1_3: 90,
-        viz1_4: 120,
-        viz2_1: 150,
-        viz2_2: 180,
-        viz2_3: 210,
-        viz2_4: 240,
-        viz3_1: 270,
-        viz3_2: 300,
-        viz3_3: 330,
-        viz3_4: 360,
-        viz4_1: 390,
-        viz4_2: 320,
-        viz4_3: 350,
-        viz4_4: 380
+        viz1: 60,
+        viz1_1: 60,
+        viz1_2: 120,
+        viz1_3: 180,
+        viz1_4: 240,
+        viz2: 300,
+        viz2_1: 300,
+        viz2_2: 360,
+        viz2_3: 420,
+        viz2_4: 480,
+        viz3: 540,
+        viz3_1: 540,
+        viz3_2: 600,
+        viz3_3: 660,
+        viz3_4: 720,
+        viz4: 780,
+        viz4_1: 780,
+        viz4_2: 840,
+        viz4_3: 900,
+        viz4_4: 960
       }
     });
   </script>
