@@ -1,3 +1,8 @@
+@COLOR_TITLES: #e56c2a;
+@COLOR_BORDERS: #aaa;
+@COLOR_BACKGROUND: #eee;
+@COLOR_BARS: #000;
+
 html {
   height: 100%;
   width: 100%;
@@ -11,6 +16,8 @@ html {
     #app-container {
       height: 100%;
       width: 100%;
+
+      overflow: hidden;
     }
   }
 }
@@ -44,4 +51,29 @@ html {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.column-title {
+  height: 2em;
+  line-height: 2em;
+
+  text-align: center;
+  color: @COLOR_TITLES;
+}
+
+.block-title {
+  height: 2em;
+  line-height: 2em;
+
+  color: @COLOR_TITLES;
+  text-transform: uppercase;
+
+  .sub-block-title {
+    color: @COLOR_TITLES;
+  }
 }
