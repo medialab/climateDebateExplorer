@@ -46,7 +46,7 @@
       }
     } 
 
-    .viz-band {
+    #viz-band {
       position: absolute;
       box-sizing: border-box;
       padding: 0 30em 0 10em;
@@ -57,7 +57,7 @@
       border-top: solid 1px @mainBlue;
       border-bottom: solid 1px @mainBlue;
 
-      .verbatims {
+      #verbatims {
         position: absolute;
         top: 1em;
         bottom: 1em;
@@ -67,7 +67,7 @@
         padding-left: 1em;
       }
 
-      .analysis {
+      #analysis {
         position: absolute;
         left: 20em;
         right: 20em;
@@ -76,11 +76,37 @@
         height: 8em;
       }
 
-      .viz {
+      #viz {
         display: block;
         height: 100%;
         position: relative;
         overflow: hidden;
+      }
+
+      #dots {
+        position: absolute;
+        left: 11em;
+        width: 2em;
+        height: 8em;
+        bottom: -8.5em;
+
+        >div {
+          box-sizing: border-box;
+          margin: 0.5em;
+          padding: 0.75em;
+          border: 1px solid @mainBlue;
+          border-radius: 100%;
+
+          >div {
+            height: 0;
+            width: 0;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            background-color: @mainBlue;
+            border-radius: 100%;
+          }
+        }
       }
     }
   }

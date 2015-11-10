@@ -76,13 +76,12 @@ d3.csv(targetFile, function(error, data) {
     .entries(volumes)
     .filter(function(d, i){
         // return d3.max(d.values.map(function(d2){return d2.volume})) >= 10
-          // || d.key == 'Adaptation'
-          // || d.key == 'Mitigation'
-        return d.key == 'UNFCCC and Kyoto Protocol Functioning'
-          || d.key == 'Extension of the Kyoto protocol'
-          || d.key == 'Post-Kyoto Agreements'
-          || d.key == 'Pre-Kyoto'
-          || d.key == 'Compliance and Enforcement'
+        return d.key == 'Vulnerabilities and Impacts'
+          || d.key == 'Adverse Effects and Response Measure'
+          // || d.key == 'Reasons for Concern'
+          || d.key == 'Financial Mechanisms and Funds'
+          || d.key == 'forests'
+          || d.key == 'Loss and Damage'
       })
 
   color.domain(nested_data.map(function(d){return d.key}));
@@ -129,27 +128,9 @@ d3.csv(targetFile, function(error, data) {
       .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.volume) + ")"; })
       .attr("x", 3)
       .attr("y", function(d){
-          if ( d.name == "UNFCCC and Kyoto Protocol Functioning" ) {
-            return -3
+          if ( d.name == "Vulnerabilities and Impacts" ) {
+            return -5
           }
-          if ( d.name == "Financial Mechanisms and Funds" ) {
-            return 3
-          }
-          if ( d.name == "Extension of the Kyoto protocol" ) {
-            return -3
-          }
-          if ( d.name == "Compliance and Enforcement" ) {
-            return -6
-          }
-          // if ( d.name == "Pre-Kyoto" ) {
-          //   return -5
-          // }
-          // if ( d.name == "Adaptation" ) {
-          //   return -5
-          // }
-          // if ( d.name == "Mitigation" ) {
-          //   return 5
-          // }
           return 0
         })
       .attr("dy", '.35em')
