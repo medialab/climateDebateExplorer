@@ -1,0 +1,234 @@
+{
+  "intro": "",
+  "viz_1": {
+    "title": "What are the major climate negotiation issues ?",
+    "1": {
+      "offset": 100,
+      "title": "Visibility of issues related to the Kyoto protocol.",
+      "window": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "analysis": "The diagram shows the evolution of visibility of four discussions related to the Kyoto protocol (measured as the percentage of ENB sections mentioning expressions related to each discussion over the total of ENB sections for the year).",
+      "verbatims": {
+        "1": {
+          "title": "",
+          "content": ""
+        },
+        "2": {
+          "title": "",
+          "content": ""
+        },
+        "3": {
+          "title": "",
+          "content": ""
+        }
+      }
+    },
+    "2": {
+      "offset": 300,
+      "title": "Setting up the Kyoto Protocol",
+      "window": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "analysis": "The first stage of negotiations seemed to be framed by attempts to establish a Kyoto protocol and deciding its functional rules and integration within the UNFCCC system (this second set of concerns will remain highly important throughout the negotiations).",
+      "verbatims": {
+        "1": {
+          "title": "",
+          "content": ""
+        },
+        "2": {
+          "title": "",
+          "content": ""
+        },
+        "3": {
+          "title": "",
+          "content": ""
+        }
+      }
+    },
+    "3": {
+      "offset": 500,
+      "title": "",
+      "window": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "analysis": "",
+      "verbatims": {
+        "1": {
+          "title": "",
+          "content": ""
+        },
+        "2": {
+          "title": "",
+          "content": ""
+        },
+        "3": {
+          "title": "",
+          "content": ""
+        }
+      }
+    },
+    "4": {
+      "offset": 700,
+      "title": "",
+      "window": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "analysis": "",
+      "verbatims": {
+        "1": {
+          "title": "",
+          "content": ""
+        },
+        "2": {
+          "title": "",
+          "content": ""
+        },
+        "3": {
+          "title": "",
+          "content": ""
+        }
+      }
+    }
+  },
+  "viz_2": {
+    "title": "Who are the climate negotiations actors ?",
+    "1": {
+      "offset": 900,
+      "title": "",
+      "window": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "analysis": "",
+      "verbatims": {
+        "1": {
+          "title": "",
+          "content": ""
+        },
+        "2": {
+          "title": "",
+          "content": ""
+        },
+        "3": {
+          "title": "",
+          "content": ""
+        }
+      }
+    },
+    "2": {
+      "offset": 1100,
+      "title": "",
+      "window": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "analysis": "",
+      "verbatims": {
+        "1": {
+          "title": "",
+          "content": ""
+        },
+        "2": {
+          "title": "",
+          "content": ""
+        },
+        "3": {
+          "title": "",
+          "content": ""
+        }
+      }
+    },
+    "3": {
+      "offset": 1300,
+      "title": "",
+      "window": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "analysis": "",
+      "verbatims": {
+        "1": {
+          "title": "",
+          "content": ""
+        },
+        "2": {
+          "title": "",
+          "content": ""
+        },
+        "3": {
+          "title": "",
+          "content": ""
+        }
+      }
+    },
+    "4": {
+      "offset": 1500,
+      "title": "",
+      "window": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "analysis": "",
+      "verbatims": {
+        "1": {
+          "title": "",
+          "content": ""
+        },
+        "2": {
+          "title": "",
+          "content": ""
+        },
+        "3": {
+          "title": "",
+          "content": ""
+        }
+      }
+    },
+    "5": {
+      "offset": 1700,
+      "title": "",
+      "window": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "analysis": "",
+      "verbatims": {
+        "1": {
+          "title": "",
+          "content": ""
+        },
+        "2": {
+          "title": "",
+          "content": ""
+        },
+        "3": {
+          "title": "",
+          "content": ""
+        }
+      }
+    }
+  }
+}
