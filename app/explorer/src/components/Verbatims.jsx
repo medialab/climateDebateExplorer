@@ -15,7 +15,7 @@ module.exports = React.createClass({
         place: 'Copenhagen',
         event: 'COP 8',
         title: 'This is my very tiny title',
-        actors: ['France', 'USA', 'Spain'],
+        groupings: ['Group1', 'Group2'],
         topics: ['toilet paper', 'Forest']
       },
       {
@@ -23,7 +23,7 @@ module.exports = React.createClass({
         place: 'Copenhagen',
         event: 'COP 8',
         title: 'This is my very tiny title',
-        actors: ['France', 'USA', 'Spain'],
+        groupings: ['Group1', 'Group2'],
         topics: ['toilet paper', 'Forest']
       },
       {
@@ -31,7 +31,7 @@ module.exports = React.createClass({
         place: 'Copenhagen',
         event: 'COP 8',
         title: 'This is my very tiny title',
-        actors: ['France', 'USA', 'Spain'],
+        groupings: ['Group1', 'Group2'],
         topics: ['toilet paper', 'Forest']
       },
       {
@@ -39,7 +39,7 @@ module.exports = React.createClass({
         place: 'Copenhagen',
         event: 'COP 8',
         title: 'This is my very tiny title',
-        actors: ['France', 'USA', 'Spain'],
+        groupings: ['Group1', 'Group2'],
         topics: ['toilet paper', 'Forest']
       },
       {
@@ -47,7 +47,7 @@ module.exports = React.createClass({
         place: 'Copenhagen',
         event: 'COP 8',
         title: 'This is my very tiny title',
-        actors: ['France', 'USA', 'Spain'],
+        groupings: ['Group1', 'Group2'],
         topics: ['toilet paper', 'Forest']
       },
       {
@@ -55,7 +55,7 @@ module.exports = React.createClass({
         place: 'Copenhagen',
         event: 'COP 8',
         title: 'This is my very tiny title',
-        actors: ['France', 'USA', 'Spain'],
+        groupings: ['Group1', 'Group2'],
         topics: ['toilet paper', 'Forest']
       },
       {
@@ -63,7 +63,7 @@ module.exports = React.createClass({
         place: 'Copenhagen',
         event: 'COP 8',
         title: 'This is my very tiny title',
-        actors: ['France', 'USA', 'Spain'],
+        groupings: ['Group1', 'Group2'],
         topics: ['toilet paper', 'Forest']
       },
       {
@@ -71,7 +71,7 @@ module.exports = React.createClass({
         place: 'Copenhagen',
         event: 'COP 8',
         title: 'This is my very tiny title',
-        actors: ['France', 'USA', 'Spain'],
+        groupings: ['Group1', 'Group2'],
         topics: ['toilet paper', 'Forest']
       },
       {
@@ -79,7 +79,7 @@ module.exports = React.createClass({
         place: 'Copenhagen',
         event: 'COP 8',
         title: 'This is my very tiny title',
-        actors: ['France', 'USA', 'Spain'],
+        groupings: ['Group1', 'Group2'],
         topics: ['toilet paper', 'Forest']
       }
     ];
@@ -95,7 +95,7 @@ module.exports = React.createClass({
               <li  className="minute"
                     key={ i }>
                 <div className="minute-actions">
-                  <div className="minute-number"></div>
+                  <div className="minute-number">{ i }</div>
                   <div className="minute-see"></div>
                   <div className="minute-share"></div>
                 </div>
@@ -106,7 +106,26 @@ module.exports = React.createClass({
                   minute.title
                 }</div>
                 <div className="minute-tags">{
-                  minute.actors.concat(minute.topics).join(' | ')
+                  minute.groupings.map(function(g) {
+                    return {
+                      class: 'countries',
+                      value: g
+                    };
+                  }).concat(
+                    minute.topics.map(function(t) {
+                      return {
+                        class: 'topics',
+                        value: t
+                      };
+                    })
+                  ).map(function(tag, j) {
+                    return (
+                      <span className={ tag.class }
+                            key={ j }>{
+                        tag.value
+                      }</span>
+                    );
+                  })
                 }</div>
               </li>
             );
