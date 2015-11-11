@@ -39,36 +39,35 @@ tree.on('actions:filter', function(e) {
   tree.commit();
 });
 tree.on('actions:gather', function() {
-  tree.datastore.query(
-    { size: 0,
-      query: filtersFacet(
-        tree.get('appState', 'filters'),
-        tree.get('cached', 'config', 'fields')
-      ),
-      aggregations:
-        tree.get('cached', 'config', 'aggregations').reduce(function(result, field) {
-          result[field] = field;
+  var result = tree.datastore.query({
+    size: 0,
+    query: filtersFacet(
+      tree.get('appState', 'filters'),
+      tree.get('cached', 'config', 'fields')
+    ),
+    aggregations:
+      tree.get('cached', 'config', 'aggregations').reduce(function(result, field) {
+        result[field] = field;
+        return result;
+      }, {})
+  });
+
+  // Store aggregations:
+  var total = tree.set(['contextual', 'total'], result.total);
+
+  // Store aggregations:
+  _.forEach(result.aggregations, function(list, field) {
+    tree.set(
+      ['contextual', 'aggregatedLists', field],
+      _.sortBy(
+        _.reduce(list, function(result, value, key) {
+          result.push({ id: key, value: value / total });
           return result;
-        }, {}) },
-    function(result) {
-      // Store aggregations:
-      var total = tree.set(['contextual', 'total'], result.total);
+        }, []),
+        'value'
+      ).reverse()
+    );
+  });
 
-      // Store aggregations:
-      _.forEach(result.aggregations, function(list, field) {
-        tree.set(
-          ['contextual', 'aggregatedLists', field],
-          _.sortBy(
-            _.reduce(list, function(result, value, key) {
-              result.push({ id: key, value: value / total });
-              return result;
-            }, []),
-            'value'
-          ).reverse()
-        );
-      });
-
-      tree.commit();
-    }
-  );
+  tree.commit();
 });

@@ -65,33 +65,32 @@ module.exports = React.createClass({
           this.state.fields
         );
 
-    this.context.tree.datastore.query(
-      { query: faceted,
-        sort: ['event_id', 'id'],
-        from: morePosts ?
-          (this.state.results || []).length :
-          0,
-        size: SIZE },
-      (function(queryResult) {
-        var verbatims = morePosts ?
-          (this.state.verbatims || []).concat(queryResult.hits) :
-          queryResult.hits;
+    var queryResult = this.context.tree.datastore.query({
+      query: faceted,
+      sort: ['event_id', 'id'],
+      from: morePosts ?
+        (this.state.results || []).length :
+        0,
+      size: SIZE
+    });
 
-        this.setState({
-          verbatims: verbatims,
-          total: queryResult.total,
-          fullList: queryResult.total === verbatims.length
-        });
+    var verbatims = morePosts ?
+      (this.state.verbatims || []).concat(queryResult.hits) :
+      queryResult.hits;
 
-        this.collapse();
+    this.setState({
+      verbatims: verbatims,
+      total: queryResult.total,
+      fullList: queryResult.total === verbatims.length
+    });
 
-        // Scroll to top, if full list reloaded:
-        if (!morePosts && list)
-          setTimeout(function() {
-            list.scrollTop = 0;
-          }, 0);
-      }).bind(this)
-    );
+    this.collapse();
+
+    // Scroll to top, if full list reloaded:
+    if (!morePosts && list)
+      setTimeout(function() {
+        list.scrollTop = 0;
+      }, 0);
   },
   _getList: function() {
     var events = this.state.fields.event_id.values;
