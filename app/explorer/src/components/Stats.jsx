@@ -8,12 +8,12 @@ var React = require('react'),
 module.exports = React.createClass({
   displayName: 'climateDebateExplorer/explorer/stats',
   mixins: [ BaobabBranchMixin ],
-  cursors: {},
-
-  getInitialState: function() {
-    return {
-      expanded: null
-    };
+  cursors: {
+    fields: ['cached', 'config', 'fields'],
+    filtersIndex: ['views', 'filtersIndex'],
+    deployedList: ['appState', 'deployedList'],
+    aggregations: ['cached', 'config', 'aggregations'],
+    aggregatedLists: ['contextual', 'aggregatedLists']
   },
 
   // Handlers
@@ -21,15 +21,11 @@ module.exports = React.createClass({
     window.addEventListener('resize', this._updateBlockSize, false);
     this._updateBlockSize();
   },
-  more: function(e) {
-    if (this.state.expanded)
-      this.setState({
-        expanded: null
-      });
+  toggle: function(e) {
+    if (this.state.deployedList)
+      this.cursors.deployedList.set(null);
     else
-      this.setState({
-        expanded: e.currentTarget.getAttribute('data-id')
-      });
+      this.cursors.deployedList.set(e.currentTarget.getAttribute('data-id'));
   },
 
   // Helpers
@@ -37,137 +33,69 @@ module.exports = React.createClass({
     var dom = ReactDOM.findDOMNode(this);
 
     this.setState({
-      nbLines: Math.floor(((dom.offsetHeight - 2 * EM) / 3 - 4 * EM) / (2 * EM))
+      nbLines: Math.floor(((dom.offsetHeight - EM) / 3 - 4 * EM) / (2.5 * EM))
     });
   },
 
   render: function() {
-    var data = [
-          {name: 'Cheval', figure: 90 },
-          {name: 'Cheval', figure: 85 },
-          {name: 'Cheval', figure: 70 },
-          {name: 'Cheval', figure: 60 },
-          {name: 'Cheval', figure: 55 },
-          {name: 'Cheval', figure: 50 },
-          {name: 'Cheval', figure: 40 },
-          {name: 'Cheval', figure: 30 },
-          {name: 'Cheval', figure: 20 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 },
-          {name: 'Cheval', figure: 15 }
-        ],
-        bars = this.state.expanded ?
-          data :
-          data.slice(0, this.state.nbLines);
-
     return (
       <div className="stats">
-        <div className="column-title">Stats</div>
-        <div  className={
-                this.state.expanded === null ?
-                  'block' :
-                  this.state.expanded === 'topics' ?
-                    'block expanded' :
-                    'block hidden'
-              }>
-          <div className="block-title">Topics</div>
-          <div className="block-content">{
-            bars.map(function(line, i) {
-              return (
-                <div  className="chart-line"
-                      key={ i }>
-                  <div className="chart-line-label">{ line.name }</div>
-                  <div  className="chart-line-bar"
-                        data-figure={ line.figure + '%' }>
-                    <div  className="chart-line-fill"
-                          style={{
-                            width: line.figure + '%'
-                          }}></div>
-                  </div>
-                </div>
-              );
-            })
-          }</div>
-          <div  className="block-more"
-                data-id="topics"
-                onClick={ this.more }>See more</div>
-        </div>
-        <div  className={
-                this.state.expanded === null ?
-                  'block' :
-                  this.state.expanded === 'groupings' ?
-                    'block expanded' :
-                    'block hidden'
-              }>
-          <div className="block-title">Groupings</div>
-          <div className="block-content">{
-            bars.map(function(line, i) {
-              return (
-                <div  className="chart-line"
-                      key={ i }>
-                  <div className="chart-line-label">{ line.name }</div>
-                  <div  className="chart-line-bar"
-                        data-figure={ line.figure + '%' }>
-                    <div  className="chart-line-fill"
-                          style={{
-                            width: line.figure + '%'
-                          }}></div>
-                  </div>
-                </div>
-              );
-            })
-          }</div>
-          <div  className="block-more"
-                data-id="groupings"
-                onClick={ this.more }>See more</div>
-        </div>
-        <div  className={
-                this.state.expanded === null ?
-                  'block' :
-                  this.state.expanded === 'events' ?
-                    'block expanded' :
-                    'block hidden'
-              }>
-          <div className="block-title">Events</div>
-          <div className="block-content">{
-            bars.map(function(line, i) {
-              return (
-                <div  className="chart-line"
-                      key={ i }>
-                  <div className="chart-line-label">{ line.name }</div>
-                  <div  className="chart-line-bar"
-                        data-figure={ line.figure + '%' }>
-                    <div  className="chart-line-fill"
-                          style={{
-                            width: line.figure + '%'
-                          }}></div>
-                  </div>
-                </div>
-              );
-            })
-          }</div>
-          <div  className="block-more"
-                data-id="events"
-                onClick={ this.more }>See more</div>
-        </div>
+        <div className="column-title">Statistics</div>
+        { (
+            this.state.deployedList ?
+              [this.state.deployedList] :
+              this.state.aggregations
+          ).map(function(field, i) {
+            var displayed = 0,
+                filter = this.state.filtersIndex[field] || {};
+
+            return (
+              <div  key={ field }
+                    className={
+                      this.state.deployedList ?
+                        'block expanded' :
+                        'block'
+                    }>
+                <div className="block-title">{
+                  this.state.fields[field].label || field
+                }</div>
+                <div className="block-content">{
+                  (this.state.aggregatedLists[field] || []).map(function(line, i) {
+                    var display = Math.round(line.value * 100) + '%';
+
+                    // Hide filtered values:
+                    if (filter[line.id])
+                      return undefined;
+
+                    // Truncate values count to display:
+                    if (!this.state.deployedList && displayed >= this.state.nbLines)
+                      return undefined;
+
+                    // If you're still here, then the line will be displayed:
+                    displayed++;
+
+                    return (
+                      <div  className="chart-line"
+                            data-field={ field }
+                            key={ i }>
+                        <div  className="chart-line-bar"
+                              data-figure={ display }>
+                          <div  className="chart-line-fill"
+                                style={{
+                                  width: display
+                                }}></div>
+                        </div>
+                        <div className="chart-line-label">{ line.id }</div>
+                      </div>
+                    );
+                  }, this)
+                }</div>
+                <div  className="block-more"
+                      data-id={ field }
+                      onClick={ this.toggle }>See more results</div>
+              </div>
+            );
+          }, this) }
       </div>
     );
   }

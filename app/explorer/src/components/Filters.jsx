@@ -1,21 +1,23 @@
 'use strict';
 
-var React = require('react'),
+var _ = require('lodash'),
+    React = require('react'),
     BaobabBranchMixin = require('baobab-react/mixins').branch;
 
 module.exports = React.createClass({
   displayName: 'climateDebateExplorer/explorer/filters',
   mixins: [ BaobabBranchMixin ],
-  cursors: {},
+  cursors: {
+    valuesLists: ['cached', 'valuesLists'],
+    filtersIndex: ['views', 'filtersIndex'],
+
+    fields: ['cached', 'config', 'fields'],
+    filterBlocks: ['cached', 'config', 'filters']
+  },
 
   getInitialState: function() {
     return {
-      filters: {
-        countries: false,
-        groupings: false,
-        topics: false,
-        events: false
-      }
+      deployed: {}
     };
   },
 
@@ -23,107 +25,77 @@ module.exports = React.createClass({
   search: function(e) {
     console.log('TODO: search handler');
   },
-  toggle: function(e) {
-    var block = e.currentTarget.getAttribute('data-id'),
-        filters = this.state.filters;
-
-    if (Array.isArray(filters[block]))
-      filters[block] = false;
-    else
-      filters[block] = [];
+  toggleBlock: function(e) {
+    var field = e.currentTarget.getAttribute('data-field');
 
     this.setState({
-      filters: filters
+      deployed: _.set(this.state.deployed, field, !this.state.deployed[field])
     });
   },
-  subToggle: function(e) {
-    var block = e.currentTarget.getAttribute('data-block'),
-        subBlock = e.currentTarget.getAttribute('data-sub-block'),
-        filters = this.state.filters;
+  onClickInput: function(e) {
+    var target = e.currentTarget,
+        field = target.getAttribute('data-field'),
+        value = target.getAttribute('data-value');
 
-    if (filters[block].indexOf(subBlock) < 0)
-      filters[block].push(subBlock);
-    else
-      filters[block] = filters[block].filter(function(f) {
-        return f !== subBlock;
-      });
-
-    this.setState({
-      filters: filters
+    this.context.tree.emit('actions:filter', {
+      field: field,
+      value: value
     });
   },
 
   render: function() {
-    var data = {
-      countries: [
-        {name: 'Europe', values: ['France', 'Spain']},
-        {name: 'Africa', values: ['France', 'Spain']},
-      ],
-      groupings: [
-        {name: 'Europe', values: ['France', 'Spain']},
-        {name: 'Africa', values: ['France', 'Spain']},
-      ],
-      topics: [
-        {name: 'Europe', values: ['France', 'Spain']},
-        {name: 'Africa', values: ['France', 'Spain']},
-      ],
-      events: [
-        {name: 'Europe', values: ['France', 'Spain']},
-        {name: 'Africa', values: ['France', 'Spain']},
-      ]
-    };
-
     return (
       <div className="filters">
         <div className="column-title">Filters</div>
-
 
         <div  className="search"
               onChange={ this.search }>
           <input type="text" />
         </div>
 
+        { (this.state.filterBlocks || []).map(function(filterBlock, i) {
+            var field = filterBlock.field,
+                deployed = !!this.state.deployed[field],
+                filteredValues = this.state.filtersIndex[field] || {};
 
-        <div className="block">
-          <div  className="block-title"
-                data-id="countries"
-                onClick={ this.toggle }>Countries</div>
-          <div  className={
-                  Array.isArray(this.state.filters.countries) ?
-                    'block-content expanded' : 'block-content'
-                }>{
-            data.countries.map(function(area, i) {
-              return (
-                <div  className="sub-block"
-                      key={ i }>
-                  <div  className="sub-block-title"
-                        data-block="countries"
-                        data-sub-block={ area.name }
-                        onClick={ this.subToggle }>{
-                    area.name
-                  }</div>
-                  <div className="sub-block-content">{
-                    (
-                      ( Array.isArray(this.state.filters.countries) &&
-                        this.state.filters.countries.indexOf(area.name) < 0 ) ?
-                        [] : area.values
-                    ).map(function(country, j) {
-                      return (
-                        <div  className="filter"
-                              key={ j }>
-                          <div className="filter-label">{
-                            country
-                          }</div>
-                          <input type="checkbox" />
-                        </div>
-                      );
-                    }, this)
-                  }</div>
+            return (
+              <div  key={ field }
+                    data-id={ field }
+                    className="block"
+                    data-deployed={ deployed || undefined }>
+                <div  data-field={ field }
+                      className="block-title"
+                      onClick={ this.toggleBlock }>{
+                  this.state.fields[field].label || field
+                }</div>
+
+                <div className="block-content">
+                  <ul className="filters-list">{
+                    deployed ?
+                      this.state.valuesLists[field].map(function(value, j) {
+                        var id = 'filter-' + field + '-' + value;
+
+                        return (
+                          <li key={ j }
+                              className="filter">
+                            <input  id={ id }
+                                    name={ id }
+                                    type="checkbox"
+                                    data-field={ field }
+                                    data-value={ value }
+                                    onChange={ this.onClickInput }
+                                    checked={ !!filteredValues[value] } />
+                            <label  htmlFor={ id }
+                                    className="filter-label">{ value }</label>
+                          </li>
+                        );
+                      }, this) :
+                      undefined
+                  }</ul>
                 </div>
-              );
-            }, this)
-          }</div>
-        </div>
+              </div>
+            );
+          }, this) }
       </div>
     );
   }

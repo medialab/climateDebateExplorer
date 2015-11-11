@@ -4,22 +4,95 @@
     width: 100%;
 
     overflow: auto;
+    color: @COLOR_VERBATIMS_TEXTS;
 
     .minute {
-      width: 100%;
+      display: block;
+      position: relative;
+      height: 8em;
+      width: 90%;
+      margin-left: 1em;
 
-      border-bottom: 1px solid @COLOR_BORDERS;
+      .minute-actions {
+        position: absolute;
+        top: 1em;
+        left: 0em;
+        height: 6em;
+        width: 3em;
+
+        border-right: 2px solid @COLOR_ORANGE;
+
+        .minute-number {
+          height: 2em;
+          line-height: 2em;
+          width: 2em;
+          margin-left: 0.5em;
+
+          text-align: center;
+          vertical-align: bottom;
+          border-bottom: 2px solid @COLOR_ORANGE;
+        }
+        .minute-see {
+          height: 1.2em;
+          width: 1.2em;
+          margin: 0.2em 0.9em;
+
+          background-image: url('./assets/picto_eye.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        .minute-share {
+          height: 1.2em;
+          width: 1.2em;
+          margin: 0.2em 0.9em;
+
+          background-image: url('./assets/picto_link.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
 
       .minute-context {
+        position: absolute;
+        top: 1em;
+        left: 4em;
         height: 2em;
+        line-height: 2em;
+        width: calc(~"100% - 2em");
+
+        color: @COLOR_ORANGE;
       }
 
       .minute-title {
+        position: absolute;
+        top: 3em;
+        left: 4em;
         height: 2em;
+        line-height: 2em;
+        width: calc(~"100% - 2em");
       }
 
       .minute-tags {
+        position: absolute;
+        top: 5em;
+        left: 4em;
         height: 2em;
+        line-height: 2em;
+        width: calc(~"100% - 2em");
+
+        span {
+          margin: 0 0.3em;
+          padding: 0.2em 0.5em;
+
+          background-color: @COLOR_BARS_BACKGROUND;
+
+          &.topics {
+            border-left: 3px solid @COLOR_TOPICS;
+          }
+          &.groupings {
+            border-left: 3px solid @COLOR_GROUPINGS;
+          }
+        }
       }
     }
   }

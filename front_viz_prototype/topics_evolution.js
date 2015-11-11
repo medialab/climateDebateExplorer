@@ -50,32 +50,39 @@ d3.csv(targetFile, function(error, data) {
   // Agregate volume
   var volumeByTopicYearly = {}
   data.forEach(function(d){
-    d.topics.forEach(function(actor){
-      var volumeYearly = volumeByTopicYearly[actor] || {}
+    d.topics.forEach(function(topic){
+      var volumeYearly = volumeByTopicYearly[topic] || {}
         , volume = ( volumeYearly[d.year] || 0 ) + ( 100 / totalVolumeYearly[d.year] )
       volumeYearly[d.year] = volume
-      volumeByTopicYearly[actor] = volumeYearly
+      volumeByTopicYearly[topic] = volumeYearly
     })
   })
 
   // Flatten data
   var volumes = []
-  for ( var actor in volumeByTopicYearly ) {
+  for ( var topic in volumeByTopicYearly ) {
     for ( var year = 1995 ; year <= 2015 ; year++ ) {
       volumes.push({
-        actor: actor
+        topic: topic
       , year: year
-      , volume: volumeByTopicYearly[actor][year] || 0
+      , volume: volumeByTopicYearly[topic][year] || 0
       })
     }
   }
 
-  // Curves by actor
+  // Curves by topic
   var nested_data = d3.nest()
-    .key(function(d) { return d.actor; })
+    .key(function(d) { return d.topic; })
     .entries(volumes)
     .filter(function(d, i){
-        return d3.max(d.values.map(function(d2){return d2.volume})) >= 5
+        // return d3.max(d.values.map(function(d2){return d2.volume})) >= 10
+          // || d.key == 'Adaptation'
+          // || d.key == 'Mitigation'
+        return d.key == 'UNFCCC and Kyoto Protocol Functioning'
+          || d.key == 'Extension of the Kyoto protocol'
+          || d.key == 'Post-Kyoto Agreements'
+          || d.key == 'Pre-Kyoto'
+          || d.key == 'Compliance and Enforcement'
       })
 
   color.domain(nested_data.map(function(d){return d.key}));
@@ -107,27 +114,42 @@ d3.csv(targetFile, function(error, data) {
       .style("text-anchor", "end")
       .text("Volume (%)");
 
-  var actor = svg.selectAll(".actor")
+  var topic = svg.selectAll(".topic")
       .data(nested_data)
     .enter().append("g")
-      .attr("class", "actor");
+      .attr("class", "topic");
 
-  actor.append("path")
+  topic.append("path")
       .attr("class", "line")
       .attr("d", function(d) { return line(d.values); })
       .style("stroke", function(d) { return color(d.key); });
 
-  actor.append("text")
+  topic.append("text")
       .datum(function(d) { return {name: d.key, value: d.values[d.values.length - 1]}; })
       .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.volume) + ")"; })
       .attr("x", 3)
       .attr("y", function(d){
-          if ( d.name == "UNFCCC and Kyoto Protocol Implementation" ) {
-            return -5
+          if ( d.name == "UNFCCC and Kyoto Protocol Functioning" ) {
+            return -3
           }
-          if ( d.name == "Financial Mechanisms and Funds 2" ) {
-            return 5
+          if ( d.name == "Financial Mechanisms and Funds" ) {
+            return 3
           }
+          if ( d.name == "Extension of the Kyoto protocol" ) {
+            return -3
+          }
+          if ( d.name == "Compliance and Enforcement" ) {
+            return -6
+          }
+          // if ( d.name == "Pre-Kyoto" ) {
+          //   return -5
+          // }
+          // if ( d.name == "Adaptation" ) {
+          //   return -5
+          // }
+          // if ( d.name == "Mitigation" ) {
+          //   return 5
+          // }
           return 0
         })
       .attr("dy", '.35em')

@@ -1,5 +1,7 @@
 'use strict';
 
+var _ = require('lodash');
+
 var PREFIX = '#/?',
     PREFIX_REGEXP = /^(#\/\?)+/g,
 
@@ -61,8 +63,11 @@ module.exports = function(cursor, keys) {
     var hash = location.hash;
 
     if (hash !== _oldHash) {
-      _oldHash = hash
-      cursor.set(_hashToTree());
+      _oldHash = hash;
+      var newState = _hashToTree();
+
+      if (!_.isEqual(newState, cursor.get()))
+        cursor.set(newState);
     }
   });
 

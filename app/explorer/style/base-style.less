@@ -1,7 +1,19 @@
-@COLOR_TITLES: #e56c2a;
+@COLOR_ORANGE: #E46C28;
+
+@COLOR_COUNTRIES: #00B7CD;
+@COLOR_TOPICS: #ED5538;
+@COLOR_GROUPINGS: #A5D281;
+@COLOR_EVENTS: #6979AC;
+
+@COLOR_TITLES: #888;
 @COLOR_BORDERS: #aaa;
 @COLOR_BACKGROUND: #eee;
-@COLOR_BARS: #000;
+@COLOR_BARS: #939597;
+@COLOR_BARS_BACKGROUND: #F4F5F6;
+@COLOR_STATS_TEXTS: #939597;
+@COLOR_VERBATIMS_TEXTS: #939597;
+@COLOR_TIMELINE_POINTS: #939597;
+@COLOR_TIMELINE_BOTTOM: @COLOR_ORANGE;
 
 html {
   height: 100%;
@@ -59,11 +71,15 @@ input {
 }
 
 .column-title {
+  .border-bottom;
+
+  position: relative;
   height: 2em;
   line-height: 2em;
 
   text-align: center;
   color: @COLOR_TITLES;
+  text-transform: uppercase;
 }
 
 .block-title {
@@ -75,5 +91,17 @@ input {
 
   .sub-block-title {
     color: @COLOR_TITLES;
+  }
+}
+
+.border-bottom {
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0.5em;
+    right: 0.5em;
+
+    border-top: 1px solid @COLOR_BORDERS;
   }
 }
