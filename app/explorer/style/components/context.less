@@ -1,0 +1,95 @@
+.context {
+  .filters-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 5em;
+
+    .filter {
+      display: inline-block;
+      height: 1em;
+      margin-right: 1em;
+
+      .filter-field {
+        display: inline-block;
+        height: 100%;
+        padding: 0 0.3em;
+
+        background-color: @COLOR_TAGS_LIGHT;
+        color: @COLOR_TAGS_DARK;
+
+        &[data-field="countries"] {
+          border-left: 2px solid @COLOR_COUNTRIES;
+        }
+        &[data-field="actors"] {
+          border-left: 2px solid @COLOR_GROUPINGS;
+        }
+        &[data-field="event_id"] {
+          border-left: 2px solid @COLOR_EVENTS;
+        }
+        &[data-field="topics"] {
+          border-left: 2px solid @COLOR_TOPICS;
+        }
+      }
+
+      .filter-values {
+        display: inline-block;
+        height: 100%;
+
+        .filter-value {
+          display: inline-block;
+          height: 100%;
+
+          .filter-value-label {
+            display: inline-block;
+            height: 100%;
+            padding: 0 0.3em;
+
+            background-color: @COLOR_TAGS_DARK;
+            color: @COLOR_TAGS_LIGHT;
+          }
+
+          .filter-value-cross {
+            position: relative;
+            display: inline-block;
+            height: 100%;
+            width: 1em;
+
+            border-left: 1px solid @COLOR_TAGS_LIGHT;
+            background-color: @COLOR_TAGS_DARK;
+            color: @COLOR_TAGS_LIGHT;
+
+            &::before, &::after {
+              position: absolute;
+              content: '';
+              top: 0.1em;
+              left: 0.5em;
+              height: 0.8em;
+              width: 0;
+
+              border-left: 1px solid @COLOR_TAGS_LIGHT;
+            }
+            &::before {
+              transform: rotate(45deg);
+            }
+            &::after {
+              transform: rotate(-45deg);
+            }
+          }
+        }
+
+        .filter-join {
+          display: inline-block;
+          height: 100%;
+          padding: 0 0.3em;
+
+          background-color: @COLOR_TAGS_LIGHT;
+          color: @COLOR_TAGS_DARK;
+        }
+      }
+    }
+  }
+}
