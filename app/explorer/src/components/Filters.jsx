@@ -44,6 +44,8 @@ module.exports = React.createClass({
   },
 
   render: function() {
+    var events = this.state.fields.event_id.values;
+
     return (
       <div className="filters">
         <div className="column-title">Filters</div>
@@ -87,7 +89,14 @@ module.exports = React.createClass({
                                       onChange={ this.onClickInput }
                                       checked={ !!filteredValues[value] } />
                               <label  htmlFor={ id }
-                                      className="filter-label">{ value }</label>
+                                      className="filter-label">{
+                                // HACK:
+                                // Fetch events proper label:
+                                field === 'event_id' ?
+                                  [ events[value].city,
+                                    events[value].country ].join(', ') :
+                                  value
+                              }</label>
                             </li>
                           );
                         }, this) :
