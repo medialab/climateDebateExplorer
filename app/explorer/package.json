@@ -11,7 +11,7 @@
   "author": "Medialab & Atelier Iceberg",
   "license": "ISC",
   "dependencies": {
-    "baobab": "^2.1.0",
+    "baobab": "^2.1.1",
     "baobab-react": "^1.0.0",
     "djax": "^1.2.0",
     "lodash": "^3.10.1",
