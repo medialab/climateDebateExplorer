@@ -108,7 +108,7 @@ module.exports = React.createClass({
                 <div className="minute-tags">{
                   minute.groupings.map(function(g) {
                     return {
-                      class: 'countries',
+                      class: 'groupings',
                       value: g
                     };
                   }).concat(
