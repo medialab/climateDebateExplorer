@@ -104,17 +104,17 @@
     }
   },
   "viz_2": {
-    "title": "",
+    "title": "Other major climate negotiation issues",
     "1": {
       "offset": 900,
-      "title": "",
+      "title": "Visibility of other negotiation issues",
       "window": {
         "x": 0,
         "y": 0,
         "w": 0,
         "h": 0
       },
-      "analysis": "",
+      "analysis": "The diagram shows the evolution of the visibility of a selection of negotiation issues related to the costs and investments connected to climate change (measured as the percentage of ENB sections that mentions expressions related to each discussion over the total of ENB sections for the year).",
       "verbatims": {
         "1": {
           "title": "",
@@ -132,14 +132,14 @@
     },
     "2": {
       "offset": 1100,
-      "title": "",
+      "title": "The consequences of climate change and of its mitigation",
       "window": {
         "x": 0,
         "y": 0,
         "w": 0,
         "h": 0
       },
-      "analysis": "",
+      "analysis": "The first period of the negotiations seems occupied by a prevalence of questions regarding negative consequences of global warming as well as the response measures introduced to mitigate it.",
       "verbatims": {
         "1": {
           "title": "",
@@ -157,14 +157,14 @@
     },
     "3": {
       "offset": 1300,
-      "title": "",
+      "title": "The impacts of climate change and the funding of adaptation",
       "window": {
         "x": 0,
         "y": 0,
         "w": 0,
         "h": 0
       },
-      "analysis": "",
+      "analysis": "Contrarily to what could be expected, the discussion over the mechanisms necessary to finance the adaptation of impending consequences of climate change begin before the reflection directly addressed to these impacts and the vulnerabilities connected to them.",
       "verbatims": {
         "1": {
           "title": "",
@@ -182,14 +182,14 @@
     },
     "4": {
       "offset": 1500,
-      "title": "",
+      "title": "REDD+ and Loss & Damage",
       "window": {
         "x": 0,
         "y": 0,
         "w": 0,
         "h": 0
       },
-      "analysis": "",
+      "analysis": "In the last stages, it is possible to observe the emergence of specialized discussion about greenhouse sinks (in the particular the question of forests) and about the liabilities and compensation connected to the impact of climate change.",
       "verbatims": {
         "1": {
           "title": "",

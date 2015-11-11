@@ -18,13 +18,13 @@ module.exports = React.createClass({
 
 
   componentDidMount: function() {
-    this.cursors.filters.on('update', this._loadList.bind(this, false));
+    this.cursors.filters.on('update', this._loadListAsync.bind(this, false));
     this._loadList(false);
   },
   componentWillUnmount: function() {
     // WTF ?!? It comes from some other code of mine, and it cannot work.
     // Though, I'll leave it here, to preserve the "logic" of the thing...
-    this.cursors.filters.off('update', this._loadList.bind(this, false));
+    this.cursors.filters.off('update', this._loadListAsync.bind(this, false));
   },
   handleScroll: function() {
     if (this.state.fullList)
@@ -51,6 +51,9 @@ module.exports = React.createClass({
 
 
 
+  _loadListAsync: function(morePosts) {
+    setTimeout(this._loadList.bind(this, false), 0);
+  },
   _loadList: function(morePosts) {
     var k,
         faceted = filtersFacet(
@@ -60,6 +63,7 @@ module.exports = React.createClass({
 
     this.context.tree.datastore.query(
       { query: faceted,
+        sort: ['event_id', 'id'],
         from: morePosts ?
           (this.state.results || []).length :
           0,
