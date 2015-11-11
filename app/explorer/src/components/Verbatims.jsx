@@ -63,6 +63,7 @@ module.exports = React.createClass({
 
     this.context.tree.datastore.query(
       { query: faceted,
+        sort: ['event_id', 'id'],
         from: morePosts ?
           (this.state.results || []).length :
           0,
