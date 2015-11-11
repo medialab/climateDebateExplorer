@@ -49,7 +49,7 @@
     #viz-band {
       position: absolute;
       box-sizing: border-box;
-      padding: 0 30em 0 10em;
+      padding: 0 10em 0 0em;
       width: 100%;
       top: 10em;
       bottom: 10em;
@@ -61,7 +61,7 @@
         position: absolute;
         top: 1em;
         bottom: 1em;
-        right: 10em;
+        right: 1em;
         width: 19em;
         border-left: 1px solid #FFF;
         padding-left: 1em;
@@ -111,3 +111,47 @@
     }
   }
 }
+
+#viz-1{
+
+  font: 10px sans-serif;
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  
+  .x.axis path {
+    display: none;
+  }
+  
+  .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+
+}
+
+#viz-2{
+
+}
+
+#viz-3{
+
+  font: 12px sans-serif;
+
+  .year {
+    width: 120px;
+    height: 100px;
+    padding: 12px;
+    display: inline-block;
+
+    p{
+      margin: 0;
+    }
+  }
+}
+
+
