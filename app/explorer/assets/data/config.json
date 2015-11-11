@@ -1,8 +1,9 @@
 {
   "index": [
-    "countries",
     "actors",
-    "topics"
+    "countries",
+    "topics",
+    "event_id"
   ],
   "fields": {
     "countries": {
@@ -24,6 +25,11 @@
       "label": "Events",
       "cacheValues": true,
       "operator": "or"
+    },
+    "year": {
+      "label": "Year",
+      "cacheValues": true,
+      "operator": "or"
     }
   },
 
@@ -36,6 +42,7 @@
   "aggregations": [
     "topics",
     "event_id",
-    "actors"
+    "actors",
+    "year"
   ]
 }
