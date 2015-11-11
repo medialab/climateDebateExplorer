@@ -6,10 +6,13 @@
     overflow: auto;
     color: @COLOR_VERBATIMS_TEXTS;
 
+    .bottom {
+      height: 5em;
+    }
+
     .minute {
       display: block;
       position: relative;
-      height: 8em;
       width: 90%;
       margin-left: 1em;
 
@@ -53,36 +56,28 @@
       }
 
       .minute-context {
-        position: absolute;
-        top: 1em;
-        left: 4em;
+        margin-top: 1em;
+        padding-left: 4em;
         height: 2em;
         line-height: 2em;
-        width: calc(~"100% - 2em");
 
         color: @COLOR_ORANGE;
       }
 
       .minute-title {
-        position: absolute;
-        top: 3em;
-        left: 4em;
+        padding-left: 4em;
         height: 2em;
         line-height: 2em;
-        width: calc(~"100% - 2em");
       }
 
       .minute-tags {
-        position: absolute;
-        top: 5em;
-        left: 4em;
-        height: 2em;
+        padding-left: 4em;
         line-height: 2em;
-        width: calc(~"100% - 2em");
 
         span {
-          margin: 0 0.3em;
+          margin: 0.1em 0.3em;
           padding: 0.2em 0.5em;
+          display: inline-block;
 
           background-color: @COLOR_BARS_BACKGROUND;
 
