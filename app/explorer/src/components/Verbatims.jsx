@@ -13,7 +13,8 @@ module.exports = React.createClass({
   mixins: [ BaobabBranchMixin ],
   cursors: {
     filters: ['appState', 'filters'],
-    fields: ['cached', 'config', 'fields']
+    fields: ['cached', 'config', 'fields'],
+    deployed: ['appState', 'deployedVerbatim']
   },
 
 
@@ -41,10 +42,10 @@ module.exports = React.createClass({
     var id = e.currentTarget.getAttribute('data-id');
 
     if (this.state.deployed !== id)
-      this.setState({ deployed: id });
+      this.cursors.deployed.set(id);
   },
   collapse: function(e) {
-    this.setState({ deployed: undefined });
+    this.cursors.deployed.set(undefined);
   },
   openPermalink: function(e) {
     var permalink = e.currentTarget.getAttribute('data-permalink');
@@ -77,11 +78,12 @@ module.exports = React.createClass({
           queryResult.hits;
 
         this.setState({
-          deployed: undefined,
           verbatims: verbatims,
           total: queryResult.total,
           fullList: queryResult.total === verbatims.length
         });
+
+        this.collapse();
 
         // Scroll to top, if full list reloaded:
         if (!morePosts && list)
