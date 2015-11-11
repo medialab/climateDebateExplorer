@@ -1,6 +1,7 @@
 'use strict';
 
-var React = require('react'),
+var _ = require('lodash'),
+    React = require('react'),
     BaobabBranchMixin = require('baobab-react/mixins').branch,
     filtersFacet = require('../utils/filtersFacet');
 
@@ -37,9 +38,6 @@ module.exports = React.createClass({
       this._loadList(true);
   },
   deploy: function(e) {
-    // This feature is disabled at the moment, please come back later...
-    return;
-
     var id = e.currentTarget.getAttribute('data-id');
 
     if (this.state.deployed !== id)
@@ -47,6 +45,10 @@ module.exports = React.createClass({
   },
   collapse: function(e) {
     this.setState({ deployed: undefined });
+  },
+  openPermalink: function(e) {
+    var permalink = e.currentTarget.getAttribute('data-permalink');
+    window.open(permalink, '_blank');
   },
 
 
@@ -89,48 +91,9 @@ module.exports = React.createClass({
       }).bind(this)
     );
   },
-  _getVerbatim: function(obj, index) {
-    return (
-      <div className="minute-content">
-        <div className="minute-actions">
-          <div className="minute-number">{ index }</div>
-          <div className="minute-see"></div>
-          <div className="minute-share"></div>
-        </div>
-        <div className="minute-context">{
-          [ obj.year,
-            this.state.fields.event_id.values[obj.event_id].country,
-            this.state.fields.event_id.values[obj.event_id].city ].join(' | ')
-        }</div>
-        <div className="minute-title">{
-          obj.title
-        }</div>
-        <div className="minute-tags">{
-          obj.actors.map(function(g) {
-            return {
-              class: 'groupings',
-              value: g
-            };
-          }).concat(
-            obj.topics.map(function(t) {
-              return {
-                class: 'topics',
-                value: t
-              };
-            })
-          ).map(function(tag, j) {
-            return (
-              <span className={ tag.class }
-                    key={ j }>{
-                tag.value
-              }</span>
-            );
-          })
-        }</div>
-      </div>
-    );
-  },
   _getList: function() {
+    var events = this.state.fields.event_id.values;
+
     return (
       <ul ref="verbatims"
           className="minutes"
@@ -139,9 +102,48 @@ module.exports = React.createClass({
           return (
             <li key={ i }
                 data-id={ obj.id }
-                className="minute"
-                onClick={ this.deploy }>
-              { this._getVerbatim(obj, i + 1) }
+                className="minute">
+              <div className="minute-content">
+                <div className="minute-actions">
+                  <div className="minute-number">{ i + 1 }</div>
+                  <div  className="minute-see"
+                        data-id={ obj.id }
+                        onClick={ this.deploy } />
+                  <div  className="minute-share"
+                        data-permalink={ obj.url }
+                        onClick={ this.openPermalink } />
+                </div>
+                <div className="minute-context">{
+                  [ obj.year,
+                    events[obj.event_id].country,
+                    events[obj.event_id].city ].join(' | ')
+                }</div>
+                <div className="minute-title">{
+                  obj.title
+                }</div>
+                <div className="minute-tags">{
+                  obj.actors.map(function(g) {
+                    return {
+                      class: 'groupings',
+                      value: g
+                    };
+                  }).concat(
+                    obj.topics.map(function(t) {
+                      return {
+                        class: 'topics',
+                        value: t
+                      };
+                    })
+                  ).map(function(tag, j) {
+                    return (
+                      <span className={ tag.class }
+                            key={ j }>{
+                        tag.value
+                      }</span>
+                    );
+                  })
+                }</div>
+              </div>
             </li>
           );
         }, this).concat(
@@ -155,8 +157,56 @@ module.exports = React.createClass({
     );
   },
   _getDeployed: function() {
-    // TODO
-    return (<div />);
+    var events = this.state.fields.event_id.values,
+        obj = _.find(this.state.verbatims, { id: this.state.deployed });
+
+    return (
+      <div className="minute-deployed">
+        <div className="minute">
+          <div className="minute-actions">
+            <div  className="minute-see"
+                  data-id={ obj.id }
+                  onClick={ this.collapse } />
+            <div  className="minute-share"
+                  data-permalink={ obj.url }
+                  onClick={ this.openPermalink } />
+          </div>
+          <div className="minute-context">{
+            [ obj.year,
+              events[obj.event_id].country,
+              events[obj.event_id].city ].join(' | ')
+          }</div>
+          <div className="minute-title">{
+            obj.title
+          }</div>
+          <div className="minute-tags">{
+            obj.actors.map(function(g) {
+              return {
+                class: 'groupings',
+                value: g
+              };
+            }).concat(
+              obj.topics.map(function(t) {
+                return {
+                  class: 'topics',
+                  value: t
+                };
+              })
+            ).map(function(tag, j) {
+              return (
+                <span className={ tag.class }
+                      key={ j }>{
+                  tag.value
+                }</span>
+              );
+            })
+          }</div>
+        </div>
+        <div className="minute-verbatim">
+          <iframe width="100%" height="100%" />
+        </div>
+      </div>
+    );
   },
 
   render: function() {
