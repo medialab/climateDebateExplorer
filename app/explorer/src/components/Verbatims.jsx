@@ -207,7 +207,9 @@ module.exports = React.createClass({
           }</div>
         </div>
         <div className="minute-verbatim">
-          <iframe width="100%" height="100%" />
+          <iframe width="100%" height="100%" frameBorder="0">
+            Woops, something went wrong here...
+          </iframe>
         </div>
       </div>
     );
