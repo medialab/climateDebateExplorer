@@ -53,49 +53,51 @@ module.exports = React.createClass({
           <input type="text" />
         </div>
 
-        { (this.state.filterBlocks || []).map(function(filterBlock, i) {
-            var field = filterBlock.field,
-                deployed = !!this.state.deployed[field],
-                filteredValues = this.state.filtersIndex[field] || {};
+        <div className="filter-blocks">
+          { (this.state.filterBlocks || []).map(function(filterBlock, i) {
+              var field = filterBlock.field,
+                  deployed = !!this.state.deployed[field],
+                  filteredValues = this.state.filtersIndex[field] || {};
 
-            return (
-              <div  key={ field }
-                    data-id={ field }
-                    className="block"
-                    data-deployed={ deployed || undefined }>
-                <div  data-field={ field }
-                      className="block-title"
-                      onClick={ this.toggleBlock }>{
-                  this.state.fields[field].label || field
-                }</div>
+              return (
+                <div  key={ field }
+                      data-id={ field }
+                      className="block"
+                      data-deployed={ deployed || undefined }>
+                  <div  data-field={ field }
+                        className="block-title"
+                        onClick={ this.toggleBlock }>{
+                    this.state.fields[field].label || field
+                  }</div>
 
-                <div className="block-content">
-                  <ul className="filters-list">{
-                    deployed ?
-                      this.state.valuesLists[field].map(function(value, j) {
-                        var id = 'filter-' + field + '-' + value;
+                  <div className="block-content">
+                    <ul className="filters-list">{
+                      deployed ?
+                        this.state.valuesLists[field].map(function(value, j) {
+                          var id = 'filter-' + field + '-' + value;
 
-                        return (
-                          <li key={ j }
-                              className="filter">
-                            <input  id={ id }
-                                    name={ id }
-                                    type="checkbox"
-                                    data-field={ field }
-                                    data-value={ value }
-                                    onChange={ this.onClickInput }
-                                    checked={ !!filteredValues[value] } />
-                            <label  htmlFor={ id }
-                                    className="filter-label">{ value }</label>
-                          </li>
-                        );
-                      }, this) :
-                      undefined
-                  }</ul>
+                          return (
+                            <li key={ j }
+                                className="filter">
+                              <input  id={ id }
+                                      name={ id }
+                                      type="checkbox"
+                                      data-field={ field }
+                                      data-value={ value }
+                                      onChange={ this.onClickInput }
+                                      checked={ !!filteredValues[value] } />
+                              <label  htmlFor={ id }
+                                      className="filter-label">{ value }</label>
+                            </li>
+                          );
+                        }, this) :
+                        undefined
+                    }</ul>
+                  </div>
                 </div>
-              </div>
-            );
-          }, this) }
+              );
+            }, this) }
+        </div>
       </div>
     );
   }
