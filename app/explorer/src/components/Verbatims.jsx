@@ -116,8 +116,8 @@ module.exports = React.createClass({
                 </div>
                 <div className="minute-context">{
                   [ obj.year,
-                    events[obj.event_id].country,
-                    events[obj.event_id].city ].join(' | ')
+                    (events[obj.event_id] || {}).country,
+                    (events[obj.event_id] || {}).city ].join(' | ')
                 }</div>
                 <div className="minute-title">{
                   obj.title
