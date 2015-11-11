@@ -42,16 +42,21 @@
     }
   }
 
-  .block {
-    border-bottom: 1px solid @COLOR_BORDERS;
-    overflow: hidden;
+  .filter-blocks {
+    height: calc(~"100% - 4em");
+    overflow: auto;
 
-    .block-title {
-      .button;
-    }
+    .block {
+      border-bottom: 1px solid @COLOR_BORDERS;
+      overflow: hidden;
 
-    .block-content {
-      width: 100%;
+      .block-title {
+        .button;
+      }
+
+      .block-content {
+        width: 100%;
+      }
     }
   }
 }

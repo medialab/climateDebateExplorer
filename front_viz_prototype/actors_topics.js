@@ -43,43 +43,29 @@ d3.csv(targetFile, function(error, data) {
     })
   })
 
-  // Complete data
+  // Complete data + compute averages
+  var averageByActor = {}
+    , averageByTopic = {}
+    , volByTopic = {}
+    , vol
   for ( actor in actors ) {
+    vol = 0
     for ( topic in topics ) {
       volumeByActorByTopic[actor][topic] = volumeByActorByTopic[actor][topic] || 0
+      volByTopic[topic] = (volByTopic[topic] || 0) + volumeByActorByTopic[actor][topic]
+      vol += volumeByActorByTopic[actor][topic]
     }
+    averageByActor[actor] = vol / Object.keys(topics).length
   }
-
-  // Average by actor
-  var averageByActor = {}
-  for ( actor in actors ) {
-    var vol = 0
-      , count = 0
-    for ( topic in volumeByActorByTopic[actor] ) {
-      vol += volumeByActorByTopic[actor][topic] || 0
-      count += 1
-    }
-    averageByActor[actor] = vol / count
-  }
-
-  // Average by topic
-  var averageByTopic = {}
   for ( topic in topics ) {
-    var vol = 0
-      , count = 0
-    for ( actor in actors ) {
-      vol += volumeByActorByTopic[actor][topic] || 0
-      count += 1
-    }
-    averageByTopic[topic] = vol / count
+    averageByTopic[topic] = volByTopic[topic] / Object.keys(actors).length
   }
   
   // Flatten data
   var volumes = []
     , normalizedVolumeByActorByTopic = {}
   for ( actor in actors ) {
-    var vol = volumeByActorByTopic[actor][topic] || 0
-      , normVol = ( vol - averageByActor[actor] ) / ( averageByActor[actor] )
+    normalizedVolumeByActorByTopic[actor] = {}
     for ( topic in topics ) {
       volumes.push({
         actor : actor
@@ -87,7 +73,8 @@ d3.csv(targetFile, function(error, data) {
       , volume : vol
       , normalizedVolume: normVol
       })
-      normalizedVolumeByActorByTopic[actor] = normalizedVolumeByActorByTopic[actor] || {}
+      var vol = volumeByActorByTopic[actor][topic] || 0
+        , normVol = ( vol - averageByActor[actor] ) / ( averageByActor[actor] )
       normalizedVolumeByActorByTopic[actor][topic] = normVol
     }
   }
@@ -114,12 +101,12 @@ d3.csv(targetFile, function(error, data) {
     .append("circle")
       .attr("cx", function(d){ return x(d.actor) })
       .attr("cy", function(d){ return y(d.topic) })
-      .attr("r", function(d) { return d.normalizedVolume * d.normalizedVolume * 10 })
+      .attr("r", function(d) { return Math.sqrt(Math.abs(d.normalizedVolume*5)) })
       .style("fill", function(d){
           if ( d.normalizedVolume < 0 ) {
-            return '#FF0000'
+            return '#D42116'
           } else {
-            return '#00FF00'
+            return '#36D464'
           }
         });
 

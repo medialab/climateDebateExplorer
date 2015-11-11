@@ -42,7 +42,8 @@ for path, _, files in os.walk(ENB_DATA):
     for f in files:
         if not f.endswith("json"):
             continue
-        reportId, sectionId = f.replace('.json', '').decode('utf-8').split('_')
+        _id = f.replace('.json', '').decode('utf-8')
+        reportId, sectionId = _id.split('_')
         with open(os.path.join(path, f)) as jsonf:
             section = json.load(jsonf)
             if cleaner:
@@ -55,11 +56,14 @@ for path, _, files in os.walk(ENB_DATA):
                 u"source": section['enb_url'],
                 u"sections": []
             }
+        legend = build_legend(section)
         reports[reportId]['sections'].append({
-            u"id": int(sectionId),
+            u"id": _id,
+            u"section_num": int(sectionId),
             u"title": section['section_title'],
-            u"legend": build_legend(section),
-            u"sentences": section['sentences']
+            u"legend": legend,
+            u"has_legend": (legend != ""),
+            u"sentences": [a.replace(u'\u0092', "'").encode('utf-8') for a in section['sentences']]
         })
 
 if not os.path.exists(ENB_PAGES_DIR):
