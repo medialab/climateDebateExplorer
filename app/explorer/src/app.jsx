@@ -77,26 +77,42 @@ Papa.parse('assets/data/data.csv', {
     );
 
     // Compute once and for all some relevant metrics:
-    var aggregations = {};
+    var aggregations = config.aggregations.slice(0);
     _.forEach(config.fields, function(obj, field) {
       if (obj.cacheValues)
-        aggregations[field] = field;
+        aggregations.push(field);
     });
 
     var result = tree.datastore.query({
-      aggregations: aggregations
+      aggregations: _.uniq(aggregations).reduce(function(res, key) {
+        res[key] = key;
+        return res;
+      }, {})
     });
 
-    for (var k in result.aggregations)
-      result.aggregations[k] =
-        _.map(result.aggregations[k], function(value, key) {
-          return key;
-        });
+    var valuesLists = {};
+    for (var k in config.fields)
+      if (config.fields[k].cacheValues)
+        valuesLists[k] =
+          _.map(result.aggregations[k], function(value, field) {
+            return field;
+          }).sort();
+
+    var aggregatedLists = config.aggregations.reduce(function(res, field) {
+      res[field] = result.aggregations[field];
+      return res;
+    }, {});
 
     // Cache values lists:
     tree.set(
       ['cached', 'valuesLists'],
-      result.aggregations
+      valuesLists
+    );
+
+    // Cache aggregated lists:
+    tree.set(
+      ['cached', 'aggregatedLists'],
+      aggregatedLists
     );
 
     // Initial rendering:

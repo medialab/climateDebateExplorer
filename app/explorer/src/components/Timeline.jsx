@@ -9,6 +9,7 @@ module.exports = React.createClass({
   mixins: [ BaobabBranchMixin ],
   cursors: {
     contextual: ['contextual'],
+    cachedList: ['cached', 'aggregatedLists', 'year'],
     list: ['cached', 'valuesLists', 'year']
   },
 
@@ -30,16 +31,27 @@ module.exports = React.createClass({
       return <div className="timeline"></div>;
 
     var list = this.state.list || [],
-        values = (this.state.contextual.aggregatedLists.year.values || []).reduce(function(res, obj) {
+        yearValues = this.state.contextual.aggregatedLists.year || [],
+        values = yearValues.reduce(function(res, obj) {
           res[obj.id] = obj.value;
           return res;
         }, {}),
-        data = [{year: 'YEAR', value: 50}].concat(this.state.list.map(function(value) {
-          return {
-            year: value,
-            value: (values[value] || 0) * 100
-          };
-        }));
+        max = 0,
+        data =
+          [{year: 'YEAR', label: '%', height: '50%'}]
+            .concat(this.state.list.map(function(value) {
+              var score =
+                ((values[value] || 0) / this.state.cachedList[value]) * 100;
+
+              max = Math.max(max, score);
+
+              return {
+                year: value,
+                value: score
+              };
+            }, this));
+
+    max = max || 1;
 
     return (
       <div className="timeline">{
@@ -52,9 +64,9 @@ module.exports = React.createClass({
                     width: this.state.width / ( data.length + 1 )
                   }}>
               <div  className="bar"
-                    data-figure={ Math.round(bar.value * 100) / 100 }
+                    data-figure={ bar.label || Math.round(bar.value * 100) / 100 }
                     style={{
-                      height: bar.value + '%'
+                      height: bar.height || ((bar.value / max * 100) + '%')
                     }}></div>
             </div>
           );
