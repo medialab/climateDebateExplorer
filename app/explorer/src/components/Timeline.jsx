@@ -7,7 +7,10 @@ var React = require('react'),
 module.exports = React.createClass({
   displayName: 'climateDebateExplorer/explorer/timeline',
   mixins: [ BaobabBranchMixin ],
-  cursors: {},
+  cursors: {
+    list: ['cached', 'valuesLists', 'year'],
+    values: ['contextual', 'aggregatedLists', 'year']
+  },
 
   // Handlers:
   componentDidMount: function(e) {
@@ -23,36 +26,24 @@ module.exports = React.createClass({
   },
 
   render: function() {
-    var data = [
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 40},
-      {year: 94, value: 10},
-      {year: 94, value: 90}
-    ];
-
     if (!this.state.width)
       return <div className="timeline"></div>;
 
+    var list = this.state.list || [],
+        values = (this.state.values || []).reduce(function(res, obj) {
+          res[obj.id] = obj.value;
+          return res;
+        }, {}),
+        data = [{year: 'YEAR', value: 50}].concat(this.state.list.map(function(value) {
+          return {
+            year: value,
+            value: (values[value] || 0) * 100
+          };
+        }));
+
     return (
       <div className="timeline">{
-        [{year: 'YEAR', value: 50}].concat(data).map(function(bar, i) {
+        data.map(function(bar, i) {
           return (
             <div  className="bar-placeholder"
                   data-year={ bar.year }
@@ -61,7 +52,7 @@ module.exports = React.createClass({
                     width: this.state.width / ( data.length + 1 )
                   }}>
               <div  className="bar"
-                    data-figure={ bar.value }
+                    data-figure={ Math.round(bar.value * 100) / 100 }
                     style={{
                       height: bar.value + '%'
                     }}></div>
