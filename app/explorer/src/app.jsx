@@ -49,7 +49,13 @@ Papa.parse('assets/data/data.csv', {
         });
     });
 
-    data.data.forEach(function(row) {
+    data.data.sort(function(a, b) {
+      return (
+        (a.event_id + a.id) < (a.event_id + a.id) ?
+          1 :
+          -1
+      );
+    }).forEach(function(row) {
       splitables.forEach(function(field) {
         row[field.id] = row[field.id] ?
           row[field.id].split(field.separator) :
