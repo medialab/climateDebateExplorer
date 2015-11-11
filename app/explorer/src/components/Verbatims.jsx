@@ -56,6 +56,7 @@ module.exports = React.createClass({
   },
   _loadList: function(morePosts) {
     var k,
+        list = this.refs.verbatims,
         faceted = filtersFacet(
           this.state.filters,
           this.state.fields
@@ -79,6 +80,12 @@ module.exports = React.createClass({
           total: queryResult.total,
           fullList: queryResult.total === verbatims.length
         });
+
+        // Scroll to top, if full list reloaded:
+        if (!morePosts && list)
+          setTimeout(function() {
+            list.scrollTop = 0;
+          }, 0);
       }).bind(this)
     );
   },
@@ -91,7 +98,9 @@ module.exports = React.createClass({
           <div className="minute-share"></div>
         </div>
         <div className="minute-context">{
-          obj.year + ' | ' + obj.place + ' | ' + obj.event
+          [ obj.year,
+            this.state.fields.event_id.values[obj.event_id].country,
+            this.state.fields.event_id.values[obj.event_id].city ].join(' | ')
         }</div>
         <div className="minute-title">{
           obj.title

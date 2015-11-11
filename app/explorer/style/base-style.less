@@ -77,7 +77,7 @@ input {
 }
 
 .column-title {
-  .border-bottom;
+  .diamond;
 
   position: relative;
   height: 2em;
@@ -89,11 +89,45 @@ input {
 }
 
 .block-title {
-  height: 2em;
-  line-height: 2em;
+  position: relative;
+  height: 2.5em;
+  line-height: 1.1em;
+  padding-top: 1.4em;
+  margin-left: 1.5em;
 
   color: @COLOR_TITLES;
-  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: attr(data-before);
+    top: 0.5em;
+    left: 0;
+
+    font-size: 0.7em;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0.7em;
+    left: -13px;
+    height: 1.6em;
+  }
+  &[data-field="countries"]::after {
+    border-right: 5px solid @COLOR_COUNTRIES;
+  }
+  &[data-field="actors"]::after {
+    border-right: 5px solid @COLOR_GROUPINGS;
+  }
+  &[data-field="topics"]::after {
+    border-right: 5px solid @COLOR_TOPICS;
+  }
+  &[data-field="event_id"]::after {
+    border-right: 5px solid @COLOR_EVENTS;
+  }
+
+  span {
+    text-transform: uppercase;
+  }
 
   .sub-block-title {
     color: @COLOR_TITLES;
@@ -109,5 +143,56 @@ input {
     right: 0.5em;
 
     border-top: 1px solid @COLOR_BORDERS;
+  }
+}
+
+.title-border {
+  &::before {
+    position: absolute;
+    content: '';
+    top: 2em;
+    left: 0.5em;
+    right: 0.5em;
+
+    border-top: 1px solid @COLOR_BORDERS;
+  }
+}
+
+.border-right {
+  &::after {
+    position: absolute;
+    content: '';
+    top: 2.5em;
+    bottom: 0.5em;
+    right: 0;
+
+    border-right: 1px solid @COLOR_BORDERS;
+  }
+}
+
+.diamond {
+  &::before {
+    position: absolute;
+    content: '';
+    top: 2em;
+    left: 50%;
+    height: 1px;
+    width: 1em;
+    margin-left: -0.5em;
+
+    background-color: #fff;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    top: 2em;
+    left: 50%;
+    height: 4px;
+    width: 4px;
+    margin-top: -1.5px;
+    margin-left: -2px;
+
+    background-color: @COLOR_ORANGE;
+    transform: rotate(45deg);
   }
 }

@@ -8,6 +8,7 @@ var _ = require('lodash'),
     BaobabRootMixin = require('baobab-react/mixins').root,
 
     tree = require('./tree.js'),
+    config = require('./config.js'),
     controller = require('./controller.js'),
     DataStore = require('./utils/datastore'),
     HashBinder = require('./utils/hashbinder'),
@@ -20,86 +21,80 @@ var _ = require('lodash'),
       }
     });
 
-// Load JSON config file:
-djax({
-  url: 'assets/data/config.json',
-  success: function(config) {
-    // Cache config:
-    tree.set(
-      ['cached', 'config'],
-      config
+// Cache config:
+tree.set(
+  ['cached', 'config'],
+  config
+);
+
+// Load CSV data file:
+Papa.parse('assets/data/data.csv', {
+  header: true,
+  download: true,
+  complete: function(data) {
+    // Reference the store as a tree attribute, to make it easily accessible
+    // from outside of here:
+    tree.datastore = new DataStore({
+      fields: config.fields,
+      index: config.index
+    });
+
+    // Feed the store:
+    var splitables = [];
+    _.forEach(config.fields, function(field, key) {
+      if (field.separator)
+        splitables.push({
+          id: key,
+          separator: field.separator
+        });
+    });
+
+    data.data.forEach(function(row) {
+      splitables.forEach(function(field) {
+        row[field.id] = row[field.id] ?
+          row[field.id].split(field.separator) :
+          [];
+      })
+      tree.datastore.append(row);
+    });
+
+    // Hash bindings:
+    new HashBinder(
+      tree.select('appState'),
+      ['deployedList', 'deployedVerbatim']
     );
 
-    // Load CSV data file:
-    Papa.parse('assets/data/data.csv', {
-      header: true,
-      download: true,
-      complete: function(data) {
-        // Reference the store as a tree attribute, to make it easily accessible
-        // from outside of here:
-        tree.datastore = new DataStore({
-          fields: config.fields,
-          index: config.index
-        });
+    // Compute once and for all some relevant metrics:
+    var aggregations = {};
+    _.forEach(config.fields, function(obj, field) {
+      if (obj.cacheValues)
+        aggregations[field] = field;
+    });
 
-        // Feed the store:
-        var splitables = [];
-        _.forEach(config.fields, function(field, key) {
-          if (field.separator)
-            splitables.push({
-              id: key,
-              separator: field.separator
+    tree.datastore.query(
+      { aggregations: aggregations },
+      function(result) {
+        for (var k in result.aggregations)
+          result.aggregations[k] =
+            _.map(result.aggregations[k], function(value, key) {
+              return key;
             });
-        });
 
-        data.data.forEach(function(row) {
-          splitables.forEach(function(field) {
-            row[field.id] = row[field.id] ?
-              row[field.id].split(field.separator) :
-              [];
-          })
-          tree.datastore.append(row);
-        });
-
-        // Hash bindings:
-        new HashBinder(
-          tree.select('appState'),
-          ['deployedList', 'deployedVerbatim']
+        // Cache values lists:
+        tree.set(
+          ['cached', 'valuesLists'],
+          result.aggregations
         );
 
-        // Compute once and for all some relevant metrics:
-        var aggregations = {};
-        _.forEach(config.fields, function(obj, field) {
-          if (obj.cacheValues)
-            aggregations[field] = field;
-        });
-
-        tree.datastore.query(
-          { aggregations: aggregations },
-          function(result) {
-            for (var k in result.aggregations)
-              result.aggregations[k] =
-                _.map(result.aggregations[k], function(value, key) {
-                  return key;
-                });
-
-            // Cache values lists:
-            tree.set(
-              ['cached', 'valuesLists'],
-              result.aggregations
-            );
-
-            // Initial rendering:
-            ReactDOM.render(
-              <App tree={ tree } />,
-              container
-            );
-          }
+        // Initial rendering:
+        ReactDOM.render(
+          <App tree={ tree } />,
+          container
         );
       }
-    });
+    );
   }
-})
+});
 
 module.exports = {
   tree: tree
