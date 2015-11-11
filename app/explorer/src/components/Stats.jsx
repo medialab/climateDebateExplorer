@@ -21,11 +21,11 @@ module.exports = React.createClass({
     window.addEventListener('resize', this._updateBlockSize, false);
     this._updateBlockSize();
   },
-  toggle: function(e) {
-    if (this.state.deployedList)
-      this.cursors.deployedList.set(null);
-    else
-      this.cursors.deployedList.set(e.currentTarget.getAttribute('data-id'));
+  expand: function(e) {
+    this.cursors.deployedList.set(e.currentTarget.getAttribute('data-field'));
+  },
+  hide: function(e) {
+    this.cursors.deployedList.set(null);
   },
 
   // Helpers
@@ -33,7 +33,7 @@ module.exports = React.createClass({
     var dom = ReactDOM.findDOMNode(this);
 
     this.setState({
-      nbLines: Math.floor(((dom.offsetHeight - EM) / 3 - 4 * EM) / (2.5 * EM))
+      nbLines: Math.floor(((dom.offsetHeight - 2 * EM) / 3 - 3.5 * EM) / (2.5 * EM))
     });
   },
 
@@ -41,6 +41,14 @@ module.exports = React.createClass({
     return (
       <div className="stats">
         <div className="column-title">Statistics</div>
+        <div  className={
+                this.state.deployedList ?
+                  'stats-back' :
+                  'stats-back hidden'
+              }
+              onClick={ this.expand }>
+          <span className="stats-back-text">Back to recurring contents</span>
+        </div>
         { (
             this.state.deployedList ?
               [this.state.deployedList] :
@@ -56,9 +64,13 @@ module.exports = React.createClass({
                         'block expanded' :
                         'block'
                     }>
-                <div className="block-title">{
-                  this.state.fields[field].label || field
-                }</div>
+                <div  className="block-title"
+                      data-before="Most recurring"
+                      data-field={ field }>
+                  <span>{
+                    this.state.fields[field].label || field
+                  }</span>
+                </div>
                 <div className="block-content">{
                   (this.state.aggregatedLists[field] || []).map(function(line, i) {
                     var display = Math.round(line.value * 100) + '%';
@@ -90,9 +102,13 @@ module.exports = React.createClass({
                     );
                   }, this)
                 }</div>
-                <div  className="block-more"
-                      data-id={ field }
-                      onClick={ this.toggle }>See more results</div>
+                <div  className={
+                        this.state.deployedList ?
+                          'block-more hidden' :
+                          'block-more'
+                      }
+                      data-field={ field }
+                      onClick={ this.expand }>See more results</div>
               </div>
             );
           }, this) }
