@@ -63,7 +63,7 @@ for path, _, files in os.walk(ENB_DATA):
             u"title": section['section_title'],
             u"legend": legend,
             u"has_legend": (legend != ""),
-            u"sentences": section['sentences']
+            u"sentences": [a.replace(u'\u0092', "'").encode('utf-8') for a in section['sentences']]
         })
 
 if not os.path.exists(ENB_PAGES_DIR):
