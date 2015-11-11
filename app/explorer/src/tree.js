@@ -17,6 +17,33 @@ var tree = new Baobab({
     deployedVerbatim: undefined
   },
 
+  // Various dynamic views:
+  views: {
+    deployedVerbatimContent: Baobab.monkey({
+      cursors: {
+        id: ['appState', 'deployedVerbatim']
+      },
+      get: function(data) {
+        if (!data.id)
+          return undefined;
+
+        var results = tree.datastore.query({
+          query: {
+            field: 'id',
+            method: 'has',
+            value: '' + data.id
+          }
+        });
+
+        return (
+          results.hits.length ?
+            results.hits[0] :
+            undefined
+        );
+      }
+    })
+  },
+
   // Data that depend on current filters:
   contextual: Baobab.monkey({
     cursors: {

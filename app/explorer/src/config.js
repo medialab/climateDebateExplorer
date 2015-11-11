@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   // Fields to index through reverse dictionaries in data store:
   index: [

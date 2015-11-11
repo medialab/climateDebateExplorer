@@ -14,14 +14,14 @@ module.exports = React.createClass({
   cursors: {
     filters: ['appState', 'filters'],
     fields: ['cached', 'config', 'fields'],
-    deployed: ['appState', 'deployedVerbatim']
+    deployed: ['appState', 'deployedVerbatim'],
+    deployedContent: ['views', 'deployedVerbatimContent']
   },
 
 
 
   componentDidMount: function() {
     this.cursors.filters.on('update', this._loadListAsync.bind(this, false));
-    this._loadList(false);
   },
   componentWillUnmount: function() {
     // WTF ?!? It comes from some other code of mine, and it cannot work.
@@ -78,13 +78,14 @@ module.exports = React.createClass({
       (this.state.verbatims || []).concat(queryResult.hits) :
       queryResult.hits;
 
+    if (this.state.verbatims && this.state.verbatims.length)
+      this.collapse();
+
     this.setState({
       verbatims: verbatims,
       total: queryResult.total,
       fullList: queryResult.total === verbatims.length
     });
-
-    this.collapse();
 
     // Scroll to top, if full list reloaded:
     if (!morePosts && list)
@@ -159,7 +160,10 @@ module.exports = React.createClass({
   },
   _getDeployed: function() {
     var events = this.state.fields.event_id.values,
-        obj = _.find(this.state.verbatims, { id: this.state.deployed });
+        obj = this.state.deployedContent;
+
+    if (!obj)
+      return <div className="minute-deployed" />;
 
     return (
       <div className="minute-deployed">
