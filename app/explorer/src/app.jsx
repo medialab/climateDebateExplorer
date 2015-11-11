@@ -49,13 +49,25 @@ Papa.parse('assets/data/data.csv', {
         });
     });
 
-    data.data.forEach(function(row) {
+    data.data.sort(function(a, b) {
+      return (
+        a.event_id < b.event_id ?
+          -1 :
+        a.event_id > b.event_id ?
+          1 :
+        a.id < b.id ?
+          -1 :
+          1
+      );
+    }).forEach(function(row) {
       splitables.forEach(function(field) {
         row[field.id] = row[field.id] ?
           row[field.id].split(field.separator) :
           [];
       })
-      tree.datastore.append(row);
+
+      if (row.id)
+        tree.datastore.append(row);
     });
 
     // Hash bindings:

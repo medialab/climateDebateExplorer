@@ -2,12 +2,7 @@
 
 module.exports = {
   // Fields to index through reverse dictionaries in data store:
-  index: [
-    'actors',
-    'countries',
-    'topics',
-    'event_id'
-  ],
+  index: [],
 
   // Fields that can be used to filter the dataset:
   filters: [

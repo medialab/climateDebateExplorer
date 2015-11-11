@@ -67,7 +67,6 @@ module.exports = React.createClass({
 
     var queryResult = this.context.tree.datastore.query({
       query: faceted,
-      sort: ['event_id', 'id'],
       from: morePosts ?
         (this.state.results || []).length :
         0,
@@ -117,8 +116,8 @@ module.exports = React.createClass({
                 </div>
                 <div className="minute-context">{
                   [ obj.year,
-                    events[obj.event_id].country,
-                    events[obj.event_id].city ].join(' | ')
+                    (events[obj.event_id] || {}).country,
+                    (events[obj.event_id] || {}).city ].join(' | ')
                 }</div>
                 <div className="minute-title">{
                   obj.title
@@ -208,7 +207,9 @@ module.exports = React.createClass({
           }</div>
         </div>
         <div className="minute-verbatim">
-          <iframe width="100%" height="100%" />
+          <iframe width="100%" height="100%" frameBorder="0">
+            Woops, something went wrong here...
+          </iframe>
         </div>
       </div>
     );
