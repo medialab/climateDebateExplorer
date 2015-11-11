@@ -21,15 +21,20 @@
       "separator": "|"
     },
     "event_id": {
-      "label": "Events"
+      "label": "Events",
+      "cacheValues": true,
+      "operator": "or"
     }
   },
 
   "filters": [
-    { "field": "countries" }
+    { "field": "countries" },
+    { "field": "actors" },
+    { "field": "event_id" },
+    { "field": "topics" }
   ],
   "aggregations": [
-    "countries",
+    "topics",
     "event_id",
     "actors"
   ]
