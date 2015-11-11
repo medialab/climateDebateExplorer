@@ -54,7 +54,7 @@ function textReplace(txt, path, str) {
     }, str);
   }
   else {
-    str = str.replace('[' + path.toUpperCase() + ']', txt);
+    str = str.replace(new RegExp('\\[' + path.toUpperCase() + '\\]', 'g'), txt);
   }
 
   return str;
