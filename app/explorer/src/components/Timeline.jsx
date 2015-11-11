@@ -8,8 +8,8 @@ module.exports = React.createClass({
   displayName: 'climateDebateExplorer/explorer/timeline',
   mixins: [ BaobabBranchMixin ],
   cursors: {
-    list: ['cached', 'valuesLists', 'year'],
-    values: ['contextual', 'aggregatedLists', 'year']
+    contextual: ['contextual'],
+    list: ['cached', 'valuesLists', 'year']
   },
 
   // Handlers:
@@ -30,7 +30,7 @@ module.exports = React.createClass({
       return <div className="timeline"></div>;
 
     var list = this.state.list || [],
-        values = (this.state.values || []).reduce(function(res, obj) {
+        values = (this.state.contextual.aggregatedLists.year.values || []).reduce(function(res, obj) {
           res[obj.id] = obj.value;
           return res;
         }, {}),

@@ -8,8 +8,8 @@ module.exports = React.createClass({
   displayName: 'climateDebateExplorer/explorer/filters',
   mixins: [ BaobabBranchMixin ],
   cursors: {
+    contextual: ['contextual'],
     valuesLists: ['cached', 'valuesLists'],
-    filtersIndex: ['views', 'filtersIndex'],
 
     fields: ['cached', 'config', 'fields'],
     filterBlocks: ['cached', 'config', 'filters']
@@ -59,7 +59,8 @@ module.exports = React.createClass({
           { (this.state.filterBlocks || []).map(function(filterBlock, i) {
               var field = filterBlock.field,
                   deployed = !!this.state.deployed[field],
-                  filteredValues = this.state.filtersIndex[field] || {};
+                  filteredValues =
+                    this.state.contextual.filtersIndex[field] || {};
 
               return (
                 <div  key={ field }

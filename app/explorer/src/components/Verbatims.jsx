@@ -1,6 +1,7 @@
 'use strict';
 
-var React = require('react'),
+var _ = require('lodash'),
+    React = require('react'),
     BaobabBranchMixin = require('baobab-react/mixins').branch,
     filtersFacet = require('../utils/filtersFacet');
 
@@ -12,14 +13,15 @@ module.exports = React.createClass({
   mixins: [ BaobabBranchMixin ],
   cursors: {
     filters: ['appState', 'filters'],
-    fields: ['cached', 'config', 'fields']
+    fields: ['cached', 'config', 'fields'],
+    deployed: ['appState', 'deployedVerbatim'],
+    deployedContent: ['views', 'deployedVerbatimContent']
   },
 
 
 
   componentDidMount: function() {
     this.cursors.filters.on('update', this._loadListAsync.bind(this, false));
-    this._loadList(false);
   },
   componentWillUnmount: function() {
     // WTF ?!? It comes from some other code of mine, and it cannot work.
@@ -37,16 +39,17 @@ module.exports = React.createClass({
       this._loadList(true);
   },
   deploy: function(e) {
-    // This feature is disabled at the moment, please come back later...
-    return;
-
     var id = e.currentTarget.getAttribute('data-id');
 
     if (this.state.deployed !== id)
-      this.setState({ deployed: id });
+      this.cursors.deployed.set(id);
   },
   collapse: function(e) {
-    this.setState({ deployed: undefined });
+    this.cursors.deployed.set(undefined);
+  },
+  openPermalink: function(e) {
+    var permalink = e.currentTarget.getAttribute('data-permalink');
+    window.open(permalink, '_blank');
   },
 
 
@@ -62,75 +65,37 @@ module.exports = React.createClass({
           this.state.fields
         );
 
-    this.context.tree.datastore.query(
-      { query: faceted,
-        sort: ['event_id', 'id'],
-        from: morePosts ?
-          (this.state.results || []).length :
-          0,
-        size: SIZE },
-      (function(queryResult) {
-        var verbatims = morePosts ?
-          (this.state.verbatims || []).concat(queryResult.hits) :
-          queryResult.hits;
+    var queryResult = this.context.tree.datastore.query({
+      query: faceted,
+      sort: ['event_id', 'id'],
+      from: morePosts ?
+        (this.state.results || []).length :
+        0,
+      size: SIZE
+    });
 
-        this.setState({
-          deployed: undefined,
-          verbatims: verbatims,
-          total: queryResult.total,
-          fullList: queryResult.total === verbatims.length
-        });
+    var verbatims = morePosts ?
+      (this.state.verbatims || []).concat(queryResult.hits) :
+      queryResult.hits;
 
-        // Scroll to top, if full list reloaded:
-        if (!morePosts && list)
-          setTimeout(function() {
-            list.scrollTop = 0;
-          }, 0);
-      }).bind(this)
-    );
-  },
-  _getVerbatim: function(obj, index) {
-    return (
-      <div className="minute-content">
-        <div className="minute-actions">
-          <div className="minute-number">{ index }</div>
-          <div className="minute-see"></div>
-          <div className="minute-share"></div>
-        </div>
-        <div className="minute-context">{
-          [ obj.year,
-            this.state.fields.event_id.values[obj.event_id].country,
-            this.state.fields.event_id.values[obj.event_id].city ].join(' | ')
-        }</div>
-        <div className="minute-title">{
-          obj.title
-        }</div>
-        <div className="minute-tags">{
-          obj.actors.map(function(g) {
-            return {
-              class: 'groupings',
-              value: g
-            };
-          }).concat(
-            obj.topics.map(function(t) {
-              return {
-                class: 'topics',
-                value: t
-              };
-            })
-          ).map(function(tag, j) {
-            return (
-              <span className={ tag.class }
-                    key={ j }>{
-                tag.value
-              }</span>
-            );
-          })
-        }</div>
-      </div>
-    );
+    if (this.state.verbatims && this.state.verbatims.length)
+      this.collapse();
+
+    this.setState({
+      verbatims: verbatims,
+      total: queryResult.total,
+      fullList: queryResult.total === verbatims.length
+    });
+
+    // Scroll to top, if full list reloaded:
+    if (!morePosts && list)
+      setTimeout(function() {
+        list.scrollTop = 0;
+      }, 0);
   },
   _getList: function() {
+    var events = this.state.fields.event_id.values;
+
     return (
       <ul ref="verbatims"
           className="minutes"
@@ -139,9 +104,48 @@ module.exports = React.createClass({
           return (
             <li key={ i }
                 data-id={ obj.id }
-                className="minute"
-                onClick={ this.deploy }>
-              { this._getVerbatim(obj, i + 1) }
+                className="minute">
+              <div className="minute-content">
+                <div className="minute-actions">
+                  <div className="minute-number">{ i + 1 }</div>
+                  <div  className="minute-see"
+                        data-id={ obj.id }
+                        onClick={ this.deploy } />
+                  <div  className="minute-share"
+                        data-permalink={ obj.url }
+                        onClick={ this.openPermalink } />
+                </div>
+                <div className="minute-context">{
+                  [ obj.year,
+                    events[obj.event_id].country,
+                    events[obj.event_id].city ].join(' | ')
+                }</div>
+                <div className="minute-title">{
+                  obj.title
+                }</div>
+                <div className="minute-tags">{
+                  obj.actors.map(function(g) {
+                    return {
+                      class: 'groupings',
+                      value: g
+                    };
+                  }).concat(
+                    obj.topics.map(function(t) {
+                      return {
+                        class: 'topics',
+                        value: t
+                      };
+                    })
+                  ).map(function(tag, j) {
+                    return (
+                      <span className={ tag.class }
+                            key={ j }>{
+                        tag.value
+                      }</span>
+                    );
+                  })
+                }</div>
+              </div>
             </li>
           );
         }, this).concat(
@@ -155,8 +159,59 @@ module.exports = React.createClass({
     );
   },
   _getDeployed: function() {
-    // TODO
-    return (<div />);
+    var events = this.state.fields.event_id.values,
+        obj = this.state.deployedContent;
+
+    if (!obj)
+      return <div className="minute-deployed" />;
+
+    return (
+      <div className="minute-deployed">
+        <div className="minute">
+          <div className="minute-actions">
+            <div  className="minute-see"
+                  data-id={ obj.id }
+                  onClick={ this.collapse } />
+            <div  className="minute-share"
+                  data-permalink={ obj.url }
+                  onClick={ this.openPermalink } />
+          </div>
+          <div className="minute-context">{
+            [ obj.year,
+              events[obj.event_id].country,
+              events[obj.event_id].city ].join(' | ')
+          }</div>
+          <div className="minute-title">{
+            obj.title
+          }</div>
+          <div className="minute-tags">{
+            obj.actors.map(function(g) {
+              return {
+                class: 'groupings',
+                value: g
+              };
+            }).concat(
+              obj.topics.map(function(t) {
+                return {
+                  class: 'topics',
+                  value: t
+                };
+              })
+            ).map(function(tag, j) {
+              return (
+                <span className={ tag.class }
+                      key={ j }>{
+                  tag.value
+                }</span>
+              );
+            })
+          }</div>
+        </div>
+        <div className="minute-verbatim">
+          <iframe width="100%" height="100%" />
+        </div>
+      </div>
+    );
   },
 
   render: function() {

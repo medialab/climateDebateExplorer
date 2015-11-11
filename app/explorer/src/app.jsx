@@ -71,27 +71,26 @@ Papa.parse('assets/data/data.csv', {
         aggregations[field] = field;
     });
 
-    tree.datastore.query(
-      { aggregations: aggregations },
-      function(result) {
-        for (var k in result.aggregations)
-          result.aggregations[k] =
-            _.map(result.aggregations[k], function(value, key) {
-              return key;
-            });
+    var result = tree.datastore.query({
+      aggregations: aggregations
+    });
 
-        // Cache values lists:
-        tree.set(
-          ['cached', 'valuesLists'],
-          result.aggregations
-        );
+    for (var k in result.aggregations)
+      result.aggregations[k] =
+        _.map(result.aggregations[k], function(value, key) {
+          return key;
+        });
 
-        // Initial rendering:
-        ReactDOM.render(
-          <App tree={ tree } />,
-          container
-        );
-      }
+    // Cache values lists:
+    tree.set(
+      ['cached', 'valuesLists'],
+      result.aggregations
+    );
+
+    // Initial rendering:
+    ReactDOM.render(
+      <App tree={ tree } />,
+      container
     );
   }
 });

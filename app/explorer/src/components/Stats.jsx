@@ -9,11 +9,10 @@ module.exports = React.createClass({
   displayName: 'climateDebateExplorer/explorer/stats',
   mixins: [ BaobabBranchMixin ],
   cursors: {
+    contextual: ['contextual'],
     fields: ['cached', 'config', 'fields'],
-    filtersIndex: ['views', 'filtersIndex'],
     deployedList: ['appState', 'deployedList'],
-    aggregations: ['cached', 'config', 'aggregations'],
-    aggregatedLists: ['contextual', 'aggregatedLists']
+    aggregations: ['cached', 'config', 'aggregations']
   },
 
   // Handlers
@@ -38,6 +37,8 @@ module.exports = React.createClass({
   },
 
   render: function() {
+    var total = this.state.contextual.total;
+
     return (
       <div className="stats">
         <div className="column-title">Statistics</div>
@@ -55,7 +56,7 @@ module.exports = React.createClass({
               this.state.aggregations
           ).map(function(field, i) {
             var displayed = 0,
-                filter = this.state.filtersIndex[field] || {};
+                filter = this.state.contextual.filtersIndex[field] || {};
 
             return (
               <div  key={ field }
@@ -72,8 +73,8 @@ module.exports = React.createClass({
                   }</span>
                 </div>
                 <div className="block-content">{
-                  (this.state.aggregatedLists[field] || []).map(function(line, i) {
-                    var display = Math.round(line.value * 100) + '%';
+                  (this.state.contextual.aggregatedLists[field] || []).map(function(line, i) {
+                    var display = Math.round(line.value / total * 100) + '%';
 
                     // Hide filtered values:
                     if (filter[line.id])
