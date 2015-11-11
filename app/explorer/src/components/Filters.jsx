@@ -52,7 +52,9 @@ module.exports = React.createClass({
 
         <div  className="search"
               onChange={ this.search }>
-          <input type="text" />
+          <input  type="text"
+                  placeholder="Search" />
+          <div className="custom-border"></div>
         </div>
 
         <div className="filter-blocks">
@@ -69,6 +71,7 @@ module.exports = React.createClass({
                       data-deployed={ deployed || undefined }>
                   <div  data-field={ field }
                         className="block-title"
+                        data-before="Filtered by"
                         onClick={ this.toggleBlock }>{
                     this.state.fields[field].label || field
                   }</div>

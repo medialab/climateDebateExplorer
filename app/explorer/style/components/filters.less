@@ -1,19 +1,19 @@
 .filters {
-  border: 1px solid @COLOR_BORDERS;
-  background-color: @COLOR_BACKGROUND;
+  .title-border;
+  .border-right;
 
   .search {
     position: relative;
     height: 2em;
     width: 100%;
 
-    border-top: 1px solid @COLOR_BORDERS;
-    border-bottom: 1px solid @COLOR_BORDERS;
-    background-color: #fff;
-
     input {
-      height: 100%;
-      width: calc(~"100% - 3em");
+      height: 1.6em;
+      width: calc(~"100% - 4em");
+      margin-top: 0.4em;
+      margin-left: 1em;
+
+      background-color: @COLOR_BARS_BACKGROUND;
     }
 
     &::before {
@@ -40,6 +40,15 @@
       border: 1px solid @COLOR_TITLES;
       transform: rotate(-45deg);
     }
+
+    .custom-border {
+      position: absolute;
+      bottom: 0;
+      left: 0.5em;
+      right: 0.5em;
+
+      border-top: 1px solid @COLOR_BORDERS;
+    }
   }
 
   .filter-blocks {
@@ -47,7 +56,10 @@
     overflow: auto;
 
     .block {
-      border-bottom: 1px solid @COLOR_BORDERS;
+      .border-bottom;
+
+      position: relative;
+
       overflow: hidden;
 
       .block-title {
