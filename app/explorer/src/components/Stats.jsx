@@ -91,7 +91,7 @@ module.exports = React.createClass({
                   }, this)
                 }</div>
                 <div  className="block-more"
-                      data-id="topics"
+                      data-id={ field }
                       onClick={ this.toggle }>See more results</div>
               </div>
             );
