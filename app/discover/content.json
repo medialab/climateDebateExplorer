@@ -1,7 +1,8 @@
 {
   "intro": "",
+  "datapath": "../data/sections_metadata.csv",
   "viz_1": {
-    "title": "What are the major climate negotiation issues ?",
+    "title": "What are the major climate negotiation issues?",
     "1": {
       "offset": 100,
       "title": "Visibility of issues related to the Kyoto protocol.",
@@ -207,7 +208,7 @@
     }
   },
   "viz_3": {
-    "title": "Who are the climate negotiations actors ?",
+    "title": "Who are the climate negotiations actors?",
     "1": {
       "offset": 1700,
       "title": "Main negotiation groups",
