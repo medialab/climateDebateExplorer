@@ -56,6 +56,7 @@ module.exports = React.createClass({
   },
   _loadList: function(morePosts) {
     var k,
+        list = this.refs.verbatims,
         faceted = filtersFacet(
           this.state.filters,
           this.state.fields
@@ -79,6 +80,12 @@ module.exports = React.createClass({
           total: queryResult.total,
           fullList: queryResult.total === verbatims.length
         });
+
+        // Scroll to top, if full list reloaded:
+        if (!morePosts && list)
+          setTimeout(function() {
+            list.scrollTop = 0;
+          }, 0);
       }).bind(this)
     );
   },
