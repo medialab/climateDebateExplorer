@@ -13,42 +13,66 @@ module.exports = React.createClass({
 
   // Handlers
   delete: function(e) {
+    var target = e.currentTarget;
 
+    this.context.tree.emit('actions:filter', {
+      field: target.getAttribute('data-field'),
+      value: target.getAttribute('data-value')
+    });
   },
 
   render: function() {
+    var self = this,
+        fields = this.state.fields,
+        filters = this.state.filters,
+        events = fields.event_id.values;
+
     return (
       <div className="context">
         <div className="filters-list">{
-          this.state.filters.map(function(filter, i) {
-            return (
-              <div  className="filter"
-                    key={ i }>
-                <div  className="filter-field"
-                      data-field={ filter.field }>{
-                  (this.state.fields[filter.field].label || filter.field) + ' :'
-                }</div>
-                <div className="filter-values">{
-                  filter.values.map(function(v, j) {
-                    return (
-                      <div key={ j }>
-                        <div className="filter-value"
-                              onClick={ this.delete }>
-                          <div className="filter-value-label">{ v }</div>
-                          <div className="filter-value-cross"></div>
-                        </div>
-                        {
-                          j === filter.values.length - 1 ?
-                            '' :
-                            <div className="filter-join">AND</div>
-                        }
-                      </div>
-                    );
-                  }, this)
-                }</div>
-              </div>
+          filters.reduce(function(res, filter, i) {
+            var field = fields[filter.field];
+
+            res.push(
+              <div  key={ 'title-' + filter.field }
+                    className="filter-field"
+                    data-field={ filter.field }>{
+                (field.label || filter.field) + ' :'
+              }</div>
             );
-          }, this)
+
+            filter.values.map(function(v, j, a) {
+              if (j && a.length > 1)
+                res.push(
+                  <div  key={ 'join-' + filter.field + '-' + j }
+                        className="filter-join">{
+                    (j === a.length - 1) ?
+                      (field.operator || 'and').toUpperCase() :
+                      ', '
+                  }</div>
+                );
+
+              res.push(
+                <div  key={ 'filter-' + filter.field + '-' + j }
+                      className="filter-value"
+                      data-value={ v }
+                      data-field={ filter.field }
+                      onClick={ self.delete }>
+                  <div className="filter-label">{
+                    // HACK:
+                    // Fetch events proper label:
+                    filter.field === 'event_id' ?
+                      [ events[v].year,
+                        events[v].city,
+                        events[v].country ].join(', ') :
+                      v
+                  }</div>
+                </div>
+              );
+            });
+
+            return res;
+          }, [])
         }</div>
       </div>
     );
