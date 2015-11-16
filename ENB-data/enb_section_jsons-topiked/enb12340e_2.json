@@ -2,9 +2,7 @@
   "countries": [
     "Japan"
   ], 
-  "topics": [
-    "Vulnerabilities and Impacts"
-  ], 
+  "topics": [], 
   "section_title": "MITIGATION:", 
   "enb_start_date": "15-Sep-07", 
   "enb_short_title": "Workshop", 

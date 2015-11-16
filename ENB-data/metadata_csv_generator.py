@@ -94,7 +94,7 @@ for directory,subdir,filenames in os.walk(ENB_DATA):
                         data["subtype"].replace('&', 'and'),
                         unicode(epoch_millisecond),
                         unicode(year),
-                        data["sentences"][0].replace('\u0092' "'")
+                        data["sentences"][0].replace('\u0092', "'")
                         ]
                     section_metadata.append(csv_data)
 

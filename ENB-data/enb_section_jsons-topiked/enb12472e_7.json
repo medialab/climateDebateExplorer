@@ -2,9 +2,7 @@
   "countries": [
     "Germany"
   ], 
-  "topics": [
-    "Mitigation"
-  ], 
+  "topics": [], 
   "section_title": "AWG-LCA 9 AND AWG-KP 11:", 
   "enb_start_date": "31-May-10", 
   "enb_short_title": "AWGs", 
