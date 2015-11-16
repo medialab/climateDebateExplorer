@@ -61,6 +61,7 @@ module.exports = React.createClass({
               this.state.aggregations
           ).map(function(field, i) {
             var displayed = 0,
+                events = this.state.fields.event_id.values,
                 filter = this.state.contextual.filtersIndex[field] || {};
 
             return (
@@ -107,7 +108,15 @@ module.exports = React.createClass({
                                   width: display
                                 }}></div>
                         </div>
-                        <div className="chart-line-label">{ line.id }</div>
+                        <div className="chart-line-label">{
+                          // HACK:
+                          // Fetch events proper label:
+                          field === 'event_id' ?
+                            [ events[line.id].year,
+                              events[line.id].city,
+                              events[line.id].country ].join(', ') :
+                            line.id
+                        }</div>
                       </div>
                     );
                   }, this)
