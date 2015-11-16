@@ -11,6 +11,14 @@ module.exports = {
     { field: 'event_id' },
     { field: 'topics' }
   ],
+
+  // Fields that are displayed in the Stats column:
+  stats: [
+    'topics',
+    'event_id',
+    'actors'
+  ],
+
   // Fields that must be aggregated when filtering the dataset:
   aggregations: [
     'topics',

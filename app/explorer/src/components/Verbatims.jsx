@@ -207,7 +207,10 @@ module.exports = React.createClass({
           }</div>
         </div>
         <div className="minute-verbatim">
-          <iframe width="100%" height="100%" frameBorder="0">
+          <iframe width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  src={ './bulletin/' + obj.id.replace(/_.*$/, '') + '.html#section_' + obj.id }>
             Woops, something went wrong here...
           </iframe>
         </div>

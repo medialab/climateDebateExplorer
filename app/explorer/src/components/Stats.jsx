@@ -12,7 +12,7 @@ module.exports = React.createClass({
     contextual: ['contextual'],
     fields: ['cached', 'config', 'fields'],
     deployedList: ['appState', 'deployedList'],
-    aggregations: ['cached', 'config', 'aggregations']
+    stats: ['cached', 'config', 'stats']
   },
 
   // Handlers
@@ -58,7 +58,7 @@ module.exports = React.createClass({
         { (
             this.state.deployedList ?
               [this.state.deployedList] :
-              this.state.aggregations
+              this.state.stats
           ).map(function(field, i) {
             var displayed = 0,
                 events = this.state.fields.event_id.values,
