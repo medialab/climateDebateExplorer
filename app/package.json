@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
+    "start": "http-server -p 8000",
     "build": "gulp build"
   },
   "author": "",
