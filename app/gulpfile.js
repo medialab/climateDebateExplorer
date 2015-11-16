@@ -144,6 +144,11 @@ gulp.task('data-build-csv', function() {
     .pipe(gulp.dest('./build/assets/data'));
 });
 
+gulp.task('data-build-htaccess', function() {
+  return gulp.src(['./data/.htaccess'])
+    .pipe(gulp.dest('./build/assets/data'));
+});
+
 gulp.task('data-build-html', function () {
   return gulp.src('../ENB-data/enb_pages/')
     .pipe(symlink('./build/bulletin'));
@@ -158,6 +163,7 @@ gulp.task('data-build', function() {
   runSequence(
     'data-build-style',
     'data-build-csv',
+    'data-build-htaccess',
     'data-build-html'
   );
 });
