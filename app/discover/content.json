@@ -5,12 +5,12 @@
     "title": "What are the major climate negotiation issues?",
     "1": {
       "offset": 100,
-      "title": "Visibility of issues related to the Kyoto protocol.",
+      "title": "Visibility of issues related to the Kyoto protocol",
       "window": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
+        "x": -50,
+        "y": -50,
+        "w": 200,
+        "h": 200
       },
       "analysis": "The diagram shows the evolution of visibility of four discussions related to the Kyoto protocol (measured as the percentage of ENB sections mentioning expressions related to each discussion over the total of ENB sections for the year).",
       "verbatims": {
@@ -34,8 +34,8 @@
       "window": {
         "x": 0,
         "y": 0,
-        "w": 0,
-        "h": 0
+        "w": 18,
+        "h": 100
       },
       "analysis": "The first stage of negotiations seemed to be framed by attempts to establish a Kyoto protocol and deciding its functional rules and integration within the UNFCCC system (this second set of concerns will remain highly important throughout the negotiations).",
       "verbatims": {
@@ -57,10 +57,10 @@
       "offset": 500,
       "title": "Compliance and enforcement",
       "window": {
-        "x": 0,
+        "x": 18,
         "y": 0,
-        "w": 0,
-        "h": 0
+        "w": 20,
+        "h": 100
       },
       "analysis": "After the Kyoto Protocol approval, the discussion shifted to questions concerning the implementation of the agreements taken in Kyoto.",
       "verbatims": {
@@ -82,12 +82,12 @@
       "offset": 700,
       "title": "Going beyond the Kyoto Protocol",
       "window": {
-        "x": 0,
+        "x": 60,
         "y": 0,
-        "w": 0,
-        "h": 0
+        "w": 40,
+        "h": 100
       },
-      "analysis": "In the last period the limitations of the Kyoto Protocol (both temporal and in terms of the countries engaged) drive the discussion increasingly toward the search for a successor to the Kyoto Protocol and – after the failure of the Copenhagen conference – to the temporary extension of the agreement.",
+      "analysis": "In the last period the limitations of the Kyoto Protocol (both temporal and in terms of the countries engaged) drive the discussion increasingly toward the search for a successor to the Kyoto Protocol and \u2013 after the failure of the Copenhagen conference \u2013 to the temporary extension of the agreement.",
       "verbatims": {
         "1": {
           "title": "",
@@ -110,10 +110,10 @@
       "offset": 900,
       "title": "Visibility of other negotiation issues",
       "window": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
+        "x": -50,
+        "y": -50,
+        "w": 200,
+        "h": 200
       },
       "analysis": "The diagram shows the evolution of the visibility of a selection of negotiation issues related to the costs and investments connected to climate change (measured as the percentage of ENB sections that mentions expressions related to each discussion over the total of ENB sections for the year).",
       "verbatims": {
@@ -135,10 +135,10 @@
       "offset": 1100,
       "title": "The consequences of climate change and of its mitigation",
       "window": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
+        "x": -50,
+        "y": -50,
+        "w": 200,
+        "h": 200
       },
       "analysis": "The first period of the negotiations seems occupied by a prevalence of questions regarding negative consequences of global warming as well as the response measures introduced to mitigate it.",
       "verbatims": {
@@ -160,10 +160,10 @@
       "offset": 1300,
       "title": "The impacts of climate change and the funding of adaptation",
       "window": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
+        "x": -50,
+        "y": -50,
+        "w": 200,
+        "h": 200
       },
       "analysis": "Contrarily to what could be expected, the discussion over the mechanisms necessary to finance the adaptation of impending consequences of climate change begin before the reflection directly addressed to these impacts and the vulnerabilities connected to them.",
       "verbatims": {
@@ -185,10 +185,10 @@
       "offset": 1500,
       "title": "REDD+ and Loss & Damage",
       "window": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
+        "x": -50,
+        "y": -50,
+        "w": 200,
+        "h": 200
       },
       "analysis": "In the last stages, it is possible to observe the emergence of specialized discussion about greenhouse sinks (in the particular the question of forests) and about the liabilities and compensation connected to the impact of climate change.",
       "verbatims": {
@@ -213,10 +213,10 @@
       "offset": 1700,
       "title": "Main negotiation groups",
       "window": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
+        "x": -50,
+        "y": -50,
+        "w": 200,
+        "h": 200
       },
       "analysis": "The diagram shows the visibility evolution of the most engaged negotiation groupings. Each line shows the percentage of ENB sections in which the name of the corresponding group is mentioned (over the total of ENB sections for the year).",
       "verbatims": {
@@ -238,10 +238,10 @@
       "offset": 1900,
       "title": "The protagonists",
       "window": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
+        "x": -50,
+        "y": -50,
+        "w": 200,
+        "h": 200
       },
       "analysis": "Three groupings are consistent among the most visible actors of the negotiation: the European Union, the Group of 77 and China and the Alliance of Small Islands. The engagement of this last group is particularly interesting, as it derives directly from the specific vulnerability of these States to climate change.",
       "verbatims": {
@@ -263,10 +263,10 @@
       "offset": 2100,
       "title": "On the rise",
       "window": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
+        "x": -50,
+        "y": -50,
+        "w": 200,
+        "h": 200
       },
       "analysis": "The diagram shows the increasing engagement of countries in the southern hemisphere, in particular the African group and the Independent Association of Latin America and the Caribbean, as well as the transversal Environmental Integrity Group.",
       "verbatims": {
@@ -288,10 +288,10 @@
       "offset": 2300,
       "title": "The peak after Kyoto",
       "window": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
+        "x": -50,
+        "y": -50,
+        "w": 200,
+        "h": 200
       },
       "analysis": "A clear peak is visible in many lines during 1998 (particularly the EU and the G77 and China). The interpretation of this peak, taking place right after the adoption of the Kyoto Protocol, is not obvious: it may corresponds to the efforts of some negotiation groupings to encourage the implementation of the Kyoto protocol, but it may also derive from a change in the way the ENB reports on the negotiation.",
       "verbatims": {
@@ -313,12 +313,12 @@
       "offset": 2500,
       "title": "Top-5 most visible countries per year",
       "window": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
+        "x": -50,
+        "y": -50,
+        "w": 200,
+        "h": 200
       },
-      "analysis": "Considering the most visible countries in the different years of the negotiation, one can see the constant importance of the United States, China and Australia (the European Union has been not considered in this visualization). Other particularly visible countries are Japan, Saudi Arabia. Canada and Switzerland seems to ‘switch places’, as Canada disappears from the top positions after 2009, while Switzerland returns in 2006.",
+      "analysis": "Considering the most visible countries in the different years of the negotiation, one can see the constant importance of the United States, China and Australia (the European Union has been not considered in this visualization). Other particularly visible countries are Japan, Saudi Arabia. Canada and Switzerland seems to \u2018switch places\u2019, as Canada disappears from the top positions after 2009, while Switzerland returns in 2006.",
       "verbatims": {
         "1": {
           "title": "",
