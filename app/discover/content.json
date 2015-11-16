@@ -29,7 +29,7 @@
       }
     },
     "2": {
-      "offset": 300,
+      "offset": 500,
       "title": "Setting up the Kyoto Protocol",
       "window": {
         "x": 0,
@@ -54,7 +54,7 @@
       }
     },
     "3": {
-      "offset": 500,
+      "offset": 1000,
       "title": "Compliance and enforcement",
       "window": {
         "x": 18,
@@ -79,7 +79,7 @@
       }
     },
     "4": {
-      "offset": 700,
+      "offset": 1500,
       "title": "Going beyond the Kyoto Protocol",
       "window": {
         "x": 60,
@@ -107,7 +107,7 @@
   "viz_2": {
     "title": "Other major climate negotiation issues",
     "1": {
-      "offset": 900,
+      "offset": 2000,
       "title": "Visibility of other negotiation issues",
       "window": {
         "x": -50,
@@ -132,7 +132,7 @@
       }
     },
     "2": {
-      "offset": 1100,
+      "offset": 2500,
       "title": "The consequences of climate change and of its mitigation",
       "window": {
         "x": -50,
@@ -157,7 +157,7 @@
       }
     },
     "3": {
-      "offset": 1300,
+      "offset": 3000,
       "title": "The impacts of climate change and the funding of adaptation",
       "window": {
         "x": -50,
@@ -182,7 +182,7 @@
       }
     },
     "4": {
-      "offset": 1500,
+      "offset": 3500,
       "title": "REDD+ and Loss & Damage",
       "window": {
         "x": -50,
@@ -210,7 +210,7 @@
   "viz_3": {
     "title": "Who are the climate negotiations actors?",
     "1": {
-      "offset": 1700,
+      "offset": 4000,
       "title": "Main negotiation groups",
       "window": {
         "x": -50,
@@ -235,7 +235,7 @@
       }
     },
     "2": {
-      "offset": 1900,
+      "offset": 4500,
       "title": "The protagonists",
       "window": {
         "x": -50,
@@ -260,7 +260,7 @@
       }
     },
     "3": {
-      "offset": 2100,
+      "offset": 5000,
       "title": "On the rise",
       "window": {
         "x": -50,
@@ -285,7 +285,7 @@
       }
     },
     "4": {
-      "offset": 2300,
+      "offset": 5500,
       "title": "The peak after Kyoto",
       "window": {
         "x": -50,
@@ -310,7 +310,7 @@
       }
     },
     "5": {
-      "offset": 2500,
+      "offset": 6000,
       "title": "Top-5 most visible countries per year",
       "window": {
         "x": -50,
