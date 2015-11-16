@@ -175,6 +175,7 @@ module.exports = React.createClass({
           <div className="minute-actions">
             <div  className="minute-see"
                   data-id={ obj.id }
+                  data-deployed="true"
                   onClick={ this.collapse } />
             <div  className="minute-share"
                   data-permalink={ obj.url }

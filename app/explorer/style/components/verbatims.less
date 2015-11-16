@@ -86,9 +86,13 @@
         width: 1.2em;
         margin: 0.2em 0.9em;
 
-        background-image: url('../img/picto_eye.svg');
+        background-image: url('../img/picto-eye.svg');
         background-repeat: no-repeat;
         background-size: contain;
+
+        &[data-deployed] {
+          background-image: url('../img/picto-closed-eye.svg');
+        }
       }
       .minute-share {
         .button;
@@ -97,7 +101,7 @@
         width: 1.2em;
         margin: 0.2em 0.9em;
 
-        background-image: url('../img/picto_link.svg');
+        background-image: url('../img/picto-link.svg');
         background-repeat: no-repeat;
         background-size: contain;
       }
