@@ -112,14 +112,21 @@
       color: @COLOR_ORANGE;
     }
 
-    .minute-title {
-      .bold;
-
+    .minute-description {
       padding-left: 4em;
-      height: 2em;
-      line-height: 2em;
-
+      margin: 0.5em 0;
+      line-height: 1em;
       color: @COLOR_VERBATIMS_TITLES;
+
+      .minute-title {
+        .bold;
+        &::after {
+          content: " : ";
+        }
+      }
+      .minute-abstract {
+        padding-left: 0.1em;
+      }
     }
 
     .minute-tags {
