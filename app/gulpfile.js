@@ -77,7 +77,7 @@ function textReplace(txt, path, str) {
 
 
 /**
- * EXPLOREr
+ * EXPLORER
  * ********
  */
 
@@ -133,6 +133,17 @@ gulp.task('explorer-build', function() {
 });
 
 /**
+ * DATA
+ * ********
+ */
+
+gulp.task('data-csv', function() {
+  return gulp.src(['./data/sections_metadata.csv*'])
+    .pipe(rename('data.csv'))
+    .pipe(gulp.dest('./build/assets/data'));
+});
+
+/**
  * MAIN
  * ********
  */
@@ -142,5 +153,5 @@ gulp.task('clean', function() {
 
 
 gulp.task('build', function() {
-  runSequence('clean', 'discover-build', 'explorer-build');
+  runSequence('clean', 'data-csv', 'discover-build', 'explorer-build');
 });
