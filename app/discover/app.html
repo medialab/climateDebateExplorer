@@ -177,7 +177,8 @@
         <div id="viz">
           <div id="viz-1" data-0="display: !block; opacity: !0.5;" data-_viz1="display: !block; opacity: !1;" data-_viz2="display: !none;"></div>
           <div id="viz-2" data-0="display: !none;" data-_viz2="display: !block;" data-_viz3="display: !none;"></div>
-          <div id="viz-3" data-0="display: !none;" data-_viz3="display: !block;"></div>
+          <div id="viz-3-1" data-0="display: !none;" data-_viz3="display: !block;" data-_viz3_5="display: !none;"></div>
+          <div id="viz-3-2" data-0="display: !none;" data-_viz3_5="display: !block;"></div>
         </div>
       </section>
     </div>
@@ -223,10 +224,10 @@
     });
     d3.csv("[HTML_DATAPATH]", function(error, data){
       if (error) throw error;
-      discoverviz.draw_viz1("#viz-1", data);
-      discoverviz.draw_viz2("#viz-2", data);
-      //discoverviz.draw_viz2bis("#viz-2", data);
-      discoverviz.draw_viz3("#viz-3", data);
+      discoverviz.draw_main_topics("#viz-1", data);
+      discoverviz.draw_other_topics("#viz-2", data);
+      discoverviz.draw_groupings("#viz-3-1", data);
+      discoverviz.list_countries("#viz-3-2", data);
     });
   </script>
 </body>
