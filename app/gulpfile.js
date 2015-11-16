@@ -16,6 +16,8 @@ var gulp = require('gulp'),
     transform = require('vinyl-transform'),
     source = require('vinyl-source-stream'),
 
+    symlink = require('gulp-symlink'),
+
     fs = require('fs');
 
 
@@ -136,11 +138,28 @@ gulp.task('explorer-build', function() {
  * DATA
  * ********
  */
-
-gulp.task('data-csv', function() {
+gulp.task('data-build-csv', function() {
   return gulp.src(['./data/sections_metadata.csv*'])
     .pipe(rename('data.csv'))
     .pipe(gulp.dest('./build/assets/data'));
+});
+
+gulp.task('data-build-html', function () {
+  return gulp.src('../ENB-data/enb_pages/')
+    .pipe(symlink('./build/bulletin'));
+});
+
+gulp.task('data-build-style', function() {
+  return gulp.src('../ENB-data/bulletin.css')
+    .pipe(gulp.dest('./build/assets/style'));
+});
+
+gulp.task('data-build', function() {
+  runSequence(
+    'data-build-style',
+    'data-build-csv',
+    'data-build-html'
+  );
 });
 
 /**
@@ -153,5 +172,5 @@ gulp.task('clean', function() {
 
 
 gulp.task('build', function() {
-  runSequence('clean', 'data-csv', 'discover-build', 'explorer-build');
+  runSequence('clean', 'data-build', 'discover-build', 'explorer-build');
 });
