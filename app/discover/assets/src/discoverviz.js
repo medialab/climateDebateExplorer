@@ -6,11 +6,19 @@
     
   };
 
+  var container = document.getElementById('viz');
+  ns.getWidth = function() {
+    return container.offsetWidth;
+  }
+  ns.getHeight = function() {
+    return container.offsetHeight;
+  }
+
   ns.draw_groupings = function(el_id, data){
 
-    var margin = {top: 20, right: 200, bottom: 30, left: 50},
-        width = 960 - margin.left - margin.right,
-        height = 450 - margin.top - margin.bottom;
+    var margin = {top: 20, right: 200, bottom: 50, left: 50},
+        width = ns.getWidth() - margin.left - margin.right,
+        height = ns.getHeight() - margin.top - margin.bottom;
 
     var x = d3.scale.linear()
         .range([0, width]);
@@ -173,9 +181,9 @@
 
   ns.draw_topics = function(el_id, data, filters){
 
-    var margin = {top: 20, right: 200, bottom: 30, left: 50},
-        width = 960 - margin.left - margin.right,
-        height = 450 - margin.top - margin.bottom;
+    var margin = {top: 20, right: 200, bottom: 50, left: 50},
+        width = ns.getWidth() - margin.left - margin.right,
+        height = ns.getHeight() - margin.top - margin.bottom;
 
     var parseDate = d3.time.format("%Y%m%d").parse;
 
