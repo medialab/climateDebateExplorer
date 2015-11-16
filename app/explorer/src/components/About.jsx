@@ -11,7 +11,10 @@ module.exports = React.createClass({
   },
 
   close: function(e) {
-    this.cursors.deployed.set(false);
+    var className = e.target.getAttribute('class');
+
+    if (className === 'about' || className === 'about-cross')
+      this.cursors.deployed.set(false);
   },
 
   render: function() {
@@ -20,7 +23,8 @@ module.exports = React.createClass({
               this.state.deployed ?
                 'about' :
                 'about hidden'
-            }>
+            }
+            onClick={ this.close }>
         <div className="about-content">
           <div  className="about-cross"
                 onClick={ this.close }></div>
