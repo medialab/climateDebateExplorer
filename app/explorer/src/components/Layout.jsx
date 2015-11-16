@@ -4,8 +4,6 @@ var React = require('react'),
     BaobabBranchMixin = require('baobab-react/mixins').branch,
     Header = require('./Header.jsx'),
     About = require('./About.jsx'),
-    Disclaimer = require('./Disclaimer.jsx'),
-    Menu = require('./Menu.jsx'),
     Context = require('./Context.jsx'),
     Filters = require('./Filters.jsx'),
     Stats = require('./Stats.jsx'),
@@ -22,8 +20,6 @@ module.exports = React.createClass({
       <div className="app">
         <Header />
         <About />
-        <Disclaimer />
-        <Menu />
         <Context />
         <div className="content">
           <Filters />

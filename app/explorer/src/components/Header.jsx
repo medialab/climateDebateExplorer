@@ -6,11 +6,31 @@ var React = require('react'),
 module.exports = React.createClass({
   displayName: 'climateDebateExplorer/explorer/header',
   mixins: [ BaobabBranchMixin ],
-  cursors: {},
+  cursors: {
+    deployed: ['appState', 'deployedHeader']
+  },
+
+  toggleAbout: function(e) {
+    this.cursors.deployed.set(!this.state.deployed);
+  },
 
   render: function() {
     return (
-      <div className="header">header</div>
+      <div className="header">
+        <div className="links">
+          <a  className="button"
+              onClick={ this.toggleAbout }>About</a>
+        </div>
+        <div className="social">
+          <a className="button"><img src="assets/img/facebook.svg" /></a>
+          <a className="button"><img src="assets/img/twitter.svg" /></a>
+          <a className="button"><img src="assets/img/linkedin.svg" /></a>
+        </div>
+        <div className="menu">
+          <a className="discover">Discover</a>
+          <a className="explore">Explore</a>
+        </div>
+      </div>
     );
   }
 });
