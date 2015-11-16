@@ -119,9 +119,14 @@ module.exports = React.createClass({
                     (events[obj.event_id] || {}).country,
                     (events[obj.event_id] || {}).city ].join(' | ')
                 }</div>
-                <div className="minute-title">{
-                  obj.title
-                }</div>
+                <div className="minute-description">
+                  <span className="minute-title">{
+                    obj.title
+                  }</span>
+                  <span className="minute-abstract">{
+                    obj.abstract
+                  }</span>
+                </div>
                 <div className="minute-tags">{
                   obj.actors.map(function(g) {
                     return {
@@ -181,9 +186,14 @@ module.exports = React.createClass({
               events[obj.event_id].country,
               events[obj.event_id].city ].join(' | ')
           }</div>
-          <div className="minute-title">{
-            obj.title
-          }</div>
+          <div className="minute-description">
+            <span className="minute-title">{
+              obj.title
+            }</span>
+            <span className="minute-abstract">{
+              obj.abstract
+            }</span>
+          </div>
           <div className="minute-tags">{
             obj.actors.map(function(g) {
               return {
