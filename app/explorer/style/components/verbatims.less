@@ -21,6 +21,16 @@
     .minute {
       flex-grow: auto;
       margin-bottom: 1em;
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: calc(~"100% + 1em");
+        left: 0.5em;
+        right: 0.5em;
+
+        border-top: 1px solid @COLOR_BORDERS;
+      }
     }
 
     .minute-verbatim {
