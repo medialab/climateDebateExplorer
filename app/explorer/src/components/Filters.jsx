@@ -75,9 +75,11 @@ module.exports = React.createClass({
                 onChange={ this.onClickInput }
                 checked={ obj.checked } />
         <label  htmlFor={ id }
-                className="filter-label">{
-          obj.label
-        }</label>
+                className="filter-label">
+          <span className="label-wrapper">{
+            obj.label
+          }</span>
+        </label>
       </li>
     );
   },
@@ -113,9 +115,13 @@ module.exports = React.createClass({
                   <div  data-field={ field }
                         className="block-title"
                         data-before="Filtered by"
-                        onClick={ this.toggleBlock }>{
-                    fields[field].label || field
-                  }</div>
+                        onClick={ this.toggleBlock }>
+                    <span>{
+                      fields[field].label || field
+                    }</span>
+                    <div  className="arrow"
+                          data-deployed={ deployedBlocks || undefined }></div>
+                  </div>
 
                   <div className="block-content">
                     <ul className="filters-list">{

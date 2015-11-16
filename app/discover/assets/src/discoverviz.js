@@ -16,19 +16,21 @@
 
   ns.draw_groupings = function(el_id, data){
 
-    var margin = {top: 20, right: 200, bottom: 50, left: 50},
+    var margin = {top: 20, right: 250, bottom: 50, left: 50},
         width = ns.getWidth() - margin.left - margin.right,
         height = ns.getHeight() - margin.top - margin.bottom;
 
     var x = d3.scale.linear()
         .range([0, width]);
 
+
     var y = d3.scale.linear()
         .range([height, 0]);
 
     var xAxis = d3.svg.axis()
         .scale(x)
-        .orient("bottom");
+        .orient("bottom")
+        .tickFormat(d3.format(".0f"));
 
     var yAxis = d3.svg.axis()
         .scale(y)
@@ -181,7 +183,7 @@
 
   ns.draw_topics = function(el_id, data, filters){
 
-    var margin = {top: 20, right: 200, bottom: 50, left: 50},
+    var margin = {top: 20, right: 250, bottom: 50, left: 50},
         width = ns.getWidth() - margin.left - margin.right,
         height = ns.getHeight() - margin.top - margin.bottom;
 
@@ -195,7 +197,8 @@
 
     var xAxis = d3.svg.axis()
         .scale(x)
-        .orient("bottom");
+        .orient("bottom")
+        .tickFormat(d3.format(".0f"));
 
     var yAxis = d3.svg.axis()
         .scale(y)
