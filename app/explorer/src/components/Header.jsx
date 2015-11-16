@@ -27,8 +27,10 @@ module.exports = React.createClass({
           <a className="button"><img src="assets/img/linkedin.svg" /></a>
         </div>
         <div className="menu">
-          <a className="discover">Discover</a>
-          <a className="explore">Explore</a>
+          <a  className="discover"
+              href="discover.html">Discover</a>
+          <a className="explore"
+              href="#">Explore</a>
         </div>
       </div>
     );

@@ -86,9 +86,13 @@
         width: 1.2em;
         margin: 0.2em 0.9em;
 
-        background-image: url('../img/picto_eye.svg');
+        background-image: url('../img/picto-eye.svg');
         background-repeat: no-repeat;
         background-size: contain;
+
+        &[data-deployed] {
+          background-image: url('../img/picto-closed-eye.svg');
+        }
       }
       .minute-share {
         .button;
@@ -97,7 +101,7 @@
         width: 1.2em;
         margin: 0.2em 0.9em;
 
-        background-image: url('../img/picto_link.svg');
+        background-image: url('../img/picto-link.svg');
         background-repeat: no-repeat;
         background-size: contain;
       }
@@ -112,23 +116,30 @@
       color: @COLOR_ORANGE;
     }
 
-    .minute-title {
-      .bold;
-
+    .minute-description {
       padding-left: 4em;
-      height: 2em;
-      line-height: 2em;
-
+      margin: 0.5em 0;
+      line-height: 1.2em;
       color: @COLOR_VERBATIMS_TITLES;
+
+      .minute-title {
+        .bold;
+        &::after {
+          content: " : ";
+        }
+      }
+      .minute-abstract {
+        padding-left: 0.1em;
+      }
     }
 
     .minute-tags {
       padding-left: 4em;
-      line-height: 2em;
+      line-height: 1.3em;
 
       span {
-        margin: 0.1em 0.3em;
-        padding: 0.2em 0.5em;
+        margin: 0.1em 0.1em;
+        padding: 0em 0.5em;
         display: inline-block;
 
         background-color: @COLOR_TAGS_LIGHT;

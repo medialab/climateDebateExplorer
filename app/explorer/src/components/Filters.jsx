@@ -148,9 +148,10 @@ module.exports = React.createClass({
 
                           return (
                             <li key={ j }
-                                className="group">
+                                className="group"
+                                data-deployed={ !!deployed }>
                               <h3 className="group-title"
-                                  data-deployed={ deployed }
+                                  data-deployed={ !!deployed }
                                   data-field={ field }
                                   data-group={ group }
                                   onClick={ this.toggleGroup }>{
