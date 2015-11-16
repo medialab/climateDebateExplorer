@@ -110,7 +110,7 @@ gulp.task('explorer-build-src', function() {
   return browserify({
       entries: './explorer/src/app.jsx',
       standalone: 'app',
-      debug: false
+      debug: true
     })
     .transform(reactify)
     .bundle()
