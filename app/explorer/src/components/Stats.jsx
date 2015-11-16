@@ -37,7 +37,8 @@ module.exports = React.createClass({
   },
 
   render: function() {
-    var total = this.state.contextual.total;
+    var total = this.state.contextual.total,
+        filtersIndex = this.state.contextual.filtersIndex;
 
     return (
       <div className="stats">
@@ -48,7 +49,11 @@ module.exports = React.createClass({
                   'stats-back hidden'
               }
               onClick={ this.expand }>
-          <span className="stats-back-text">Back to recurring contents</span>
+          <span className="stats-back-text">{
+            filtersIndex[this.state.deployedList] ?
+              'Back to related contents' :
+              'Back to recurring contents'
+          }</span>
         </div>
         { (
             this.state.deployedList ?
@@ -66,7 +71,11 @@ module.exports = React.createClass({
                         'block'
                     }>
                 <div  className="block-title"
-                      data-before="Most recurring"
+                      data-before={
+                        filtersIndex[field] ?
+                          'Most related' :
+                          'Most recurring'
+                      }
                       data-field={ field }>
                   <span>{
                     this.state.fields[field].label || field
