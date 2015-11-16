@@ -55,7 +55,8 @@ with open(os.path.join(OUT_DATA,"sections_metadata.csv"),"w") as f:
     "track",
     "format",
     "date",
-    "year"
+    "year",
+    "abstract"
       ]
     print >> f, (",".join(headers)).encode('utf-8')
 section_metadata=[]
@@ -92,7 +93,8 @@ for directory,subdir,filenames in os.walk(ENB_DATA):
                         data["type"].replace('&', 'and'),
                         data["subtype"].replace('&', 'and'),
                         unicode(epoch_millisecond),
-                        unicode(year)
+                        unicode(year),
+                        data["sentences"][0]
                         ]
                     section_metadata.append(csv_data)
 
