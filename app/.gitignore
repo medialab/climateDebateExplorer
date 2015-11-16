@@ -1,4 +1,2 @@
-dev/
+build/
 node_modules/
-
-*.log

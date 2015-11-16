@@ -37,7 +37,8 @@ module.exports = React.createClass({
   },
 
   render: function() {
-    var total = this.state.contextual.total;
+    var total = this.state.contextual.total,
+        filtersIndex = this.state.contextual.filtersIndex;
 
     return (
       <div className="stats">
@@ -48,7 +49,11 @@ module.exports = React.createClass({
                   'stats-back hidden'
               }
               onClick={ this.expand }>
-          <span className="stats-back-text">Back to recurring contents</span>
+          <span className="stats-back-text">{
+            filtersIndex[this.state.deployedList] ?
+              'Back to related contents' :
+              'Back to recurring contents'
+          }</span>
         </div>
         { (
             this.state.deployedList ?
@@ -56,6 +61,7 @@ module.exports = React.createClass({
               this.state.aggregations
           ).map(function(field, i) {
             var displayed = 0,
+                events = this.state.fields.event_id.values,
                 filter = this.state.contextual.filtersIndex[field] || {};
 
             return (
@@ -66,7 +72,11 @@ module.exports = React.createClass({
                         'block'
                     }>
                 <div  className="block-title"
-                      data-before="Most recurring"
+                      data-before={
+                        filtersIndex[field] ?
+                          'Most related' :
+                          'Most recurring'
+                      }
                       data-field={ field }>
                   <span>{
                     this.state.fields[field].label || field
@@ -98,7 +108,15 @@ module.exports = React.createClass({
                                   width: display
                                 }}></div>
                         </div>
-                        <div className="chart-line-label">{ line.id }</div>
+                        <div className="chart-line-label">{
+                          // HACK:
+                          // Fetch events proper label:
+                          field === 'event_id' ?
+                            [ events[line.id].year,
+                              events[line.id].city,
+                              events[line.id].country ].join(', ') :
+                            line.id
+                        }</div>
                       </div>
                     );
                   }, this)

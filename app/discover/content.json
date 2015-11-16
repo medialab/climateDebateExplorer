@@ -1,6 +1,6 @@
 {
   "intro": "",
-  "datapath": "../data/sections_metadata.csv",
+  "datapath": "./assets/data/data.csv",
   "viz_1": {
     "title": "What are the major climate negotiation issues?",
     "1": {
