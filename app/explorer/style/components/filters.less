@@ -65,6 +65,8 @@
       .block-title {
         .button;
 
+        height: 3em;
+
         .arrow {
           position: absolute;
           top: 1.2em;
@@ -95,12 +97,38 @@
 
             color: @COLOR_FILTER_GROUP;
 
+            &[data-deployed="true"] {
+              padding-bottom: 0.5em;
+            }
+
             .group-title {
               .button;
 
+              position: relative;
               margin: 0;
               padding: 0;
               font-size: 1em;
+
+              &::after {
+                position: absolute;
+                content: '';
+                top: 0.5em;
+                right: 0.6em;
+                height: 0;
+                width: 0.8em;
+
+                border-top: 1px solid @COLOR_FILTER;
+              }
+              &[data-deployed="false"]::before {
+                position: absolute;
+                content: '';
+                top: 0.1em;
+                right: 1em;
+                height: 0.8em;
+                width: 0;
+
+                border-left: 1px solid @COLOR_FILTER;
+              }
             }
           }
 
@@ -119,7 +147,7 @@
             }
 
             label {
-              .button;
+              cursor: pointer;
 
               display: inline-block;
 
