@@ -64,10 +64,97 @@
 
       .block-title {
         .button;
+
+        .arrow {
+          position: absolute;
+          top: 1.2em;
+          right: 0.8em;
+          height: 0.8em;
+          width: 0.8em;
+
+          border-top: 1px solid @COLOR_BORDERS;
+          border-left: 1px solid @COLOR_BORDERS;
+          transform: rotate(45deg);
+
+          &[data-deployed] {
+            top: 0.8em;
+            transform: rotate(225deg);
+          }
+        }
       }
 
       .block-content {
         width: 100%;
+
+        ul.filters-list {
+          width: 100%;
+
+          li.group {
+            width: 100%;
+            padding-left: 1em;
+
+            color: @COLOR_FILTER_GROUP;
+
+            .group-title {
+              .button;
+
+              margin: 0;
+              padding: 0;
+              font-size: 1em;
+            }
+          }
+
+          li.filter {
+            position: relative;
+            width: 100%;
+            padding-left: 1em;
+
+            color: @COLOR_FILTER;
+
+            input[type="checkbox"] {
+              display: none;
+            }
+            input[type="radio"] {
+              display: none;
+            }
+
+            label {
+              .button;
+
+              display: inline-block;
+
+              .label-wrapper {
+                font-size: 0.8em;
+              }
+            }
+
+            input[type="checkbox"] + label::before {
+              position: absolute;
+              content: '';
+              top: 0.2em;
+              right: 0.5em;
+              height: 1em;
+              width: 1em;
+
+              border: 2px solid @COLOR_BORDERS;
+              border-radius: 4px;
+              background-color: transparent;
+            }
+
+            input[type="checkbox"]:checked + label::after {
+              position: absolute;
+              content: '';
+              top: 0;
+              right: 0.5em;
+              height: 0.9em;
+              width: 0.5em;
+
+              border-right: 2px solid @COLOR_BORDERS;
+              border-bottom: 2px solid @COLOR_BORDERS;
+              transform: rotate(45deg);
+            }
+          }
+        }
       }
     }
   }
