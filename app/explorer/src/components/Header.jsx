@@ -6,19 +6,25 @@ var React = require('react'),
 module.exports = React.createClass({
   displayName: 'climateDebateExplorer/explorer/header',
   mixins: [ BaobabBranchMixin ],
-  cursors: {},
+  cursors: {
+    deployed: ['appState', 'deployedHeader']
+  },
+
+  toggleAbout: function(e) {
+    this.cursors.deployed.set(!this.state.deployed);
+  },
 
   render: function() {
     return (
       <div className="header">
         <div className="links">
-          <a>About</a>
-          <a>Disclaimer</a>
+          <a  className="button"
+              onClick={ this.toggleAbout }>About</a>
         </div>
         <div className="social">
-          <a href="#"><img src="assets/facebook.svg" /></a>
-          <a href="#"><img src="assets/twitter.svg" /></a>
-          <a href="#"><img src="assets/linkedin.svg" /></a>
+          <a className="button"><img src="assets/facebook.svg" /></a>
+          <a className="button"><img src="assets/twitter.svg" /></a>
+          <a className="button"><img src="assets/linkedin.svg" /></a>
         </div>
         <div className="menu">
           <a className="discover">Discover</a>

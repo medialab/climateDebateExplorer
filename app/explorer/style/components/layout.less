@@ -8,30 +8,30 @@
   }
 
   .about {
-    height: 0;
+    position: absolute;
+    top: 2.5em;
+    left: 0;
+    height: calc(~"100% - 2.5em");
     width: 100%;
+    z-index: 10;
 
-    &.displayed {
-      height: auto;
-    }
-  }
-
-  .disclaimer {
-    height: 0;
-    width: 100%;
-
-    &.displayed {
-      height: auto;
+    &.hidden {
+      display: none;
     }
   }
 
   .context {
+    position: absolute;
+    top: 7em;
+    left: 0;
     height: 5em;
     width: 100%;
   }
 
   .content {
-    position: relative;
+    position: absolute;
+    top: 12em;
+    left: 0;
     height: calc(~"100% - 12em");
     width: 100%;
 

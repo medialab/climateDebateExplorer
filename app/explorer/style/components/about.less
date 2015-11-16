@@ -1,0 +1,76 @@
+.about {
+  color: @COLOR_ABOUT_TEXTS;
+  text-align: center;
+  background-color: rgba(200, 200, 200, 0.7);
+
+  .about-content {
+    position: relative;
+    padding: 1em calc(~"(100% - 50em) / 2");
+
+    background-color: @COLOR_ORANGE;
+    text-align: right;
+
+    .about-cross {
+      .button;
+
+      position: absolute;
+      top: 1em;
+      right: 1em;
+      height: 2em;
+      width: 2em;
+
+      &::before,&::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 1em;
+        height: 2em;
+        width: 0;
+
+        border: 1px solid @COLOR_ABOUT_TEXTS;
+      }
+      &::before {
+        transform: rotate(45deg);
+      }
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+
+    .about-text {
+      column-count: 2;
+      column-gap: 3em;
+      text-align: justify;
+    }
+
+    .read-more {
+      .button;
+
+      display: none;
+      padding: 0.5em 1em;
+
+      font-family: georgia;
+      border: 1px solid @COLOR_ABOUT_TEXTS;
+    }
+
+    .about-partners {
+      height: 6em;
+      line-height: 6em;
+      width: 100%;
+
+      text-align: center;
+
+      img {
+        height: 100%;
+        margin: 0 1em;
+
+        vertical-align: middle;
+        opacity: 0.7;
+
+        &.epfl {
+          height: 60%;
+        }
+      }
+    }
+  }
+}
