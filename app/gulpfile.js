@@ -139,7 +139,7 @@ gulp.task('explorer-build', function() {
  * ********
  */
 gulp.task('data-build-csv', function() {
-  return gulp.src(['./data/sections_metadata.csv*'])
+  return gulp.src(['../ENB-data/metadata_overview/sections_metadata.csv'])
     .pipe(rename('data.csv'))
     .pipe(gulp.dest('./build/assets/data'));
 });
