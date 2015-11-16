@@ -22,9 +22,9 @@ module.exports = React.createClass({
               onClick={ this.toggleAbout }>About</a>
         </div>
         <div className="social">
-          <a className="button"><img src="assets/facebook.svg" /></a>
-          <a className="button"><img src="assets/twitter.svg" /></a>
-          <a className="button"><img src="assets/linkedin.svg" /></a>
+          <a className="button"><img src="assets/img/facebook.svg" /></a>
+          <a className="button"><img src="assets/img/twitter.svg" /></a>
+          <a className="button"><img src="assets/img/linkedin.svg" /></a>
         </div>
         <div className="menu">
           <a className="discover">Discover</a>
