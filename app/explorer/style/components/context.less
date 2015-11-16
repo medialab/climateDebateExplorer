@@ -1,95 +1,83 @@
 .context {
+  @LINE_HEIGHT: 1.4em;
+  position: relative;
+
   .filters-list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-content: center;
-    height: 100%;
     width: 100%;
-    padding: 0 5em;
+    padding: 0 2em;
 
-    .filter {
-      display: inline-block;
-      height: 1em;
-      margin-right: 1em;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+    line-height: @LINE_HEIGHT + 0.1em;
 
-      .filter-field {
-        display: inline-block;
-        height: 100%;
+    .filter-field,
+    .filter-value,
+    .filter-join {
+      height: @LINE_HEIGHT;
+      line-height: @LINE_HEIGHT;
+      margin-right: 0.3em;
+      margin-bottom: 3px;
+    }
+
+    .filter-field {
+      display: inline;
+      padding: 0 0.3em;
+
+      background-color: @COLOR_TAGS_LIGHT;
+      color: @COLOR_TAGS_DARK;
+
+      &:not(:first-child) {
+        margin-left: 1.3em;
+      }
+
+      &[data-field="countries"] {
+        border-left: 2px solid @COLOR_COUNTRIES;
+      }
+      &[data-field="actors"] {
+        border-left: 2px solid @COLOR_GROUPINGS;
+      }
+      &[data-field="event_id"] {
+        border-left: 2px solid @COLOR_EVENTS;
+      }
+      &[data-field="topics"] {
+        border-left: 2px solid @COLOR_TOPICS;
+      }
+    }
+
+    .filter-value {
+      display: inline;
+
+      background-color: @COLOR_TAGS_DARK;
+      color: @COLOR_TAGS_LIGHT;
+
+      .hoverable;
+
+      .filter-label {
+        display: inline;
         padding: 0 0.3em;
-
-        background-color: @COLOR_TAGS_LIGHT;
-        color: @COLOR_TAGS_DARK;
-
-        &[data-field="countries"] {
-          border-left: 2px solid @COLOR_COUNTRIES;
-        }
-        &[data-field="actors"] {
-          border-left: 2px solid @COLOR_GROUPINGS;
-        }
-        &[data-field="event_id"] {
-          border-left: 2px solid @COLOR_EVENTS;
-        }
-        &[data-field="topics"] {
-          border-left: 2px solid @COLOR_TOPICS;
-        }
       }
 
-      .filter-values {
+      &::after {
+        content: '\274C';
         display: inline-block;
-        height: 100%;
+        height: @LINE_HEIGHT;
+        width: @LINE_HEIGHT;
+        text-align: center;
 
-        .filter-value {
-          display: inline-block;
-          height: 100%;
-
-          .filter-value-label {
-            display: inline-block;
-            height: 100%;
-            padding: 0 0.3em;
-
-            background-color: @COLOR_TAGS_DARK;
-            color: @COLOR_TAGS_LIGHT;
-          }
-
-          .filter-value-cross {
-            position: relative;
-            display: inline-block;
-            height: 100%;
-            width: 1em;
-
-            border-left: 1px solid @COLOR_TAGS_LIGHT;
-            background-color: @COLOR_TAGS_DARK;
-            color: @COLOR_TAGS_LIGHT;
-
-            &::before, &::after {
-              position: absolute;
-              content: '';
-              top: 0.1em;
-              left: 0.5em;
-              height: 0.8em;
-              width: 0;
-
-              border-left: 1px solid @COLOR_TAGS_LIGHT;
-            }
-            &::before {
-              transform: rotate(45deg);
-            }
-            &::after {
-              transform: rotate(-45deg);
-            }
-          }
-        }
-
-        .filter-join {
-          display: inline-block;
-          height: 100%;
-          padding: 0 0.3em;
-
-          background-color: @COLOR_TAGS_LIGHT;
-          color: @COLOR_TAGS_DARK;
-        }
+        border-left: 1px solid @COLOR_TAGS_LIGHT;
+        background-color: @COLOR_TAGS_DARK;
+        color: @COLOR_TAGS_LIGHT;
       }
+    }
+
+    .filter-join {
+      display: inline;
+      padding: 0 0.3em;
+
+      background-color: @COLOR_TAGS_LIGHT;
+      color: @COLOR_TAGS_DARK;
     }
   }
 }
