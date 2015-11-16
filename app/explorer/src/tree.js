@@ -14,6 +14,7 @@ var tree = new Baobab({
   appState: {
     filters: [],
     deployedList: undefined,
+    deployedHeader: false,
     deployedVerbatim: undefined
   },
 
