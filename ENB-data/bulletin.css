@@ -15,7 +15,8 @@ body {
 }
 
 body > * {
-  margin: 0 73px;
+  margin-left: 73px !important;
+  margin-right: 73px !important;
 }
 
 :target {
