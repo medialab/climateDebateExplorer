@@ -5,7 +5,6 @@ var React = require('react'),
     Header = require('./Header.jsx'),
     About = require('./About.jsx'),
     Disclaimer = require('./Disclaimer.jsx'),
-    Menu = require('./Menu.jsx'),
     Context = require('./Context.jsx'),
     Filters = require('./Filters.jsx'),
     Stats = require('./Stats.jsx'),
@@ -23,7 +22,6 @@ module.exports = React.createClass({
         <Header />
         <About />
         <Disclaimer />
-        <Menu />
         <Context />
         <div className="content">
           <Filters />

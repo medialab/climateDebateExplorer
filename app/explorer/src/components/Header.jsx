@@ -10,7 +10,21 @@ module.exports = React.createClass({
 
   render: function() {
     return (
-      <div className="header">header</div>
+      <div className="header">
+        <div className="links">
+          <a>About</a>
+          <a>Disclaimer</a>
+        </div>
+        <div className="social">
+          <a href="#"><img src="assets/facebook.svg" /></a>
+          <a href="#"><img src="assets/twitter.svg" /></a>
+          <a href="#"><img src="assets/linkedin.svg" /></a>
+        </div>
+        <div className="menu">
+          <a className="discover">Discover</a>
+          <a className="explore">Explore</a>
+        </div>
+      </div>
     );
   }
 });
