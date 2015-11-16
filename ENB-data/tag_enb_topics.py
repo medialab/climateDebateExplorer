@@ -28,6 +28,7 @@ def must_tag(lowtitle, sentences, keywords):
                 alreadyFound = True
 
 def tag_json(data, topics):
+    data['topics'] = []
     lowtitle = data['section_title'].lower()
     sentences = "\n".join(data['sentences']).lower() + "\n" + lowtitle
     for topic, keywords in topics.iteritems():
