@@ -341,10 +341,18 @@
     });
     d3.csv("[HTML_DATAPATH]", function(error, data){
       if (error) throw error;
-      discoverviz.draw_main_topics("#viz-1", data);
-      discoverviz.draw_other_topics("#viz-2", data);
-      discoverviz.draw_groupings("#viz-3-1", data);
-      discoverviz.list_countries("#viz-3-2", data);
+      var containers = ["#viz-1", "#viz-2", "#viz-3-1", "#viz-3-2"],
+          drawing = false;
+      discoverviz.draw_all(containers, data);
+      window.addEventListener('resize', function(e){
+        if (drawing) return;
+        console.log(e)
+        drawing = true;
+        setTimeout(function(){
+          discoverviz.draw_all(containers);
+          drawing = false;
+        }, 150);
+      });
     });
   </script>
 </body>
