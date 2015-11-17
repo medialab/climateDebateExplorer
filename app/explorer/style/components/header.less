@@ -1,7 +1,18 @@
 .header {
+  position: relative;
   padding: 0.5em;
   text-align: right;
-  z-index: 100;
+
+  .header-logo {
+    position: absolute;
+    top: 1.5em;
+    left: 2em;
+    height: 4em;
+
+    &.hidden {
+      display: none;
+    }
+  }
 
   .links {
     .italic;

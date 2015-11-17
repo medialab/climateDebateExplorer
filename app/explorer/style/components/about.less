@@ -5,10 +5,8 @@
 
   .about-content {
     position: relative;
-    padding: 1em calc(~"(100% - 50em) / 2");
 
     background-color: @COLOR_ORANGE;
-    text-align: right;
 
     .about-cross {
       .button;
@@ -37,10 +35,31 @@
       }
     }
 
+    .about-logo {
+      height: 6em;
+      width: 37.5em;
+      margin: 0 auto;
+      padding: 1em 0;
+
+      background-image: url('../img/white-logo.svg');
+      background-repeat: no-repeat;
+      background-origin: content-box;
+      background-size: contain;
+      background-position: left;
+    }
+
     .about-text {
+      width: 50em;
+      margin: 0 auto;
+
       column-count: 2;
-      column-gap: 3em;
+      column-gap: 4em;
       text-align: justify;
+      font-size: 0.75em;
+
+      p {
+        margin: 0;
+      }
     }
 
     .read-more {

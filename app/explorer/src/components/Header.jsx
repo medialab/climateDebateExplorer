@@ -17,6 +17,12 @@ module.exports = React.createClass({
   render: function() {
     return (
       <div className="header">
+        <img  className={
+                this.state.deployed ?
+                  'header-logo hidden' :
+                  'header-logo'
+              }
+              src="assets/img/black-logo.svg" />
         <div className="links">
           <a  className="button"
               onClick={ this.toggleAbout }>About</a>
