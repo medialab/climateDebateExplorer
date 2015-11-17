@@ -83,6 +83,8 @@ var tree = new Baobab({
       return {
         total: result.total,
         aggregatedLists: lists,
+        permalink:
+          encodeURI(location.origin + location.pathname + location.hash),
         filtersIndex: data.filters.reduce(function(res, filter) {
           res[filter.field] = filter.values.reduce(function(res, value) {
             res[value] = true;
