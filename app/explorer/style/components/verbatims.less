@@ -12,6 +12,12 @@
     .bottom {
       height: 5em;
     }
+
+    .minute-title {
+      &::after {
+        content: " : ";
+      }
+    }
   }
 
   .minute-deployed {
@@ -136,9 +142,6 @@
 
       .minute-title {
         .bold;
-        &::after {
-          content: " : ";
-        }
       }
       .minute-abstract {
         padding-left: 0.1em;
