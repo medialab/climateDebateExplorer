@@ -1,10 +1,18 @@
 (function(ns){ 
 
+  ns.data = null;
+
   ns.color = d3.scale.category10();
 
-  ns.init_data = function(data){
-    
-  };
+  ns.draw_all = function(placeholders, data, callback) {
+    if (data && !ns.data) {
+      ns.data = data;
+    }
+    ns.draw_main_topics(placeholders[0]);
+    ns.draw_other_topics(placeholders[1]);
+    ns.draw_groupings(placeholders[2]);
+    ns.list_countries(placeholders[3]);
+  }
 
   var container = document.getElementById('viz');
   ns.getWidth = function() {
@@ -15,6 +23,8 @@
   }
 
   ns.draw_groupings = function(el_id, data){
+
+    data = data || ns.data;
 
     var margin = {top: 40, right: 250, bottom: 70, left: 50},
         width = ns.getWidth() - margin.left - margin.right,
@@ -41,6 +51,7 @@
         .x(function(d) { return x(d.year); })
         .y(function(d) { return y(d.volume); });
 
+    d3.select(el_id).select("svg").remove();
     var svg = d3.select(el_id).append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
@@ -49,7 +60,8 @@
 
     // Actors as an array
     data.forEach(function(d){
-      d.actors = d.actors.split('|').filter(function(d){ return d != '' })
+      if (typeof(d.actors) === "string")
+        d.actors = d.actors.split('|').filter(function(d){ return d != '' })
     })
   
     // Total yearly
@@ -183,6 +195,8 @@
 
   ns.draw_topics = function(el_id, data, filters){
 
+    data = data || ns.data;
+
     var margin = {top: 40, right: 250, bottom: 70, left: 50},
         width = ns.getWidth() - margin.left - margin.right,
         height = ns.getHeight() - margin.top - margin.bottom;
@@ -209,6 +223,7 @@
         .x(function(d) { return x(d.year); })
         .y(function(d) { return y(d.volume); });
 
+    d3.select(el_id).select("svg").remove();
     var svg = d3.select(el_id).append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
@@ -314,6 +329,9 @@
 
   ns.list_countries = function(el_id, data){
 
+    data = data || ns.data;
+
+    d3.select(el_id).select("div").remove();
     var html = d3.select(el_id).append('div')
     //.attr("width", width + margin.left + margin.right)
     //.attr("height", height + margin.top + margin.bottom)
@@ -324,7 +342,8 @@
 
     // Countries as an array
     data.forEach(function(d){
-      d.countries = d.countries.split('|').filter(function(d){ return d != '' })
+      if (typeof(d.countries) === "string")
+        d.countries = d.countries.split('|').filter(function(d){ return d != '' })
     })
   
     // Total yearly
@@ -411,7 +430,6 @@
               d.classList.remove('highlight-country')
             })
           })
-  
 
   };
 
