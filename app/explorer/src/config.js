@@ -6,10 +6,10 @@ module.exports = {
 
   // Fields that can be used to filter the dataset:
   filters: [
-    { field: 'countries' },
-    { field: 'actors' },
+    { field: 'topics' },
     { field: 'event_id' },
-    { field: 'topics' }
+    { field: 'actors' },
+    { field: 'countries' }
   ],
 
   // Fields that are displayed in the Stats column:
