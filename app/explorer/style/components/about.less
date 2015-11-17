@@ -37,9 +37,10 @@
 
     .about-logo {
       height: 6em;
-      width: 37.5em;
+      width: 24em;
       margin: 0 auto;
-      padding: 1em 0;
+      padding-top: 1.5em;
+      padding-bottom: 1em;
 
       background-image: url('../img/white-logo.svg');
       background-repeat: no-repeat;
@@ -49,16 +50,19 @@
     }
 
     .about-text {
-      width: 50em;
+      width: 30em;
       margin: 0 auto;
 
-      column-count: 2;
-      column-gap: 4em;
       text-align: justify;
-      font-size: 0.75em;
+      font-size: 0.8em;
+      font-weight: 100;
 
       p {
         margin: 0;
+
+        a {
+          color: @COLOR_ABOUT_TEXTS;
+        }
       }
     }
 

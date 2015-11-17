@@ -113,7 +113,15 @@
             height: 100%;
             transition: width @DEFAULT_TRANSITION;
 
-            background-color: @COLOR_BARS;
+            &[data-field="topics"] {
+              background-color: @COLOR_TOPICS;
+            }
+            &[data-field="actors"] {
+              background-color: @COLOR_GROUPINGS;
+            }
+            &[data-field="event_id"] {
+              background-color: @COLOR_EVENTS;
+            }
           }
         }
 
