@@ -104,6 +104,7 @@ module.exports = React.createClass({
                         <div  className="chart-line-bar"
                               data-figure={ display }>
                           <div  className="chart-line-fill"
+                                data-field={ field }
                                 style={{
                                   width: display
                                 }}></div>
