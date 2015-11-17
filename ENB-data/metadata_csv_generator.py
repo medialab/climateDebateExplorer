@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import json
 import os, sys
 import itertools
@@ -61,6 +64,16 @@ with open(os.path.join(OUT_DATA,"sections_metadata.csv"),"w") as f:
     print >> f, (",".join(headers)).encode('utf-8')
 section_metadata=[]
 
+def shorten(t):
+    sp_pos = 0
+    spaces = 0
+    while sp_pos != -1:
+        sp_pos = t.find(" ", sp_pos + 1)
+        spaces += 1
+        if spaces > 20:
+            return t[:sp_pos] + u"…"
+    return t
+
 for directory,subdir,filenames in os.walk(ENB_DATA):
     for f in filenames:
         if f.split(".")[-1]=="json":
@@ -94,7 +107,7 @@ for directory,subdir,filenames in os.walk(ENB_DATA):
                         data["subtype"].replace('&', 'and'),
                         unicode(epoch_millisecond),
                         unicode(year),
-                        data["sentences"][0].replace('\u0092', "'")
+                        shorten(data["sentences"][0].replace('\u0092', "'"))
                         ]
                     section_metadata.append(csv_data)
 
