@@ -66,7 +66,7 @@ module.exports = function(cursor, keys) {
       _oldHash = hash;
       var newState = _hashToTree();
 
-      if (!_.isEqual(newState, cursor.get()))
+      if (JSON.stringify(newState) !== JSON.stringify(cursor.get()))
         cursor.set(newState);
     }
   });

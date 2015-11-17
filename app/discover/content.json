@@ -6,6 +6,7 @@
     "1": {
       "offset": 100,
       "title": "Visibility of issues related to Kyoto Protocol",
+      "link": "explore.html",
       "window": {
         "x": -50,
         "y": -50,
@@ -31,6 +32,7 @@
     "2": {
       "offset": 500,
       "title": "Setting up the Kyoto Protocol",
+      "link": "explore.html",
       "window": {
         "x": 0,
         "y": 0,
@@ -56,6 +58,7 @@
     "3": {
       "offset": 1000,
       "title": "Compliance and enforcement",
+      "link": "explore.html",
       "window": {
         "x": 18,
         "y": 0,
@@ -81,6 +84,7 @@
     "4": {
       "offset": 1500,
       "title": "Going beyond the Kyoto Protocol",
+      "link": "explore.html",
       "window": {
         "x": 60,
         "y": 0,
@@ -109,6 +113,7 @@
     "1": {
       "offset": 2000,
       "title": "Visibility of other negotiation issues",
+      "link": "explore.html",
       "window": {
         "x": -50,
         "y": -50,
@@ -134,6 +139,7 @@
     "2": {
       "offset": 2500,
       "title": "The consequences of climate change and of its mitigation",
+      "link": "explore.html",
       "window": {
         "x": -50,
         "y": -50,
@@ -159,6 +165,7 @@
     "3": {
       "offset": 3000,
       "title": "The impacts of climate change and the funding of adaptation",
+      "link": "explore.html",
       "window": {
         "x": -50,
         "y": -50,
@@ -184,6 +191,7 @@
     "4": {
       "offset": 3500,
       "title": "REDD+ and Loss & Damage",
+      "link": "explore.html",
       "window": {
         "x": -50,
         "y": -50,
@@ -212,6 +220,7 @@
     "1": {
       "offset": 4000,
       "title": "Main negotiation groups",
+      "link": "explore.html",
       "window": {
         "x": -50,
         "y": -50,
@@ -237,6 +246,7 @@
     "2": {
       "offset": 4500,
       "title": "The protagonists",
+      "link": "explore.html",
       "window": {
         "x": -50,
         "y": -50,
@@ -262,6 +272,7 @@
     "3": {
       "offset": 5000,
       "title": "On the rise",
+      "link": "explore.html",
       "window": {
         "x": -50,
         "y": -50,
@@ -287,6 +298,7 @@
     "4": {
       "offset": 5500,
       "title": "The peak after Kyoto",
+      "link": "explore.html",
       "window": {
         "x": -50,
         "y": -50,
@@ -312,6 +324,7 @@
     "5": {
       "offset": 6000,
       "title": "Top-5 most visible countries per year",
+      "link": "explore.html",
       "window": {
         "x": -50,
         "y": -50,

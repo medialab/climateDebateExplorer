@@ -41,11 +41,20 @@ module.exports = React.createClass({
   deploy: function(e) {
     var id = e.currentTarget.getAttribute('data-id');
 
-    if (this.state.deployed !== id)
+    if (this.state.deployed !== id) {
       this.cursors.deployed.set(id);
+      this.setState({
+        lastScroll: this.refs.verbatims.scrollTop
+      });
+    }
   },
   collapse: function(e) {
     this.cursors.deployed.set(undefined);
+
+    if (typeof this.state.lastScroll)
+      setTimeout((function() {
+        this.refs.verbatims.scrollTop = this.state.lastScroll;
+      }).bind(this), 0);
   },
   openPermalink: function(e) {
     var permalink = e.currentTarget.getAttribute('data-permalink');
@@ -77,7 +86,11 @@ module.exports = React.createClass({
       (this.state.verbatims || []).concat(queryResult.hits) :
       queryResult.hits;
 
-    if (this.state.verbatims && this.state.verbatims.length)
+    if (
+      this.state.deployed &&
+      this.state.verbatims &&
+      this.state.verbatims.length
+    )
       this.collapse();
 
     this.setState({
