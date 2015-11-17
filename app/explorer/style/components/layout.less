@@ -1,17 +1,18 @@
 .app {
+  position: relative;
   height: 100%;
   width: 100%;
 
   .header {
-    height: 7em;
+    height: 6em;
     width: 100%;
   }
 
   .about {
     position: absolute;
     top: 2em;
+    bottom: 0;
     left: 0;
-    height: calc(~"100% - 2.5em");
     width: 100%;
     z-index: 10;
 
@@ -22,17 +23,17 @@
 
   .context {
     position: absolute;
-    top: 7em;
+    top: 6em;
     left: 0;
-    height: 5em;
+    height: 4em;
     width: 100%;
   }
 
   .content {
     position: absolute;
-    top: 12em;
+    top: 10em;
+    bottom: 0;
     left: 0;
-    height: calc(~"100% - 12em");
     width: 100%;
 
     .filters {
@@ -55,8 +56,8 @@
       position: absolute;
       top: 0;
       left: 30em;
+      right: 0;
       height: 100%;
-      width: calc(~"100% - 30em");
 
       .verbatims {
         height: calc(~"100% - 6em");

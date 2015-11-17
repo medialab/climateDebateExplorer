@@ -16,7 +16,7 @@
 
   ns.draw_groupings = function(el_id, data){
 
-    var margin = {top: 20, right: 250, bottom: 50, left: 50},
+    var margin = {top: 40, right: 250, bottom: 70, left: 50},
         width = ns.getWidth() - margin.left - margin.right,
         height = ns.getHeight() - margin.top - margin.bottom;
 
@@ -183,7 +183,7 @@
 
   ns.draw_topics = function(el_id, data, filters){
 
-    var margin = {top: 20, right: 250, bottom: 50, left: 50},
+    var margin = {top: 40, right: 250, bottom: 70, left: 50},
         width = ns.getWidth() - margin.left - margin.right,
         height = ns.getHeight() - margin.top - margin.bottom;
 

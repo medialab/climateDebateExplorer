@@ -32,7 +32,7 @@ module.exports = React.createClass({
     var dom = ReactDOM.findDOMNode(this);
 
     this.setState({
-      nbLines: Math.floor(((dom.offsetHeight - 2 * EM) / 3 - 3.5 * EM) / (2.5 * EM))
+      nbLines: Math.floor(((dom.offsetHeight - 2 * EM) / 3 - 4.5 * EM) / (2.5 * EM))
     });
   },
 

@@ -5,8 +5,17 @@
     top: 0;
 
     .verbatim {
-      margin: 1em 0;
+      margin: 1em 1em;
       position: relative;
+
+      p {
+        margin: 0;
+        font-family: "lato";
+        font-weight: 500;
+        font-size: 0.85em;
+        position: relative;
+        z-index: 20;
+      }
 
       h3 {
         font-family: "georgia";
@@ -16,41 +25,30 @@
         color: @mainBlue;
         position: relative;
         z-index: 20;
-      }
-
-      p {
-        margin: 0;
-        font-family: "lato";
-        font-weight: 500;
-        font-size: 0.75em;
-        position: relative;
-        z-index: 20;
+        font-size: 1em;
       }
     }
 
-    .verbatim:before {
+    .verbatim p:before, .verbatim p:after {
       content: " ";
+      display: block;
       background-image: url('../img/quotes.svg');
       position: absolute;
+      height: 1.5em;
+      width: 1.5em;
+      background-size: contain;
+      z-index: -1;
+    }
+
+    .verbatim p:before {
       top: -0.5em;
       left: -0.5em;
-      height: 2em;
-      width: 2em;
-      background-size: contain;
-      z-index: 1;
       transform: rotate(180deg);
     }
 
-    .verbatim:after {
-      content: " ";
-      background-image: url('../img/quotes.svg');
-      position: absolute;
+    .verbatim p:after {
       bottom: -0.5em;
       right: -0.5em;
-      height: 2em;
-      width: 2em;
-      background-size: contain;
-      z-index: 1;
     }
   }
 }
