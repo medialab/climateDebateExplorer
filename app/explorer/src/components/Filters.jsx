@@ -18,13 +18,84 @@ module.exports = React.createClass({
   getInitialState: function() {
     return {
       deployedBlocks: {},
-      deployedGroups: {}
+      deployedGroups: {},
+      search: {}
     };
   },
 
   // Handlers:
-  search: function(e) {
-    console.log('TODO: search handler');
+  onSearchChange: function(e) {
+    var fields = this.state.fields,
+        events = fields.event_id.values,
+        query = (e.currentTarget.value || '').toLowerCase(),
+        results;
+
+    if (query.length >= 3) {
+      results = [];
+      (this.state.filterBlocks || []).forEach(function(block, i) {
+        var field = block.field;
+        this.state.valuesLists[field].forEach(function(value) {
+          var score,
+              label = field === 'event_id' ?
+                [ events[value].city,
+                  events[value].country ].join(', ') :
+                value,
+              index = label.toLowerCase().indexOf(query);
+
+          // Perfect match:
+          if (index === 0 && label.length === query.length) {
+            score = 3;
+            label = [{ text: label, highlight: true }];
+          }
+
+          // Starts with...
+          else if (index === 0){
+            score = 2;
+            label = [
+              { text: label.substring(0, query.length), highlight: true },
+              { text: label.substring(query.length, label.length) }
+            ];
+          }
+
+          // Contains...
+          else if (index >= 0){
+            score = 1;
+            label = [
+              { text: label.substring(0, index) },
+              { text: label.substring(index, index + query.length), highlight: true },
+              { text: label.substring(index + query.length, label.length) }
+            ];
+          }
+
+          if (score)
+            results.push({
+              score: score,
+              field: field,
+              label: label,
+              value: value
+            });
+        });
+      }, this);
+      results = _.sortBy(results, 'score').reverse();
+    }
+
+    this.setState({
+      searchQuery: query,
+      searchResults: results
+    });
+  },
+  onSearchBlur: function() {
+    // HACK:
+    setTimeout((function() {
+      this.setState({
+        resultsDisplayed: false
+      });
+    }).bind(this), 100);
+  },
+  onSearchFocus: function() {
+    this.setState({
+      resultsDisplayed: true
+    });
   },
   toggleBlock: function(e) {
     var field = e.currentTarget.getAttribute('data-field');
@@ -76,9 +147,19 @@ module.exports = React.createClass({
                 checked={ obj.checked } />
         <label  htmlFor={ id }
                 className="filter-label">
-          <span className="label-wrapper">{
+          <span className="label-wrapper"
+                title={ obj.label }>{
             obj.label
           }</span>
+          {
+            obj.field === 'event_id' ?
+              <span className="event-label-wrapper"
+                    title={ obj.longLabel }>
+                <br/>
+                { obj.longLabel }
+              </span> :
+              ''
+          }
         </label>
       </li>
     );
@@ -92,11 +173,44 @@ module.exports = React.createClass({
       <div className="filters">
         <div className="column-title">Filters</div>
 
-        <div  className="search"
-              onChange={ this.search }>
+        <div  className="search">
           <input  type="text"
-                  placeholder="Search" />
+                  placeholder="Search"
+                  onBlur={ this.onSearchBlur }
+                  onFocus={ this.onSearchFocus }
+                  onChange={ this.onSearchChange }
+                  value={ this.state.searchQuery } />
           <div className="custom-border"></div>
+
+          { (this.state.searchResults && this.state.resultsDisplayed) ?
+              <ul className="results-list">{
+                this.state.searchResults.length ?
+                  (this.state.searchResults || []).map(function(res, i) {
+                    return (
+                      <li key={ i }
+                          className="result"
+                          data-field={ res.field }
+                          data-value={ res.value }
+                          data-score={ res.score }
+                          onClick={ this.onClickInput }>{
+                        res.label.map(function(obj, j) {
+                          return (
+                            <span key={ j }
+                                  className={
+                                    obj.highlight ? 'highlighted' : ''
+                                  }>{
+                              obj.text
+                            }</span>
+                          );
+                        })
+                      }</li>
+                    );
+                  }, this) :
+                  <li className="no-result">{
+                    'No result'
+                  }</li>
+              }</ul> :
+              undefined }
         </div>
 
         <div className="filter-blocks">
@@ -170,7 +284,8 @@ module.exports = React.createClass({
                                       label: field === 'event_id' ?
                                         [ obj.city,
                                           obj.country ].join(', ') :
-                                        obj.id
+                                        obj.id,
+                                      longLabel: obj['long_title']
                                     });
                                   }, this) :
                                   undefined

@@ -49,6 +49,70 @@
 
       border-top: 1px solid @COLOR_BORDERS;
     }
+
+    ul.results-list {
+      background: #fff;
+      border: 1px solid @COLOR_BORDERS;
+
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      left: 0;
+
+      margin-top: -1px;
+      z-index: 100;
+      overflow: auto;
+      max-height: 200px;
+
+      counter-reset: filter-search-result;
+
+      li.result,
+      li.no-result {
+        margin: 0 5px;
+        font-size: 0.8em;
+
+        height: 23px;
+        line-height: 23px;
+
+        color: @COLOR_FILTER;
+        .highlighted {
+          color: #000;
+        }
+      }
+
+      li.result {
+        &:before {
+          padding: 0 5px;
+          counter-increment: filter-search-result;
+          content: counter(filter-search-result);
+          margin-right: 4px;
+        }
+
+        &[data-field="countries"]::before {
+          border-right: 3px solid @COLOR_COUNTRIES;
+        }
+        &[data-field="actors"]::before {
+          border-right: 3px solid @COLOR_GROUPINGS;
+        }
+        &[data-field="topics"]::before {
+          border-right: 3px solid @COLOR_TOPICS;
+        }
+        &[data-field="event_id"]::before {
+          border-right: 3px solid @COLOR_EVENTS;
+        }
+
+        .ellipsis;
+        .hoverable;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid @COLOR_BORDERS;
+        }
+      }
+
+      li.no-result {
+        text-align: center;
+      }
+    }
   }
 
   .filter-blocks {
@@ -155,6 +219,9 @@
 
               .label-wrapper {
                 font-size: 0.8em;
+              }
+              .event-label-wrapper {
+                font-size: 0.6em;
               }
             }
 
