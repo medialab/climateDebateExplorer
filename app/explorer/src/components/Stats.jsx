@@ -49,11 +49,13 @@ module.exports = React.createClass({
                   'stats-back hidden'
               }
               onClick={ this.expand }>
-          <span className="stats-back-text">{
-            filtersIndex[this.state.deployedList] ?
-              'Back to related contents' :
-              'Back to recurring contents'
-          }</span>
+          <span className="stats-back-text"
+                data-text={
+                  filtersIndex[this.state.deployedList] ?
+                    'Back to related contents' :
+                    'Back to recurring contents'
+                }
+                data-short-text="Back"></span>
         </div>
         { (
             this.state.deployedList ?
@@ -109,7 +111,14 @@ module.exports = React.createClass({
                                   width: display
                                 }}></div>
                         </div>
-                        <div className="chart-line-label">{
+                        <div  className="chart-line-label"
+                              title={
+                                field === 'event_id' ?
+                                  [ events[line.id].year,
+                                    events[line.id].city,
+                                    events[line.id].country ].join(', ') :
+                                  line.id
+                              }>{
                           // HACK:
                           // Fetch events proper label:
                           field === 'event_id' ?
