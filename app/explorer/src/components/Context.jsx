@@ -67,6 +67,7 @@ module.exports = React.createClass({
                         events[v].country ].join(', ') :
                       v
                   }</div>
+                  <div className="filter-cross"></div>
                 </div>
               );
             });
