@@ -10,17 +10,25 @@ header {
   text-align: right;
   z-index: 100;
 
+  #main-logo {
+    position: fixed;
+    left: 1em;
+    height: 3em;
+  }
+
   #menu {
+    position: relative;
+    z-index: 102;
     color: @mainBlue;
     font-family: "geogia";
     font-weight: 900;
     font-style: italic;
     display: inline-block;
-    vertical-align: center;
+    vertical-align: middle;
 
     a {
       display: inline-block;
-      vertical-align: center;
+      vertical-align: middle;
       margin: 0 0.5em;
       text-decoration: none;
       color: @mainBlue;
@@ -28,18 +36,20 @@ header {
   }
 
   #social {
+    position: relative;
+    z-index: 102;
     display: inline-block;
-    vertical-align: center;
+    vertical-align: middle;
     a {
       display: inline-block;
-      vertical-align: center;
+      vertical-align: middle;
       margin: 0 0.25em;
       text-decoration: none;
 
       img {
         height: 1em;
         width: 1em;
-        vertical-align: center;
+        vertical-align: middle;
       }
     }
   }
@@ -50,6 +60,7 @@ header {
     font-family: "lato";
     left: 0;
     right: 0;
+    z-index: 101;
 
     a {
       display: inline-block;
