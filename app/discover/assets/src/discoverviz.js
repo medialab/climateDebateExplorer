@@ -60,7 +60,7 @@
 
     // Actors as an array
     data.forEach(function(d){
-      if (typeof(d.actors) === "string")
+      if (typeof d.actors === "string")
         d.actors = d.actors.split('|').filter(function(d){ return d != '' })
     })
   
@@ -232,7 +232,7 @@
 
     // Topics as an array
     data.forEach(function(d){
-      if (typeof(d.topics) === "string")
+      if (typeof d.topics === "string")
         d.topics = d.topics.split('|').filter(function(d){ return d != '' })
     })
   
@@ -342,7 +342,7 @@
 
     // Countries as an array
     data.forEach(function(d){
-      if (typeof(d.countries) === "string")
+      if (typeof d.countries === "string")
         d.countries = d.countries.split('|').filter(function(d){ return d != '' })
     })
   
