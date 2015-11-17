@@ -147,9 +147,19 @@ module.exports = React.createClass({
                 checked={ obj.checked } />
         <label  htmlFor={ id }
                 className="filter-label">
-          <span className="label-wrapper">{
+          <span className="label-wrapper"
+                title={ obj.label }>{
             obj.label
           }</span>
+          {
+            obj.field === 'event_id' ?
+              <span className="event-label-wrapper"
+                    title={ obj.longLabel }>
+                <br/>
+                { obj.longLabel }
+              </span> :
+              ''
+          }
         </label>
       </li>
     );
@@ -274,7 +284,8 @@ module.exports = React.createClass({
                                       label: field === 'event_id' ?
                                         [ obj.city,
                                           obj.country ].join(', ') :
-                                        obj.id
+                                        obj.id,
+                                      longLabel: obj['long_title']
                                     });
                                   }, this) :
                                   undefined
