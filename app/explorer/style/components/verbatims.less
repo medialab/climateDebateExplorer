@@ -121,6 +121,13 @@
       margin: 0.5em 0;
       line-height: 1.2em;
       color: @COLOR_VERBATIMS_TITLES;
+      transition: opacity @DEFAULT_TRANSITION;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        opacity: 0.8;
+      }
 
       .minute-title {
         .bold;
