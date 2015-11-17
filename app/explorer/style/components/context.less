@@ -56,18 +56,37 @@
       .filter-label {
         display: inline;
         padding: 0 0.3em;
+
+        border-right: 1px solid @COLOR_TAGS_LIGHT;
       }
 
-      &::after {
-        content: '\274C';
+      .filter-cross {
+        position: relative;
         display: inline-block;
-        height: @LINE_HEIGHT;
+        height: 1em;
         width: @LINE_HEIGHT;
-        text-align: center;
 
-        border-left: 1px solid @COLOR_TAGS_LIGHT;
         background-color: @COLOR_TAGS_DARK;
-        color: @COLOR_TAGS_LIGHT;
+
+
+          &::before,
+          &::after {
+            position: absolute;
+            content: '';
+            top: 0.7em;
+            left: 0.7em;
+            height: 1em;
+            width: 0;
+            margin-top: -0.5em;
+
+            border-left: 1px solid @COLOR_TAGS_LIGHT;
+          }
+          &::before {
+            transform: rotate(-45deg);
+          }
+          &::after {
+            transform: rotate(45deg);
+          }
       }
     }
 
