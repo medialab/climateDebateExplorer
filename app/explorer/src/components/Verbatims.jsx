@@ -12,6 +12,9 @@ module.exports = React.createClass({
   displayName: 'climateDebateExplorer/explorer/verbatims',
   mixins: [ BaobabBranchMixin ],
   cursors: {
+    cached: ['cached'],
+    contextual: ['contextual'],
+
     filters: ['appState', 'filters'],
     fields: ['cached', 'config', 'fields'],
     deployed: ['appState', 'deployedVerbatim'],
@@ -244,9 +247,25 @@ module.exports = React.createClass({
   },
 
   render: function() {
+    var curTotal = this.state.contextual.total,
+        total = this.state.cached.total;
+
     return (
       <div className="verbatims">
-        <div className="column-title">Verbatims</div>
+        <div className="column-title">
+          Verbatims
+          <small>{
+            total === curTotal ?
+              [ ' (',
+                total,
+                ' documents)' ].join('') :
+              [ ' (',
+                curTotal,
+                ' results / ',
+                total,
+                ' documents)' ].join('')
+          }</small>
+        </div>
 
         { this.state.deployed ?
             this._getDeployed() :

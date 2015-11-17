@@ -103,6 +103,12 @@ Papa.parse('assets/data/data.csv', {
       return res;
     }, {});
 
+    // Cache total documents count:
+    tree.set(
+      ['cached', 'total'],
+      result.total
+    );
+
     // Cache values lists:
     tree.set(
       ['cached', 'valuesLists'],
