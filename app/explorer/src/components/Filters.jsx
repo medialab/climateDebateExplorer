@@ -178,7 +178,7 @@ module.exports = React.createClass({
 
         <div  className="search">
           <input  type="text"
-                  placeholder="Search"
+                  placeholder="Search filters"
                   onBlur={ this.onSearchBlur }
                   onFocus={ this.onSearchFocus }
                   onChange={ this.onSearchChange }

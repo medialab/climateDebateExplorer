@@ -19,7 +19,8 @@ body > * {
   margin-right: 73px !important;
 }
 
-:target {
+:target,
+.target {
   color: black;
 }
 

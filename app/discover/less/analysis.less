@@ -19,5 +19,30 @@
       font-weight: 500;
       font-size: 1em;
     }
+
+    >a {
+      position: absolute;
+      left: -8em;
+
+      img {
+        height: 2em;
+      }
+    }
+
+    >a.previous {
+      top: 0.5em;
+
+      img{
+        transform: rotate(180deg);
+      }
+    }
+
+    >a.next {
+      top: 5em;
+    }
+
+    >a.next.fivedots {
+      top: 7em;
+    }
   }
 }
