@@ -318,6 +318,10 @@
     //.attr("width", width + margin.left + margin.right)
     //.attr("height", height + margin.top + margin.bottom)
 
+    ns.getCountryClass = function(d){
+      return 'country-' + d.country.toLowerCase().replace(/[^a-z]*/gi, '')
+    }
+
     // Countries as an array
     data.forEach(function(d){
       d.countries = d.countries.split('|').filter(function(d){ return d != '' })
@@ -390,10 +394,23 @@
             return d.values
           })
       .enter().append('p')
+        .attr('class', function(d) { return 'overable ' + ns.getCountryClass(d) } )
         .style('color', function(d){ return ns.color(d.country) })
         .text(function(d){
-          return d.country + ' ' + Math.round(d.volume) + '%'
-        })
+            return d.country + ' ' + Math.round(d.volume) + '%'
+          })
+        .on('mouseenter', function(d){
+            var cClass = ns.getCountryClass(d)
+            ;[].forEach.call(document.querySelectorAll( '.' + cClass ), function(d){
+              d.classList.add('highlight-country')
+            })
+          })
+        .on('mouseleave', function(d){
+            var cClass = ns.getCountryClass(d)
+            ;[].forEach.call(document.querySelectorAll( '.' + cClass ), function(d){
+              d.classList.remove('highlight-country')
+            })
+          })
   
 
   };
