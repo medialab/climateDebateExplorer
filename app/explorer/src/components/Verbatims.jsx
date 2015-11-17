@@ -80,7 +80,7 @@ module.exports = React.createClass({
     var queryResult = this.context.tree.datastore.query({
       query: faceted,
       from: morePosts ?
-        (this.state.results || []).length :
+        (this.state.verbatims || []).length :
         0,
       size: SIZE
     });
