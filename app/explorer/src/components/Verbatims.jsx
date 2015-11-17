@@ -261,17 +261,21 @@ module.exports = React.createClass({
     return (
       <div className="verbatims">
         <div className="column-title">
-          Verbatims
+          <span>Verbatims</span>
           <small>{
             total === curTotal ?
-              [ ' (',
+              [ '(',
                 total,
-                ' documents)' ].join('') :
-              [ ' (',
+                total > 1 ?
+                  ' documents)' :
+                  ' document)' ].join('') :
+              [ '(',
                 curTotal,
-                ' results / ',
+                ' / ',
                 total,
-                ' documents)' ].join('')
+                total > 1 ?
+                  ' documents)' :
+                  ' document)' ].join('')
           }</small>
         </div>
 
