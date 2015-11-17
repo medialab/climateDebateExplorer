@@ -80,7 +80,7 @@ module.exports = React.createClass({
     var queryResult = this.context.tree.datastore.query({
       query: faceted,
       from: morePosts ?
-        (this.state.results || []).length :
+        (this.state.verbatims || []).length :
         0,
       size: SIZE
     });
@@ -112,72 +112,80 @@ module.exports = React.createClass({
     var events = this.state.fields.event_id.values;
 
     return (
-      <ul ref="verbatims"
-          className="minutes"
-          onScroll={ this.handleScroll }>{
-        (this.state.verbatims || []).map(function(obj, i) {
-          return (
-            <li key={ i }
-                data-id={ obj.id }
-                className="minute">
-              <div className="minute-content">
-                <div className="minute-actions">
-                  <div className="minute-number">{ i + 1 }</div>
-                  <div  className="minute-see"
+      (this.state.verbatims || []).length ?
+        <ul ref="verbatims"
+            className="minutes"
+            onScroll={ this.handleScroll }>{
+          (this.state.verbatims || []).map(function(obj, i) {
+            return (
+              <li key={ i }
+                  data-id={ obj.id }
+                  className="minute">
+                <div className="minute-content">
+                  <div className="minute-actions">
+                    <div className="minute-number">{ i + 1 }</div>
+                    <div  className="minute-see"
+                          data-id={ obj.id }
+                          onClick={ this.deploy } />
+                    <div  className="minute-share"
+                          data-permalink={ obj.url }
+                          onClick={ this.openPermalink } />
+                  </div>
+                  <div className="minute-context">{
+                    obj.year + ' | ' +
+                    events[obj.event_id].country + ', ' +
+                    events[obj.event_id].city
+                  }</div>
+                  <div  className="minute-description"
                         data-id={ obj.id }
-                        onClick={ this.deploy } />
-                  <div  className="minute-share"
-                        data-permalink={ obj.url }
-                        onClick={ this.openPermalink } />
-                </div>
-                <div className="minute-context">{
-                  obj.year + ' | ' +
-                  events[obj.event_id].country + ', ' +
-                  events[obj.event_id].city
-                }</div>
-                <div  className="minute-description"
-                      data-id={ obj.id }
-                      onClick={ this.deploy }>
-                  <span className="minute-title">{
-                    obj.title
-                  }</span>
-                  <span className="minute-abstract">{
-                    obj.abstract
-                  }</span>
-                </div>
-                <div className="minute-tags">{
-                  obj.actors.map(function(g) {
-                    return {
-                      class: 'groupings',
-                      value: g
-                    };
-                  }).concat(
-                    obj.topics.map(function(t) {
+                        onClick={ this.deploy }>
+                    <span className="minute-title">{
+                      obj.title
+                    }</span>
+                    <span className="minute-abstract">{
+                      obj.abstract
+                    }</span>
+                  </div>
+                  <div className="minute-tags">{
+                    obj.actors.map(function(g) {
                       return {
-                        class: 'topics',
-                        value: t
+                        class: 'groupings',
+                        value: g
                       };
+                    }).concat(
+                      obj.topics.map(function(t) {
+                        return {
+                          class: 'topics',
+                          value: t
+                        };
+                      })
+                    ).map(function(tag, j) {
+                      return (
+                        <span className={ tag.class }
+                              key={ j }>{
+                          tag.value
+                        }</span>
+                      );
                     })
-                  ).map(function(tag, j) {
-                    return (
-                      <span className={ tag.class }
-                            key={ j }>{
-                        tag.value
-                      }</span>
-                    );
-                  })
-                }</div>
-              </div>
-            </li>
-          );
-        }, this).concat(
-          this.state.fullList ?
-            undefined :
-            <li key="bottom"
-                ref="bottom"
-                className="bottom" />
-        )
-      }</ul>
+                  }</div>
+                </div>
+              </li>
+            );
+          }, this).concat(
+            this.state.fullList ?
+              undefined :
+              <li key="bottom"
+                  ref="bottom"
+                  className="bottom" />
+          )
+        }</ul> :
+        <div className="no-result">
+          <div className="wrapper">
+            <div className="message">
+              No result
+            </div>
+          </div>
+        </div>
     );
   },
   _getDeployed: function() {
@@ -253,17 +261,21 @@ module.exports = React.createClass({
     return (
       <div className="verbatims">
         <div className="column-title">
-          Verbatims
+          <span>Verbatims</span>
           <small>{
             total === curTotal ?
-              [ ' (',
+              [ '(',
                 total,
-                ' documents)' ].join('') :
-              [ ' (',
+                total > 1 ?
+                  ' documents)' :
+                  ' document)' ].join('') :
+              [ '(',
                 curTotal,
-                ' results / ',
+                ' / ',
                 total,
-                ' documents)' ].join('')
+                total > 1 ?
+                  ' documents)' :
+                  ' document)' ].join('')
           }</small>
         </div>
 
