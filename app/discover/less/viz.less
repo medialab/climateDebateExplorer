@@ -193,18 +193,20 @@
       font-family: "lato";
       font-style: normal;
       margin: 0;
-      padding: 0.2em 0.1em;
+      padding: 0.6em 0.1em 0;
       position: relative;
-      height: 2em;
+      height: 2.8em;
       line-height: 1.5em;
+      border-bottom: 5px solid #FFF;
+      box-sizing: border-box;
 
       span {
         display: block;
-        content: " ";
         width: attr('data-percent');
         background-color: attr('data-color');
+        position: absolute;
         height: 5px;
-        bottom: -1px;
+        bottom: -5px;
         left: 0;
       }
     }
