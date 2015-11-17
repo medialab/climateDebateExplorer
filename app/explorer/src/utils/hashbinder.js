@@ -28,12 +28,12 @@ module.exports = function(cursor, keys) {
       else if (state[key] && ~keys.indexOf(key))
         hash.push(key + SEPARATOR_EQ + state[key]);
 
-    return PREFIX + hash.join(SEPARATOR_KEYS);
+    return decodeURI(PREFIX + hash.join(SEPARATOR_KEYS));
   }
 
   function _hashToTree() {
     var state = { filters: [] },
-        hash = location.hash.replace(PREFIX_REGEXP, '');
+        hash = decodeURI(location.hash.replace(PREFIX_REGEXP, ''));
 
     hash.split(SEPARATOR_KEYS).forEach(function(str) {
       var arr = str.split(SEPARATOR_EQ),
