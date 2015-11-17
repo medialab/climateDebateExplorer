@@ -128,11 +128,13 @@ module.exports = React.createClass({
                         onClick={ this.openPermalink } />
                 </div>
                 <div className="minute-context">{
-                  [ obj.year,
-                    (events[obj.event_id] || {}).country,
-                    (events[obj.event_id] || {}).city ].join(' | ')
+                  obj.year + ' | ' +
+                  events[obj.event_id].country + ', ' +
+                  events[obj.event_id].city
                 }</div>
-                <div className="minute-description">
+                <div  className="minute-description"
+                      data-id={ obj.id }
+                      onClick={ this.deploy }>
                   <span className="minute-title">{
                     obj.title
                   }</span>
@@ -195,16 +197,15 @@ module.exports = React.createClass({
                   onClick={ this.openPermalink } />
           </div>
           <div className="minute-context">{
-            [ obj.year,
-              events[obj.event_id].country,
-              events[obj.event_id].city ].join(' | ')
+            obj.year + ' | ' +
+            events[obj.event_id].country + ', ' +
+            events[obj.event_id].city
           }</div>
-          <div className="minute-description">
+          <div  className="minute-description"
+                data-id={ obj.id }
+                onClick={ this.collapse }>
             <span className="minute-title">{
               obj.title
-            }</span>
-            <span className="minute-abstract">{
-              obj.abstract
             }</span>
           </div>
           <div className="minute-tags">{
