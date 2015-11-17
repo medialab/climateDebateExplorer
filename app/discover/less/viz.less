@@ -1,7 +1,3 @@
-.highlight-country {
-  background-color: #FFFFFF;
-  font-weight: 600;
-}
 .overable {
   cursor: pointer;
 }
@@ -174,17 +170,53 @@
 }
 
 #viz-3-2{
+  height: 100%;
 
-  font: 12px sans-serif;
+  div {
+    height: 100%;
+  }
 
   .year {
-    width: 120px;
-    height: 100px;
-    padding: 12px;
+    box-sizing: border-box;
+    padding: 0.3em;
+    text-align: center;
+    width: 14%;
+    font-size: 2em;
+    height: 33%;
     display: inline-block;
+    font-family: "georgia";
+    font-style: italic;
+    color: @mainBlue;
 
     p{
+      font-size: 0.3em;
+      font-family: "lato";
+      font-style: normal;
       margin: 0;
+      padding: 0.2em 0.1em;
+      position: relative;
+      height: 2em;
+      line-height: 1.5em;
+
+      span {
+        display: block;
+        content: " ";
+        width: attr('data-percent');
+        background-color: attr('data-color');
+        height: 5px;
+        bottom: -1px;
+        left: 0;
+      }
+    }
+  }
+
+  .overed {
+    p {
+      opacity: 0.2;
+    }
+
+    p.highlight-country {
+      opacity: 1;
     }
   }
 }

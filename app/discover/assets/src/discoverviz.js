@@ -333,6 +333,8 @@
 
     d3.select(el_id).select("div").remove();
     var html = d3.select(el_id).append('div')
+
+    html.attr('id', 'year-history')
     //.attr("width", width + margin.left + margin.right)
     //.attr("height", height + margin.top + margin.bottom)
 
@@ -419,17 +421,24 @@
             return d.country + ' ' + Math.round(d.volume) + '%'
           })
         .on('mouseenter', function(d){
+            document.getElementById('year-history').classList.add('overed');
             var cClass = ns.getCountryClass(d)
             ;[].forEach.call(document.querySelectorAll( '.' + cClass ), function(d){
               d.classList.add('highlight-country')
             })
           })
         .on('mouseleave', function(d){
+            document.getElementById('year-history').classList.remove('overed');
             var cClass = ns.getCountryClass(d)
             ;[].forEach.call(document.querySelectorAll( '.' + cClass ), function(d){
               d.classList.remove('highlight-country')
             })
           })
+        .append('span')
+          .style('background-color', function(d){ return ns.color(d.country) })
+          .style('width', function(d){
+              return Math.round(d.volume) + '%';
+            });
 
   };
 
