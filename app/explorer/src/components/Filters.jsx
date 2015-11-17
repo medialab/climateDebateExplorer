@@ -241,7 +241,8 @@ module.exports = React.createClass({
                   </div>
 
                   <div className="block-content">
-                    <ul className="filters-list">{
+                    <ul className="filters-list"
+                        data-deployed={ deployedBlocks || undefined }>{
                       !deployedBlocks ?
                         undefined :
                       fields[field].groupBy ?
