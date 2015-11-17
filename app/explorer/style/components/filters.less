@@ -62,7 +62,7 @@
       margin-top: -1px;
       z-index: 100;
       overflow: auto;
-      max-height: 200px;
+      max-height: 400px;
 
       counter-reset: filter-search-result;
 
@@ -118,6 +118,7 @@
   .filter-blocks {
     height: calc(~"100% - 4em");
     overflow: auto;
+    transition: opacity @DEFAULT_TRANSITION;
 
     .block {
       .border-bottom;
@@ -254,5 +255,9 @@
         }
       }
     }
+  }
+
+  &[data-active-search] .filter-blocks {
+    opacity: 0.4;
   }
 }

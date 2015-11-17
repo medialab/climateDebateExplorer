@@ -30,7 +30,7 @@ module.exports = React.createClass({
         query = (e.currentTarget.value || '').toLowerCase(),
         results;
 
-    if (query.length >= 3) {
+    if (query.length >= 1) {
       results = [];
       (this.state.filterBlocks || []).forEach(function(block, i) {
         var field = block.field;
@@ -170,7 +170,10 @@ module.exports = React.createClass({
         events = fields.event_id.values;
 
     return (
-      <div className="filters">
+      <div  className="filters"
+            data-active-search={
+              (this.state.searchResults && this.state.resultsDisplayed) || undefined
+            }>
         <div className="column-title">Filters</div>
 
         <div  className="search">
