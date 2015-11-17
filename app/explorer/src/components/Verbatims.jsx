@@ -235,7 +235,7 @@ module.exports = React.createClass({
           <iframe width="100%"
                   height="100%"
                   frameBorder="0"
-                  src={ './bulletin/' + obj.id.replace(/_.*$/, '') + '.html#section_' + obj.id }>
+                  src={ './bulletin/' + obj.id.replace(/_.*$/, '') + '.html#' + obj.id }>
             Woops, something went wrong here...
           </iframe>
         </div>

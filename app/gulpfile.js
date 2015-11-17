@@ -159,9 +159,15 @@ gulp.task('data-build-style', function() {
     .pipe(gulp.dest('./build/assets/style'));
 });
 
+gulp.task('data-build-src', function() {
+  return gulp.src('../ENB-data/bulletin.js')
+    .pipe(gulp.dest('./build/assets/src'));
+});
+
 gulp.task('data-build', function() {
   runSequence(
     'data-build-style',
+    'data-build-src',
     'data-build-csv',
     'data-build-htaccess',
     'data-build-html'
