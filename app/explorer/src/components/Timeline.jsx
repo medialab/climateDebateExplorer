@@ -38,7 +38,7 @@ module.exports = React.createClass({
         }, {}),
         max = 0,
         data =
-          [{year: 'YEAR', label: '%', height: '50%'}]
+          [{year: 'YEAR', short: 'YY', label: '%', height: '50%'}]
             .concat(this.state.list.map(function(value) {
               var score =
                 ((values[value] || 0) / this.state.cachedList[value]) * 100;
@@ -47,6 +47,7 @@ module.exports = React.createClass({
 
               return {
                 year: value,
+                short: value.substr(2),
                 value: score
               };
             }, this));
@@ -56,15 +57,20 @@ module.exports = React.createClass({
     return (
       <div className="timeline">{
         data.map(function(bar, i) {
+          var figure = Math.round(bar.value * 100) / 100;
+
           return (
             <div  className="bar-placeholder"
                   data-year={ bar.year }
+                  data-short-year={ bar.short }
                   key={ i }
                   style={{
                     width: this.state.width / ( data.length + 1 )
                   }}>
               <div  className="bar"
-                    data-figure={ bar.label || Math.round(bar.value * 100) / 100 }
+                    data-figure={
+                      bar.label || (figure > 0.05 * max ? figure : '')
+                    }
                     style={{
                       height: bar.height || ((bar.value / max * 100) + '%')
                     }}></div>

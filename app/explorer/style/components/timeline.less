@@ -81,3 +81,13 @@
     }
   }
 }
+
+@media @SMALL_WIDTH {
+  .timeline {
+    .bar-placeholder {
+      &::after {
+        content: attr(data-short-year);
+      }
+    }
+  }
+}
