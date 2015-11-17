@@ -54,7 +54,7 @@ module.exports = React.createClass({
   collapse: function(e) {
     this.cursors.deployed.set(undefined);
 
-    if (typeof this.state.lastScroll)
+    if (typeof this.state.lastScroll === 'number')
       setTimeout((function() {
         this.refs.verbatims.scrollTop = this.state.lastScroll;
       }).bind(this), 0);
