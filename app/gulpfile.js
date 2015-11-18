@@ -53,7 +53,7 @@ gulp.task('discover-html', function(done) {
 
   fs.readFile('./discover/app.html', function(err, data) {
     fs.writeFile(
-      'build/discover.html',
+      'build/index.html',
       textReplace(content, 'html', data.toString()),
       done
       );

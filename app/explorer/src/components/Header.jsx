@@ -129,7 +129,7 @@ module.exports = React.createClass({
         </div>
         <div className="menu">
           <a  className="discover"
-              href="discover.html">Discover</a>
+              href="./">Discover</a>
           <a className="explore"
               href="#">Explore</a>
         </div>
