@@ -138,9 +138,9 @@
       "link": "explore/#/?topics=Adverse Effects and Response Measure&event_id=011|012|013|014|015|016|017|018|019|020|021|022|023|024|025|026|027|028|029|030|031|032|033|034",
       "window": {
         "x": 10,
-        "y": 30,
+        "y": 50,
         "w": 20,
-        "h": 70
+        "h": 65
       },
       "analysis": "The first period of the negotiations seems occupied by a prevalence of questions regarding negative consequences of global warming as well as the response measures introduced to mitigate it.",
       "verbatims": {
@@ -159,12 +159,12 @@
       "title": "The impacts of climate change and the funding of adaptation",
       "link": "explore/#/?topics=Vulnerabilities and Impacts",
       "window": {
-        "x": -50,
-        "y": 0,
+        "x": 0,
+        "y": 15,
         "w": 100,
-        "h": 85
+        "h": 75
       },
-      "analysis": "Contrarily to what could be expected, the discussion over the mechanisms necessary to finance the adaptation of impending consequences of climate change begin before the reflection directly addressed to these impacts and the vulnerabilities connected to them.",
+      "analysis": "Contrarily to what could be expected, the discussion over the mechanisms necessary to finance the adaptation of impending consequences of climate change begin before and seems to be more visible than the reflection directly addressed to these impacts and the vulnerabilities connected to them.",
       "verbatims": {
         "1": {
           "title": "2004 | Canada | Montreal - Innovative Financing Options",
@@ -181,10 +181,10 @@
       "title": "REDD+ and Loss & Damage",
       "link": "explore/#/?topics=Forests&event_id=076|077|078|079|080|081|084|085|086|087|088|089|090|091|092|093|095|096|097|098|099|100|101|102|103|104|105|106|107|108|109|110|111|112|113|114|115|116|117|118|119",
       "window": {
-        "x": 65,
-        "y": 70,
-        "w": 35,
-        "h": 30
+        "x": 70,
+        "y": 65,
+        "w": 30,
+        "h": 35
       },
       "analysis": "In the last stages, it is possible to observe the emergence of specialized discussion about greenhouse sinks (in the particular the question of forests) and about the liabilities and compensation connected to the impact of climate change.",
       "verbatims": {
@@ -231,7 +231,7 @@
         "x": 0,
         "y": 40,
         "w": 100,
-        "h": 25
+        "h": 40
       },
       "analysis": "Three groupings are consistent among the most visible actors of the negotiation: the European Union, the Group of 77 and China and the Alliance of Small Islands. The engagement of this last group is particularly interesting, as it derives directly from the specific vulnerability of these States to climate change.",
       "verbatims": {
@@ -273,9 +273,9 @@
       "link": "explore/#/?actors=Group of 77 and China&event_id=011|012|013|014|015|016|017|018|019|020|021|022",
       "window": {
         "x": 5,
-        "y": 5,
+        "y": 0,
         "w": 20,
-        "h": 30
+        "h": 35
       },
       "analysis": "A clear peak is visible in many lines during 1998 (particularly the EU and the G77 and China). The interpretation of this peak, taking place right after the adoption of the Kyoto Protocol, is not obvious: it may corresponds to the efforts of some negotiation groupings to encourage the implementation of the Kyoto protocol, but it may also derive from a change in the way the ENB reports on the negotiation.",
       "verbatims": {
