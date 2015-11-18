@@ -6,7 +6,7 @@
     "1": {
       "offset": 100,
       "title": "Visibility of issues related to Kyoto Protocol",
-      "link": "explore.html",
+      "link": "explorer.html#/?topics=UNFCCC and Kyoto Protocol Functioning",
       "window": {
         "x": -50,
         "y": -50,
@@ -17,7 +17,7 @@
       "verbatims": {
         "1": {
           "title": "1995 | USA | New York - ESTABLISHMENT OF THE INC/FCCC",
-          "content": "On 11 December 1990, the 45th session of the UN General Assembly adopted a resolution that established the Intergovernmental Negotiating Committee for a Framework Convention on Climate Change with the mandate of the INC/FCCC was to prepare an effective framework convention on climate change..."
+          "content": "On 11 December 1990, the 45th session of the UN General Assembly established the Intergovernmental Negotiating Committee for a Framework Convention on Climate Change with the mandate to prepare a framework convention on climate change..."
         },
         "2": {
           "title": "1996 | Switzerland | Geneva - COOPERATION WITH THE IPCC",
@@ -32,14 +32,14 @@
     "2": {
       "offset": 500,
       "title": "Setting up the Kyoto Protocol",
-      "link": "explore.html",
+      "link": "explorer.html#/?topics=Pre-Kyoto",
       "window": {
         "x": 0,
         "y": 0,
-        "w": 18,
+        "w": 20,
         "h": 100
       },
-      "analysis": "The first stage of negotiations was framed by attempts to establish the Kyoto protocol and to decide its functional rules and integration within the UNFCCC system (this second concern will remain highly important throughout the negotiations).",
+      "analysis": "The first stage of negotiations was framed by the effort to establish the Kyoto protocol and to decide its functional rules and integration within the UNFCCC system (this second concern will remain highly important throughout the negotiations).",
       "verbatims": {
         "1": {
           "title": "1995 | USA | New York - PLENARY",
@@ -58,11 +58,11 @@
     "3": {
       "offset": 1000,
       "title": "Compliance and enforcement",
-      "link": "explore.html",
+      "link": "explorer.html#/?topics=Compliance and Enforcement",
       "window": {
-        "x": 18,
+        "x": 10,
         "y": 0,
-        "w": 20,
+        "w": 30,
         "h": 100
       },
       "analysis": "After the Kyoto Protocol approval, the discussion shifted to questions concerning the implementation of the agreements taken in Kyoto.",
@@ -72,7 +72,7 @@
           "content": "The different possible consequences in international instruments range from making non-compliance publicly known, such as in human rights conventions, to making adverse inferences on the part of the Party that has not delivered requested information or to imposing sanctions..."
         },
         "2": {
-          "title": "1999 | Austria | Vienna - COMPLIANCE SYSTEMS UNDER INTERNATIONAL TREATIES",
+          "title": "1999 | Austria | Vienna - COMPLIANCE UNDER INTERNATIONAL TREATIES",
           "content": "The different steps in a compliance process were presented. The first step would involve a reporting system on environmental quality data, baselines and implementation of obligations..."
         },
         "3": {
@@ -84,7 +84,7 @@
     "4": {
       "offset": 1500,
       "title": "Going beyond the Kyoto Protocol",
-      "link": "explore.html",
+      "link": "explorer.html#/?topics=Post-Kyoto Agreements",
       "window": {
         "x": 60,
         "y": 0,
@@ -95,11 +95,11 @@
       "verbatims": {
         "1": {
           "title": "2008 | Indonesia | Bali - BALI ROADMAP",
-          "content": "The most significant issue taken up during the Conference in Bali was the question of a multilateral framework to address climate change, when the Kyoto Protocol's first commitment period expires. Negotiators spent much of their time agreing on a 2-year process to finalize a post-2012 regime by Dec.2009..."
+          "content": "The most significant issue taken up in Bali was the question of a multilateral framework to address climate change, when the Kyoto Protocol's 1st commitment period expires. Negotiators spent much of their time agreing on a 2-year process to finalize a post-2012 regime by Dec 2009..."
         },
         "2": {
           "title": "2008 | Indonesia | Bali - NEGOTIATING TRACKS",
-          "content": "The Bali roadmap builds on negotiations on long-term issues launched at the Montreal Climate Change Conference. In addition to addressing the period after the Protocol's first commitment period, the Bali roadmap aims to mend some of the fractures in the climate regime, most notably the refusal of the United States to ratify the Protocol..."
+          "content": "The Bali roadmap builds on negotiations on long-term issues launched at the Montreal. In addition to addressing the period after the Protocol's first period, the Bali roadmap aims to mend some of the fractures in the climate regime, most notably the refusal of the United States to ratify the Protocol..."
         },
         "3": {
           "title": "2010 | Mexico | Cancún PARTIES PROPOSALS FOR PROTOCOL AMENDMENTS",
