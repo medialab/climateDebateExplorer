@@ -1,3 +1,4 @@
+// Fix chrome anchor bug
 (function() {
   var el,
       hash = (location.hash || '').replace(/^#/, '');
@@ -8,3 +9,8 @@
       el.setAttribute('class', 'target');
     }, 0);
 }).call(window);
+
+// Glossary
+(function(){
+  
+})();
