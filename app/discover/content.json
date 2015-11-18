@@ -99,7 +99,7 @@
         },
         "2": {
           "title": "2008 | Indonesia | Bali - NEGOTIATING TRACKS",
-          "content": "The Bali roadmap builds on negotiations on long-term issues launched at the Montreal. In addition to addressing the period after the Protocol's first period, the Bali roadmap aims to mend some of the fractures in the climate regime, most notably the refusal of the United States to ratify the Protocol..."
+          "content": "In addition to addressing the period after the Protocol's first period, the Bali roadmap aims to mend some of the fractures in the climate regime, most notably the refusal of the United States to ratify the Protocol..."
         },
         "3": {
           "title": "2010 | Mexico | Cancún PARTIES PROPOSALS FOR PROTOCOL AMENDMENTS",
@@ -138,9 +138,9 @@
       "link": "explorer.html#/?topics=Adverse Effects and Response Measure&event_id=011|012|013|014|015|016|017|018|019|020|021|022|023|024|025|026|027|028|029|030|031|032|033|034",
       "window": {
         "x": 10,
-        "y": 0,
-        "w": 30,
-        "h": 80
+        "y": 30,
+        "w": 20,
+        "h": 70
       },
       "analysis": "The first period of the negotiations seems occupied by a prevalence of questions regarding negative consequences of global warming as well as the response measures introduced to mitigate it.",
       "verbatims": {
@@ -160,9 +160,9 @@
       "link": "explorer.html#/?topics=Vulnerabilities and Impacts",
       "window": {
         "x": -50,
-        "y": 10,
-        "w": 200,
-        "h": 90
+        "y": 0,
+        "w": 100,
+        "h": 85
       },
       "analysis": "Contrarily to what could be expected, the discussion over the mechanisms necessary to finance the adaptation of impending consequences of climate change begin before the reflection directly addressed to these impacts and the vulnerabilities connected to them.",
       "verbatims": {
@@ -182,7 +182,7 @@
       "link": "explorer.html#/?topics=Forests&event_id=076|077|078|079|080|081|084|085|086|087|088|089|090|091|092|093|095|096|097|098|099|100|101|102|103|104|105|106|107|108|109|110|111|112|113|114|115|116|117|118|119",
       "window": {
         "x": 65,
-        "y": 0,
+        "y": 70,
         "w": 35,
         "h": 30
       },
