@@ -149,6 +149,11 @@ gulp.task('data-build-htaccess', function() {
     .pipe(gulp.dest('./build/assets/data'));
 });
 
+gulp.task('data-build-htaccess', function() {
+  return gulp.src(['./data/glossary.csv'])
+    .pipe(gulp.dest('./build/assets/data'));
+});
+
 gulp.task('data-build-html', function () {
   return gulp.src('../ENB-data/enb_pages/')
     .pipe(symlink('./build/bulletin'));
