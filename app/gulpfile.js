@@ -149,7 +149,7 @@ gulp.task('data-build-htaccess', function() {
     .pipe(gulp.dest('./build/assets/data'));
 });
 
-gulp.task('data-build-htaccess', function() {
+gulp.task('data-build-glossary', function() {
   return gulp.src(['./data/glossary.csv'])
     .pipe(gulp.dest('./build/assets/data'));
 });
@@ -175,6 +175,7 @@ gulp.task('data-build', function() {
     'data-build-src',
     'data-build-csv',
     'data-build-htaccess',
+    'data-build-glossary',
     'data-build-html'
   );
 });
