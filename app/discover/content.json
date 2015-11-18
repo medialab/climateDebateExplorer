@@ -204,7 +204,7 @@
     "1": {
       "offset": 4000,
       "title": "Main negotiation groups",
-      "link": "explore.html",
+      "link": "explorer.html#/?actors=European Union",
       "window": {
         "x": -50,
         "y": -50,
@@ -228,12 +228,12 @@
     "2": {
       "offset": 4500,
       "title": "The protagonists",
-      "link": "explore.html",
+      "link": "explorer.html#/?actors=Alliance of Small Island States",
       "window": {
-        "x": -50,
-        "y": -50,
-        "w": 200,
-        "h": 200
+        "x": 0,
+        "y": 40,
+        "w": 100,
+        "h": 25
       },
       "analysis": "Three groupings are consistent among the most visible actors of the negotiation: the European Union, the Group of 77 and China and the Alliance of Small Islands. The engagement of this last group is particularly interesting, as it derives directly from the specific vulnerability of these States to climate change.",
       "verbatims": {
@@ -252,14 +252,14 @@
     "3": {
       "offset": 5000,
       "title": "On the rise",
-      "link": "explore.html",
+      "link": "explorer.html#/?actors=African Group&event_id=076|077|078|079|080|081|084|085|086|087|088|089|090|091|092|093|095|096|097|098|099|100|101|102|103|104|105|106|107|108|109|110|111|112|113|114|115|116|117|118|119",
       "window": {
-        "x": -50,
-        "y": -50,
-        "w": 200,
-        "h": 200
+        "x": 66,
+        "y": 75,
+        "w": 34,
+        "h": 25
       },
-      "analysis": "The diagram shows the increasing engagement of countries in the southern hemisphere, in particular the African group and the Independent Association of Latin America and the Caribbean, as well as the transversal Environmental Integrity Group.",
+      "analysis": "The diagram shows the increasing engagement of countries in the southern hemisphere, in particular the African Group and the Independent Association of Latin America and the Caribbean, as well as the transversal Environmental Integrity Group.",
       "verbatims": {
         "1": {
           "title": "2012 | Thailand | Bangkok - Vision for the ADP",
@@ -267,7 +267,7 @@
           "url": "explorer.html#/?actors=African Group&event_id=101&deployedVerbatim=enb12550e_12"
         },
         "2": {
-          "title": "2013 | Germany | Bonn - RESULTS-BASED FINANCE FOR IMPLEMENTATION OF ACTIVITIES IN REDD+",
+          "title": "2013 | Germany | Bonn - Result-based finance for implementation of activities in REDD+",
           "content": "Switzerland, for the EIG, indicated that COP guidance should not create additional burdens for REDD+ finance and identified the need to fill the gap between fast start and long-term financing.",
           "url": "explorer.html#/?actors=Environmental Integrity Group&event_id=104&deployedVerbatim=enb12576e_2"
         }
@@ -276,12 +276,12 @@
     "4": {
       "offset": 5500,
       "title": "The peak after Kyoto",
-      "link": "explore.html",
+      "link": "explorer.html#/?actors=Group of 77 and China&event_id=011|012|013|014|015|016|017|018|019|020|021|022",
       "window": {
-        "x": -50,
-        "y": -50,
-        "w": 200,
-        "h": 200
+        "x": 5,
+        "y": 5,
+        "w": 20,
+        "h": 30
       },
       "analysis": "A clear peak is visible in many lines during 1998 (particularly the EU and the G77 and China). The interpretation of this peak, taking place right after the adoption of the Kyoto Protocol, is not obvious: it may corresponds to the efforts of some negotiation groupings to encourage the implementation of the Kyoto protocol, but it may also derive from a change in the way the ENB reports on the negotiation.",
       "verbatims": {
@@ -300,7 +300,7 @@
     "5": {
       "offset": 6000,
       "title": "Top-5 most visible countries per year",
-      "link": "explore.html",
+      "link": "explorer.html#/?countries=Saudi Arabia",
       "window": {
         "x": -50,
         "y": -50,
