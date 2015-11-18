@@ -168,37 +168,33 @@
       "verbatims": {
         "1": {
           "title": "2004 | Canada | Montreal - INNOVATIVE FINANCING OPTIONS",
-          "content": "He noted a growing interest among venture capitalists and others in clean energy, with US$3 billion invested in recent years in new technologies, mostly in North America and Europe. On opportunities in developing countries, he differentiated between big economies like China, which he said had huge potential for leapfrogging that should be driven by the private sector, and smaller developing countries, which he said need capacity building and training.",
-          "url": ""
+          "content": "He noted a growing interest among venture capitalists and others in clean energy, with US$3 billion invested in recent years in new technologies, mostly in North America and Europe. On opportunities in developing countries, he differentiated between big economies like China, which he said had potential for leapfrogging..."
         },
         "2": {
           "title": "2007 | Austria | Vienna - Presentations",
-          "content": "UNFCCC Executive Secretary de Boer underscored the broad consultative process underlying the Secretariat report and said its main findings concerned financial and investment flows needed in 2030 to meet worldwide mitigation and adaptation requirements. For mitigation, he identified the need for an additional USD 200-210 billion in 2030 and said that the estimated figures for adaptation amounted to several tens of billions of USD.",
-          "url": ""
+          "content": "UNFCCC Executive said its main findings concerned financial and investment flows needed in 2030 to meet worldwide mitigation and adaptation requirements. For mitigation, he identified the need for an additional USD 200-210 billion in 2030..."
         }
       }
     },
     "4": {
       "offset": 3500,
       "title": "REDD+ and Loss & Damage",
-      "link": "explore.html",
+      "link": "explorer.html#/?topics=Forests&event_id=076|077|078|079|080|081|084|085|086|087|088|089|090|091|092|093|095|096|097|098|099|100|101|102|103|104|105|106|107|108|109|110|111|112|113|114|115|116|117|118|119",
       "window": {
-        "x": -50,
-        "y": -50,
-        "w": 200,
-        "h": 200
+        "x": 65,
+        "y": 0,
+        "w": 35,
+        "h": 30
       },
       "analysis": "In the last stages, it is possible to observe the emergence of specialized discussion about greenhouse sinks (in the particular the question of forests) and about the liabilities and compensation connected to the impact of climate change.",
       "verbatims": {
         "1": {
           "title": "2015 | Switzerland | Geneva - Adaptation and Loss and Damage",
-          "content": "The LDCs called for a compensation scheme for countries affected by slow onset events and for a climate change displacement coordination facility to deal with relocation and population displacement. The EU suggested that all parties commit to adapt to climate change and cooperate to achieve climate resilient development.",
-          "url": "explorer.html#/?topics=Loss and Damage&event_id=115&deployedVerbatim=enb12626e_14"
+          "content": "The LDCs called for a compensation scheme for countries affected by slow onset events and for a climate change displacement coordination facility to deal with relocation and population displacement..."
         },
         "2": {
-          "title": "2009 | Germany | Bonn - REDUCING EMISSIONS FROM DEFORESTATION IN DEVELOPING COUNTRIES",
-          "content": "At the suggestion of a number of developing countries, the title of the appended draft decision now includes mention of conservation, sustainable management of forests and enhancement of forest carbon stocks.",
-          "url": "explorer.html#/?topics=Forests&event_id=079&deployedVerbatim=enb12421e_36"
+          "title": "2009 | Germany | Bonn - Reducing Emissions from Deforestation in Developing Countries",
+          "content": "At the suggestion of a number of developing countries, the title of the appended draft decision now includes mention of conservation, sustainable management of forests and enhancement of forest carbon stocks."
         }
       }
     }
