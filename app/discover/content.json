@@ -6,7 +6,7 @@
     "1": {
       "offset": 100,
       "title": "Visibility of issues related to the Kyoto Protocol",
-      "link": "explorer.html#/?topics=UNFCCC and Kyoto Protocol Functioning",
+      "link": "explore/#/?topics=UNFCCC and Kyoto Protocol Functioning",
       "window": {
         "x": -50,
         "y": -50,
@@ -32,7 +32,7 @@
     "2": {
       "offset": 500,
       "title": "Setting up the Kyoto Protocol",
-      "link": "explorer.html#/?topics=Pre-Kyoto&event_id=001|002|003|004|005|006|007|008|009|010|011|012|013|014|015|016|017|018",
+      "link": "explore/#/?topics=Pre-Kyoto&event_id=001|002|003|004|005|006|007|008|009|010|011|012|013|014|015|016|017|018",
       "window": {
         "x": 0,
         "y": 0,
@@ -58,7 +58,7 @@
     "3": {
       "offset": 1000,
       "title": "Compliance and enforcement",
-      "link": "explorer.html#/?topics=Compliance and Enforcement&event_id=017|018|019|020|021|022|023|024|025|026|027|028|029|030|031|032|033|034",
+      "link": "explore/#/?topics=Compliance and Enforcement&event_id=017|018|019|020|021|022|023|024|025|026|027|028|029|030|031|032|033|034",
       "window": {
         "x": 10,
         "y": 0,
@@ -84,7 +84,7 @@
     "4": {
       "offset": 1500,
       "title": "Going beyond the Kyoto Protocol",
-      "link": "explorer.html#/?topics=Post-Kyoto Agreements&event_id=058|059|060|061|062|063|064|065|066|067|068|070|072|074|076|077|078|079|080|081|084|085|086|087|088|089|090|091|092|093|095|096|097|098|099|100|101|102|103|104|105|106|107|108|109|110|111|112|113|114|115|116|117|118|119",
+      "link": "explore/#/?topics=Post-Kyoto Agreements&event_id=058|059|060|061|062|063|064|065|066|067|068|070|072|074|076|077|078|079|080|081|084|085|086|087|088|089|090|091|092|093|095|096|097|098|099|100|101|102|103|104|105|106|107|108|109|110|111|112|113|114|115|116|117|118|119",
       "window": {
         "x": 60,
         "y": 0,
@@ -113,7 +113,7 @@
     "1": {
       "offset": 2000,
       "title": "Visibility of other negotiation issues",
-      "link": "explorer.html#/?topics=Financial Mechanisms and Funds",
+      "link": "explore/#/?topics=Financial Mechanisms and Funds",
       "window": {
         "x": -50,
         "y": -50,
@@ -135,7 +135,7 @@
     "2": {
       "offset": 2500,
       "title": "The consequences of climate change and of its mitigation",
-      "link": "explorer.html#/?topics=Adverse Effects and Response Measure&event_id=011|012|013|014|015|016|017|018|019|020|021|022|023|024|025|026|027|028|029|030|031|032|033|034",
+      "link": "explore/#/?topics=Adverse Effects and Response Measure&event_id=011|012|013|014|015|016|017|018|019|020|021|022|023|024|025|026|027|028|029|030|031|032|033|034",
       "window": {
         "x": 10,
         "y": 30,
@@ -157,7 +157,7 @@
     "3": {
       "offset": 3000,
       "title": "The impacts of climate change and the funding of adaptation",
-      "link": "explorer.html#/?topics=Vulnerabilities and Impacts",
+      "link": "explore/#/?topics=Vulnerabilities and Impacts",
       "window": {
         "x": -50,
         "y": 0,
@@ -179,7 +179,7 @@
     "4": {
       "offset": 3500,
       "title": "REDD+ and Loss & Damage",
-      "link": "explorer.html#/?topics=Forests&event_id=076|077|078|079|080|081|084|085|086|087|088|089|090|091|092|093|095|096|097|098|099|100|101|102|103|104|105|106|107|108|109|110|111|112|113|114|115|116|117|118|119",
+      "link": "explore/#/?topics=Forests&event_id=076|077|078|079|080|081|084|085|086|087|088|089|090|091|092|093|095|096|097|098|099|100|101|102|103|104|105|106|107|108|109|110|111|112|113|114|115|116|117|118|119",
       "window": {
         "x": 65,
         "y": 70,
@@ -204,7 +204,7 @@
     "1": {
       "offset": 4000,
       "title": "Main negotiation groups",
-      "link": "explorer.html#/?actors=European Union",
+      "link": "explore/#/?actors=European Union",
       "window": {
         "x": -50,
         "y": -50,
@@ -226,7 +226,7 @@
     "2": {
       "offset": 4500,
       "title": "The protagonists",
-      "link": "explorer.html#/?actors=Alliance of Small Island States",
+      "link": "explore/#/?actors=Alliance of Small Island States",
       "window": {
         "x": 0,
         "y": 40,
@@ -248,7 +248,7 @@
     "3": {
       "offset": 5000,
       "title": "On the rise",
-      "link": "explorer.html#/?actors=African Group&event_id=076|077|078|079|080|081|084|085|086|087|088|089|090|091|092|093|095|096|097|098|099|100|101|102|103|104|105|106|107|108|109|110|111|112|113|114|115|116|117|118|119",
+      "link": "explore/#/?actors=African Group&event_id=076|077|078|079|080|081|084|085|086|087|088|089|090|091|092|093|095|096|097|098|099|100|101|102|103|104|105|106|107|108|109|110|111|112|113|114|115|116|117|118|119",
       "window": {
         "x": 66,
         "y": 75,
@@ -270,7 +270,7 @@
     "4": {
       "offset": 5500,
       "title": "The peak after Kyoto",
-      "link": "explorer.html#/?actors=Group of 77 and China&event_id=011|012|013|014|015|016|017|018|019|020|021|022",
+      "link": "explore/#/?actors=Group of 77 and China&event_id=011|012|013|014|015|016|017|018|019|020|021|022",
       "window": {
         "x": 5,
         "y": 5,
@@ -292,7 +292,7 @@
     "5": {
       "offset": 6000,
       "title": "Top-5 most visible countries per year",
-      "link": "explorer.html#/?countries=Saudi Arabia",
+      "link": "explore/#/?countries=Saudi Arabia",
       "window": {
         "x": -50,
         "y": -50,

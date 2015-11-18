@@ -121,8 +121,8 @@ gulp.task('explorer-build-src', function() {
 
 gulp.task('explorer-build-html', function() {
   return gulp.src('./explorer/app.html')
-    .pipe(rename('explorer.html'))
-    .pipe(gulp.dest('./build'));
+    .pipe(rename('index.html'))
+    .pipe(gulp.dest('./build/explore'));
 });
 
 gulp.task('explorer-build', function() {

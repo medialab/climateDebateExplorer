@@ -107,7 +107,7 @@ module.exports = React.createClass({
                   'header-logo hidden' :
                   'header-logo'
               }
-              src="assets/img/black-logo.svg" />
+              src="../assets/img/black-logo.svg" />
         <div className="links">
           <a  className="button"
               onClick={ this.toggleAbout }>About</a>
@@ -115,21 +115,21 @@ module.exports = React.createClass({
         <div className="social">
           <a  className="button"
               onClick={ this.onClickShare }>
-            <img src="assets/img/share.svg" />
+            <img src="../assets/img/share.svg" />
           </a>
           <a  className="button"
               data-network="facebook"
-              onClick={ this.share }><img src="assets/img/facebook.svg" /></a>
+              onClick={ this.share }><img src="../assets/img/facebook.svg" /></a>
           <a  className="button"
               data-network="twitter"
-              onClick={ this.share }><img src="assets/img/twitter.svg" /></a>
+              onClick={ this.share }><img src="../assets/img/twitter.svg" /></a>
           <a  className="button"
               data-network="linkedin"
-              onClick={ this.share }><img src="assets/img/linkedin.svg" /></a>
+              onClick={ this.share }><img src="../assets/img/linkedin.svg" /></a>
         </div>
         <div className="menu">
           <a  className="discover"
-              href="./">Discover</a>
+              href="../">Discover</a>
           <a className="explore"
               href="#">Explore</a>
         </div>

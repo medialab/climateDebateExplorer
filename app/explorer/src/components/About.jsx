@@ -37,17 +37,17 @@ module.exports = React.createClass({
           <div className="about-partners">
             <a  href="http://www.medialab.sciences-po.fr/"
                 target="_blank">
-              <img  src="assets/img/sciences-po-medialab.svg"
+              <img  src="../assets/img/sciences-po-medialab.svg"
                     alt="Medialab SciencesPo" />
             </a>
             <a  href="http://lsir.epfl.ch/"
                 target="_blank">
-              <img  src="assets/img/epfl.svg"
+              <img  src="../assets/img/epfl.svg"
                     alt="EPFL" />
             </a>
             <a  href="http://ateliericeberg.fr/"
                 target="_blank">
-              <img  src="assets/img/atelier-iceberg.svg"
+              <img  src="../assets/img/atelier-iceberg.svg"
                     alt="Atelier Iceberg" />
             </a>
           </div>

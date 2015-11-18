@@ -28,7 +28,7 @@ tree.set(
 );
 
 // Load CSV data file:
-Papa.parse('assets/data/data.csv', {
+Papa.parse('../assets/data/data.csv', {
   header: true,
   download: true,
   complete: function(data) {
