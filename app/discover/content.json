@@ -1,11 +1,11 @@
 {
-  "intro": "<p>The Climate Negotiations Browser allows the user to navigate over 20 years of UN climate negotiations as captured by the <a href=\"http://www.iisd.ca/vol12/ target=\"_blank\" / \">Earth Negotiation Bulletin</a> reporting system.<br /><br /></p><p>The DISCOVER interface offers a visual overview of the most visible issues and actors of the negotiations.<br />The EXPLORE interface allows the user to search, filter and read verbatim text directly from ENB.</p>",
+   "intro": "<p>The Climate Negotiations Browser allows the user to navigate over 20 years of UN climate negotiations as captured by the <a href=\"http://www.iisd.ca/vol12/ target=\"_blank\" / \">Earth Negotiation Bulletin</a> reporting system.<br /><br /></p><p>The DISCOVER interface offers a visual overview of the most visible issues and actors of the negotiations.<br />The EXPLORE interface allows the user to search, filter and read verbatim text directly from ENB.</p>",
   "datapath": "./assets/data/data.csv",
   "viz_1": {
     "title": "What are the negotiation issues?",
     "1": {
       "offset": 100,
-      "title": "Visibility of issues related to Kyoto Protocol",
+      "title": "Visibility of issues related to the Kyoto Protocol",
       "link": "explorer.html#/?topics=UNFCCC and Kyoto Protocol Functioning",
       "window": {
         "x": -50,
@@ -32,7 +32,7 @@
     "2": {
       "offset": 500,
       "title": "Setting up the Kyoto Protocol",
-      "link": "explorer.html#/?topics=Pre-Kyoto",
+      "link": "explorer.html#/?topics=Pre-Kyoto&event_id=001|002|003|004|005|006|007|008|009|010|011|012|013|014|015|016|017|018",
       "window": {
         "x": 0,
         "y": 0,
@@ -58,7 +58,7 @@
     "3": {
       "offset": 1000,
       "title": "Compliance and enforcement",
-      "link": "explorer.html#/?topics=Compliance and Enforcement",
+      "link": "explorer.html#/?topics=Compliance and Enforcement&event_id=017|018|019|020|021|022|023|024|025|026|027|028|029|030|031|032|033|034",
       "window": {
         "x": 10,
         "y": 0,
@@ -84,14 +84,14 @@
     "4": {
       "offset": 1500,
       "title": "Going beyond the Kyoto Protocol",
-      "link": "explorer.html#/?topics=Post-Kyoto Agreements",
+      "link": "explorer.html#/?topics=Post-Kyoto Agreements&event_id=058|059|060|061|062|063|064|065|066|067|068|070|072|074|076|077|078|079|080|081|084|085|086|087|088|089|090|091|092|093|095|096|097|098|099|100|101|102|103|104|105|106|107|108|109|110|111|112|113|114|115|116|117|118|119",
       "window": {
         "x": 60,
         "y": 0,
         "w": 40,
         "h": 100
       },
-      "analysis": "In the last period, the limitations of the Kyoto Protocol (both temporal and in terms of the countries engaged) drive the discussion increasingly toward the search for a successor to the Protocol and \u2013 after the failure of the Copenhagen conference \u2013 to the temporary extension of the agreement.",
+      "analysis": "In the last period, the limitations of the Kyoto Protocol (both temporal and in terms of the countries engaged) drive the discussion increasingly toward the search for a successor to the Protocol and \u2013 after the failure of the Copenhagen conference \u2013 to the temporary extension of the agreement...",
       "verbatims": {
         "1": {
           "title": "2008 | Indonesia | Bali - BALI ROADMAP",
@@ -99,7 +99,7 @@
         },
         "2": {
           "title": "2008 | Indonesia | Bali - NEGOTIATING TRACKS",
-          "content": "The Bali roadmap builds on negotiations on long-term issues launched at the Montreal. In addition to addressing the period after the Protocol's first period, the Bali roadmap aims to mend some of the fractures in the climate regime, most notably the refusal of the United States to ratify the Protocol..."
+          "content": "In addition to addressing the period after the Protocol's first period, the Bali roadmap aims to mend some of the fractures in the climate regime, most notably the refusal of the United States to ratify the Protocol..."
         },
         "3": {
           "title": "2010 | Mexico | Cancún PARTIES PROPOSALS FOR PROTOCOL AMENDMENTS",
@@ -109,100 +109,92 @@
     }
   },
   "viz_2": {
-    "title": "Other major climate negotiation issues",
+    "title": "Other negotiation issues",
     "1": {
       "offset": 2000,
       "title": "Visibility of other negotiation issues",
-      "link": "explore.html",
+      "link": "explorer.html#/?topics=Financial Mechanisms and Funds",
       "window": {
         "x": -50,
         "y": -50,
         "w": 200,
         "h": 200
       },
-      "analysis": "The diagram shows the evolution of the visibility of a selection of negotiation issues related to the costs and investments connected to climate change (measured as the percentage of ENB sections that mentions expressions related to each discussion over the total of ENB sections for the year).",
+      "analysis": "The diagram shows the evolution of the visibility of a selection of negotiation issues related to the costs and investments connected to climate change (measured as the percentage of ENB sections that mentions expressions related to each discussion over the total of ENB sections for the year)...",
       "verbatims": {
         "1": {
           "title": "2001 | Kenya | Nairobi - IPCC Work Programme and Budget for 2002-2004:",
-          "content": "He noted that the current budgetary situation was stable, and that one country had committed to substantially increased contributions.He mentioned that the WMO had submitted an analysis on IPCC financial matters, and suggested measures that should be taken to improve financial reporting and transparency.",
-          "url": ""
+          "content": "He noted that the current budgetary situation was stable, and that one country had committed to substantially increased contributions. He mentioned that the WMO had submitted an analysis on IPCC financial matters, and suggested measures to be taken to improve financial reporting and transparency..."
         },
         "2": {
           "title": "2007 | Belgium | Brussels - Health",
-          "content": "Bullet points were inserted in a paragraph listing impacts of climate change on health. On a sentence on increased frequency of cardio-respiratory diseases due to higher concentrations of ground-level ozone, China proposed, and WGII agreed, to add language clarifying that the sentence refers to the higher ozone concentrations related to climate change.",
-          "url": ""
+          "content": "On a sentence on increased frequency of cardio-respiratory diseases due to higher concentrations of ground-level ozone, China proposed, and WGII agreed, to add language clarifying that the sentence refers to the higher ozone concentrations related to climate change..."
         }
       }
     },
     "2": {
       "offset": 2500,
       "title": "The consequences of climate change and of its mitigation",
-      "link": "explore.html",
+      "link": "explorer.html#/?topics=Adverse Effects and Response Measure&event_id=011|012|013|014|015|016|017|018|019|020|021|022|023|024|025|026|027|028|029|030|031|032|033|034",
       "window": {
-        "x": -50,
-        "y": -50,
-        "w": 200,
-        "h": 200
+        "x": 10,
+        "y": 30,
+        "w": 20,
+        "h": 70
       },
       "analysis": "The first period of the negotiations seems occupied by a prevalence of questions regarding negative consequences of global warming as well as the response measures introduced to mitigate it.",
       "verbatims": {
         "1": {
           "title": "1999 | Germany | Bonn - IMPLEMENTATION OF CONVENTION ARTICLES 4.8 AND 4.9 (ADVERSE EFFECTS)",
-          "content": "The technical workshop will aim to identify: factors that will determine the adverse effects of climate change and the impacts of implementing response measures; and existing information gaps, needs and views on methodologies. It will further consider the specific needs of the least developed countries...",
-          "url": ""
+          "content": "The technical workshop will aim to identify: factors that will determine the adverse effects of climate change and the impacts of implementing response measures and existing information gaps. It will further consider the specific needs of the least developed countries..."
         },
         "2": {
           "title": "1998 | Argentina | Buenos Aires - COP PLENARY",
-          "content": "Over the past year floods, fires, droughts and hurricanes have profoundly effected countries around the world and suggested that 'Mother Nature' was reminding delegates that urgent action was needed. These events should remind all participants of their vulnerability to disasters and should prompt action.",
-          "url": ""
+          "content": "Over the past year floods, fires, droughts and hurricanes have profoundly effected countries around the world and suggested that 'Mother Nature' was reminding delegates that urgent action was needed. These events should remind all participants of their vulnerability to disasters and should prompt action..."
         }
       }
     },
     "3": {
       "offset": 3000,
       "title": "The impacts of climate change and the funding of adaptation",
-      "link": "explore.html",
+      "link": "explorer.html#/?topics=Vulnerabilities and Impacts",
       "window": {
         "x": -50,
-        "y": -50,
-        "w": 200,
-        "h": 200
+        "y": 0,
+        "w": 100,
+        "h": 85
       },
       "analysis": "Contrarily to what could be expected, the discussion over the mechanisms necessary to finance the adaptation of impending consequences of climate change begin before the reflection directly addressed to these impacts and the vulnerabilities connected to them.",
       "verbatims": {
         "1": {
           "title": "2004 | Canada | Montreal - INNOVATIVE FINANCING OPTIONS",
-          "content": "He noted a growing interest among venture capitalists and others in clean energy, with US$3 billion invested in recent years in new technologies, mostly in North America and Europe. On opportunities in developing countries, he differentiated between big economies like China, which he said had huge potential for leapfrogging that should be driven by the private sector, and smaller developing countries, which he said need capacity building and training.",
-          "url": ""
+          "content": "He noted a growing interest among venture capitalists and others in clean energy, with US$3 billion invested in recent years in new technologies, mostly in North America and Europe. On opportunities in developing countries, he differentiated between big economies like China, which he said had potential for leapfrogging..."
         },
         "2": {
           "title": "2007 | Austria | Vienna - Presentations",
-          "content": "UNFCCC Executive Secretary de Boer underscored the broad consultative process underlying the Secretariat report and said its main findings concerned financial and investment flows needed in 2030 to meet worldwide mitigation and adaptation requirements. For mitigation, he identified the need for an additional USD 200-210 billion in 2030 and said that the estimated figures for adaptation amounted to several tens of billions of USD.",
-          "url": ""
+          "content": "UNFCCC Executive said its main findings concerned financial and investment flows needed in 2030 to meet worldwide mitigation and adaptation requirements. For mitigation, he identified the need for an additional USD 200-210 billion in 2030..."
         }
       }
     },
     "4": {
       "offset": 3500,
       "title": "REDD+ and Loss & Damage",
-      "link": "explore.html",
+      "link": "explorer.html#/?topics=Forests&event_id=076|077|078|079|080|081|084|085|086|087|088|089|090|091|092|093|095|096|097|098|099|100|101|102|103|104|105|106|107|108|109|110|111|112|113|114|115|116|117|118|119",
       "window": {
-        "x": -50,
-        "y": -50,
-        "w": 200,
-        "h": 200
+        "x": 65,
+        "y": 70,
+        "w": 35,
+        "h": 30
       },
       "analysis": "In the last stages, it is possible to observe the emergence of specialized discussion about greenhouse sinks (in the particular the question of forests) and about the liabilities and compensation connected to the impact of climate change.",
       "verbatims": {
         "1": {
           "title": "2015 | Switzerland | Geneva - Adaptation and Loss and Damage",
-          "content": "The LDCs called for a compensation scheme for countries affected by slow onset events and for a climate change displacement coordination facility to deal with relocation and population displacement. The EU suggested that all parties commit to adapt to climate change and cooperate to achieve climate resilient development.",
-          "url": "explorer.html#/?topics=Loss and Damage&event_id=115&deployedVerbatim=enb12626e_14"
+          "content": "The LDCs called for a compensation scheme for countries affected by slow onset events and for a climate change displacement coordination facility to deal with relocation and population displacement..."
         },
         "2": {
-          "title": "2009 | Germany | Bonn - REDUCING EMISSIONS FROM DEFORESTATION IN DEVELOPING COUNTRIES",
-          "content": "At the suggestion of a number of developing countries, the title of the appended draft decision now includes mention of conservation, sustainable management of forests and enhancement of forest carbon stocks.",
-          "url": "explorer.html#/?topics=Forests&event_id=079&deployedVerbatim=enb12421e_36"
+          "title": "2009 | Germany | Bonn - Reducing Emissions from Deforestation in Developing Countries",
+          "content": "At the suggestion of a number of developing countries, the title of the appended draft decision now includes mention of conservation, sustainable management of forests and enhancement of forest carbon stocks."
         }
       }
     }
@@ -212,7 +204,7 @@
     "1": {
       "offset": 4000,
       "title": "Main negotiation groups",
-      "link": "explore.html",
+      "link": "explorer.html#/?actors=European Union",
       "window": {
         "x": -50,
         "y": -50,
@@ -236,12 +228,12 @@
     "2": {
       "offset": 4500,
       "title": "The protagonists",
-      "link": "explore.html",
+      "link": "explorer.html#/?actors=Alliance of Small Island States",
       "window": {
-        "x": -50,
-        "y": -50,
-        "w": 200,
-        "h": 200
+        "x": 0,
+        "y": 40,
+        "w": 100,
+        "h": 25
       },
       "analysis": "Three groupings are consistent among the most visible actors of the negotiation: the European Union, the Group of 77 and China and the Alliance of Small Islands. The engagement of this last group is particularly interesting, as it derives directly from the specific vulnerability of these States to climate change.",
       "verbatims": {
@@ -260,14 +252,14 @@
     "3": {
       "offset": 5000,
       "title": "On the rise",
-      "link": "explore.html",
+      "link": "explorer.html#/?actors=African Group&event_id=076|077|078|079|080|081|084|085|086|087|088|089|090|091|092|093|095|096|097|098|099|100|101|102|103|104|105|106|107|108|109|110|111|112|113|114|115|116|117|118|119",
       "window": {
-        "x": -50,
-        "y": -50,
-        "w": 200,
-        "h": 200
+        "x": 66,
+        "y": 75,
+        "w": 34,
+        "h": 25
       },
-      "analysis": "The diagram shows the increasing engagement of countries in the southern hemisphere, in particular the African group and the Independent Association of Latin America and the Caribbean, as well as the transversal Environmental Integrity Group.",
+      "analysis": "The diagram shows the increasing engagement of countries in the southern hemisphere, in particular the African Group and the Independent Association of Latin America and the Caribbean, as well as the transversal Environmental Integrity Group.",
       "verbatims": {
         "1": {
           "title": "2012 | Thailand | Bangkok - Vision for the ADP",
@@ -275,7 +267,7 @@
           "url": "explorer.html#/?actors=African Group&event_id=101&deployedVerbatim=enb12550e_12"
         },
         "2": {
-          "title": "2013 | Germany | Bonn - RESULTS-BASED FINANCE FOR IMPLEMENTATION OF ACTIVITIES IN REDD+",
+          "title": "2013 | Germany | Bonn - Result-based finance for implementation of activities in REDD+",
           "content": "Switzerland, for the EIG, indicated that COP guidance should not create additional burdens for REDD+ finance and identified the need to fill the gap between fast start and long-term financing.",
           "url": "explorer.html#/?actors=Environmental Integrity Group&event_id=104&deployedVerbatim=enb12576e_2"
         }
@@ -284,12 +276,12 @@
     "4": {
       "offset": 5500,
       "title": "The peak after Kyoto",
-      "link": "explore.html",
+      "link": "explorer.html#/?actors=Group of 77 and China&event_id=011|012|013|014|015|016|017|018|019|020|021|022",
       "window": {
-        "x": -50,
-        "y": -50,
-        "w": 200,
-        "h": 200
+        "x": 5,
+        "y": 5,
+        "w": 20,
+        "h": 30
       },
       "analysis": "A clear peak is visible in many lines during 1998 (particularly the EU and the G77 and China). The interpretation of this peak, taking place right after the adoption of the Kyoto Protocol, is not obvious: it may corresponds to the efforts of some negotiation groupings to encourage the implementation of the Kyoto protocol, but it may also derive from a change in the way the ENB reports on the negotiation.",
       "verbatims": {
@@ -308,7 +300,7 @@
     "5": {
       "offset": 6000,
       "title": "Top-5 most visible countries per year",
-      "link": "explore.html",
+      "link": "explorer.html#/?countries=Saudi Arabia",
       "window": {
         "x": -50,
         "y": -50,
