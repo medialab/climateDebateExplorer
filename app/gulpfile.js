@@ -135,7 +135,7 @@ gulp.task('explorer-build', function() {
     'explorer-build-assets',
     'explorer-build-style',
     'explorer-build-src',
-    'explorer-build-analytics'
+    'explorer-build-analytics',
     'explorer-build-html'
   );
 });
