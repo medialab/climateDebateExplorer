@@ -1,0 +1,83 @@
+{
+  "name": "ClimateNegotiations",
+  "datapackage_version": "1.0-beta",
+  "title": "Climate Negotiations Browser data",
+  "description": "http://www.climatenegotiations.org/",
+  "version": "1.0",
+  "keywords": ["Earth Negotiation Bulletin", "Climate", "UNFCCC"],
+  "licenses": [{
+    "url": "http://opendatacommons.org/licenses/by/",
+    "name": "Open Data Commons Attribution License",
+    "version": "1.0",
+    "id": "odc-by"
+  }],
+  "sources": [{
+    "name": "Earth Negotiation Bulletin",
+    "web": "http://www.iisd.ca/vol12/"
+  }],
+  "contributors":[ {
+    "name": "médialab Sciences po",
+    "email": "medialab@sciencespo.fr",
+    "web": "http://medialab.sciences-po.fr"
+  },
+   {
+    "name": "Distributed Information Systems Laboratory LSIR EPFL",
+    "email": "alex.constantin@epfl.ch",
+    "web": "http://lsir.epfl.ch/research/themes/"
+  }
+
+  ],
+  "maintainers": [
+  {
+    "name": "médialab Sciences po",
+    "email": "medialab@sciencespo.fr",
+    "web": "http://medialab.sciences-po.fr"
+  }
+  ],
+  "publishers": [
+  	{
+    "name": "médialab Sciences po",
+    "email": "medialab@sciencespo.fr",
+    "web": "http://medialab.sciences-po.fr"
+  }
+  ],
+  "dependencies": {
+    "data-package-name": ">=1.0"
+  },
+  "resources": [
+    {     
+      "path": "ENB-data/metadata_overview/",
+      "name": "metadata_overview",
+      "description": "various CSV and JSON files generated from the main data package or from scrapping about ENBv12 events, bulletins and sections",
+      "mediatype":"inode/directory",
+      "format":"csv/json",
+      "encoding":"UTF8"
+    },
+    {     
+      "path": "ENB-data/topics-keywords.csv",
+      "name": "topics-keywords",
+      "description": "the list of keywords (grouped by topics) used for topic detection",
+      "mediatype":"text/csv",
+      "format":"csv",
+      "encoding":"UTF8"
+    },
+    {     
+      "path": "ENB-data/enb_section_jsons",
+      "name": "DEPRECATED_enb_section_jsons",
+      "description": "(DEPRECATED) The sections of ENB bulletin splited into separated json files with related metadata. EPFL version without topics metadata.",
+      "mediatype":"text/json",
+      "format":"json",
+      "encoding":"UTF8"
+    },
+    
+        {     
+      "path": "ENB-data/enb_section_jsons-topiked",
+      "name": "enb_section_jsons-topiked",
+      "description": "The sections of ENB bulletin splited into separated json files with related metadata (including topics). The right version to be used after médialab added the topics metadata through the tag_enb_topics.py script",
+      "mediatype":"text/json",
+      "format":"json",
+      "encoding":"UTF8"
+    }
+    
+  ]
+}

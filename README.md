@@ -18,6 +18,7 @@ Then serve statically the build directory (with Apache to use the .htaccess enab
 ## Data
 
 The data was extracted from the [ENB volume 12](http://www.iisd.ca/vol12/) website, formatted and tagged by EPFL, then cleaned, refined and tagged again by médialab.
+Pelase consult datapackage.json for more details.
 
 ## Architecture
 - app
