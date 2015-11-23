@@ -53,7 +53,7 @@ module.exports = React.createClass({
                 data-text={
                   filtersIndex[this.state.deployedList] ?
                     'Back to related contents' :
-                    'Back to recurring contents'
+                    'Back to all statistics'
                 }
                 data-short-text="Back"></span>
         </div>
@@ -137,7 +137,7 @@ module.exports = React.createClass({
                           'block-more'
                       }
                       data-field={ field }
-                      onClick={ this.expand }>See more results</div>
+                      onClick={ this.expand }>See more { (this.state.fields[field].label || field).toLowerCase() }</div>
               </div>
             );
           }, this) }
