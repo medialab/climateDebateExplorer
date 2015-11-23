@@ -105,12 +105,14 @@ module.exports = React.createClass({
                   value={ this.state.contextual.permalink }
                   onChange={ function() {} } />
         </div>
-        <img  className={
+        <a href="../">
+          <img  className={
                 this.state.deployed ?
                   'header-logo hidden' :
                   'header-logo'
               }
               src="../assets/img/black-logo.svg" />
+        </a>
         <div className="links">
           <a  className="button"
               onClick={ this.toggleAbout }>How to use</a>
