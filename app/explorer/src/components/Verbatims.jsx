@@ -59,12 +59,6 @@ module.exports = React.createClass({
         this.refs.verbatims.scrollTop = this.state.lastScroll;
       }).bind(this), 0);
   },
-  openPermalink: function(e) {
-    var permalink = e.currentTarget.getAttribute('data-permalink');
-    window.open(permalink, '_blank');
-  },
-
-
 
   _loadListAsync: function(morePosts) {
     setTimeout(this._loadList.bind(this, false), 0);
@@ -127,9 +121,9 @@ module.exports = React.createClass({
                     <div  className="minute-see"
                           data-id={ obj.id }
                           onClick={ this.deploy } />
-                    <div  className="minute-share"
-                          data-permalink={ obj.url }
-                          onClick={ this.openPermalink } />
+                    <a  className="minute-share"
+                          href={ obj.url }
+                          target="_blank" />
                   </div>
                   <div className="minute-context">{
                     obj.year + ' | ' +
