@@ -8,7 +8,6 @@ module.exports = React.createClass({
   mixins: [ BaobabBranchMixin ],
   cursors: {
     deployed: ['appState', 'deployedHeader'],
-    state: ['appState'],
     contextual: ['contextual']
   },
 
@@ -75,7 +74,7 @@ module.exports = React.createClass({
 
     return networks[network].api +
       ( networks[network].title ? networks[network].title + encodeURIComponent('Climate Negociations Browser') : '' ) +
-      ( networks[network].url ? networks[network].url + encodeURIComponent(window.location.href) : '' );
+      ( networks[network].url ? networks[network].url + encodeURIComponent(this.state.contextual.permalink) : '' );
   },
 
   render: function() {
