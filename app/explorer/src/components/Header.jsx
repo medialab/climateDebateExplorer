@@ -14,6 +14,9 @@ module.exports = React.createClass({
   componentDidMount: function() {
     document.body.addEventListener('click', this.bodyHandler);
   },
+  componentWillUnmount: function() {
+    document.body.removeEventListener('click', this.bodyHandler);
+  },
 
   bodyHandler: function(e) {
     if (this.state.permalinkDeployed) {
