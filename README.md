@@ -38,5 +38,5 @@ Please consult `datapackage.json` for more details.
 
 ## Licenses
 
-All the source code is released under the [MIT License](https://opensource.org/licenses/MIT).
+All the source code is released under the [MIT License](https://opensource.org/licenses/MIT). 
 All the data is republished under the [ODC-BY License](http://opendatacommons.org/licenses/by/) meaning you have to cite the source whenever reusing it.
