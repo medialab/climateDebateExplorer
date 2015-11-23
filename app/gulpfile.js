@@ -150,6 +150,12 @@ gulp.task('data-build-csv', function() {
     .pipe(gulp.dest('./build/assets/data'));
 });
 
+gulp.task('data-build-csv-full', function() {
+  return gulp.src(['../ENB-data/metadata_overview/sections_fulldata.csv.zip'])
+    .pipe(rename('ClimateNegtationsBrowser-ENB-verbatims.csv.zip'))
+    .pipe(gulp.dest('./build/assets/data'));
+});
+
 gulp.task('data-build-htaccess', function() {
   return gulp.src(['./data/.htaccess'])
     .pipe(gulp.dest('./build/assets/data'));

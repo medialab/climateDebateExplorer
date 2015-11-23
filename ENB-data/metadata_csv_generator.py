@@ -46,8 +46,7 @@ try:
 except:
     clean_sections=False
 
-with open(os.path.join(OUT_DATA,"sections_metadata.csv"),"w") as f:
-    headers=[
+headers = [
     "id",
     "title",
     "actors",
@@ -60,9 +59,7 @@ with open(os.path.join(OUT_DATA,"sections_metadata.csv"),"w") as f:
     "date",
     "year",
     "abstract"
-      ]
-    print >> f, (",".join(headers)).encode('utf-8')
-section_metadata=[]
+]
 
 def shorten(t):
     sp_pos = 0
@@ -74,6 +71,8 @@ def shorten(t):
             return t[:sp_pos] + u"…"
     return t
 
+section_metadata = []
+section_fulldata = []
 for directory,subdir,filenames in os.walk(ENB_DATA):
     for f in filenames:
         if f.split(".")[-1]=="json":
@@ -81,34 +80,38 @@ for directory,subdir,filenames in os.walk(ENB_DATA):
                 #load a section
                 data=json.load(jsonfile)
 
+                # clean
+                if clean_sections:
+                    data=cleaner.clean_section(data)
+
+                # process date
+                import locale
+                locale.setlocale(locale.LC_TIME, "en_US.utf8")
+                date=time.strptime(data["enb_end_date"],"%d-%b-%y")
+                epoch_millisecond=time.mktime(date)*1000
+                year=time.strftime("%Y",date)
+
+                csv_data=[
+                    data["id"],
+                    data["section_title"],
+                    [act.replace('&', 'and') for act in data["actors"]],
+                    [cou.replace('&', 'and') for cou in data["countries"]],
+                    [top.replace('&', 'and') for top in data["topics"]],
+                    data["enb_url"],
+                    u"" if not add_eventid else url_eventid[data["enb_url"]],
+                    data["type"].replace('&', 'and'),
+                    data["subtype"].replace('&', 'and'),
+                    unicode(epoch_millisecond),
+                    unicode(year),
+                    shorten(data["sentences"][0].replace('\u0092', "'"))
+                    ]
+
+                csv_fulldata = list(csv_data)
+                csv_fulldata[-1] = " ".join(data["sentences"]).replace('\u0092', "'")
+                section_fulldata.append(csv_fulldata)
+
                 # filtering
                 if not clean_sections or cleaner.keep_section(data):
-
-                    # clean
-                    if clean_sections:
-                        data=cleaner.clean_section(data)
-
-                    # process date
-                    import locale
-                    locale.setlocale(locale.LC_TIME, "en_US.utf8")
-                    date=time.strptime(data["enb_end_date"],"%d-%b-%y")
-                    epoch_millisecond=time.mktime(date)*1000
-                    year=time.strftime("%Y",date)
-
-                    csv_data=[
-                        data["id"],
-                        data["section_title"],
-                        [act.replace('&', 'and') for act in data["actors"]],
-                        [cou.replace('&', 'and') for cou in data["countries"]],
-                        [top.replace('&', 'and') for top in data["topics"]],
-                        data["enb_url"],
-                        u"" if not add_eventid else url_eventid[data["enb_url"]],
-                        data["type"].replace('&', 'and'),
-                        data["subtype"].replace('&', 'and'),
-                        unicode(epoch_millisecond),
-                        unicode(year),
-                        shorten(data["sentences"][0].replace('\u0092', "'"))
-                        ]
                     section_metadata.append(csv_data)
 
                     # create index and filter sentences out
@@ -117,8 +120,8 @@ for directory,subdir,filenames in os.walk(ENB_DATA):
                             data_index[k]=[v] if k not in data_index else data_index[k]+[v]
 
 
-
-with open(os.path.join(OUT_DATA,"sections_metadata.csv"),"a") as metadata_file:
+with open(os.path.join(OUT_DATA,"sections_metadata.csv"), "w") as metadata_file:
+    print >> metadata_file, (",".join(headers)).encode('utf-8')
     section_metadata.sort(key=lambda x: (x[6], x[0]))
     for l in section_metadata:
         for field in l:
@@ -127,7 +130,20 @@ with open(os.path.join(OUT_DATA,"sections_metadata.csv"),"a") as metadata_file:
             except:
                 print "failed to format this value :%s"%field
                 exit()
-        print >>metadata_file, ",".join(format_field(field) for field in l)
+        print >> metadata_file, ",".join(format_field(field) for field in l)
+
+headers[-1] = "fulltext"
+with open(os.path.join(OUT_DATA,"sections_fulldata.csv"), "w") as fulldata_file:
+    print >> fulldata_file, (",".join(headers)).encode('utf-8')
+    section_fulldata.sort(key=lambda x: (x[6], x[0]))
+    for l in section_fulldata:
+        for field in l:
+            try:
+                format_field(field)
+            except:
+                print "failed to format this value :%s"%field
+                exit()
+        print >> fulldata_file, ",".join(format_field(field) for field in l)
 
 
 key_usage={}

@@ -1,1 +1,2 @@
 *.zip
+!ENB-data/metadata_overview/sections_fulldata.csv.zip
