@@ -186,6 +186,23 @@ gulp.task('data-build', function() {
   );
 });
 
+
+/**
+ * APPENDICE PAGES
+ * ********
+ */
+gulp.task('appendice-build-about', function() {
+  return gulp.src('../ENB-data/about.html')
+    .pipe(gulp.dest('./build'));
+});
+
+gulp.task('appendice-build', function() {
+  runSequence(
+    'appendice-build-about'
+  );
+});
+
+
 /**
  * MAIN
  * ********
@@ -196,5 +213,5 @@ gulp.task('clean', function() {
 
 
 gulp.task('build', function() {
-  runSequence('clean', 'data-build', 'discover-build', 'explorer-build');
+  runSequence('clean', 'data-build', 'discover-build', 'explorer-build', 'appendice-build');
 });
