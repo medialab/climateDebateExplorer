@@ -73,7 +73,7 @@ module.exports = React.createClass({
     };
 
     return networks[network].api +
-      ( networks[network].title ? networks[network].title + encodeURIComponent('Climate Negociations Browser') : '' ) +
+      ( networks[network].title ? networks[network].title + encodeURIComponent('Climate Negotiations Browser') : '' ) +
       ( networks[network].url ? networks[network].url + encodeURIComponent(this.state.contextual.permalink) : '' );
   },
 
