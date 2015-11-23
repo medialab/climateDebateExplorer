@@ -22,6 +22,12 @@ module.exports = React.createClass({
       search: {}
     };
   },
+  componentDidMount: function() {
+    document.body.addEventListener('click', this.bodyHandler);
+  },
+  componentWillUnmount: function() {
+    document.body.removeEventListener('click', this.bodyHandler);
+  },
 
   // Handlers:
   onSearchChange: function(e) {
@@ -84,13 +90,22 @@ module.exports = React.createClass({
       searchResults: results
     });
   },
-  onSearchBlur: function() {
-    // HACK:
-    setTimeout((function() {
-      this.setState({
-        resultsDisplayed: false
-      });
-    }).bind(this), 100);
+
+  bodyHandler: function(e) {
+    if (this.state.resultsDisplayed) {
+      var el = e.target,
+          matches = false;
+
+      while (!matches && el && el.hasAttribute) {
+        if (el.hasAttribute('data-preserve-search'))
+          matches = true;
+
+        el = el.parentNode;
+      }
+
+      if (!matches)
+        this.setState({ resultsDisplayed: false });
+    }
   },
   onSearchFocus: function() {
     this.setState({
@@ -129,6 +144,10 @@ module.exports = React.createClass({
     this.context.tree.emit('actions:filter', {
       field: field,
       value: value
+    });
+
+    this.setState({
+      resultsDisplayed: false
     });
   },
 
@@ -176,10 +195,10 @@ module.exports = React.createClass({
             }>
         <div className="column-title">Filters</div>
 
-        <div  className="search">
+        <div  className="search"
+              data-preserve-search="true">
           <input  type="text"
                   placeholder="Search filters"
-                  onBlur={ this.onSearchBlur }
                   onFocus={ this.onSearchFocus }
                   onChange={ this.onSearchChange }
                   value={ this.state.searchQuery } />
