@@ -119,6 +119,11 @@ gulp.task('explorer-build-src', function() {
     .pipe(gulp.dest('./build/assets/src'));
 });
 
+gulp.task('explorer-build-analytics', function() {
+  return gulp.src(['./explorer/assets/analytics.js'])
+    .pipe(gulp.dest('./build/assets/src'));
+});
+
 gulp.task('explorer-build-html', function() {
   return gulp.src('./explorer/app.html')
     .pipe(rename('index.html'))
@@ -130,6 +135,7 @@ gulp.task('explorer-build', function() {
     'explorer-build-assets',
     'explorer-build-style',
     'explorer-build-src',
+    'explorer-build-analytics'
     'explorer-build-html'
   );
 });
