@@ -113,7 +113,9 @@ module.exports = React.createClass({
               src="../assets/img/black-logo.svg" />
         <div className="links">
           <a  className="button"
-              onClick={ this.toggleAbout }>About</a>
+              onClick={ this.toggleAbout }>How to use</a>
+          <a  className="button"
+              href="../about.html">About</a>
         </div>
         <div className="social">
           <a  className="button"
