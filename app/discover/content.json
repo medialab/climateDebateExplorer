@@ -12,8 +12,8 @@
       "window": {
         "x": -50,
         "y": -50,
-        "w": 200,
-        "h": 200
+        "w": 400,
+        "h": 400
       },
       "analysis": "The diagram shows the evolution of visibility of four discussions related to the Kyoto protocol (measured as the percentage of ENB sections mentioning expressions related to each discussion over the total of ENB sections for the year).",
       "verbatims": {
@@ -119,8 +119,8 @@
       "window": {
         "x": -50,
         "y": -50,
-        "w": 200,
-        "h": 200
+        "w": 400,
+        "h": 400
       },
       "analysis": "The diagram shows the evolution of the visibility of a selection of negotiation issues related to the costs and investments connected to climate change (measured as the percentage of ENB sections that mentions expressions related to each discussion over the total of ENB sections for the year)...",
       "verbatims": {
@@ -210,8 +210,8 @@
       "window": {
         "x": -50,
         "y": -50,
-        "w": 200,
-        "h": 200
+        "w": 400,
+        "h": 400
       },
       "analysis": "The diagram shows the visibility evolution of the most engaged negotiation groupings. Each line shows the percentage of ENB sections in which the name of the corresponding group is mentioned (over the total of ENB sections for the year).",
       "verbatims": {
@@ -298,8 +298,8 @@
       "window": {
         "x": -50,
         "y": -50,
-        "w": 200,
-        "h": 200
+        "w": 400,
+        "h": 400
       },
       "analysis": "Considering the most visible countries in the different years of the negotiation, one can see the constant importance of the United States, China and Australia (the European Union has been not considered in this visualization). Other particularly visible countries are Japan, Saudi Arabia. Canada and Switzerland seems to \u2018switch places\u2019, as Canada disappears from the top positions after 2009, while Switzerland returns in 2006.",
       "verbatims": {

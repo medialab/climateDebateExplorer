@@ -324,6 +324,12 @@
   <script src="assets/src/d3.min.js"></script>
   <script src="assets/src/discoverviz.js"></script>
   <script type="text/javascript">
+    var resizeWindow = function(){
+      var smallWindow = window.innerWidth < 1024;
+      document.getElementById('viz-band').style.paddingRight = (smallWindow ? '2' : '26') + 'em';
+      document.getElementById('verbatims').style.display = (smallWindow ? 'none' : 'block');
+    };
+    resizeWindow();
     var s = skrollr.init({
       constants: {
         viz1: [HTML_VIZ_1_1_OFFSET],
@@ -350,8 +356,8 @@
           drawing = false;
       discoverviz.draw_all(containers, data);
       window.addEventListener('resize', function(e){
+        resizeWindow();
         if (drawing) return;
-        console.log(e)
         drawing = true;
         setTimeout(function(){
           discoverviz.draw_all(containers);
