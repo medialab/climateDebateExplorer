@@ -3,7 +3,7 @@
 var React = require('react'),
     ReactDOM = require('react-dom'),
     BaobabBranchMixin = require('baobab-react/mixins').branch,
-    EM = 16;
+    EM = 14;
 
 module.exports = React.createClass({
   displayName: 'climateDebateExplorer/explorer/stats',
