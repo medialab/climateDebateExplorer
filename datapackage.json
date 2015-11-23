@@ -4,7 +4,7 @@
   "title": "Climate Negotiations Browser data",
   "description": "http://www.climatenegotiations.org/",
   "version": "1.0",
-  "keywords": ["Earth Negotiation Bulletin", "Climate", "UNFCCC"],
+  "keywords": ["Earth Negotiation Bulletin", "Climate", "UNFCCC", "IPCC", "COP21"],
   "licenses": [{
     "url": "http://opendatacommons.org/licenses/by/",
     "name": "Open Data Commons Attribution License",
@@ -15,36 +15,52 @@
     "name": "Earth Negotiation Bulletin",
     "web": "http://www.iisd.ca/vol12/"
   }],
-  "contributors":[ {
-    "name": "médialab Sciences po",
-    "email": "medialab@sciencespo.fr",
-    "web": "http://medialab.sciences-po.fr"
-  },
-   {
-    "name": "Distributed Information Systems Laboratory LSIR EPFL",
-    "email": "alex.constantin@epfl.ch",
-    "web": "http://lsir.epfl.ch/research/themes/"
-  }
-
+  "contributors":[
+    {
+      "name": "médialab Sciences po",
+      "email": "medialab@sciencespo.fr",
+      "web": "http://www.medialab.sciences-po.fr"
+    },
+    {
+      "name": "Distributed Information Systems Laboratory LSIR EPFL",
+      "email": "alex.constantin@epfl.ch",
+      "web": "http://lsir.epfl.ch/research/themes/"
+    }
   ],
   "maintainers": [
   {
     "name": "médialab Sciences po",
     "email": "medialab@sciencespo.fr",
-    "web": "http://medialab.sciences-po.fr"
+    "web": "http://www.medialab.sciences-po.fr"
   }
   ],
   "publishers": [
   	{
     "name": "médialab Sciences po",
     "email": "medialab@sciencespo.fr",
-    "web": "http://medialab.sciences-po.fr"
+    "web": "http://www.medialab.sciences-po.fr"
   }
   ],
   "dependencies": {
     "data-package-name": ">=1.0"
   },
   "resources": [
+    {     
+      "path": "ENB-data/metadata_overview/sections_metadata.csv",
+      "name": "sections_metadata",
+      "description": "All the paragraphs metadata presented in the Climate Negotiations Browser interface.",
+      "mediatype":"text/csv",
+      "format":"csv",
+      "encoding":"UTF8"
+    },
+    {     
+      "path": "ENB-data/metadata_overview/sections_fulldata.csv.zip",
+      "name": "sections_fulldata.csv.zip",
+      "description": "All the paragraphs data (including full verbatims) of sections from ENB bulletins (includes corridors and other sections excluded from the Browser interface.",
+      "mediatype":"text/csv",
+      "format":"csv",
+      "encoding":"UTF8-zip"
+    },
     {     
       "path": "ENB-data/metadata_overview/",
       "name": "metadata_overview",
@@ -64,20 +80,18 @@
     {     
       "path": "ENB-data/enb_section_jsons",
       "name": "DEPRECATED_enb_section_jsons",
-      "description": "(DEPRECATED) The sections of ENB bulletin splited into separated json files with related metadata. EPFL version without topics metadata.",
-      "mediatype":"text/json",
+      "description": "(DEPRECATED) The sections of ENB bulletins split into separated json files with related metadata. EPFL version without topics metadata.",
+      "mediatype":"inode/directory",
       "format":"json",
       "encoding":"UTF8"
     },
-    
-        {     
+    {     
       "path": "ENB-data/enb_section_jsons-topiked",
       "name": "enb_section_jsons-topiked",
-      "description": "The sections of ENB bulletin splited into separated json files with related metadata (including topics). The right version to be used after médialab added the topics metadata through the tag_enb_topics.py script",
-      "mediatype":"text/json",
+      "description": "The sections of ENB bulletins split into separated json files with related metadata (including topics). The right version to be used after médialab added the topics metadata through the tag_enb_topics.py script.",
+      "mediatype":"inode/directory",
       "format":"json",
       "encoding":"UTF8"
     }
-    
   ]
 }
