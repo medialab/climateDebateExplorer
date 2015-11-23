@@ -12,19 +12,20 @@
   <a href="index.html"><img src="assets/img/black-logo.svg"/></a>
   <h1>About</h1>
   <h2>The project</h2>
-  In continuation of the <a href="http://climaps.eu/" target="_blank">EMAPS project</a>, the médialab of Sciences-Po Paris (medialab.sciences-po.fr), the LSIR of the EPFL (lsir.epfl.ch) and the Atelier Iceberg of Nantes (ateliericeberg.fr), have developed a <strong>climate change debate exploration platform</strong> focusing on deliberations at the highest level of the UNFCCC (United Nation Framework Convention on Climate Change)
+  <p>In continuation of the <a href="http://climaps.eu/" target="_blank">EMAPS project</a>, the médialab of Sciences-Po Paris (medialab.sciences-po.fr), the LSIR of the EPFL (lsir.epfl.ch) and the Atelier Iceberg of Nantes (ateliericeberg.fr), have developed a <strong>climate change debate exploration platform</strong> focusing on deliberations at the highest level of the UNFCCC (United Nation Framework Convention on Climate Change).</p>
   <h2>The objective</h2>
-  The platform hopes to assist climate negotiation actors and observers, providing them with the tools required to navigate through the last twenty years of international discussions on climate change:
+  <p>The platform hopes to assist climate negotiation actors and observers, providing them with the tools required to navigate through the last twenty years of international discussions on climate change:</p>
   <ul>
   <li>A serie of visual diagrams presenting the main actors (countries and negotiating groupings), the stake of negotiations (mitigation, adaptation, Kyoto Protocol, post-Kyoto…) as well as the evolution of their respective and combined visibility over time.</li>
   <li>A search engine allowing users to filter and browse the verbatims of the Earth Negotiation Bulletins</li>
   </ul>
   <h2>The data</h2>
-  All the data analyzed and distributed by the Climate Negotiation Browser derives from reports of the <a href="http://www.iisd.ca/vol12/" target="_blank">Volume 12 of the Earth Negotiation Bulletins</a>.
-  The ENB is an information service published by the <a href=" http://www.iisd.org/" target="_blank">IISD (International Institute for Sustainable Development)</a>. and covers 33 UN negotiation processes on environment and development. <a href="http://www.iisd.ca/vol12/" target="_blank"> Volume 12</a>. is devoted to climate negotiations and includes all the meetings relating to the UN Framework Convention on Climate Change, including the Conference of Parties, Subsidiary Bodies, Ad Hoc Working Groups and the thematic workshops. The ENB is considered one of the most reliable and comprehensive sources of information on the UNFCCC negotiations. The bulletins are issued daily and summarize the discussion at the official negotiation tables and, when possible, in the corridors.
-  The problem with the ENB is that the content is published as daily documents mixing different negotiation tracks and formats, making it difficult to have both a whole view of the negotiations and to access specific pieces of information. The main goal of this platform is to facilitate the access to this information.
+  <p>All the data analyzed and distributed by the Climate Negotiation Browser derives from reports of the <a href="http://www.iisd.ca/vol12/" target="_blank">Volume 12 of the Earth Negotiation Bulletins</a>.</p>
+  <p>The ENB is an information service published by the <a href=" http://www.iisd.org/" target="_blank">IISD (International Institute for Sustainable Development)</a>. and covers 33 UN negotiation processes on environment and development. <a href="http://www.iisd.ca/vol12/" target="_blank"> Volume 12</a>. is devoted to climate negotiations and includes all the meetings relating to the UN Framework Convention on Climate Change, including the Conference of Parties, Subsidiary Bodies, Ad Hoc Working Groups and the thematic workshops. The ENB is considered one of the most reliable and comprehensive sources of information on the UNFCCC negotiations. The bulletins are issued daily and summarize the discussion at the official negotiation tables and, when possible, in the corridors.</p>
+  <p>The problem with the ENB is that the content is published as daily documents mixing different negotiation tracks and formats, making it difficult to have both a whole view of the negotiations and to access specific pieces of information. The main goal of this platform is to facilitate the access to this information.</p>
+  <p>All the metadata and full text data used and presented in this interface is <a href="assets/data/ClimateNegotationsBrowser-ENB-verbatims.csv.zip">freely downloadable and reusable as a zipped CSV (utf-8) file</a> published under the <a href="http://opendatacommons.org/licenses/by/">ODC-by OpenData licence</a>.</p>
   <h2>The context</h2>
-  The discussions on climate change are one of – if not <em>the</em> most – complex multilateral negotiations of the United Nations system. Such complexity derives from:
+  <p>The discussions on climate change are one of – if not <em>the</em> most – complex multilateral negotiations of the United Nations system. Such complexity derives from:</p>
   <ol>
   <li>The high number of actors mobilized (compared to other negotiations, almost all countries of the World have high stakes in this debate and they are often joined by non-governmental actors such as large and small NGOs as well as corporations).</li>
   <li>The dynamic of alliances between actors (not only the countries are gathered in multiple and overlapping negotiation groupings, but the unequal size of delegations forces smaller countries to ask others to represent them in some negotiation tables). </li>
@@ -34,7 +35,7 @@
   <li>The accumulation of negotiation results over more than 20 years of diplomacy (which demands the memorization of the positions taken by actors in previous negotiations. </li>
   </ol>
   <h2>The protocol</h2>
-  The development of the Climate Negotiation Browser entailed 6 different phases:
+  <p>The development of the Climate Negotiation Browser entailed 6 different phases:</p>
   <ol>
   <li>We collected all the ENB Vol. 12 bulletins from the IISD website and split them into the sections composing them (defined as the portions of text appearing before two subsequent titles).</li>
   <li>We manually tagged all the sections according to their negotiation track (COP, IPCC, SBI, SBSTA, Ad Hoc Working Groups, Special workshop) and negotiation format (Plenary, Groups, Corridors, History, Agenda, Analysis).</li>
@@ -43,6 +44,7 @@
   <li>We tagged all the sections according to the occurrence of country names, negotiation groups and thematic key-phrases</li>
   <li>We developed a faceted search engine and a series of visual diagrams to facilitate access to the data</li>
   </ol>
+  <p>The source code of the scripts wrote to generate, tag and prepare the metadata used in this web interface is freely available and reusable as free software under the <a href="https://opensource.org/licenses/MIT">MIT License</a> on the <a href="https://github.com/medialab/climateDebateExplorer">GitHub repository of this project</a>.</p>
   <h2>The team</h2>
   <strong> At <a href="http://www.medialab.sciences-po.fr/" target="_blank">Sciences Po médialab</a></strong>
   <ul>

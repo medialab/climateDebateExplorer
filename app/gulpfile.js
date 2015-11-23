@@ -154,7 +154,7 @@ gulp.task('data-build-csv', function() {
 
 gulp.task('data-build-csv-full', function() {
   return gulp.src(['../ENB-data/metadata_overview/sections_fulldata.csv.zip'])
-    .pipe(rename('ClimateNegtationsBrowser-ENB-verbatims.csv.zip'))
+    .pipe(rename('ClimateNegotationsBrowser-ENB-verbatims.csv.zip'))
     .pipe(gulp.dest('./build/assets/data'));
 });
 
@@ -188,6 +188,7 @@ gulp.task('data-build', function() {
     'data-build-style',
     'data-build-src',
     'data-build-csv',
+    'data-build-csv-full',
     'data-build-htaccess',
     'data-build-glossary',
     'data-build-html'
