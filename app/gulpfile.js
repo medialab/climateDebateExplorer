@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     rimraf = require('rimraf'),
     less = require('gulp-less'),
     rename = require('gulp-rename'),
+    uglify = require('gulp-uglify'),
     minifyCss = require('gulp-minify-css'),
     autoprefixer = require('gulp-autoprefixer'),
 
@@ -45,6 +46,7 @@ gulp.task('discover-less', function() {
 
 gulp.task('discover-build-src', function() {
   return gulp.src(['./discover/assets/src/*', './discover/dist/*'])
+    .pipe(uglify())
     .pipe(gulp.dest('./build/assets/src'));
 });
 
@@ -103,19 +105,19 @@ gulp.task('explorer-build-style', function() {
       cascade: false
     }))
     .pipe(rename('explorer.css'))
+    .pipe(minifyCss())
     .pipe(gulp.dest('./build/assets/style'));
 });
 
 gulp.task('explorer-build-src', function() {
   return browserify({
-      entries: './explorer/src/app.jsx',
-      standalone: 'app',
-      debug: true
+      entries: './explorer/src/app.jsx'
     })
     .transform(reactify)
     .bundle()
     .pipe(source('explorer.js'))
     .pipe(buffer())
+    .pipe(uglify())
     .pipe(gulp.dest('./build/assets/src'));
 });
 
