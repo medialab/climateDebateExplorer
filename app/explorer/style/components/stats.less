@@ -58,6 +58,15 @@
 
     &.expanded {
       height: calc(~"100% - 3em");
+      overflow: hidden;
+
+      .block-content {
+        overflow-y: auto;
+
+        .chart-line {
+          height: 2.2em;
+        }
+      }
     }
 
     &.hidden {
@@ -70,11 +79,11 @@
       height: calc(~"100% - 4em");
       width: 100%;
 
-      overflow-y: auto;
+      overflow: hidden;
 
       .chart-line {
         position: relative;
-        height: 2.2em;
+        height: 2em;
         width: calc(~"100% - 2em");
         margin-left: 1em;
         padding-top: 0.7em;

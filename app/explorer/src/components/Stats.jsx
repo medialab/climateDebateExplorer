@@ -3,7 +3,7 @@
 var React = require('react'),
     ReactDOM = require('react-dom'),
     BaobabBranchMixin = require('baobab-react/mixins').branch,
-    EM = 14;
+    EM = 16;
 
 module.exports = React.createClass({
   displayName: 'climateDebateExplorer/explorer/stats',
@@ -13,6 +13,12 @@ module.exports = React.createClass({
     fields: ['cached', 'config', 'fields'],
     deployedList: ['appState', 'deployedList'],
     stats: ['cached', 'config', 'stats']
+  },
+  getInitialState: function() {
+    return {
+      height: 1,
+      nbLines: 0
+    };
   },
 
   // Handlers
@@ -29,10 +35,15 @@ module.exports = React.createClass({
 
   // Helpers
   _updateBlockSize: function() {
-    var dom = ReactDOM.findDOMNode(this);
+    var dom = ReactDOM.findDOMNode(this),
+        height = ((dom.offsetHeight - 2 * EM) / 3 - 4.5 * EM),
+        nbLines = Math.floor(height / (2 * EM)),
+        lineHeight = Math.floor(height / nbLines);
 
     this.setState({
-      nbLines: Math.floor(((dom.offsetHeight - 2 * EM) / 3 - 4.5 * EM) / (2.5 * EM))
+      height: height,
+      nbLines: nbLines,
+      lineHeight: lineHeight
     });
   },
 
@@ -98,6 +109,11 @@ module.exports = React.createClass({
                     return (
                       <div  className="chart-line"
                             data-field={ field }
+                            style={{
+                              height: this.state.deployedList ?
+                                undefined :
+                                this.state.lineHeight
+                            }}
                             key={ i }>
                         <div  className="chart-line-bar"
                               data-figure={ display }>
