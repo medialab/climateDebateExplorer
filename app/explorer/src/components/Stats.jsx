@@ -50,11 +50,7 @@ module.exports = React.createClass({
               }
               onClick={ this.expand }>
           <span className="stats-back-text"
-                data-text={
-                  filtersIndex[this.state.deployedList] ?
-                    'Back to related contents' :
-                    'Back to all statistics'
-                }
+                data-text="Back to all statistics"
                 data-short-text="Back"></span>
         </div>
         { (
