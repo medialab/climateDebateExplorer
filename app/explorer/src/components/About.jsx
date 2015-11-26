@@ -43,7 +43,7 @@ module.exports = React.createClass({
                     </td>
                     <td className="spacer"></td>
                     <td>
-                      <p>The Climate Negotiations Browser allows the user to navigate over 20 years of UN climate negotiations as captured by the <a href="http://www.iisd.ca/vol12/" target="_blank">Earth Negotiation Bulletin</a> reporting system.</p>
+                      <p>The Climate Negotiations Browser allows the user to navigate over 20 years of UN climate negotiations as captured by the <a href="http://www.iisd.ca/vol12/" target="_blank">Earth Negotiations Bulletin</a> reporting system.</p>
                       <p>The DISCOVER interface offers a visual overview of the most visible issues and actors of the negotiations.<br />The EXPLORE interface allows the user to search, filter and read verbatim text directly from ENB.</p>
                     </td>
                   </tr>
