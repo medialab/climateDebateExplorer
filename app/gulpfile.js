@@ -87,6 +87,8 @@ function textReplace(txt, path, str) {
 
 gulp.task('explorer-build-img', function() {
   return gulp.src(['./explorer/assets/*.svg'])
+    .pipe(gulp.dest('./build/assets/img')) &&
+    gulp.src(['./explorer/assets/*.png'])
     .pipe(gulp.dest('./build/assets/img'));
 });
 
