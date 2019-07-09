@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/lato-regular.eot');
+  src: url('../fonts/lato-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/lato-regular.woff2') format('woff2'),
+       url('../fonts/lato-regular.woff') format('woff'),
+       url('../fonts/lato-regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  color: #999;
+  font-family: lato;
+}
+
+body > * {
+  margin-left: 73px !important;
+  margin-right: 73px !important;
+}
+
+:target,
+.target {
+  color: black;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 0.4em;
+}
+small {
+  font-size: 0.8em;
+}
+p {
+  margin: 0.4em 0;
+}
