@@ -113,7 +113,8 @@ gulp.task('explorer-build-style', function() {
 
 gulp.task('explorer-build-src', function() {
   return browserify({
-      entries: './explorer/src/app.jsx'
+      entries: './explorer/src/app.jsx',
+      ignoreTransform: ['babelify']
     })
     .transform(reactify)
     .bundle()
