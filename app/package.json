@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "http-server -p 8000",
-    "build": "gulp build"
+    "build": "gulp build",
+    "deploy": "npm run build && gh-pages -d ./build"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "browserify": "^12.0.1",
+    "gh-pages": "^2.0.1",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-less": "^3.0.3",
