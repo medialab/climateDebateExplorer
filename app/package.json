@@ -14,7 +14,7 @@
     "baobab": "^2.1.1",
     "baobab-react": "^1.0.0",
     "djax": "^1.2.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.19",
     "papaparse": "^4.1.2",
     "react": "^0.14.2",
     "react-dom": "^0.14.2"
