@@ -41,6 +41,6 @@ Please consult `datapackage.json` for more details.
 All the source code is released under the [MIT License](https://opensource.org/licenses/MIT). 
 All the data is republished under the [ODC-BY License](http://opendatacommons.org/licenses/by/) meaning you have to cite the source whenever reusing it.
 
-## Notes regarding GDPR compliance works
+## Notes regarding GDPR compliance
 
 The analytics are not configured on this website and thus are not enabled in production, which is what we want.
